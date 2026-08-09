@@ -7,7 +7,7 @@ export async function GET() {
         SELECT COUNT(*) AS totalVisits,
                COUNT(DISTINCT visitor_id) AS uniqueVisitors,
                COUNT(DISTINCT CASE WHEN country_code != 'XX' THEN country_code END) AS countries,
-               SUM(CASE WHEN date(visited_at) = date('now') THEN 1 ELSE 0 END) AS today
+               COALESCE(SUM(CASE WHEN date(visited_at) = date('now') THEN 1 ELSE 0 END), 0) AS today
         FROM visits
       `).first(),
       env.DB.prepare(`
