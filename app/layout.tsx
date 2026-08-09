@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Lora } from "next/font/google";
 import "./globals.css";
+import VisitorTracker from "../components/VisitorTracker";
 
 const sans = DM_Sans({ variable: "--font-sans", subsets: ["latin"] });
 const display = Lora({ variable: "--font-display", subsets: ["latin"] });
@@ -29,7 +30,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${sans.variable} ${display.variable}`}>{children}</body>
+      <body className={`${sans.variable} ${display.variable}`}>
+        {children}
+        <VisitorTracker />
+      </body>
     </html>
   );
 }
