@@ -1,9 +1,10 @@
 import Link from "next/link";
 import CountrySearch from "../components/CountrySearch";
+import { COUNTRIES, displayRegion, flagUrl } from "../lib/countries";
 
 const highlights = [
-  { value: "199", label: "country profiles planned" },
-  { value: "1", label: "clear place to explore" },
+  { value: "199", label: "complete country profiles" },
+  { value: "1", label: "searchable world atlas" },
   { value: "0", label: "clutter or geography jargon" },
 ];
 
@@ -18,7 +19,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#explore">Explore</a>
           <a href="#about">About</a>
-          <Link className="nav-cta" href="/countries/united-states">Open USA profile</Link>
+          <a className="nav-cta" href="#countries">Browse 199 countries</a>
         </div>
       </nav>
 
@@ -31,7 +32,7 @@ export default function Home() {
             culture, and defining facts in one beautiful profile.
           </p>
           <CountrySearch variant="hero" />
-          <p className="search-note">Try “USA”, “United States”, or “America”</p>
+          <p className="search-note">Try “Canada”, “Cambodia”, “Japan”, “UK”, or “BR”</p>
         </div>
 
         <div className="hero-atlas" aria-label="United States profile preview">
@@ -62,9 +63,9 @@ export default function Home() {
 
       <section className="feature-section" id="explore">
         <div className="section-heading">
-          <p className="eyebrow"><span /> Country spotlight</p>
-          <h2>Start with the<br /><em>United States.</em></h2>
-          <p>Our first complete profile combines trusted data with a visual, story-first experience.</p>
+          <p className="eyebrow"><span /> Featured country</p>
+          <h2>Begin anywhere.<br /><em>Explore deeply.</em></h2>
+          <p>Every country now has the same polished profile: flag, map, people, geography, economy, identity, and sources.</p>
           <Link className="text-link" href="/countries/united-states">Explore the full USA profile <span>→</span></Link>
         </div>
         <Link className="country-feature-card" href="/countries/united-states">
@@ -83,10 +84,30 @@ export default function Home() {
         </Link>
       </section>
 
+      <section className="country-directory" id="countries">
+        <div className="country-directory-head">
+          <div>
+            <p className="eyebrow"><span /> The complete atlas</p>
+            <h2>Choose from<br /><em>199 countries.</em></h2>
+          </div>
+          <p>Search by country name, common alias, or two- and three-letter country code—or browse the full directory below.</p>
+        </div>
+        <CountrySearch variant="hero" />
+        <div className="country-directory-grid">
+          {COUNTRIES.map((country) => (
+            <Link className="country-directory-card" href={`/countries/${country.slug}`} key={country.cca3}>
+              <img src={flagUrl(country.cca2)} alt="" loading="lazy" />
+              <span><strong>{country.name}</strong><small>{displayRegion(country)} · {country.cca2}</small></span>
+              <b aria-hidden="true">→</b>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className="principles" id="about">
         <div><span>01</span><h3>Trusted numbers</h3><p>Core statistics include their year and link back to authoritative sources.</p></div>
         <div><span>02</span><h3>Designed to teach</h3><p>Dense information becomes a clear visual story that works on every screen.</p></div>
-        <div><span>03</span><h3>Built to grow</h3><p>The USA is first. More complete country profiles will follow in one shared atlas.</p></div>
+        <div><span>03</span><h3>One global system</h3><p>All 199 country profiles share the same structure, navigation, sourcing, and visual language.</p></div>
       </section>
 
       <footer className="site-footer">

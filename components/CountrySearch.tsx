@@ -2,43 +2,32 @@
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
-
-const usaAliases = new Set([
-  "us", "usa", "u.s.", "u.s.a.", "america", "united states", "united states of america",
-]);
+import { COUNTRY_SEARCH_INDEX } from "@/lib/countries";
 
 export default function CountrySearch({ variant = "compact" }: { variant?: "hero" | "compact" }) {
   const router = useRouter();
   const [query, setQuery] = useState("");
   const [message, setMessage] = useState("");
 
-  function submit(event: FormEvent<HTMLFormElement>) {
+  function submit(event: FormEvent) {
     event.preventDefault();
-    const normalized = query.trim().toLowerCase();
-    if (!normalized) {
-      setMessage("Type a country name or code to begin.");
-      return;
-    }
-    if (usaAliases.has(normalized)) {
-      router.push("/countries/united-states");
-      return;
-    }
-    setMessage(`${query.trim()} is on our roadmap. The United States profile is ready now.`);
+    const term = query.trim().toLowerCase();
+    if (!term) return setMessage("Type a country name or code.");
+    const result = COUNTRY_SEARCH_INDEX.find((item) => item.name.toLowerCase() === term || item.terms.split(" ").includes(term))
+      || COUNTRY_SEARCH_INDEX.find((item) => item.name.toLowerCase().startsWith(term))
+      || COUNTRY_SEARCH_INDEX.find((item) => item.terms.includes(term));
+    if (!result) return setMessage("Country not found. Try a full name or two-letter code.");
+    setMessage("");
+    router.push(`/countries/${result.slug}`);
   }
 
   return (
     <div className={`country-search-wrap ${variant}`}>
-      <form className="country-search" onSubmit={submit}>
-        <label className="sr-only" htmlFor={`country-${variant}`}>Search countries</label>
+      <form className="country-search" onSubmit={submit} role="search">
         <span aria-hidden="true">⌕</span>
-        <input
-          id={`country-${variant}`}
-          value={query}
-          onChange={(event) => { setQuery(event.target.value); setMessage(""); }}
-          placeholder="Search any country or code"
-          autoComplete="off"
-        />
-        <button type="submit">Explore <span>→</span></button>
+        <label className="sr-only" htmlFor={`country-search-${variant}`}>Search countries</label>
+        <input id={`country-search-${variant}`} value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search any country or code…" autoComplete="off" />
+        <button type="submit">Explore</button>
       </form>
       {message && <p className="search-message" role="status">{message}</p>}
     </div>
