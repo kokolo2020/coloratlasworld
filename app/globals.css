@@ -5485,15 +5485,15 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 
 .poster-flag-block {
   left:20px;
-  top:156px;
+  top:144px;
   width:420px;
-  height:256px;
+  height:300px;
   padding:14px;
 }
 
 .poster-flag-stage {
-  height:auto;
-  aspect-ratio:1.9;
+  height:132px;
+  aspect-ratio:auto;
   display:grid;
   place-items:center;
   padding:8px;
@@ -5510,30 +5510,39 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   left:18px;
   right:18px;
   top:22px;
-  height:104px;
+  height:92px;
 }
 
 .poster-flag-facts {
-  gap:7px;
-  margin-top:10px;
+  grid-template-columns:repeat(2, 1fr);
+  gap:8px;
+  margin-top:12px;
 }
 
 .poster-flag-facts article {
-  min-height:54px;
-  padding:8px 5px;
+  min-height:48px;
+  padding:8px 10px;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  align-items:center;
+  column-gap:8px;
+  text-align:left;
 }
 
 .poster-flag-facts strong {
-  font-size:22px;
+  font-size:24px;
 }
 
 .poster-flag-facts span {
-  font-size:8.5px;
+  margin-top:0;
+  font-size:9.5px;
+  line-height:1.15;
 }
 
 .poster-flag-block p {
-  margin-top:10px;
+  margin-top:11px;
   font-size:11px;
+  line-height:1.32;
 }
 
 .poster-gender { left:460px; top:104px; width:172px; }
@@ -5574,8 +5583,49 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 }
 
 .human {
-  width:21px;
-  height:48px;
+  position:relative;
+  width:24px;
+  height:54px;
+  background:transparent;
+  clip-path:none;
+}
+
+.human::before,
+.human::after {
+  content:"";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  background:currentColor;
+}
+
+.human::before {
+  top:0;
+  width:13px;
+  height:13px;
+  border-radius:50%;
+}
+
+.human.red {
+  color:#d42035;
+}
+
+.human.red::after {
+  top:16px;
+  width:26px;
+  height:34px;
+  clip-path:polygon(50% 0, 66% 10%, 76% 36%, 100% 68%, 70% 68%, 64% 100%, 54% 100%, 52% 70%, 48% 70%, 46% 100%, 36% 100%, 30% 68%, 0 68%, 24% 36%, 34% 10%);
+}
+
+.human.blue {
+  color:#0b70b3;
+}
+
+.human.blue::after {
+  top:16px;
+  width:24px;
+  height:36px;
+  clip-path:polygon(34% 0, 66% 0, 76% 22%, 100% 48%, 84% 58%, 72% 38%, 68% 100%, 54% 100%, 51% 60%, 49% 60%, 46% 100%, 32% 100%, 28% 38%, 16% 58%, 0 48%, 24% 22%);
 }
 
 .life-box {
@@ -5686,7 +5736,7 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 
 .poster-stat-strip {
   left:20px;
-  top:426px;
+  top:456px;
   width:420px;
   height:92px;
 }
