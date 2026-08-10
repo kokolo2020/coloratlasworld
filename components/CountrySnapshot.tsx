@@ -108,12 +108,12 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
             <div className="gender-visual premium-gender">
               <figure className="gender-person female">
                 <span className="human female" />
-                <figcaption><b>50.5%</b><span>Female</span></figcaption>
+                <figcaption>Female</figcaption>
               </figure>
               <div className="donut gender-donut"><b>50.5%</b><b>49.5%</b></div>
               <figure className="gender-person male">
                 <span className="human male" />
-                <figcaption><b>49.5%</b><span>Male</span></figcaption>
+                <figcaption>Male</figcaption>
               </figure>
             </div>
             <div className="life-box"><span>Life expectancy</span><strong>79 <em>years</em></strong></div>

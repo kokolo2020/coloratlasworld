@@ -5859,17 +5859,18 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 }
 
 .poster-flag-stage {
-  height:128px;
+  height:104px;
   padding:0;
   overflow:hidden;
   background:#fff;
   border-color:#bfcfd0;
   border-radius:10px;
+  box-shadow:0 8px 16px rgba(11,49,93,.10);
 }
 
 .poster-flag-stage img {
-  width:100%;
-  height:100%;
+  width:auto;
+  height:86px;
   max-height:none;
   object-fit:contain;
   background:#fff;
@@ -5879,11 +5880,19 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   display:none;
 }
 
+.poster-flag-facts {
+  margin-top:14px;
+}
+
+.poster-flag-facts article {
+  min-height:52px;
+}
+
 .premium-gender {
-  grid-template-columns:44px 1fr 44px;
+  grid-template-columns:42px 1fr 42px;
   align-items:center;
-  gap:7px;
-  margin-top:4px;
+  gap:8px;
+  margin-top:6px;
 }
 
 .gender-person {
@@ -5891,32 +5900,30 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   margin:0;
   display:grid;
   justify-items:center;
-  gap:5px;
+  gap:6px;
 }
 
 .gender-person figcaption {
-  display:grid;
-  justify-items:center;
-  gap:2px;
-  color:#234455;
-  font-size:8px;
+  color:currentColor;
+  font-size:10px;
   font-weight:900;
   line-height:1;
-  text-transform:uppercase;
 }
 
-.gender-person figcaption b {
-  color:#0d6371;
-  font-size:10px;
-  line-height:1;
+.gender-person.female {
+  color:#d42035;
+}
+
+.gender-person.male {
+  color:#0b315d;
 }
 
 .human.female,
 .human.male {
-  width:28px;
-  height:58px;
+  width:32px;
+  height:54px;
   border-radius:999px;
-  filter:drop-shadow(0 6px 8px rgba(10,49,87,.14));
+  filter:drop-shadow(0 5px 7px rgba(10,49,87,.08));
 }
 
 .human.female::before,
@@ -5924,50 +5931,102 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   top:0;
   width:14px;
   height:14px;
-  border:2px solid rgba(255,255,255,.92);
-  box-shadow:0 0 0 1px rgba(13,88,105,.12);
+  border:3px solid currentColor;
+  background:#fff;
+  box-shadow:0 0 0 2px #fff;
 }
 
 .human.female {
-  color:#bf5a72;
+  color:#d42035;
 }
 
 .human.female::after {
   top:16px;
   width:30px;
-  height:38px;
-  background:
-    linear-gradient(135deg, #f6b08c 0%, #c95772 58%, #8e4d7c 100%);
-  clip-path:polygon(50% 0, 66% 9%, 78% 36%, 98% 68%, 72% 68%, 66% 100%, 54% 100%, 52% 72%, 48% 72%, 46% 100%, 34% 100%, 28% 68%, 2% 68%, 22% 36%, 34% 9%);
+  height:34px;
+  border:3px solid currentColor;
+  border-bottom:0;
+  border-radius:15px 15px 7px 7px;
+  background:#fff;
+  clip-path:polygon(50% 0, 76% 18%, 76% 42%, 100% 100%, 67% 100%, 58% 70%, 42% 70%, 33% 100%, 0 100%, 24% 42%, 24% 18%);
 }
 
 .human.male {
-  color:#126f89;
+  color:#0b315d;
 }
 
 .human.male::after {
   top:16px;
   width:28px;
-  height:40px;
-  background:
-    linear-gradient(135deg, #68d4c7 0%, #167d9c 54%, #0b315d 100%);
-  clip-path:polygon(34% 0, 66% 0, 77% 21%, 100% 47%, 84% 58%, 72% 39%, 68% 100%, 55% 100%, 51% 61%, 49% 61%, 45% 100%, 32% 100%, 28% 39%, 16% 58%, 0 47%, 23% 21%);
+  height:36px;
+  border:3px solid currentColor;
+  border-bottom:0;
+  border-radius:14px 14px 6px 6px;
+  background:#fff;
+  clip-path:polygon(30% 0, 70% 0, 82% 26%, 100% 55%, 82% 66%, 70% 40%, 66% 100%, 54% 100%, 51% 60%, 49% 60%, 46% 100%, 34% 100%, 30% 40%, 18% 66%, 0 55%, 18% 26%);
 }
 
 .gender-donut {
-  width:82px;
-  height:82px;
+  width:88px;
+  height:88px;
   background:
-    conic-gradient(#c95772 0 50.5%, #167d9c 50.5% 100%);
+    conic-gradient(#f00014 0 50.5%, #0065a8 50.5% 100%);
   box-shadow:
-    inset 0 0 0 15px #fff,
+    inset 0 0 0 17px #fff,
     0 0 0 1px #cfdedf,
     0 10px 18px rgba(12,75,92,.12);
 }
 
 .gender-donut b {
   color:#173a50;
-  font-size:10.5px;
+  font-size:11px;
+}
+
+.poster-gender .life-box {
+  min-height:54px;
+  margin-top:9px;
+  padding:9px 12px 9px 48px;
+  background:linear-gradient(180deg, #f2f9fd, #eaf4f8);
+  position:relative;
+}
+
+.poster-gender .life-box::before,
+.poster-gender .life-box::after {
+  content:"";
+  position:absolute;
+}
+
+.poster-gender .life-box::before {
+  left:15px;
+  top:18px;
+  width:24px;
+  height:22px;
+  background:#087182;
+  transform:rotate(-45deg);
+  border-radius:7px 7px 2px 7px;
+}
+
+.poster-gender .life-box::after {
+  left:18px;
+  top:27px;
+  width:19px;
+  height:7px;
+  border:3px solid #fff;
+  border-left:0;
+  border-right:0;
+  border-top-color:transparent;
+  transform:skewX(-18deg);
+}
+
+.poster-gender .life-box span {
+  color:#087182;
+  font-size:9.5px;
+  letter-spacing:.05em;
+}
+
+.poster-gender .life-box strong {
+  color:#087182;
+  font-size:25px;
 }
 
 @media (max-width:970px) {
