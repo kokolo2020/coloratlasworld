@@ -1,4 +1,4 @@
-import { env } from "cloudflare:workers";
+import { getCloudflareEnv } from "@/lib/cloudflare-bindings";
 
 const displayNames = new Intl.DisplayNames(["en"], { type: "region" });
 
@@ -10,6 +10,9 @@ function countryFromRequest(request: Request) {
 
 export async function POST(request: Request) {
   try {
+    const env = await getCloudflareEnv();
+    if (!env?.DB) return Response.json({ ok: true, preview: true });
+
     const body = (await request.json()) as { visitorId?: string; sessionId?: string; path?: string };
     const visitorId = body.visitorId?.slice(0, 100);
     const sessionId = body.sessionId?.slice(0, 100);
