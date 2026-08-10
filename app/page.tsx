@@ -1,6 +1,7 @@
 import Link from "next/link";
 import CountrySearch from "../components/CountrySearch";
-import { COUNTRIES, displayRegion, flagUrl } from "../lib/countries";
+import CountrySnapshot, { CountrySnapshotData } from "../components/CountrySnapshot";
+import { COUNTRIES, displayRegion, flagUrl, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getMetrics } from "../lib/countries";
 
 const highlights = [
   { value: "199", label: "complete country profiles" },
@@ -9,8 +10,38 @@ const highlights = [
 ];
 
 export default function Home() {
+  const usa = getCountryBySlug("united-states")!;
+  const metrics = getMetrics(usa.cca3);
+  const enrichment = getEnrichment(usa.cca3);
+  const currencies = Object.entries(usa.currencies);
+  const [lat, lng] = usa.latlng;
+  const snapshot: CountrySnapshotData = {
+    name: usa.name,
+    officialName: usa.officialName,
+    code: usa.cca2,
+    region: displayRegion(usa),
+    flagUrl: flagUrl(usa.cca2),
+    capital: usa.capital || "Washington, D.C.",
+    population: metrics?.population ? formatNumber(metrics.population.value) : formatNumber(usa.population),
+    currency: currencies.map(([code, currency]) => `${currency.name} (${code})`).join(", "),
+    gdp: metrics?.gdp ? formatMoney(metrics.gdp.value) : "Not published",
+    lifeExpectancy: metrics?.lifeExpectancy ? `${metrics.lifeExpectancy.value.toFixed(1)} years` : "Not published",
+    medianAge: enrichment.demographics.medianAge ? `${enrichment.demographics.medianAge} years` : "Not published",
+    languages: enrichment.demographics.officialLanguages.join(", ") || Object.values(usa.languages).join(", "),
+    government: enrichment.government.type,
+    timeZones: enrichment.dailyLife.timeZones.join(", "),
+    drivingSide: enrichment.dailyLife.drivingSide,
+    plugTypes: enrichment.dailyLife.plugTypes.join(", "),
+    mapUrl: `https://www.openstreetmap.org/export/embed.html?bbox=${lng - 30}%2C${lat - 16}%2C${lng + 30}%2C${lat + 16}&layer=mapnik&marker=${lat}%2C${lng}`,
+    neighbors: enrichment.neighbors.map(getCountryByCca3).filter((country): country is NonNullable<typeof country> => Boolean(country)).map((country) => ({ name: country.name, slug: country.slug, flagUrl: flagUrl(country.cca2) })),
+    landmark: enrichment.images[0],
+    history: enrichment.history.summary,
+    facts: enrichment.facts,
+  };
+
   return (
     <main>
+      <CountrySnapshot data={snapshot} />
       <nav className="site-nav" aria-label="Primary navigation">
         <Link className="brand" href="/" aria-label="Color Atlas World home">
           <span className="brand-mark">✦</span>

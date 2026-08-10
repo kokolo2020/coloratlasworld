@@ -18,6 +18,11 @@ export default function CountrySearch({ variant = "compact" }: { variant?: "hero
       || COUNTRY_SEARCH_INDEX.find((item) => item.terms.includes(term));
     if (!result) return setMessage("Country not found. Try a full name or two-letter code.");
     setMessage("");
+    if (result.slug === "united-states") {
+      window.history.pushState({}, "", "?country=united-states");
+      window.dispatchEvent(new CustomEvent("coloratlas:open-snapshot"));
+      return;
+    }
     router.push(`/countries/${result.slug}`);
   }
 
