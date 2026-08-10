@@ -5265,3 +5265,180 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   object-fit:contain;
   filter:drop-shadow(0 9px 10px rgba(11,49,93,.22));
 }
+
+/* USA flag-only approval pass: compact one-page snapshot without maps */
+.usa-poster {
+  background:
+    radial-gradient(circle at 38% 22%, rgba(209, 32, 53, .055), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, #fbfdfd 100%);
+}
+
+.usa-poster::before,
+.poster-map-block,
+.poster-region-card {
+  display:none;
+}
+
+.poster-title {
+  top:22px;
+  width:780px;
+}
+
+.poster-title h2 {
+  gap:13px;
+  color:#14777b;
+  font-size:45px;
+}
+
+.poster-title h2 span {
+  color:#0b315d;
+  font-size:78px;
+}
+
+.poster-lede {
+  width:520px;
+  font-size:13px;
+  line-height:1.42;
+}
+
+.poster-flag-ribbon {
+  right:28px;
+  width:104px;
+  height:126px;
+  border:1px solid #d6e0de;
+  border-top:0;
+  box-shadow:0 7px 18px rgba(11,49,93,.12);
+}
+
+.poster-flag-ribbon img {
+  height:82%;
+  object-fit:cover;
+}
+
+.poster-flag-block {
+  position:absolute;
+  left:22px;
+  top:158px;
+  width:535px;
+  height:286px;
+  padding:16px;
+  border:1px solid #d9e3e1;
+  border-radius:14px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.94), rgba(244,248,249,.96)),
+    #fff;
+  box-shadow:0 10px 24px rgba(15,58,69,.06);
+}
+
+.poster-flag-block::before {
+  content:"";
+  position:absolute;
+  left:25px;
+  right:25px;
+  top:24px;
+  height:130px;
+  background:linear-gradient(180deg, rgba(11,49,93,.05), rgba(20,119,123,.04));
+  border-radius:12px;
+}
+
+.poster-flag-stage {
+  position:relative;
+  overflow:hidden;
+  height:156px;
+  border:1px solid #cfdcda;
+  border-radius:12px;
+  background:#fff;
+  box-shadow:0 13px 22px rgba(11,49,93,.14);
+}
+
+.poster-flag-stage img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.poster-flag-facts {
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:9px;
+  margin-top:13px;
+}
+
+.poster-flag-facts article {
+  min-width:0;
+  min-height:62px;
+  padding:10px 7px;
+  border:1px solid #dce5e3;
+  border-radius:10px;
+  background:#f8fbfb;
+  text-align:center;
+}
+
+.poster-flag-facts strong,
+.poster-flag-facts span {
+  display:block;
+}
+
+.poster-flag-facts strong {
+  color:#d42035;
+  font-size:25px;
+  line-height:1;
+}
+
+.poster-flag-facts span {
+  margin-top:6px;
+  color:#173a50;
+  font-size:10px;
+  font-weight:900;
+  line-height:1.1;
+  text-transform:uppercase;
+}
+
+.poster-flag-block p {
+  margin:12px 4px 0;
+  color:#294958;
+  font-size:12px;
+  font-weight:750;
+  line-height:1.35;
+}
+
+.poster-gender { left:574px; top:104px; }
+.poster-age { left:786px; top:104px; }
+.poster-economy { left:1022px; top:104px; }
+.poster-living { left:574px; top:336px; }
+.poster-education { left:786px; top:336px; }
+.poster-language { left:1022px; top:336px; }
+
+.poster-card {
+  height:218px;
+  border-color:#d8e2e0;
+}
+
+.poster-card h3 {
+  font-size:12.5px;
+}
+
+.poster-bars {
+  height:96px;
+}
+
+.economy-panel {
+  margin-top:10px;
+}
+
+.poster-stat-strip {
+  top:456px;
+  width:535px;
+  height:96px;
+}
+
+.poster-bottom {
+  bottom:20px;
+  height:124px;
+}
+
+.poster-neighbors a,
+.poster-neighbors .neighbor-chip {
+  min-width:112px;
+}

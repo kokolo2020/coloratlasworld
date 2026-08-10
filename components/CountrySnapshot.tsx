@@ -78,9 +78,6 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
     ["coast", "Coastline", "19,924 km", ""],
     ["age", "Median age", "38.9", "years"],
   ];
-  const contiguousMapUrl = "/maps/us-contiguous.svg";
-  const flagMapUrl = "/maps/us-contiguous-flag.svg";
-
   return (
     <div className="snapshot-backdrop usa-poster-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
       <section className="snapshot-dialog usa-poster-shell" role="dialog" aria-modal="true" aria-labelledby="snapshot-title">
@@ -96,26 +93,17 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
             <img src={data.flagUrl} alt="Flag of the United States" />
           </figure>
 
-          <section className="poster-map-block" aria-label="United States map">
-            <div className="poster-skyline" aria-hidden="true" />
-            <img className="poster-usa-map" src={flagMapUrl} alt="Map of the contiguous United States filled with the United States flag" />
-            <div className="city-callout los-angeles"><i />Los Angeles</div>
-            <div className="city-callout chicago"><i />Chicago</div>
-            <div className="city-callout new-york"><i />New York</div>
-            <div className="city-callout washington"><i />Washington, D.C.<span>Capital</span></div>
-            <div className="city-callout houston"><i />Houston</div>
-            <div className="city-callout miami"><i />Miami</div>
-            <div className="poster-inset-map alaska"><img src="/maps/us-alaska.svg" alt="" /></div>
-            <div className="poster-inset-map hawaii"><img src="/maps/us-hawaii.svg" alt="" /></div>
-          </section>
-
-          <section className="poster-region-card" aria-label="Regional locator">
-            <strong>{data.region}</strong>
-            <div className="north-america-map">
-              <span className="canada-shape" />
-              <span className="usa-highlight" style={{ WebkitMaskImage: `url(${contiguousMapUrl})`, maskImage: `url(${contiguousMapUrl})` }} />
-              <span className="mexico-shape" />
+          <section className="poster-flag-block" aria-label="United States flag profile">
+            <div className="poster-flag-stage">
+              <img src={data.flagUrl} alt="Flag of the United States" />
             </div>
+            <div className="poster-flag-facts">
+              <article><strong>50</strong><span>States</span></article>
+              <article><strong>1</strong><span>Federal district</span></article>
+              <article><strong>5</strong><span>Major territories</span></article>
+              <article><strong>3</strong><span>Ocean coastlines</span></article>
+            </div>
+            <p>Federal republic in North America with major Atlantic, Pacific, Gulf, and Arctic access.</p>
           </section>
 
           <section className="poster-card poster-gender">
