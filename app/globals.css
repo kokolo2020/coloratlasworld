@@ -4609,3 +4609,488 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
     right:8px;
   }
 }
+
+/* USA poster v4 - tuned to info2.jpg */
+.usa-poster {
+  background:#fcfdfc;
+}
+
+.poster-title {
+  left:22px;
+  top:24px;
+  width:730px;
+}
+
+.poster-title h2 {
+  display:flex;
+  align-items:flex-end;
+  gap:14px;
+  white-space:nowrap;
+  color:#14777b;
+  font-size:43px;
+  line-height:.82;
+}
+
+.poster-title h2 span {
+  color:#0b315d;
+  font-size:75px;
+  line-height:.82;
+}
+
+.poster-official {
+  margin:10px 0 6px;
+  color:#d42035;
+  font-size:25px;
+}
+
+.poster-lede {
+  width:390px;
+  color:#19374a;
+  font-size:13px;
+  font-style:italic;
+  line-height:1.38;
+}
+
+.poster-flag-ribbon {
+  right:28px;
+  width:98px;
+  height:122px;
+}
+
+.poster-map-block {
+  left:22px;
+  top:172px;
+  width:342px;
+  height:280px;
+}
+
+.poster-usa-shape {
+  left:0;
+  top:0;
+  width:332px;
+  height:184px;
+  background-size:150% auto;
+}
+
+.poster-skyline {
+  display:none;
+}
+
+.city-callout {
+  position:absolute;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  gap:4px;
+  color:#0b315d;
+  font-size:10px;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+.city-callout i {
+  width:9px;
+  height:9px;
+  border:2px solid #fff;
+  border-radius:50%;
+  background:#0b70b3;
+  box-shadow:0 0 0 1px #0b315d;
+}
+
+.city-callout span {
+  display:block;
+  margin-top:2px;
+  color:#14777b;
+  font-size:9px;
+}
+
+.city-callout::after {
+  content:"";
+  position:absolute;
+  left:8px;
+  top:7px;
+  width:38px;
+  height:1px;
+  background:#0b315d;
+  opacity:.7;
+}
+
+.los-angeles { left:10px; top:112px; }
+.chicago { left:188px; top:72px; }
+.new-york { left:290px; top:48px; }
+.washington { left:286px; top:88px; align-items:flex-start; }
+.houston { left:160px; top:162px; }
+.miami { left:278px; top:162px; }
+.new-york::after,
+.washington::after,
+.miami::after { left:-33px; top:6px; }
+.houston::after { width:24px; }
+
+.poster-inset-map {
+  position:absolute;
+  bottom:4px;
+  width:95px;
+  height:62px;
+  border:1px solid #dce5e3;
+  border-radius:9px;
+  background:#fff;
+  box-shadow:0 2px 9px rgba(13,54,73,.04);
+}
+
+.poster-inset-map.alaska {
+  left:0;
+  background-image:url("/flags/us.svg");
+  background-size:170% auto;
+  background-position:left center;
+  mask-repeat:no-repeat;
+  mask-size:120px 72px;
+  mask-position:-16px 7px;
+  -webkit-mask-repeat:no-repeat;
+  -webkit-mask-size:120px 72px;
+  -webkit-mask-position:-16px 7px;
+}
+
+.poster-inset-map.hawaii {
+  left:105px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
+
+.poster-inset-map.hawaii span {
+  width:18px;
+  height:11px;
+  border-radius:50%;
+  background:#d42035;
+  box-shadow:inset 0 4px 0 #fff, inset 0 7px 0 #0b315d;
+  rotate:-18deg;
+}
+
+.poster-region-card {
+  left:379px;
+  top:200px;
+  width:178px;
+  height:196px;
+}
+
+.poster-region-card strong {
+  font-size:16px;
+}
+
+.north-america-map {
+  position:relative;
+  height:148px;
+  margin-top:8px;
+  border-radius:8px;
+  background:#f2f7f8;
+  overflow:hidden;
+}
+
+.canada-shape,
+.mexico-shape,
+.usa-highlight {
+  position:absolute;
+  display:block;
+}
+
+.canada-shape {
+  left:18px;
+  top:18px;
+  width:128px;
+  height:66px;
+  background:#cbd9df;
+  clip-path:polygon(0 38%,16% 22%,36% 28%,48% 6%,72% 12%,100% 22%,92% 48%,70% 56%,52% 44%,36% 64%,14% 58%);
+}
+
+.usa-highlight {
+  left:54px;
+  top:78px;
+  width:80px;
+  height:44px;
+  background:#d42035;
+  mask-repeat:no-repeat;
+  mask-position:center;
+  mask-size:contain;
+  -webkit-mask-repeat:no-repeat;
+  -webkit-mask-position:center;
+  -webkit-mask-size:contain;
+}
+
+.mexico-shape {
+  left:80px;
+  top:112px;
+  width:70px;
+  height:24px;
+  background:#cbd9df;
+  clip-path:polygon(0 0,50% 24%,100% 4%,86% 62%,45% 100%,16% 66%);
+}
+
+.poster-gender { left:574px; top:98px; }
+.poster-age { left:786px; top:98px; width:226px; }
+.poster-economy { left:1022px; top:98px; width:232px; }
+.poster-living { left:574px; top:332px; }
+.poster-education { left:786px; top:332px; width:226px; }
+.poster-language { left:1022px; top:332px; width:232px; }
+
+.poster-card {
+  height:224px;
+  padding:12px 13px;
+  border-color:#d9e3e1;
+}
+
+.poster-card h3 {
+  margin-bottom:8px;
+  font-size:13px;
+}
+
+.gender-visual {
+  margin-top:2px;
+}
+
+.gender-donut {
+  width:92px;
+  height:92px;
+  font-size:13px;
+  box-shadow:inset 0 0 0 17px #fff,0 0 0 1px #dfe9e7;
+}
+
+.human {
+  width:24px;
+  height:56px;
+}
+
+.life-box {
+  margin-top:8px;
+  padding:8px 10px;
+}
+
+.life-box strong {
+  font-size:24px;
+}
+
+.life-box strong em {
+  display:inline;
+  color:#294958;
+  font-size:11px;
+  font-style:normal;
+  font-weight:800;
+}
+
+.poster-bars {
+  height:104px;
+}
+
+.poster-bars span {
+  background:#13b8b2;
+}
+
+.economy-panel {
+  display:grid;
+  grid-template-columns:94px 1fr;
+  gap:12px;
+  align-items:center;
+  margin-top:14px;
+}
+
+.economy-panel .economy-pie {
+  width:94px;
+  height:94px;
+  background:#087182;
+}
+
+.economy-panel .economy-pie b {
+  color:#fff;
+  font-size:42px;
+  line-height:1;
+}
+
+.economy-panel strong,
+.economy-panel span,
+.economy-panel b,
+.economy-panel small {
+  display:block;
+}
+
+.economy-panel strong {
+  color:#173a50;
+  font-size:14px;
+  line-height:1.2;
+}
+
+.economy-panel span {
+  margin-top:12px;
+  padding-top:10px;
+  border-top:1px solid #b7c7ca;
+  color:#173a50;
+  font-size:11px;
+  font-weight:900;
+}
+
+.economy-panel b {
+  color:#14777b;
+  font-size:28px;
+  line-height:1;
+}
+
+.economy-panel small {
+  color:#61767d;
+  font-size:10px;
+}
+
+.poster-living .pie-row,
+.poster-education .pie-row {
+  margin-top:15px;
+}
+
+.living-ring,
+.edu-pie {
+  width:96px;
+  height:96px;
+}
+
+.living-ring {
+  box-shadow:inset 0 0 0 18px #fff,0 0 0 1px #dfe9e7;
+}
+
+.edu-pie {
+  background:conic-gradient(#14777b 0 62%,#19bdb5 62% 90%,#d42035 90% 100%);
+  box-shadow:inset 0 0 0 18px #fff,0 0 0 1px #dfe9e7;
+}
+
+.language-grid {
+  grid-template-columns:1fr 82px;
+}
+
+.language-grid > div:first-child {
+  padding:9px 10px;
+}
+
+.language-grid b {
+  font-size:15px;
+}
+
+.religion-pie {
+  width:82px;
+  height:82px;
+  background:conic-gradient(#0d70b4 0 63%,#d42035 63% 92%,#b8c4c8 92% 100%);
+}
+
+.poster-language small {
+  margin-top:10px;
+}
+
+.poster-stat-strip {
+  left:22px;
+  top:454px;
+  width:535px;
+  height:98px;
+}
+
+.poster-stat-strip article {
+  grid-template-rows:28px 13px auto 12px;
+  padding:8px 5px 6px;
+}
+
+.poster-stat-strip strong {
+  font-size:15px;
+}
+
+.poster-bottom {
+  left:22px;
+  right:24px;
+  bottom:22px;
+  height:124px;
+  grid-template-columns:1.02fr 1.05fr .72fr;
+}
+
+.poster-about {
+  grid-template-columns:66px 1fr;
+  padding:15px 16px;
+}
+
+.poster-about i {
+  background:#14777b;
+  font-size:16px;
+}
+
+.poster-about p {
+  font-size:11.5px;
+}
+
+.poster-neighbors {
+  padding:13px 14px;
+}
+
+.poster-neighbors div {
+  gap:8px;
+  margin-top:10px;
+}
+
+.poster-neighbors a,
+.poster-neighbors .neighbor-chip {
+  display:grid;
+  grid-template-columns:38px 1fr;
+  align-items:center;
+  gap:8px;
+  min-width:102px;
+  padding:8px 9px;
+  border:1px solid #dce5e3;
+  border-radius:12px;
+  color:#12364d;
+  font-size:11px;
+  font-weight:900;
+  line-height:1.05;
+}
+
+.poster-neighbors a span,
+.poster-neighbors .neighbor-chip {
+  text-transform:uppercase;
+}
+
+.poster-neighbors small,
+.neighbor-chip small {
+  display:block;
+  margin-top:3px;
+  color:#60747b;
+  font-size:10px;
+  text-transform:none;
+}
+
+.ocean-icon {
+  display:grid;
+  place-items:center;
+  width:38px;
+  height:38px;
+  border:3px solid #14777b;
+  border-radius:50%;
+}
+
+.ocean-icon::before {
+  content:"";
+  width:24px;
+  height:12px;
+  border:3px solid #14777b;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-radius:50%;
+}
+
+.poster-transport {
+  grid-template-columns:44px 1fr;
+  gap:8px;
+  padding:14px 12px;
+}
+
+.poster-transport strong {
+  font-size:12px;
+  line-height:1.1;
+}
+
+.poster-transport p {
+  margin:4px 0 9px;
+  font-size:9px;
+  line-height:1.25;
+  font-style:italic;
+}
