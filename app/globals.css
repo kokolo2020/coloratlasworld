@@ -6301,6 +6301,30 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   transform-origin:center top;
 }
 
+/* Batch profile pass: keep data-driven country text inside the existing poster cells */
+.poster-flag-facts strong.compact {
+  font-size:13px;
+  line-height:1.05;
+  overflow-wrap:anywhere;
+}
+
+.poster-stat-strip strong,
+.poster-neighbors a span,
+.poster-neighbors .neighbor-chip,
+.poster-transport p,
+.language-grid b,
+.poster-language small {
+  overflow-wrap:anywhere;
+}
+
+.transport-line {
+  display:block;
+}
+
+.transport-line + .transport-line {
+  margin-top:5px;
+}
+
 @media (max-width:970px) {
   .snapshot-dialog.usa-poster-shell {
     width:calc(100vw - 24px);

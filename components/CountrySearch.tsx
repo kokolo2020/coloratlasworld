@@ -4,6 +4,8 @@ import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { COUNTRY_SEARCH_INDEX } from "@/lib/countries";
 
+const SNAPSHOT_COUNTRIES = new Set(["united-states", "canada", "mexico", "france", "japan", "china", "india", "singapore", "italy", "south-africa", "brazil"]);
+
 export default function CountrySearch({ variant = "compact" }: { variant?: "hero" | "compact" }) {
   const router = useRouter();
   const [query, setQuery] = useState("");
@@ -18,8 +20,8 @@ export default function CountrySearch({ variant = "compact" }: { variant?: "hero
       || COUNTRY_SEARCH_INDEX.find((item) => item.terms.includes(term));
     if (!result) return setMessage("Country not found. Try a full name or two-letter code.");
     setMessage("");
-    if (result.slug === "united-states") {
-      window.history.pushState({}, "", "?country=united-states");
+    if (SNAPSHOT_COUNTRIES.has(result.slug)) {
+      window.history.pushState({}, "", `?country=${result.slug}`);
       window.dispatchEvent(new CustomEvent("coloratlas:open-snapshot"));
       return;
     }
