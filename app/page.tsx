@@ -9,7 +9,8 @@ const highlights = [
   { value: "0", label: "clutter or geography jargon" },
 ];
 
-export default function Home() {
+export default async function Home({ searchParams }: { searchParams?: Promise<{ country?: string }> }) {
+  const params = await searchParams;
   const usa = getCountryBySlug("united-states")!;
   const metrics = getMetrics(usa.cca3);
   const enrichment = getEnrichment(usa.cca3);
@@ -44,7 +45,7 @@ export default function Home() {
 
   return (
     <main>
-      <CountrySnapshot data={snapshot} />
+      <CountrySnapshot data={snapshot} initialOpen={params?.country === "united-states"} />
       <nav className="site-nav" aria-label="Primary navigation">
         <Link className="brand" href="/" aria-label="Color Atlas World home">
           <span className="brand-mark">✦</span>

@@ -35,8 +35,8 @@ function slugifyCountry(name: string) {
     .replace(/^-+|-+$/g, "");
 }
 
-export default function CountrySnapshot({ data }: { data: CountrySnapshotData }) {
-  const [open, setOpen] = useState(false);
+export default function CountrySnapshot({ data, initialOpen = false }: { data: CountrySnapshotData; initialOpen?: boolean }) {
+  const [open, setOpen] = useState(initialOpen);
   const [favorite, setFavorite] = useState(false);
   const favoriteKey = `coloratlas-favorite-${data.code.toLowerCase()}`;
 
@@ -135,7 +135,7 @@ export default function CountrySnapshot({ data }: { data: CountrySnapshotData })
 
         <section className="premium-snapshot-stage" aria-label={`${data.name} profile summary`}>
           <figure className="premium-map-panel">
-            <img src={data.mapUrl} alt={`${data.name} regional locator map`} />
+            <iframe src={data.mapUrl} title={`${data.name} regional locator map`} loading="lazy" />
             <figcaption>
               <span>Regional locator</span>
               <strong>{data.region}</strong>
