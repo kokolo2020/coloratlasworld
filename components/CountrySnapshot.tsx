@@ -78,6 +78,7 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
     ["coast", "Coastline", "19,924 km", ""],
     ["age", "Median age", "38.9", "years"],
   ];
+  const contiguousMapUrl = "/maps/us-contiguous.svg";
 
   return (
     <div className="snapshot-backdrop usa-poster-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
@@ -90,30 +91,31 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
             <p className="poster-lede">A federal republic in North America known for its diverse people, dynamic economy, and global influence in innovation, culture, and leadership.</p>
           </header>
 
-          <figure className="poster-flag-ribbon">
-            <img src={data.flagUrl} alt="" />
+          <figure className="poster-flag-ribbon" aria-label="United States flag banner">
+            <span className="flag-canton" />
+            <span className="flag-stripes" />
           </figure>
 
           <section className="poster-map-block" aria-label="United States map">
             <div className="poster-skyline" aria-hidden="true" />
-            <div className="poster-map-outline" style={{ WebkitMaskImage: `url(${data.silhouetteUrl})`, maskImage: `url(${data.silhouetteUrl})` }} />
-            <div className="poster-usa-shape" style={{ WebkitMaskImage: `url(${data.silhouetteUrl})`, maskImage: `url(${data.silhouetteUrl})` }} />
-            <img className="poster-state-lines" src={data.silhouetteUrl} alt="" />
+            <div className="poster-map-outline" style={{ WebkitMaskImage: `url(${contiguousMapUrl})`, maskImage: `url(${contiguousMapUrl})` }} />
+            <div className="poster-usa-shape" style={{ WebkitMaskImage: `url(${contiguousMapUrl})`, maskImage: `url(${contiguousMapUrl})` }} />
+            <img className="poster-state-lines" src={contiguousMapUrl} alt="" />
             <div className="city-callout los-angeles"><i />Los Angeles</div>
             <div className="city-callout chicago"><i />Chicago</div>
             <div className="city-callout new-york"><i />New York</div>
             <div className="city-callout washington"><i />Washington, D.C.<span>Capital</span></div>
             <div className="city-callout houston"><i />Houston</div>
             <div className="city-callout miami"><i />Miami</div>
-            <div className="poster-inset-map alaska" style={{ WebkitMaskImage: `url(${data.silhouetteUrl})`, maskImage: `url(${data.silhouetteUrl})` }} />
-            <div className="poster-inset-map hawaii"><span /><span /><span /></div>
+            <div className="poster-inset-map alaska"><img src="/maps/us-alaska.svg" alt="" /></div>
+            <div className="poster-inset-map hawaii"><img src="/maps/us-hawaii.svg" alt="" /></div>
           </section>
 
           <section className="poster-region-card" aria-label="Regional locator">
             <strong>{data.region}</strong>
             <div className="north-america-map">
               <span className="canada-shape" />
-              <span className="usa-highlight" style={{ WebkitMaskImage: `url(${data.silhouetteUrl})`, maskImage: `url(${data.silhouetteUrl})` }} />
+              <span className="usa-highlight" style={{ WebkitMaskImage: `url(${contiguousMapUrl})`, maskImage: `url(${contiguousMapUrl})` }} />
               <span className="mexico-shape" />
             </div>
           </section>
