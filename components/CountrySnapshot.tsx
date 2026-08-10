@@ -96,7 +96,9 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
 
           <section className="poster-map-block" aria-label="United States map">
             <div className="poster-skyline" aria-hidden="true" />
+            <div className="poster-map-outline" style={{ WebkitMaskImage: `url(${data.silhouetteUrl})`, maskImage: `url(${data.silhouetteUrl})` }} />
             <div className="poster-usa-shape" style={{ WebkitMaskImage: `url(${data.silhouetteUrl})`, maskImage: `url(${data.silhouetteUrl})` }} />
+            <img className="poster-state-lines" src={data.silhouetteUrl} alt="" />
             <div className="city-callout los-angeles"><i />Los Angeles</div>
             <div className="city-callout chicago"><i />Chicago</div>
             <div className="city-callout new-york"><i />New York</div>
