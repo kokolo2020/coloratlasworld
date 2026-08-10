@@ -78,6 +78,7 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
     ["coast", "Coastline", "19,924 km", ""],
     ["age", "Median age", "38.9", "years"],
   ];
+  const fullFlagUrl = "/flags/us.svg";
   return (
     <div className="snapshot-backdrop usa-poster-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
       <section className="snapshot-dialog usa-poster-shell" role="dialog" aria-modal="true" aria-labelledby="snapshot-title">
@@ -91,7 +92,7 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
 
           <section className="poster-flag-block" aria-label="United States flag profile">
             <div className="poster-flag-stage">
-              <img src={data.flagUrl} alt="Flag of the United States" />
+              <img src={fullFlagUrl} alt="Flag of the United States" />
             </div>
             <div className="poster-flag-facts">
               <article><strong>50</strong><span>States</span></article>
@@ -104,7 +105,17 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
 
           <section className="poster-card poster-gender">
             <h3><i className="pi gender" />Gender</h3>
-            <div className="gender-visual"><span className="human red" /><div className="donut gender-donut"><b>50.5%</b><b>49.5%</b></div><span className="human blue" /></div>
+            <div className="gender-visual premium-gender">
+              <figure className="gender-person female">
+                <span className="human female" />
+                <figcaption><b>50.5%</b><span>Female</span></figcaption>
+              </figure>
+              <div className="donut gender-donut"><b>50.5%</b><b>49.5%</b></div>
+              <figure className="gender-person male">
+                <span className="human male" />
+                <figcaption><b>49.5%</b><span>Male</span></figcaption>
+              </figure>
+            </div>
             <div className="life-box"><span>Life expectancy</span><strong>79 <em>years</em></strong></div>
           </section>
 
