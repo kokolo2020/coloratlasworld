@@ -78,6 +78,7 @@ const PROFILE_OVERRIDES: Record<string, Partial<CountrySnapshotData>> = {
     transportFacts: [{ title: "Major International Airports", detail: "Paris CDG, Paris Orly, Nice Cote d'Azur" }, { title: "Major Seaports", detail: "Marseille Fos, Le Havre, Dunkirk" }],
   },
   japan: {
+    displayTheme: "night",
     lede: "An island nation in East Asia known for advanced technology, long life expectancy, dense cities, and deep cultural continuity.",
     summary: "Japan is an archipelago in the northwest Pacific, with Tokyo as its capital and largest metropolitan center. Its economy is highly developed, and its society combines modern industry with long-standing traditions.",
     flagFacts: [{ value: "47", label: "Prefectures" }, { value: "4", label: "Main islands" }, { value: "JPY", label: "Currency" }, { value: "Pacific", label: "Ocean" }],
@@ -115,6 +116,7 @@ const PROFILE_OVERRIDES: Record<string, Partial<CountrySnapshotData>> = {
     transportFacts: [{ title: "Major International Airports", detail: "Delhi (DEL), Mumbai (BOM), Bengaluru (BLR)" }, { title: "Major Seaports", detail: "JNPA/Mumbai, Mundra, Chennai, Visakhapatnam" }],
   },
   singapore: {
+    displayTheme: "night",
     lede: "A compact Southeast Asian city-state known for global finance, port logistics, aviation, clean urban systems, and multicultural daily life.",
     summary: "Singapore is an island city-state at the southern end of the Malay Peninsula, positioned on one of the world’s busiest shipping routes. Its economy is high income, highly urban, and closely tied to trade, finance, aviation, and technology.",
     flagFacts: [{ value: "City", label: "State" }, { value: "4", label: "Official languages" }, { value: "SGD", label: "Currency" }, { value: "100%", label: "Urban" }],

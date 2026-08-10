@@ -6325,6 +6325,51 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   margin-top:5px;
 }
 
+/* Night display test for white-heavy flags such as Japan and Singapore */
+.usa-poster.night-display {
+  background:
+    radial-gradient(circle at 24% 29%, rgba(10, 115, 133, .08), transparent 25%),
+    radial-gradient(circle at 72% 18%, rgba(212, 32, 53, .045), transparent 22%),
+    linear-gradient(180deg, #ffffff 0%, #fbfdfd 100%);
+}
+
+.night-flag-display {
+  border-color:#183a56;
+  background:
+    radial-gradient(circle at 22% 16%, rgba(44, 206, 224, .24), transparent 28%),
+    linear-gradient(145deg, #061928 0%, #0b3150 58%, #112c42 100%);
+  box-shadow:
+    0 18px 32px rgba(6,25,40,.18),
+    inset 0 0 0 1px rgba(255,255,255,.08);
+}
+
+.night-flag-display .poster-flag-stage {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.98), rgba(247,251,252,.98));
+  border:1px solid rgba(255,255,255,.9);
+  box-shadow:
+    0 16px 28px rgba(0,0,0,.30),
+    0 0 0 5px rgba(255,255,255,.09);
+}
+
+.night-flag-display .poster-flag-stage img {
+  filter:saturate(1.04) contrast(1.03);
+}
+
+.night-flag-display .poster-flag-facts article {
+  border-color:rgba(255,255,255,.16);
+  background:rgba(255,255,255,.08);
+}
+
+.night-flag-display .poster-flag-facts strong {
+  color:#ffffff;
+}
+
+.night-flag-display .poster-flag-facts span,
+.night-flag-display p {
+  color:#d9eef4;
+}
+
 @media (max-width:970px) {
   .snapshot-dialog.usa-poster-shell {
     width:calc(100vw - 24px);

@@ -51,6 +51,7 @@ export type CountrySnapshotData = {
   aboutImageUrl?: string;
   aboutImageAlt?: string;
   transportFacts?: Array<{ title: string; detail: string }>;
+  displayTheme?: "light" | "night";
 };
 
 function slugFor(item: CountrySnapshotData) {
@@ -171,14 +172,14 @@ export default function CountrySnapshot({
     <div className="snapshot-backdrop usa-poster-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
       <section className="snapshot-dialog usa-poster-shell" role="dialog" aria-modal="true" aria-labelledby="snapshot-title">
         <button className="usa-poster-close" onClick={close} aria-label="Close country snapshot">X</button>
-        <div className="usa-poster">
+        <div className={`usa-poster ${selected.displayTheme === "night" ? "night-display" : ""}`}>
           <header className="poster-title">
             <h2 id="snapshot-title"><span>{selected.name.toUpperCase()}</span> Country Profile</h2>
             <p className="poster-official">* {selected.officialName} *</p>
             <p className="poster-lede">{selected.lede || `${selected.name} is a ${selected.region} country with a distinctive culture, economy, and place in world affairs.`}</p>
           </header>
 
-          <section className="poster-flag-block" aria-label={`${selected.name} flag profile`}>
+          <section className={`poster-flag-block ${selected.displayTheme === "night" ? "night-flag-display" : ""}`} aria-label={`${selected.name} flag profile`}>
             <div className="poster-flag-stage">
               <img src={fullFlagUrl} alt={`Flag of ${selected.name}`} />
             </div>
