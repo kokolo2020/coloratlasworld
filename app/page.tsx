@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CountrySearch from "../components/CountrySearch";
 import CountrySnapshot, { CountrySnapshotData } from "../components/CountrySnapshot";
-import { COUNTRIES, displayRegion, flagUrl, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getMetrics } from "../lib/countries";
+import { COUNTRIES, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getMetrics } from "../lib/countries";
 
 const highlights = [
   { value: "199", label: "complete country profiles" },
@@ -28,15 +28,22 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
     capital: usa.capital || "Washington, D.C.",
     population: metrics?.population ? formatNumber(metrics.population.value) : formatNumber(usa.population),
     currency: currencies.map(([code, currency]) => `${currency.name} (${code})`).join(", "),
+    area: formatArea(usa.area),
+    coastline: usa.landlocked ? "Landlocked" : "Coastal",
     gdp: metrics?.gdp ? formatMoney(metrics.gdp.value) : "Not published",
+    gdpPerCapita: metrics?.gdpPerCapita ? formatMoney(metrics.gdpPerCapita.value) : "Not published",
+    gdpGrowth: metrics?.gdpGrowth ? `${metrics.gdpGrowth.value.toFixed(1)}%` : "Not published",
     lifeExpectancy: metrics?.lifeExpectancy ? `${metrics.lifeExpectancy.value.toFixed(1)} years` : "Not published",
     medianAge: enrichment?.demographics?.medianAge ? `${enrichment.demographics.medianAge} years` : "Not published",
+    urbanPercent: enrichment?.demographics?.urbanPercent ? `${enrichment.demographics.urbanPercent.value.toFixed(1)}%` : "Not published",
+    ruralPercent: enrichment?.demographics?.ruralPercent ? `${enrichment.demographics.ruralPercent.value.toFixed(1)}%` : "Not published",
     languages: (enrichment?.demographics?.officialLanguages ?? []).join(", ") || Object.values(usa.languages).join(", "),
     government: enrichment?.government?.type || "Federal presidential republic",
-    timeZones: (enrichment?.dailyLife?.timeZones ?? []).join(", ") || "Multiple time zones",
+    timeZones: enrichment?.dailyLife?.timeZones || "Multiple time zones",
     drivingSide: enrichment?.dailyLife?.drivingSide || "Right",
-    plugTypes: (enrichment?.dailyLife?.plugTypes ?? []).join(", ") || "A, B",
+    plugTypes: enrichment?.dailyLife?.plugTypes || "A, B",
     mapUrl: `https://www.openstreetmap.org/export/embed.html?bbox=${lng - 30}%2C${lat - 16}%2C${lng + 30}%2C${lat + 16}&layer=mapnik&marker=${lat}%2C${lng}`,
+    silhouetteUrl: "/maps/us-states.svg",
     neighbors: neighborCountries.map((country) => ({ name: country.name, slug: country.slug, flagUrl: flagUrl(country.cca2) })),
     landmark: enrichment?.images?.[0],
     history: enrichment?.history?.summary || "The United States declared independence in 1776 and adopted its present Constitution in 1787.",
