@@ -60,10 +60,10 @@ const EDUCATION_SPLIT: ChartItem[] = [
   { label: "Tertiary", value: 43, color: "#356d12" },
 ];
 
-function cardTitle(icon: string, title: string) {
+function cardTitle(code: string, title: string) {
   return (
     <div className="demo-card-title">
-      <span aria-hidden="true">{icon}</span>
+      <span aria-hidden="true">{code}</span>
       <strong>{title}</strong>
     </div>
   );
@@ -205,7 +205,7 @@ export default function CountrySnapshot({ data }: { data: CountrySnapshotData })
   return (
     <div className="snapshot-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
       <section className="snapshot-dialog demographics-dashboard" role="dialog" aria-modal="true" aria-labelledby="snapshot-title">
-        <button className="snapshot-close demo-close" onClick={close} aria-label="Close country dashboard">×</button>
+        <button className="snapshot-close demo-close" onClick={close} aria-label="Close country dashboard">Close</button>
 
         <header className="demo-titlebar">
           <div>
@@ -256,7 +256,7 @@ export default function CountrySnapshot({ data }: { data: CountrySnapshotData })
 
         <div className="demo-grid demo-demographic-band">
           <article className="demo-card demo-gender">
-            {cardTitle("⚥", "Gender")}
+            {cardTitle("01", "Population mix")}
             <div className="demo-gender-body">
               <div className="demo-person female" aria-hidden="true" />
               <div className="demo-donut">
@@ -274,13 +274,13 @@ export default function CountrySnapshot({ data }: { data: CountrySnapshotData })
           </article>
 
           <article className="demo-card">
-            {cardTitle("⌁", "Age")}
+            {cardTitle("02", "Age profile")}
             <VerticalBars items={AGE_BANDS} />
             <p className="demo-note">Population: <b>{data.population}</b></p>
           </article>
 
           <article className="demo-card">
-            {cardTitle("💰", "Income")}
+            {cardTitle("03", "Economy signal")}
             <PieChart items={INCOME_SPLIT} label="Income distribution" />
             <p className="demo-note">GDP: <b>{data.gdp}</b> · Currency: <b>{data.currency}</b></p>
           </article>
@@ -303,7 +303,7 @@ export default function CountrySnapshot({ data }: { data: CountrySnapshotData })
           </article>
 
           <article className="demo-card">
-            {cardTitle("⌖", "Place of Living")}
+            {cardTitle("04", "Daily life")}
             <HorizontalBars items={LIVING_SPLIT} />
             <dl className="demo-practical">
               <div><dt>Capital</dt><dd>{data.capital}</dd></div>
@@ -314,7 +314,7 @@ export default function CountrySnapshot({ data }: { data: CountrySnapshotData })
           </article>
 
           <article className="demo-card">
-            {cardTitle("🎓", "Education")}
+            {cardTitle("05", "Education and language")}
             <PieChart items={EDUCATION_SPLIT} label="Education distribution" />
             <div className="demo-language">
               <small>Languages</small>
