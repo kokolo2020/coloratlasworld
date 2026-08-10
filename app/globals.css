@@ -6294,6 +6294,13 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   line-height:1.28;
 }
 
+/* USA gender card v31: reduce only the male/female silhouettes */
+.human.female,
+.human.male {
+  transform:scale(.9);
+  transform-origin:center top;
+}
+
 @media (max-width:970px) {
   .snapshot-dialog.usa-poster-shell {
     width:calc(100vw - 24px);
