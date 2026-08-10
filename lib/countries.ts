@@ -1,5 +1,6 @@
 import countriesData from "@/data/countries.json";
 import metricsData from "@/data/world-bank.json";
+import enrichmentData from "@/data/country-enrichment.js";
 
 export type CountryRecord = (typeof countriesData)[number];
 type Metric = { value: number; year: string } | null;
@@ -9,6 +10,16 @@ export type CountryMetrics = {
   gdp: Metric;
   gdpPerCapita: Metric;
   gdpGrowth: Metric;
+};
+export type CountryEnrichment = {
+  demographics: { urbanPercent: Metric; ruralPercent: Metric; medianAge: number | null; officialLanguages: string[]; largestCities: string[]; compositionNote: string };
+  history: { currentStateSince: number | null; summary: string };
+  government: { type: string | null; headOfState: string | null; headOfGovernment: string | null; constitutionDate: string | null; retrieved: string; sourceUrl: string | null };
+  environment: { climate: string; highestPoint: string | null; geography: string; majorRivers: string | null; naturalResources: string | null };
+  dailyLife: { drivingSide: string; timeZones: string | null; plugTypes: string | null; tipping: string | null; emergencyNumbers: string | null; callingCode: string | null };
+  neighbors: string[];
+  facts: string[];
+  images: { url: string; label: string; source: string }[];
 };
 
 export function slugifyCountry(name: string) {
@@ -32,6 +43,17 @@ export const COUNTRY_SEARCH_INDEX = COUNTRIES.map((country) => ({
 
 export function getCountryBySlug(slug: string) {
   return COUNTRIES.find((country) => country.slug === slug);
+}
+
+export function getCountryByCca3(code: string) { return COUNTRIES.find((country) => country.cca3 === code); }
+export function getEnrichment(code: string): CountryEnrichment { return (enrichmentData as Record<string, CountryEnrichment>)[code]; }
+
+const metricRows = Object.entries(metricsData as Record<string, CountryMetrics>);
+export const COUNTRY_AVERAGE_POPULATION = metricRows.reduce((sum, [, row]) => sum + (row.population?.value || 0), 0) / metricRows.filter(([, row]) => row.population?.value).length;
+export function getGdpRank(code: string) {
+  const ranked = metricRows.filter(([, row]) => row.gdp?.value).sort((a, b) => (b[1].gdp?.value || 0) - (a[1].gdp?.value || 0));
+  const index = ranked.findIndex(([key]) => key === code);
+  return index < 0 ? null : { rank: index + 1, total: ranked.length };
 }
 
 export function getMetrics(code: string): CountryMetrics {

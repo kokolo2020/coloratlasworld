@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CountrySearch from "@/components/CountrySearch";
-import { COUNTRIES, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryBySlug, getMetrics } from "@/lib/countries";
+import { COUNTRIES, COUNTRY_AVERAGE_POPULATION, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getGdpRank, getMetrics } from "@/lib/countries";
 
 export function generateStaticParams() { return COUNTRIES.map(({ slug }) => ({ slug })); }
 
@@ -30,6 +30,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const deltaLng = country.area && country.area < 1000 ? 2.2 : 8;
   const bbox = `${lng - deltaLng},${lat - deltaLat},${lng + deltaLng},${lat + deltaLat}`;
   const next = COUNTRIES[country.profileNumber % COUNTRIES.length];
+  const enrichment = getEnrichment(country.cca3);
+  const neighbors = enrichment.neighbors.map(getCountryByCca3).filter(Boolean);
+  const gdpRank = getGdpRank(country.cca3);
+  const populationRatio = metrics.population?.value ? metrics.population.value / COUNTRY_AVERAGE_POPULATION : null;
+  const populationBar = populationRatio ? Math.min(100, Math.max(4, populationRatio * 34)) : 0;
 
   const quickStats = [
     { label: "Population", value: population, note: metrics.population ? `World Bank · ${metrics.population.year}` : "No recent World Bank value" },
@@ -91,6 +96,98 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <div className="economy-stat"><small>GDP growth</small><strong>{metrics.gdpGrowth ? `${metrics.gdpGrowth.value.toFixed(1)}%` : "Not published"}</strong><span>{metrics.gdpGrowth ? `${metrics.gdpGrowth.year} annual growth` : "No recent value"}</span></div>
       </section>
 
+      <section className="depth-section">
+        <div className="depth-heading">
+          <p className="eyebrow"><span /> A deeper profile</p>
+          <h2>People, systems<br /><em>& everyday life.</em></h2>
+          <p>Comparable facts are shown with clear dates and neutral framing. Gaps stay visible instead of being filled with guesses.</p>
+        </div>
+
+        <div className="depth-grid">
+          <article className="depth-card demographics-card">
+            <span className="card-number">01 · Demographics</span>
+            <h3>How people live</h3>
+            {enrichment.demographics.urbanPercent ? <>
+              <div className="split-label"><strong>Urban {enrichment.demographics.urbanPercent.value.toFixed(1)}%</strong><strong>Rural {enrichment.demographics.ruralPercent?.value.toFixed(1)}%</strong></div>
+              <div className="split-bar" aria-label="Urban and rural population share"><i style={{width:`${enrichment.demographics.urbanPercent.value}%`}} /><b /></div>
+              <small>World Bank · {enrichment.demographics.urbanPercent.year}</small>
+            </> : <p className="availability-note">Urban and rural shares are not available in the comparable dataset.</p>}
+            <dl className="data-list">
+              <div><dt>Median age</dt><dd>{enrichment.demographics.medianAge ?? "Not in current dataset"}</dd></div>
+              <div><dt>Languages</dt><dd>{enrichment.demographics.officialLanguages.length ? enrichment.demographics.officialLanguages.join(", ") : "Not published"}</dd></div>
+              <div><dt>Capital / principal city</dt><dd>{enrichment.demographics.largestCities.join(", ") || country.capital || "Not published"}</dd></div>
+            </dl>
+            <p className="context-note">{enrichment.demographics.compositionNote}</p>
+          </article>
+
+          <article className="depth-card comparison-card">
+            <span className="card-number">02 · Global comparison</span>
+            <h3>Placed in context</h3>
+            <div className="comparison-row"><div><span>Population</span><strong>{populationRatio ? `${populationRatio.toFixed(1)}× atlas average` : "Not available"}</strong></div><div className="comparison-track"><i style={{width:`${populationBar}%`}} /></div></div>
+            <div className="comparison-row"><div><span>GDP</span><strong>{gdpRank ? `#${gdpRank.rank} of ${gdpRank.total}` : "Not ranked"}</strong></div><div className="comparison-track"><i style={{width:gdpRank ? `${Math.max(4,100-(gdpRank.rank/gdpRank.total)*100)}%` : "0%"}} /></div></div>
+            <p className="context-note">Population compares the 199 atlas profiles. GDP ranking includes profiles with a published World Bank value.</p>
+          </article>
+
+          <article className="depth-card history-card">
+            <span className="card-number">03 · History & government</span>
+            <h3>A concise timeline</h3>
+            <p>{enrichment.history.summary}</p>
+            <dl className="data-list">
+              <div><dt>Government</dt><dd>{enrichment.government.type || "Not published"}</dd></div>
+              <div><dt>Head of state</dt><dd>{enrichment.government.headOfState || "Not published"}</dd></div>
+              <div><dt>Head of government</dt><dd>{enrichment.government.headOfGovernment || "Not published"}</dd></div>
+              <div><dt>Current constitution</dt><dd>{enrichment.government.constitutionDate || "Not in current dataset"}</dd></div>
+            </dl>
+            <small>Wikidata snapshot · retrieved {enrichment.government.retrieved}</small>
+          </article>
+
+          <article className="depth-card environment-card">
+            <span className="card-number">04 · Environment</span>
+            <h3>Land and climate</h3>
+            <dl className="data-list">
+              <div><dt>Climate</dt><dd>{enrichment.environment.climate}</dd></div>
+              <div><dt>Geography</dt><dd>{enrichment.environment.geography}</dd></div>
+              <div><dt>Highest point</dt><dd>{enrichment.environment.highestPoint || "Not in current dataset"}</dd></div>
+              <div><dt>Major rivers</dt><dd>{enrichment.environment.majorRivers || "Not in current dataset"}</dd></div>
+              <div><dt>Natural resources</dt><dd>{enrichment.environment.naturalResources || "Not in current dataset"}</dd></div>
+            </dl>
+          </article>
+
+          <article className="depth-card daily-card">
+            <span className="card-number">05 · Daily life</span>
+            <h3>Practical essentials</h3>
+            <dl className="data-list compact-list">
+              <div><dt>Driving side</dt><dd>{enrichment.dailyLife.drivingSide}</dd></div>
+              <div><dt>Calling code</dt><dd>{enrichment.dailyLife.callingCode || "Not published"}</dd></div>
+              <div><dt>Time zones</dt><dd>{enrichment.dailyLife.timeZones || "Verify locally"}</dd></div>
+              <div><dt>Plug types</dt><dd>{enrichment.dailyLife.plugTypes || "Verify locally"}</dd></div>
+              <div><dt>Tipping</dt><dd>{enrichment.dailyLife.tipping || "Local customs vary"}</dd></div>
+              <div><dt>Emergency numbers</dt><dd>{enrichment.dailyLife.emergencyNumbers || "Verify before travel"}</dd></div>
+            </dl>
+          </article>
+
+          <article className="depth-card facts-card">
+            <span className="card-number">06 · Defining facts</span>
+            <h3>Remember {country.name}</h3>
+            <ul className="fact-list">{enrichment.facts.slice(0,8).map((fact) => <li key={fact}>{fact}</li>)}</ul>
+          </article>
+        </div>
+      </section>
+
+      <section className="neighbors-section">
+        <div><p className="eyebrow"><span /> Connected places</p><h2>Neighboring countries</h2><p>Continue exploring across each listed land border.</p></div>
+        <div className="neighbor-chips">{neighbors.length ? neighbors.map((neighbor) => neighbor && <Link key={neighbor.cca3} href={`/countries/${neighbor.slug}`}><img src={flagUrl(neighbor.cca2)} alt="" />{neighbor.name}<span>→</span></Link>) : <p>No land-border neighbors are listed for this profile.</p>}</div>
+      </section>
+
+      <section className="gallery-section">
+        <div><p className="eyebrow"><span /> Visual atlas</p><h2>{country.name} in view</h2></div>
+        <div className="gallery-grid">
+          {enrichment.images[0] && <figure className="gallery-card gallery-photo"><img src={enrichment.images[0].url} alt={`${enrichment.images[0].label} in ${country.name}`} /><figcaption>{enrichment.images[0].label}<small>{enrichment.images[0].source}</small></figcaption></figure>}
+          <figure className="gallery-card gallery-flag"><img src={flagUrl(country.cca2)} alt={`Flag of ${country.name}`} /><figcaption>National flag<small>FlagCDN</small></figcaption></figure>
+          <figure className="gallery-card gallery-map"><iframe title={`Detail map of ${country.name}`} src={`https://www.openstreetmap.org/export/embed.html?bbox=${encodeURIComponent(bbox)}&layer=mapnik&marker=${lat}%2C${lng}`} loading="lazy" /><figcaption>Country location<small>OpenStreetMap</small></figcaption></figure>
+        </div>
+      </section>
+
       <section className="detail-section">
         <div className="detail-title"><p className="eyebrow"><span /> People & place</p><h2>Country<br /><em>essentials.</em></h2></div>
         <div className="detail-cards">
@@ -114,6 +211,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <div><p className="eyebrow"><span /> Sources & notes</p><h2>Numbers you can trace.</h2><p>Statistics show their reference year because country data changes. Unavailable values are clearly marked instead of estimated.</p></div>
         <ul>
           <li><a href={`https://data.worldbank.org/country/${country.cca2.toLowerCase()}`} target="_blank" rel="noreferrer">World Bank — population and economy ↗</a></li>
+          <li><a href="https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS" target="_blank" rel="noreferrer">World Bank — urban population share ↗</a></li>
+          <li><a href={enrichment.government.sourceUrl || "https://www.wikidata.org"} target="_blank" rel="noreferrer">Wikidata — government and current officeholders ↗</a></li>
           <li><a href="https://github.com/mledoze/countries" target="_blank" rel="noreferrer">Open country catalog — names, codes and geography ↗</a></li>
           <li><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap — map data ↗</a></li>
         </ul>

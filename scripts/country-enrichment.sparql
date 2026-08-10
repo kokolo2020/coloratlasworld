@@ -1,0 +1,31 @@
+SELECT ?iso3
+       (SAMPLE(STR(?country)) AS ?wikidataUrl)
+       (SAMPLE(?governmentLabel) AS ?government)
+       (SAMPLE(?headStateLabel) AS ?headState)
+       (SAMPLE(?headGovernmentLabel) AS ?headGovernment)
+       (SAMPLE(?highestPointLabel) AS ?highestPoint)
+       (SAMPLE(STR(?inception)) AS ?inception)
+       (SAMPLE(STR(?countryImage)) AS ?countryImage)
+       (SAMPLE(STR(?capitalImage)) AS ?capitalImage)
+       (GROUP_CONCAT(DISTINCT ?officialLanguageLabel; separator=", ") AS ?officialLanguages)
+WHERE {
+  ?country wdt:P31 wd:Q6256;
+           wdt:P298 ?iso3.
+  OPTIONAL { ?country wdt:P122 ?government. }
+  OPTIONAL { ?country wdt:P35 ?headState. }
+  OPTIONAL { ?country wdt:P6 ?headGovernment. }
+  OPTIONAL { ?country wdt:P610 ?highestPoint. }
+  OPTIONAL { ?country wdt:P571 ?inception. }
+  OPTIONAL { ?country wdt:P18 ?countryImage. }
+  OPTIONAL { ?country wdt:P36 ?capital. ?capital wdt:P18 ?capitalImage. }
+  OPTIONAL { ?country wdt:P37 ?officialLanguage. }
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language "en".
+    ?government rdfs:label ?governmentLabel.
+    ?headState rdfs:label ?headStateLabel.
+    ?headGovernment rdfs:label ?headGovernmentLabel.
+    ?highestPoint rdfs:label ?highestPointLabel.
+    ?officialLanguage rdfs:label ?officialLanguageLabel.
+  }
+}
+GROUP BY ?iso3
