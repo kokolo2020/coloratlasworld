@@ -6334,22 +6334,19 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 }
 
 .night-flag-display {
-  border-color:#183a56;
-  background:
-    radial-gradient(circle at 22% 16%, rgba(44, 206, 224, .24), transparent 28%),
-    linear-gradient(145deg, #061928 0%, #0b3150 58%, #112c42 100%);
+  border-color:#0a0d10;
+  background:#050505;
   box-shadow:
-    0 18px 32px rgba(6,25,40,.18),
-    inset 0 0 0 1px rgba(255,255,255,.08);
+    0 18px 32px rgba(0,0,0,.22),
+    inset 0 0 0 1px rgba(255,255,255,.10);
 }
 
 .night-flag-display .poster-flag-stage {
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.98), rgba(247,251,252,.98));
-  border:1px solid rgba(255,255,255,.9);
+  background:#fff;
+  border:1px solid rgba(255,255,255,.95);
   box-shadow:
-    0 16px 28px rgba(0,0,0,.30),
-    0 0 0 5px rgba(255,255,255,.09);
+    0 16px 28px rgba(0,0,0,.42),
+    0 0 0 6px rgba(255,255,255,.08);
 }
 
 .night-flag-display .poster-flag-stage img {
@@ -6357,8 +6354,8 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 }
 
 .night-flag-display .poster-flag-facts article {
-  border-color:rgba(255,255,255,.16);
-  background:rgba(255,255,255,.08);
+  border-color:rgba(255,255,255,.18);
+  background:rgba(255,255,255,.07);
 }
 
 .night-flag-display .poster-flag-facts strong {
@@ -6367,7 +6364,7 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 
 .night-flag-display .poster-flag-facts span,
 .night-flag-display p {
-  color:#d9eef4;
+  color:#f2f6f7;
 }
 
 @media (max-width:970px) {
