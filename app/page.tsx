@@ -15,6 +15,9 @@ export default function Home() {
   const enrichment = getEnrichment(usa.cca3);
   const currencies = Object.entries(usa.currencies);
   const [lat, lng] = usa.latlng;
+  const neighborCountries = (enrichment?.neighbors ?? [])
+    .map((neighbor) => getCountryByCca3(neighbor) ?? COUNTRIES.find((country) => country.name === neighbor))
+    .filter((country): country is NonNullable<typeof country> => Boolean(country));
   const snapshot: CountrySnapshotData = {
     name: usa.name,
     officialName: usa.officialName,
@@ -26,17 +29,17 @@ export default function Home() {
     currency: currencies.map(([code, currency]) => `${currency.name} (${code})`).join(", "),
     gdp: metrics?.gdp ? formatMoney(metrics.gdp.value) : "Not published",
     lifeExpectancy: metrics?.lifeExpectancy ? `${metrics.lifeExpectancy.value.toFixed(1)} years` : "Not published",
-    medianAge: enrichment.demographics.medianAge ? `${enrichment.demographics.medianAge} years` : "Not published",
-    languages: enrichment.demographics.officialLanguages.join(", ") || Object.values(usa.languages).join(", "),
-    government: enrichment.government.type,
-    timeZones: enrichment.dailyLife.timeZones.join(", "),
-    drivingSide: enrichment.dailyLife.drivingSide,
-    plugTypes: enrichment.dailyLife.plugTypes.join(", "),
+    medianAge: enrichment?.demographics?.medianAge ? `${enrichment.demographics.medianAge} years` : "Not published",
+    languages: (enrichment?.demographics?.officialLanguages ?? []).join(", ") || Object.values(usa.languages).join(", "),
+    government: enrichment?.government?.type || "Federal presidential republic",
+    timeZones: (enrichment?.dailyLife?.timeZones ?? []).join(", ") || "Multiple time zones",
+    drivingSide: enrichment?.dailyLife?.drivingSide || "Right",
+    plugTypes: (enrichment?.dailyLife?.plugTypes ?? []).join(", ") || "A, B",
     mapUrl: `https://www.openstreetmap.org/export/embed.html?bbox=${lng - 30}%2C${lat - 16}%2C${lng + 30}%2C${lat + 16}&layer=mapnik&marker=${lat}%2C${lng}`,
-    neighbors: enrichment.neighbors.map(getCountryByCca3).filter((country): country is NonNullable<typeof country> => Boolean(country)).map((country) => ({ name: country.name, slug: country.slug, flagUrl: flagUrl(country.cca2) })),
-    landmark: enrichment.images[0],
-    history: enrichment.history.summary,
-    facts: enrichment.facts,
+    neighbors: neighborCountries.map((country) => ({ name: country.name, slug: country.slug, flagUrl: flagUrl(country.cca2) })),
+    landmark: enrichment?.images?.[0],
+    history: enrichment?.history?.summary || "The United States declared independence in 1776 and adopted its present Constitution in 1787.",
+    facts: enrichment?.facts ?? [],
   };
 
   return (
