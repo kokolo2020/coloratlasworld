@@ -6284,7 +6284,7 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   border:1px solid #cfdcda;
   border-radius:9px;
   object-fit:cover;
-  object-position:center;
+  object-position:center 42%;
   filter:sepia(.18) saturate(.82) contrast(1.03);
   box-shadow:0 5px 12px rgba(12,54,73,.10);
 }
