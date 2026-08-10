@@ -89,10 +89,6 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
             <p className="poster-lede">A federal republic in North America known for its diverse people, dynamic economy, and global influence in innovation, culture, and leadership.</p>
           </header>
 
-          <figure className="poster-flag-ribbon" aria-label="United States flag banner">
-            <img src={data.flagUrl} alt="Flag of the United States" />
-          </figure>
-
           <section className="poster-flag-block" aria-label="United States flag profile">
             <div className="poster-flag-stage">
               <img src={data.flagUrl} alt="Flag of the United States" />

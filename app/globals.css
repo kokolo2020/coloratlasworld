@@ -5442,3 +5442,356 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .poster-neighbors .neighbor-chip {
   min-width:112px;
 }
+
+/* iPad fit pass: remove ribbon, reduce the left visual, and keep proportions clean */
+.snapshot-dialog.usa-poster-shell {
+  width:min(1024px, calc(100vw - 24px));
+  max-height:calc(100vh - 24px);
+}
+
+.usa-poster {
+  width:1024px;
+  height:720px;
+}
+
+.poster-flag-ribbon {
+  display:none;
+}
+
+.poster-title {
+  left:20px;
+  top:22px;
+  width:650px;
+}
+
+.poster-title h2 {
+  gap:12px;
+  font-size:34px;
+}
+
+.poster-title h2 span {
+  font-size:62px;
+}
+
+.poster-official {
+  margin-top:8px;
+  font-size:22px;
+}
+
+.poster-lede {
+  width:420px;
+  font-size:12px;
+}
+
+.poster-flag-block {
+  left:20px;
+  top:156px;
+  width:420px;
+  height:256px;
+  padding:14px;
+}
+
+.poster-flag-stage {
+  height:auto;
+  aspect-ratio:1.9;
+  display:grid;
+  place-items:center;
+  padding:8px;
+  box-shadow:0 9px 18px rgba(11,49,93,.12);
+}
+
+.poster-flag-stage img {
+  height:auto;
+  max-height:100%;
+  object-fit:contain;
+}
+
+.poster-flag-block::before {
+  left:18px;
+  right:18px;
+  top:22px;
+  height:104px;
+}
+
+.poster-flag-facts {
+  gap:7px;
+  margin-top:10px;
+}
+
+.poster-flag-facts article {
+  min-height:54px;
+  padding:8px 5px;
+}
+
+.poster-flag-facts strong {
+  font-size:22px;
+}
+
+.poster-flag-facts span {
+  font-size:8.5px;
+}
+
+.poster-flag-block p {
+  margin-top:10px;
+  font-size:11px;
+}
+
+.poster-gender { left:460px; top:104px; width:172px; }
+.poster-age { left:642px; top:104px; width:178px; }
+.poster-economy { left:830px; top:104px; width:176px; }
+.poster-living { left:460px; top:326px; width:172px; }
+.poster-education { left:642px; top:326px; width:178px; }
+.poster-language { left:830px; top:326px; width:176px; }
+
+.poster-card {
+  height:206px;
+  padding:10px 11px;
+}
+
+.poster-card h3 {
+  gap:7px;
+  margin-bottom:7px;
+  font-size:10.5px;
+}
+
+.pi,
+.stat-symbol,
+.poster-transport i {
+  width:24px;
+  height:24px;
+}
+
+.gender-visual {
+  grid-template-columns:26px 1fr 26px;
+  gap:6px;
+}
+
+.gender-donut {
+  width:78px;
+  height:78px;
+  font-size:11px;
+  box-shadow:inset 0 0 0 15px #fff, 0 0 0 1px #dfe9e7;
+}
+
+.human {
+  width:21px;
+  height:48px;
+}
+
+.life-box {
+  padding:7px 8px;
+}
+
+.life-box span {
+  font-size:8px;
+}
+
+.life-box strong {
+  font-size:19px;
+}
+
+.poster-bars {
+  height:90px;
+  gap:4px;
+}
+
+.poster-bars b {
+  font-size:9px;
+}
+
+.poster-bars small {
+  font-size:6.5px;
+}
+
+.economy-panel {
+  grid-template-columns:70px 1fr;
+  gap:9px;
+}
+
+.economy-panel .economy-pie {
+  width:70px;
+  height:70px;
+}
+
+.economy-panel .economy-pie b {
+  font-size:34px;
+}
+
+.economy-panel strong {
+  font-size:12px;
+}
+
+.economy-panel span {
+  margin-top:8px;
+  padding-top:8px;
+  font-size:9px;
+}
+
+.economy-panel b {
+  font-size:23px;
+}
+
+.poster-living .pie-row,
+.poster-education .pie-row {
+  margin-top:12px;
+}
+
+.pie-row {
+  grid-template-columns:76px 1fr;
+  gap:8px;
+}
+
+.living-ring,
+.edu-pie {
+  width:76px;
+  height:76px;
+}
+
+.living-ring {
+  box-shadow:inset 0 0 0 15px #fff, 0 0 0 1px #dfe9e7;
+}
+
+.edu-pie {
+  box-shadow:inset 0 0 0 15px #fff, 0 0 0 1px #dfe9e7;
+}
+
+.pie-row ul {
+  gap:7px;
+  font-size:10px;
+}
+
+.language-grid {
+  grid-template-columns:1fr 66px;
+  gap:8px;
+}
+
+.language-grid > div:first-child {
+  padding:8px;
+}
+
+.language-grid b {
+  font-size:13px;
+}
+
+.language-grid span,
+.poster-language small {
+  font-size:9px;
+}
+
+.religion-pie {
+  width:66px;
+  height:66px;
+  box-shadow:inset 0 0 0 14px #fff, 0 0 0 1px #dfe9e7;
+}
+
+.poster-stat-strip {
+  left:20px;
+  top:426px;
+  width:420px;
+  height:92px;
+}
+
+.poster-stat-strip article {
+  grid-template-rows:24px 12px auto 11px;
+  padding:7px 4px 5px;
+}
+
+.poster-stat-strip small {
+  font-size:7.5px;
+}
+
+.poster-stat-strip strong {
+  font-size:12px;
+}
+
+.poster-stat-strip span {
+  font-size:7.5px;
+}
+
+.poster-bottom {
+  left:20px;
+  right:18px;
+  bottom:18px;
+  height:128px;
+  grid-template-columns:1.05fr 1.12fr .72fr;
+  gap:10px;
+}
+
+.poster-about {
+  grid-template-columns:48px 1fr;
+  gap:10px;
+  padding:13px;
+}
+
+.poster-about i {
+  width:42px;
+  height:42px;
+  font-size:13px;
+}
+
+.poster-about strong,
+.poster-neighbors strong,
+.poster-transport strong {
+  font-size:13px;
+}
+
+.poster-about p {
+  font-size:10.5px;
+  line-height:1.3;
+}
+
+.poster-neighbors {
+  padding:12px;
+}
+
+.poster-neighbors div {
+  gap:7px;
+}
+
+.poster-neighbors a,
+.poster-neighbors .neighbor-chip {
+  grid-template-columns:30px 1fr;
+  min-width:92px;
+  padding:7px;
+  font-size:9px;
+}
+
+.poster-neighbors img,
+.ocean-icon {
+  width:30px;
+  height:30px;
+}
+
+.poster-neighbors small,
+.neighbor-chip small {
+  font-size:8px;
+}
+
+.poster-transport {
+  grid-template-columns:36px 1fr;
+  padding:12px 10px;
+}
+
+.poster-transport p {
+  font-size:8px;
+}
+
+@media (max-width:1064px) {
+  .usa-poster {
+    transform:scale(calc((100vw - 24px) / 1024));
+  }
+
+  .snapshot-dialog.usa-poster-shell {
+    height:calc((100vw - 24px) * .703125);
+  }
+}
+
+@media (max-width:760px) {
+  .snapshot-dialog.usa-poster-shell {
+    height:calc(100vw * .703125);
+  }
+
+  .usa-poster {
+    transform:scale(calc(100vw / 1024));
+  }
+}
