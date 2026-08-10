@@ -79,6 +79,7 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
     ["age", "Median age", "38.9", "years"],
   ];
   const contiguousMapUrl = "/maps/us-contiguous.svg";
+  const flagMapUrl = "/maps/us-contiguous-flag.svg";
 
   return (
     <div className="snapshot-backdrop usa-poster-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
@@ -92,15 +93,12 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
           </header>
 
           <figure className="poster-flag-ribbon" aria-label="United States flag banner">
-            <span className="flag-canton" />
-            <span className="flag-stripes" />
+            <img src={data.flagUrl} alt="Flag of the United States" />
           </figure>
 
           <section className="poster-map-block" aria-label="United States map">
             <div className="poster-skyline" aria-hidden="true" />
-            <div className="poster-map-outline" style={{ WebkitMaskImage: `url(${contiguousMapUrl})`, maskImage: `url(${contiguousMapUrl})` }} />
-            <div className="poster-usa-shape" style={{ WebkitMaskImage: `url(${contiguousMapUrl})`, maskImage: `url(${contiguousMapUrl})` }} />
-            <img className="poster-state-lines" src={contiguousMapUrl} alt="" />
+            <img className="poster-usa-map" src={flagMapUrl} alt="Map of the contiguous United States filled with the United States flag" />
             <div className="city-callout los-angeles"><i />Los Angeles</div>
             <div className="city-callout chicago"><i />Chicago</div>
             <div className="city-callout new-york"><i />New York</div>
