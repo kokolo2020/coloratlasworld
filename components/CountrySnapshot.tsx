@@ -79,6 +79,7 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
     ["age", "Median age", "38.9", "years"],
   ];
   const fullFlagUrl = "/flags/us.svg";
+  const historicPhotoUrl = "https://tile.loc.gov/storage-services/service/pnp/det/4a10000/4a12000/4a12500/4a12587r.jpg";
   return (
     <div className="snapshot-backdrop usa-poster-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
       <section className="snapshot-dialog usa-poster-shell" role="dialog" aria-modal="true" aria-labelledby="snapshot-title">
@@ -162,7 +163,7 @@ export default function CountrySnapshot({ data, initialOpen = false }: { data: C
           </section>
 
           <footer className="poster-bottom">
-            <article className="poster-about"><i>US</i><div><strong>About the United States</strong><p>{summary}</p></div></article>
+            <article className="poster-about"><img className="poster-about-photo" src={historicPhotoUrl} alt="Independence Hall Assembly Room, Philadelphia, circa 1905" /><div><strong>About the United States</strong><p>{summary}</p></div></article>
             <article className="poster-neighbors"><strong>Neighbors</strong><div><a href="/countries/canada"><img src="https://flagcdn.com/ca.svg" alt="" /><span>Canada<small>North</small></span></a><a href="/countries/mexico"><img src="https://flagcdn.com/mx.svg" alt="" /><span>Mexico<small>South</small></span></a><span className="neighbor-chip"><span className="ocean-icon" />Atlantic Ocean<small>East</small></span><span className="neighbor-chip"><span className="ocean-icon" />Pacific Ocean<small>West</small></span></div></article>
             <article className="poster-transport"><i /><div><strong>3 Major International Airports</strong><p>Atlanta (ATL), Chicago (ORD), Los Angeles (LAX)</p><strong>10 Major Seaports</strong><p>Los Angeles, Long Beach, New York/New Jersey, Houston, Savannah, Seattle, Miami, etc.</p></div></article>
           </footer>

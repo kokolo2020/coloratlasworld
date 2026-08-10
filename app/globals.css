@@ -6266,6 +6266,34 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   font-size:23px;
 }
 
+/* USA about section v29: historical image treatment */
+.poster-about {
+  grid-template-columns:82px 1fr;
+  gap:12px;
+  align-items:center;
+}
+
+.poster-about i {
+  display:none;
+}
+
+.poster-about-photo {
+  width:74px;
+  height:82px;
+  align-self:center;
+  border:1px solid #cfdcda;
+  border-radius:9px;
+  object-fit:cover;
+  object-position:center;
+  filter:sepia(.18) saturate(.82) contrast(1.03);
+  box-shadow:0 5px 12px rgba(12,54,73,.10);
+}
+
+.poster-about p {
+  font-size:10px;
+  line-height:1.28;
+}
+
 @media (max-width:970px) {
   .snapshot-dialog.usa-poster-shell {
     width:calc(100vw - 24px);
