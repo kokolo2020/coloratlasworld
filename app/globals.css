@@ -6344,6 +6344,10 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 }
 
 .night-flag-display .poster-flag-stage {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px;
   background:#050505;
   border:1px solid #050505;
   box-shadow:
@@ -6352,7 +6356,17 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 }
 
 .night-flag-display .poster-flag-stage img {
-  filter:saturate(1.04) contrast(1.03);
+  display:block;
+  width:132px;
+  height:88px;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+  background:#fff;
+  border:1px solid rgba(220,229,227,.95);
+  border-radius:3px;
+  box-shadow:0 8px 14px rgba(0,0,0,.32);
+  filter:none;
 }
 
 .night-flag-display .poster-flag-facts article {
