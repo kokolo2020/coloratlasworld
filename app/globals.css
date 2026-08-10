@@ -6325,6 +6325,26 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   margin-top:5px;
 }
 
+.usa-poster.long-country-name .poster-title h2 span {
+  font-size:46px;
+}
+
+.usa-poster.extra-long-country-name .poster-title h2 {
+  align-items:flex-start;
+}
+
+.usa-poster.extra-long-country-name .poster-title h2 span {
+  max-width:430px;
+  font-size:35px;
+  line-height:.95;
+}
+
+.usa-poster.extra-long-country-name .poster-official {
+  max-width:520px;
+  font-size:17px;
+  line-height:1.05;
+}
+
 /* Night display test for white-heavy flags such as Japan and Singapore */
 .usa-poster.night-display {
   background:

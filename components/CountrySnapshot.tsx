@@ -163,6 +163,12 @@ export default function CountrySnapshot({
     { title: "Major International Airports", detail: `${selected.capital} gateway and other national hubs` },
     { title: selected.coastline === "Landlocked" ? "Land Transport Links" : "Major Ports", detail: selected.coastline === "Landlocked" ? "Regional road, rail, and airport corridors" : "Main coastal ports and container terminals" },
   ];
+  const posterClass = [
+    "usa-poster",
+    selected.displayTheme === "night" ? "night-display" : "",
+    selected.name.length > 18 ? "long-country-name" : "",
+    selected.name.length > 28 ? "extra-long-country-name" : "",
+  ].filter(Boolean).join(" ");
   const neighbors = selected.neighbors.length ? selected.neighbors : [
     { name: "Coastal access", note: selected.coastline },
     { name: selected.region, note: "Region" },
@@ -172,7 +178,7 @@ export default function CountrySnapshot({
     <div className="snapshot-backdrop usa-poster-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
       <section className="snapshot-dialog usa-poster-shell" role="dialog" aria-modal="true" aria-labelledby="snapshot-title">
         <button className="usa-poster-close" onClick={close} aria-label="Close country snapshot">X</button>
-        <div className={`usa-poster ${selected.displayTheme === "night" ? "night-display" : ""}`}>
+        <div className={posterClass}>
           <header className="poster-title">
             <h2 id="snapshot-title"><span>{selected.name.toUpperCase()}</span> Country Profile</h2>
             <p className="poster-official">* {selected.officialName} *</p>

@@ -9,7 +9,8 @@ const highlights = [
   { value: "0", label: "clutter or geography jargon" },
 ];
 
-const SNAPSHOT_COUNTRIES = ["united-states", "canada", "mexico", "france", "japan", "china", "india", "singapore", "italy", "south-africa", "brazil"];
+const SNAPSHOT_COUNTRIES = COUNTRIES.map((country) => country.slug);
+const WHITE_FLAG_CARD_COUNTRIES = new Set(["AT", "CY", "FI", "GE", "GR", "ID", "IL", "JP", "KR", "MC", "MT", "PL", "SG", "SM", "VA"]);
 
 const PROFILE_OVERRIDES: Record<string, Partial<CountrySnapshotData>> = {
   "united-states": {
@@ -210,11 +211,12 @@ function buildSnapshot(slug: string): CountrySnapshotData {
     region: displayRegion(country),
     flagUrl: flagUrl(country.cca2),
     fullFlagUrl: flagUrl(country.cca2),
+    displayTheme: WHITE_FLAG_CARD_COUNTRIES.has(country.cca2) ? "night" : undefined,
     capital: country.capital || "Not published",
     population: metrics?.population ? formatNumber(metrics.population.value) : formatNumber(country.population),
     populationNote: metrics?.population?.year ? `${metrics.population.year} est.` : "2024 est.",
-    currency: currencies.map(([code, currency]) => `${currency.name} (${code})`).join(", "),
-    currencyCode: currencies.map(([code]) => code).join(", "),
+    currency: currencies.map(([code, currency]) => `${currency.name} (${code})`).join(", ") || "Not published",
+    currencyCode: currencies.map(([code]) => code).join(", ") || "n/a",
     area: compactArea(country.area),
     areaImperial: compactSquareMiles(country.area),
     coastline: country.landlocked ? "Landlocked" : "Coastal",
