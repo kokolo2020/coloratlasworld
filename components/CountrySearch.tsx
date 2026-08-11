@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import countriesData from "@/data/countries.json";
+import { getAnalyticsSession } from "@/lib/client-analytics";
 
 function slugifyCountry(name: string) {
   return name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -20,6 +21,24 @@ export default function CountrySearch({ variant = "compact" }: { variant?: "hero
   const [query, setQuery] = useState("");
   const [message, setMessage] = useState("");
 
+  function recordSearch(term: string, result?: { slug: string; name: string }) {
+    const session = getAnalyticsSession();
+    if (!session) return;
+    void fetch("/api/analytics/search", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        ...session,
+        query: term,
+        matched: Boolean(result),
+        resultSlug: result?.slug,
+        resultName: result?.name,
+        path: window.location.pathname,
+      }),
+      keepalive: true,
+    }).catch(() => undefined);
+  }
+
   function submit(event: FormEvent) {
     event.preventDefault();
     const term = query.trim().toLowerCase();
@@ -27,6 +46,7 @@ export default function CountrySearch({ variant = "compact" }: { variant?: "hero
     const result = COUNTRY_SEARCH_INDEX.find((item) => item.name.toLowerCase() === term || item.terms.split(" ").includes(term))
       || COUNTRY_SEARCH_INDEX.find((item) => item.name.toLowerCase().startsWith(term))
       || COUNTRY_SEARCH_INDEX.find((item) => item.terms.includes(term));
+    recordSearch(query.trim(), result);
     if (!result) return setMessage("Profile not found. Try a full name, alias, or code.");
     setMessage("");
     window.location.href = `/?country=${result.slug}`;

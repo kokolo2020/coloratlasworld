@@ -1,5 +1,6 @@
 type CloudflareEnv = {
   DB?: D1Database;
+  ANALYTICS_TOKEN?: string;
 };
 
 export async function getCloudflareEnv(): Promise<CloudflareEnv | null> {

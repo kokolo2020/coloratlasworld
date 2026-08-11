@@ -272,6 +272,7 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .analytics-kpis strong { display:block; margin:9px 0 5px; font-size:36px; color:#fff; }
 .analytics-kpis small { color:#737083; font-size:11px; }
 .analytics-grid { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr); gap:18px; margin-bottom:18px; }
+.analytics-search-grid { grid-template-columns:minmax(0,1fr) minmax(360px,.85fr); }
 .country-analytics-card { background:#181a25; border:1px solid #34364a; border-radius:26px; padding:36px 42px 42px; box-shadow:0 30px 80px rgba(0,0,0,.25); }
 .country-analytics-title { display:flex; align-items:center; justify-content:space-between; margin-bottom:28px; }
 .country-analytics-title h2 { margin:0; font-family:var(--font-sans); font-size:32px; letter-spacing:-.03em; }
@@ -298,6 +299,29 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .analytics-empty { color:#8f8b9e; padding:30px 0; text-align:center; }
 .analytics-error { margin-bottom:20px; padding:14px 18px; color:#ffb5ba; background:#351a24; border:1px solid #67303d; border-radius:14px; }
 .analytics-privacy { color:#696677; text-align:center; font-size:11px; margin:24px 0 0; }
+.analytics-login-card { max-width:520px; background:#181a25; border:1px solid #34364a; border-radius:26px; padding:34px; box-shadow:0 30px 80px rgba(0,0,0,.25); }
+.analytics-login-card label { display:block; color:#aaa6bd; text-transform:uppercase; letter-spacing:.13em; font-size:10px; font-weight:900; }
+.analytics-login-card input { width:100%; margin:12px 0; padding:15px 16px; color:#fff; background:#10121b; border:1px solid #34364a; border-radius:14px; outline:0; }
+.analytics-login-card button { color:#fff; background:#6f59c8; border:0; border-radius:999px; padding:13px 18px; font-weight:900; cursor:pointer; }
+.analytics-login-card p { color:#8f8b9e; line-height:1.55; font-size:12px; }
+.keyword-bars { display:grid; gap:13px; }
+.keyword-row { display:grid; grid-template-columns:minmax(110px,210px) 1fr 52px minmax(130px,220px); gap:13px; align-items:center; }
+.keyword-text { min-width:0; color:#f0eef7; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.keyword-row strong { color:#aaa6bd; text-align:right; font-size:17px; }
+.keyword-row small { min-width:0; color:#737083; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:11px; }
+.recent-search-list { display:grid; gap:10px; }
+.recent-search-row { display:grid; grid-template-columns:minmax(90px,1fr) minmax(120px,1fr) 86px; gap:12px; align-items:center; padding:12px 0; border-bottom:1px solid #2b2d3b; }
+.recent-search-row strong,.recent-search-row span { min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.recent-search-row strong { color:#fff; }
+.recent-search-row span,.recent-search-row small { color:#aaa6bd; font-size:12px; }
+.analytics-sessions-card { margin-bottom:18px; }
+.session-table { display:grid; gap:0; }
+.session-row { display:grid; grid-template-columns:minmax(120px,1fr) 160px 82px minmax(160px,1.2fr); gap:14px; align-items:center; padding:14px 0; border-bottom:1px solid #2b2d3b; }
+.session-row span,.session-row strong,.session-row small,.session-row em { min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.session-row span { color:#f0eef7; }
+.session-row strong { color:#fff; font-size:13px; }
+.session-row small { color:#5ed9c7; text-align:right; font-size:13px; }
+.session-row em { color:#737083; font-style:normal; font-size:12px; }
 
 @media (max-width:760px) {
   .analytics-shell { padding:38px 16px 70px; }
@@ -311,6 +335,12 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   .trend-bar { height:118px; border-radius:10px; }
   .page-bar-row { grid-template-columns:minmax(90px,140px) 1fr 34px; gap:8px; }
   .page-bar-row small { display:none; }
+  .keyword-row { grid-template-columns:minmax(90px,130px) 1fr 34px; gap:8px; }
+  .keyword-row small { display:none; }
+  .recent-search-row { grid-template-columns:1fr 1fr; }
+  .recent-search-row small { display:none; }
+  .session-row { grid-template-columns:1fr 76px; gap:8px; }
+  .session-row strong,.session-row em { display:none; }
 }
 
 /* USA approval prototype: one-page country snapshot */
