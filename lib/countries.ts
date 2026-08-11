@@ -12,6 +12,7 @@ export type CountryMetrics = {
   gdpGrowth: Metric;
 };
 export type CountryEnrichment = {
+  snapshotAbout?: string;
   demographics: { urbanPercent: Metric; ruralPercent: Metric; medianAge: number | null; officialLanguages: string[]; largestCities: string[]; compositionNote: string };
   history: { currentStateSince: number | null; summary: string };
   government: { type: string | null; headOfState: string | null; headOfGovernment: string | null; constitutionDate: string | null; retrieved: string; sourceUrl: string | null };

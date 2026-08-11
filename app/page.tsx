@@ -239,6 +239,7 @@ function buildSnapshot(slug: string): CountrySnapshotData {
     neighbors: neighborCountries.map((neighbor) => ({ name: neighbor.name, slug: neighbor.slug, flagUrl: flagUrl(neighbor.cca2), note: "Border" })),
     landmark: enrichment?.images?.[0],
     history: enrichment?.history?.summary || "",
+    summary: enrichment?.snapshotAbout || enrichment?.history?.summary || "",
     facts: enrichment?.facts ?? [],
   };
   return { ...snapshot, ...override };

@@ -71,7 +71,8 @@
         "label": "Kabul, Afghanistan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Afghanistan is a sovereign country in Southern Asia bordered by Iran, Pakistan, Turkmenistan, and others. Kabul is the capital; key languages include Dari, Pashto, and Turkmen; the listed currency is Afghan afghani (AFN); population is about 43.8M."
   },
   "ALB": {
     "demographics": {
@@ -141,7 +142,8 @@
         "label": "Tirana, Albania",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Albania is a sovereign country in Southeast Europe with coastal access and land borders with Montenegro, Greece, North Macedonia, and others. Tirana is the capital; key languages include Albanian; the listed currency is Albanian lek (ALL); population is about 2.3M."
   },
   "DZA": {
     "demographics": {
@@ -213,7 +215,8 @@
         "label": "Algiers, Algeria",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Algeria is a sovereign country in Northern Africa with coastal access and land borders with Tunisia, Libya, Niger, and others. Algiers is the capital; key languages include Arabic; the listed currency is Algerian dinar (DZD); population is about 47.4M."
   },
   "AND": {
     "demographics": {
@@ -281,7 +284,8 @@
         "label": "Andorra la Vella, Andorra",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Andorra is a sovereign country in Southern Europe bordered by France and Spain. Andorra la Vella is the capital; key languages include Catalan; the listed currency is Euro (EUR); population is about 82.9K."
   },
   "AGO": {
     "demographics": {
@@ -351,7 +355,8 @@
         "label": "Luanda, Angola",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Angola is a sovereign country in Middle Africa with coastal access and land borders with Congo, DR Congo, Zambia, and others. Luanda is the capital; key languages include Portuguese; the listed currency is Angolan kwanza (AOA); population is about 39M."
   },
   "ATG": {
     "demographics": {
@@ -416,7 +421,8 @@
         "label": "Saint John's, Antigua and Barbuda",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Antigua and Barbuda is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Saint John's is the capital; key languages include English; the listed currency is Eastern Caribbean dollar (XCD); population is about 94.2K."
   },
   "ARG": {
     "demographics": {
@@ -488,7 +494,8 @@
         "label": "Buenos Aires, Argentina",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Argentina is a sovereign country in South America with coastal access and land borders with Bolivia, Brazil, Chile, and others. Buenos Aires is the capital; key languages include Guaraní and Spanish; the listed currency is Argentine peso (ARS); population is about 45.9M."
   },
   "ARM": {
     "demographics": {
@@ -558,7 +565,8 @@
         "label": "Yerevan, Armenia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Armenia is a sovereign country in Western Asia bordered by Azerbaijan, Georgia, Iran, and others. Yerevan is the capital; key languages include Armenian; the listed currency is Armenian dram (AMD); population is about 3.1M."
   },
   "AUS": {
     "demographics": {
@@ -623,7 +631,8 @@
         "label": "Canberra, Australia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Australia is a sovereign country in Australia and New Zealand; coastlines, ports, and air links shape many of its outside connections. Canberra is the capital; key languages include English; the listed currency is Australian dollar (AUD); population is about 27.6M."
   },
   "AUT": {
     "demographics": {
@@ -697,7 +706,8 @@
         "label": "Vienna, Austria",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Austria is a sovereign country in Central Europe bordered by Czechia, Germany, Hungary, and others. Vienna is the capital; key languages include Austro-Bavarian German; the listed currency is Euro (EUR); population is about 9.2M."
   },
   "AZE": {
     "demographics": {
@@ -769,7 +779,8 @@
         "label": "Baku, Azerbaijan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Azerbaijan is a sovereign country in Western Asia bordered by Armenia, Georgia, Iran, and others. Baku is the capital; key languages include Azerbaijani and Russian; the listed currency is Azerbaijani manat (AZN); population is about 10.2M."
   },
   "BHS": {
     "demographics": {
@@ -834,7 +845,8 @@
         "label": "Nassau, Bahamas",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Bahamas is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Nassau is the capital; key languages include English; the listed currencies are Bahamian dollar (BSD) and United States dollar (USD); population is about 403K."
   },
   "BHR": {
     "demographics": {
@@ -899,7 +911,8 @@
         "label": "Manama, Bahrain",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Bahrain is a sovereign country in Western Asia; coastlines, ports, and air links shape many of its outside connections. Manama is the capital; key languages include Arabic; the listed currency is Bahraini dinar (BHD); population is about 1.6M."
   },
   "BGD": {
     "demographics": {
@@ -967,7 +980,8 @@
         "label": "Dhaka, Bangladesh",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Bangladesh is a sovereign country in Southern Asia with coastal access and land borders with Myanmar and India. Dhaka is the capital; key languages include Bengali; the listed currency is Bangladeshi taka (BDT); population is about 175.7M."
   },
   "BRB": {
     "demographics": {
@@ -1032,7 +1046,8 @@
         "label": "Bridgetown, Barbados",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Barbados is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Bridgetown is the capital; key languages include English; the listed currency is Barbadian dollar (BBD); population is about 282.6K."
   },
   "BLR": {
     "demographics": {
@@ -1104,7 +1119,8 @@
         "label": "Minsk, Belarus",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Belarus is a sovereign country in Eastern Europe bordered by Latvia, Lithuania, Poland, and others. Minsk is the capital; key languages include Belarusian and Russian; the listed currency is Belarusian ruble (BYN); population is about 9.1M."
   },
   "BEL": {
     "demographics": {
@@ -1176,7 +1192,8 @@
         "label": "Brussels, Belgium",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Belgium is a sovereign country in Western Europe with coastal access and land borders with France, Germany, Luxembourg, and others. Brussels is the capital; key languages include German, French, and Dutch; the listed currency is Euro (EUR); population is about 11.9M."
   },
   "BLZ": {
     "demographics": {
@@ -1246,7 +1263,8 @@
         "label": "Belmopan, Belize",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Belize is a sovereign country in Central America with coastal access and land borders with Guatemala and Mexico. Belmopan is the capital; key languages include Belizean Creole, English, and Spanish; the listed currency is Belize dollar (BZD); population is about 422.9K."
   },
   "BEN": {
     "demographics": {
@@ -1316,7 +1334,8 @@
         "label": "Porto-Novo, Benin",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Benin is a sovereign country in Western Africa with coastal access and land borders with Burkina Faso, Niger, Nigeria, and others. Porto-Novo is the capital; key languages include French; the listed currency is West African CFA franc (XOF); population is about 14.8M."
   },
   "BTN": {
     "demographics": {
@@ -1384,7 +1403,8 @@
         "label": "Thimphu, Bhutan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Bhutan is a sovereign country in Southern Asia bordered by China and India. Thimphu is the capital; key languages include Dzongkha; the listed currencies are Bhutanese ngultrum (BTN) and Indian rupee (INR); population is about 796.7K."
   },
   "BOL": {
     "demographics": {
@@ -1458,7 +1478,8 @@
         "label": "Sucre, Bolivia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Bolivia is a sovereign country in South America bordered by Argentina, Brazil, Chile, and others. Sucre is the capital; key languages include Aymara, Guaraní, and Quechua; the listed currency is Bolivian boliviano (BOB); population is about 12.6M."
   },
   "BIH": {
     "demographics": {
@@ -1529,7 +1550,8 @@
         "label": "Sarajevo, Bosnia and Herzegovina",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Bosnia and Herzegovina is a sovereign country in Southeast Europe with coastal access and land borders with Croatia, Montenegro, and Serbia. Sarajevo is the capital; key languages include Bosnian, Croatian, and Serbian; the listed currency is Bosnia and Herzegovina convertible mark (BAM); population is about 3.1M."
   },
   "BWA": {
     "demographics": {
@@ -1600,7 +1622,8 @@
         "label": "Gaborone, Botswana",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Botswana is a sovereign country in Southern Africa bordered by Namibia, South Africa, Zambia, and others. Gaborone is the capital; key languages include English and Tswana; the listed currency is Botswana pula (BWP); population is about 2.6M."
   },
   "BRA": {
     "demographics": {
@@ -1675,7 +1698,8 @@
         "label": "Brasília, Brazil",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Brazil is the largest country in South America, stretching from the Amazon Basin to the Atlantic coast. Brasília is the capital, and the country is known for biodiversity, agriculture, energy, music, football, and Portuguese-language culture."
   },
   "BRN": {
     "demographics": {
@@ -1742,7 +1766,8 @@
         "label": "Bandar Seri Begawan, Brunei",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Brunei is a sovereign country in South-Eastern Asia with coastal access and land borders with Malaysia. Bandar Seri Begawan is the capital; key languages include Malay; the listed currencies are Brunei dollar (BND) and Singapore dollar (SGD); population is about 466.3K."
   },
   "BGR": {
     "demographics": {
@@ -1813,7 +1838,8 @@
         "label": "Sofia, Bulgaria",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Bulgaria is a sovereign country in Southeast Europe with coastal access and land borders with Greece, North Macedonia, Romania, and others. Sofia is the capital; key languages include Bulgarian; the listed currency is Euro (EUR); population is about 6.4M."
   },
   "BFA": {
     "demographics": {
@@ -1885,7 +1911,8 @@
         "label": "Ouagadougou, Burkina Faso",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Burkina Faso is a sovereign country in Western Africa bordered by Benin, Ivory Coast, Ghana, and others. Ouagadougou is the capital; key languages include French; the listed currency is West African CFA franc (XOF); population is about 24.1M."
   },
   "BDI": {
     "demographics": {
@@ -1955,7 +1982,8 @@
         "label": "Gitega, Burundi",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Burundi is a sovereign country in Eastern Africa bordered by DR Congo, Rwanda, and Tanzania. Gitega is the capital; key languages include French and Kirundi; the listed currency is Burundian franc (BIF); population is about 14.4M."
   },
   "KHM": {
     "demographics": {
@@ -2024,7 +2052,8 @@
         "label": "Phnom Penh, Cambodia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Cambodia is a sovereign country in South-Eastern Asia with coastal access and land borders with Laos, Thailand, and Vietnam. Phnom Penh is the capital; key languages include Khmer; the listed currencies are Cambodian riel (KHR) and United States dollar (USD); population is about 17.8M."
   },
   "CMR": {
     "demographics": {
@@ -2097,7 +2126,8 @@
         "label": "Yaoundé, Cameroon",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Cameroon is a sovereign country in Middle Africa with coastal access and land borders with Central African Republic, Chad, Congo, and others. Yaoundé is the capital; key languages include English and French; the listed currency is Central African CFA franc (XAF); population is about 29.9M."
   },
   "CAN": {
     "demographics": {
@@ -2165,7 +2195,8 @@
         "label": "Ottawa, Canada",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Canada stretches from the Atlantic to the Pacific and north into the Arctic, sharing the world’s longest international land border with the United States. It is known for bilingual federal institutions, natural resources, high living standards, technology, and service industries."
   },
   "CPV": {
     "demographics": {
@@ -2230,7 +2261,8 @@
         "label": "Praia, Cape Verde",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Cape Verde is a sovereign country in Western Africa; coastlines, ports, and air links shape many of its outside connections. Praia is the capital; key languages include Portuguese; the listed currency is Cape Verdean escudo (CVE); population is about 527.3K."
   },
   "CAF": {
     "demographics": {
@@ -2303,7 +2335,8 @@
         "label": "Bangui, Central African Republic",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Central African Republic is a sovereign country in Middle Africa bordered by Cameroon, Chad, DR Congo, and others. Bangui is the capital; key languages include French and Sango; the listed currency is Central African CFA franc (XAF); population is about 5.5M."
   },
   "TCD": {
     "demographics": {
@@ -2376,7 +2409,8 @@
         "label": "N'Djamena, Chad",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Chad is a sovereign country in Middle Africa bordered by Cameroon, Central African Republic, Libya, and others. N'Djamena is the capital; key languages include Arabic and French; the listed currency is Central African CFA franc (XAF); population is about 21M."
   },
   "CHL": {
     "demographics": {
@@ -2445,7 +2479,8 @@
         "label": "Santiago, Chile",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Chile is a sovereign country in South America with coastal access and land borders with Argentina, Bolivia, and Peru. Santiago is the capital; key languages include Spanish; the listed currency is Chilean peso (CLP); population is about 19.9M."
   },
   "CHN": {
     "demographics": {
@@ -2525,7 +2560,8 @@
         "label": "Beijing, China",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "China covers a vast part of East Asia, from the Pacific coast to high plateaus, deserts, and major river basins. Beijing is the capital, while Shanghai, Shenzhen, Guangzhou, and other cities anchor one of the world’s largest economies."
   },
   "COL": {
     "demographics": {
@@ -2596,7 +2632,8 @@
         "label": "Bogotá, Colombia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Colombia is a sovereign country in South America with coastal access and land borders with Brazil, Ecuador, Panama, and others. Bogotá is the capital; key languages include Spanish; the listed currency is Colombian peso (COP); population is about 53.4M."
   },
   "COM": {
     "demographics": {
@@ -2663,7 +2700,8 @@
         "label": "Moroni, Comoros",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Comoros is a sovereign country in Eastern Africa; coastlines, ports, and air links shape many of its outside connections. Moroni is the capital; key languages include Arabic, French, and Comorian; the listed currency is Comorian franc (KMF); population is about 882.8K."
   },
   "COG": {
     "demographics": {
@@ -2736,7 +2774,8 @@
         "label": "Brazzaville, Congo",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Congo is a sovereign country in Middle Africa with coastal access and land borders with Angola, Cameroon, Central African Republic, and others. Brazzaville is the capital; key languages include French, Kikongo, and Lingala; the listed currency is Central African CFA franc (XAF); population is about 6.5M."
   },
   "COK": {
     "demographics": {
@@ -2795,7 +2834,8 @@
         "label": "Avarua, Cook Islands",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Cook Islands is a self-governing Pacific island profile in Polynesia; coastlines, ports, and air links shape many of its outside connections. Avarua is the capital; key languages include English and Cook Islands Māori; the listed currencies are Cook Islands dollar (CKD) and New Zealand dollar (NZD); population is shown where available."
   },
   "CRI": {
     "demographics": {
@@ -2863,7 +2903,8 @@
         "label": "San José, Costa Rica",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Costa Rica is a sovereign country in Central America with coastal access and land borders with Nicaragua and Panama. San José is the capital; key languages include Spanish; the listed currency is Costa Rican colón (CRC); population is about 5.2M."
   },
   "HRV": {
     "demographics": {
@@ -2934,7 +2975,8 @@
         "label": "Zagreb, Croatia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Croatia is a sovereign country in Southeast Europe with coastal access and land borders with Bosnia and Herzegovina, Hungary, Montenegro, and others. Zagreb is the capital; key languages include Croatian; the listed currency is Euro (EUR); population is about 3.9M."
   },
   "CUB": {
     "demographics": {
@@ -2999,7 +3041,8 @@
         "label": "Havana, Cuba",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Cuba is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Havana is the capital; key languages include Spanish; the listed currencies are Cuban convertible peso (CUC) and Cuban peso (CUP); population is about 10.9M."
   },
   "CYP": {
     "demographics": {
@@ -3065,7 +3108,8 @@
         "label": "Nicosia, Cyprus",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Cyprus is a sovereign country in Southern Europe; coastlines, ports, and air links shape many of its outside connections. Nicosia is the capital; key languages include Greek and Turkish; the listed currency is Euro (EUR); population is about 1.4M."
   },
   "CZE": {
     "demographics": {
@@ -3136,7 +3180,8 @@
         "label": "Prague, Czechia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Czechia is a sovereign country in Central Europe bordered by Austria, Germany, Poland, and others. Prague is the capital; key languages include Czech and Slovak; the listed currency is Czech koruna (CZK); population is about 10.9M."
   },
   "DNK": {
     "demographics": {
@@ -3203,7 +3248,8 @@
         "label": "Copenhagen, Denmark",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Denmark is a sovereign country in Northern Europe with coastal access and land borders with Germany. Copenhagen is the capital; key languages include Danish; the listed currency is Danish krone (DKK); population is about 6M."
   },
   "DJI": {
     "demographics": {
@@ -3273,7 +3319,8 @@
         "label": "Djibouti, Djibouti",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Djibouti is a sovereign country in Eastern Africa with coastal access and land borders with Eritrea, Ethiopia, and Somalia. Djibouti is the capital; key languages include Arabic and French; the listed currency is Djiboutian franc (DJF); population is about 1.2M."
   },
   "DMA": {
     "demographics": {
@@ -3338,7 +3385,8 @@
         "label": "Roseau, Dominica",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Dominica is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Roseau is the capital; key languages include English; the listed currency is Eastern Caribbean dollar (XCD); population is about 65.9K."
   },
   "DOM": {
     "demographics": {
@@ -3405,7 +3453,8 @@
         "label": "Santo Domingo, Dominican Republic",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Dominican Republic is a sovereign country in Caribbean with coastal access and land borders with Haiti. Santo Domingo is the capital; key languages include Spanish; the listed currency is Dominican peso (DOP); population is about 11.5M."
   },
   "COD": {
     "demographics": {
@@ -3484,7 +3533,8 @@
         "label": "Kinshasa, DR Congo",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "DR Congo is a sovereign country in Middle Africa with coastal access and land borders with Angola, Burundi, Central African Republic, and others. Kinshasa is the capital; key languages include French, Kikongo, and Lingala; the listed currency is Congolese franc (CDF); population is about 112.8M."
   },
   "ECU": {
     "demographics": {
@@ -3552,7 +3602,8 @@
         "label": "Quito, Ecuador",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Ecuador is a sovereign country in South America with coastal access and land borders with Colombia and Peru. Quito is the capital; key languages include Spanish; the listed currency is United States dollar (USD); population is about 18.3M."
   },
   "EGY": {
     "demographics": {
@@ -3622,7 +3673,8 @@
         "label": "Cairo, Egypt",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Egypt is a sovereign country in Northern Africa with coastal access and land borders with Israel, Libya, Palestine, and others. Cairo is the capital; key languages include Arabic; the listed currency is Egyptian pound (EGP); population is about 118.4M."
   },
   "SLV": {
     "demographics": {
@@ -3690,7 +3742,8 @@
         "label": "San Salvador, El Salvador",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "El Salvador is a sovereign country in Central America with coastal access and land borders with Guatemala and Honduras. San Salvador is the capital; key languages include Spanish; the listed currency is United States dollar (USD); population is about 6.4M."
   },
   "GNQ": {
     "demographics": {
@@ -3760,7 +3813,8 @@
         "label": "Malabo, Equatorial Guinea",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Equatorial Guinea is a sovereign country in Middle Africa with coastal access and land borders with Cameroon and Gabon. Malabo is the capital; key languages include French, Portuguese, and Spanish; the listed currency is Central African CFA franc (XAF); population is about 1.9M."
   },
   "ERI": {
     "demographics": {
@@ -3831,7 +3885,8 @@
         "label": "Asmara, Eritrea",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Eritrea is a sovereign country in Eastern Africa with coastal access and land borders with Djibouti, Ethiopia, and Sudan. Asmara is the capital; key languages include Arabic, English, and Tigrinya; the listed currency is Eritrean nakfa (ERN); population is about 3.6M."
   },
   "EST": {
     "demographics": {
@@ -3899,7 +3954,8 @@
         "label": "Tallinn, Estonia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Estonia is a sovereign country in Northern Europe with coastal access and land borders with Latvia and Russia. Tallinn is the capital; key languages include Estonian; the listed currency is Euro (EUR); population is about 1.4M."
   },
   "SWZ": {
     "demographics": {
@@ -3968,7 +4024,8 @@
         "label": "Lobamba, Eswatini",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Eswatini is a sovereign country in Southern Africa bordered by Mozambique and South Africa. Lobamba is the capital; key languages include English and Swazi; the listed currencies are Swazi lilangeni (SZL) and South African rand (ZAR); population is about 1.3M."
   },
   "ETH": {
     "demographics": {
@@ -4040,7 +4097,8 @@
         "label": "Addis Ababa, Ethiopia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Ethiopia is a sovereign country in Eastern Africa bordered by Djibouti, Eritrea, Kenya, and others. Addis Ababa is the capital; key languages include Amharic; the listed currency is Ethiopian birr (ETB); population is about 135.5M."
   },
   "FJI": {
     "demographics": {
@@ -4107,7 +4165,8 @@
         "label": "Suva, Fiji",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Fiji is a sovereign country in Melanesia; coastlines, ports, and air links shape many of its outside connections. Suva is the capital; key languages include English, Fijian, and Fiji Hindi; the listed currency is Fijian dollar (FJD); population is about 933.2K."
   },
   "FIN": {
     "demographics": {
@@ -4177,7 +4236,8 @@
         "label": "Helsinki, Finland",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Finland is a sovereign country in Northern Europe with coastal access and land borders with Norway, Sweden, and Russia. Helsinki is the capital; key languages include Finnish and Swedish; the listed currency is Euro (EUR); population is about 5.6M."
   },
   "FRA": {
     "demographics": {
@@ -4251,7 +4311,8 @@
         "label": "Paris, France",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "France is centered in Western Europe with Atlantic, Mediterranean, and English Channel coastlines. Paris is its capital, and the country is known for culture, diplomacy, design, aerospace, agriculture, and one of Europe’s largest economies."
   },
   "GAB": {
     "demographics": {
@@ -4320,7 +4381,8 @@
         "label": "Libreville, Gabon",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Gabon is a sovereign country in Middle Africa with coastal access and land borders with Cameroon, Congo, and Equatorial Guinea. Libreville is the capital; key languages include French; the listed currency is Central African CFA franc (XAF); population is about 2.6M."
   },
   "GMB": {
     "demographics": {
@@ -4387,7 +4449,8 @@
         "label": "Banjul, Gambia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Gambia is a sovereign country in Western Africa with coastal access and land borders with Senegal. Banjul is the capital; key languages include English; the listed currency is dalasi (GMD); population is about 2.8M."
   },
   "GEO": {
     "demographics": {
@@ -4457,7 +4520,8 @@
         "label": "Tbilisi, Georgia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Georgia is a sovereign country in Western Asia with coastal access and land borders with Armenia, Azerbaijan, Russia, and others. Tbilisi is the capital; key languages include Georgian; the listed currency is lari (GEL); population is about 3.9M."
   },
   "DEU": {
     "demographics": {
@@ -4532,7 +4596,8 @@
         "label": "Berlin, Germany",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Germany is a sovereign country in Western Europe with coastal access and land borders with Austria, Belgium, Czechia, and others. Berlin is the capital; key languages include German; the listed currency is Euro (EUR); population is about 83.5M."
   },
   "GHA": {
     "demographics": {
@@ -4601,7 +4666,8 @@
         "label": "Accra, Ghana",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Ghana is a sovereign country in Western Africa with coastal access and land borders with Burkina Faso, Ivory Coast, and Togo. Accra is the capital; key languages include English; the listed currency is Ghanaian cedi (GHS); population is about 35.1M."
   },
   "GRC": {
     "demographics": {
@@ -4671,7 +4737,8 @@
         "label": "Athens, Greece",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Greece is a sovereign country in Southern Europe with coastal access and land borders with Albania, Bulgaria, Türkiye, and others. Athens is the capital; key languages include Greek; the listed currency is Euro (EUR); population is about 10.4M."
   },
   "GRD": {
     "demographics": {
@@ -4736,7 +4803,8 @@
         "label": "St. George's, Grenada",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Grenada is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. St. George's is the capital; key languages include English; the listed currency is Eastern Caribbean dollar (XCD); population is about 117.3K."
   },
   "GTM": {
     "demographics": {
@@ -4806,7 +4874,8 @@
         "label": "Guatemala City, Guatemala",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Guatemala is a sovereign country in Central America with coastal access and land borders with Belize, El Salvador, Honduras, and others. Guatemala City is the capital; key languages include Spanish; the listed currency is Guatemalan quetzal (GTQ); population is about 18.7M."
   },
   "GIN": {
     "demographics": {
@@ -4878,7 +4947,8 @@
         "label": "Conakry, Guinea",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Guinea is a sovereign country in Western Africa with coastal access and land borders with Ivory Coast, Guinea-Bissau, Liberia, and others. Conakry is the capital; key languages include French; the listed currency is Guinean franc (GNF); population is about 15.1M."
   },
   "GNB": {
     "demographics": {
@@ -4947,7 +5017,8 @@
         "label": "Bissau, Guinea-Bissau",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Guinea-Bissau is a sovereign country in Western Africa with coastal access and land borders with Guinea and Senegal. Bissau is the capital; key languages include Portuguese and Upper Guinea Creole; the listed currency is West African CFA franc (XOF); population is about 2.2M."
   },
   "GUY": {
     "demographics": {
@@ -5016,7 +5087,8 @@
         "label": "Georgetown, Guyana",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Guyana is a sovereign country in South America with coastal access and land borders with Brazil, Suriname, and Venezuela. Georgetown is the capital; key languages include English; the listed currency is Guyanese dollar (GYD); population is about 836K."
   },
   "HTI": {
     "demographics": {
@@ -5084,7 +5156,8 @@
         "label": "Port-au-Prince, Haiti",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Haiti is a sovereign country in Caribbean with coastal access and land borders with Dominican Republic. Port-au-Prince is the capital; key languages include French and Haitian Creole; the listed currency is Haitian gourde (HTG); population is about 11.9M."
   },
   "HND": {
     "demographics": {
@@ -5153,7 +5226,8 @@
         "label": "Tegucigalpa, Honduras",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Honduras is a sovereign country in Central America with coastal access and land borders with Guatemala, El Salvador, and Nicaragua. Tegucigalpa is the capital; key languages include Spanish; the listed currency is Honduran lempira (HNL); population is about 11M."
   },
   "HUN": {
     "demographics": {
@@ -5226,7 +5300,8 @@
         "label": "Budapest, Hungary",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Hungary is a sovereign country in Central Europe bordered by Austria, Croatia, Romania, and others. Budapest is the capital; key languages include Hungarian; the listed currency is Hungarian forint (HUF); population is about 9.5M."
   },
   "ISL": {
     "demographics": {
@@ -5291,7 +5366,8 @@
         "label": "Reykjavik, Iceland",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Iceland is a sovereign country in Northern Europe; coastlines, ports, and air links shape many of its outside connections. Reykjavik is the capital; key languages include Icelandic; the listed currency is Icelandic króna (ISK); population is about 392.4K."
   },
   "IND": {
     "demographics": {
@@ -5365,7 +5441,8 @@
         "label": "New Delhi, India",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "India covers much of South Asia, with the Himalayas to the north and the Indian Ocean to the south. New Delhi is the capital, and the country is known for democratic institutions, many languages, technology services, agriculture, film, and textiles."
   },
   "IDN": {
     "demographics": {
@@ -5434,7 +5511,8 @@
         "label": "Jakarta, Indonesia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Indonesia is a sovereign country in South-Eastern Asia with coastal access and land borders with Timor-Leste, Malaysia, and Papua New Guinea. Jakarta is the capital; key languages include Indonesian; the listed currency is Indonesian rupiah (IDR); population is about 285.7M."
   },
   "IRN": {
     "demographics": {
@@ -5507,7 +5585,8 @@
         "label": "Tehran, Iran",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Iran is a sovereign country in Southern Asia with coastal access and land borders with Afghanistan, Armenia, Azerbaijan, and others. Tehran is the capital; key languages include Persian (Farsi); the listed currency is Iranian rial (IRR); population is about 92.4M."
   },
   "IRQ": {
     "demographics": {
@@ -5581,7 +5660,8 @@
         "label": "Baghdad, Iraq",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Iraq is a sovereign country in Western Asia with coastal access and land borders with Iran, Jordan, Kuwait, and others. Baghdad is the capital; key languages include Arabic, Aramaic, and Sorani; the listed currency is Iraqi dinar (IQD); population is about 47M."
   },
   "IRL": {
     "demographics": {
@@ -5649,7 +5729,8 @@
         "label": "Dublin, Ireland",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Ireland is a sovereign country in Northern Europe with coastal access and land borders with United Kingdom. Dublin is the capital; key languages include English and Irish; the listed currency is Euro (EUR); population is about 5.5M."
   },
   "ISR": {
     "demographics": {
@@ -5721,7 +5802,8 @@
         "label": "Jerusalem, Israel",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Israel is a sovereign country in Western Asia with coastal access and land borders with Egypt, Jordan, Lebanon, and others. Jerusalem is the capital; key languages include Arabic and Hebrew; the listed currency is Israeli new shekel (ILS); population is about 10.1M."
   },
   "ITA": {
     "demographics": {
@@ -5793,7 +5875,8 @@
         "label": "Rome, Italy",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Italy extends into the Mediterranean Sea and includes Sicily and Sardinia. Rome is the capital, and the country is known for Roman history, Renaissance culture, fashion, engineering, cuisine, tourism, and Mediterranean trade."
   },
   "CIV": {
     "demographics": {
@@ -5864,7 +5947,8 @@
         "label": "Yamoussoukro, Ivory Coast",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Ivory Coast is a sovereign country in Western Africa with coastal access and land borders with Burkina Faso, Ghana, Guinea, and others. Yamoussoukro is the capital; key languages include French; the listed currency is West African CFA franc (XOF); population is about 32.7M."
   },
   "JAM": {
     "demographics": {
@@ -5930,7 +6014,8 @@
         "label": "Kingston, Jamaica",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Jamaica is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Kingston is the capital; key languages include English and Jamaican Patois; the listed currency is Jamaican dollar (JMD); population is about 2.8M."
   },
   "JPN": {
     "demographics": {
@@ -5995,7 +6080,8 @@
         "label": "Tokyo, Japan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Japan is an East Asian archipelago in the northwest Pacific, with Tokyo as its capital and largest metropolitan center. It is known for advanced technology, long life expectancy, dense cities, refined cultural traditions, and major manufacturing industries."
   },
   "JOR": {
     "demographics": {
@@ -6066,7 +6152,8 @@
         "label": "Amman, Jordan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Jordan is a sovereign country in Western Asia with coastal access and land borders with Iraq, Israel, Palestine, and others. Amman is the capital; key languages include Arabic; the listed currency is Jordanian dinar (JOD); population is about 11.5M."
   },
   "KAZ": {
     "demographics": {
@@ -6138,7 +6225,8 @@
         "label": "Astana, Kazakhstan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Kazakhstan is a sovereign country in Central Asia bordered by China, Kyrgyzstan, Russia, and others. Astana is the capital; key languages include Kazakh and Russian; the listed currency is Kazakhstani tenge (KZT); population is about 20.8M."
   },
   "KEN": {
     "demographics": {
@@ -6210,7 +6298,8 @@
         "label": "Nairobi, Kenya",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Kenya is a sovereign country in Eastern Africa with coastal access and land borders with Ethiopia, Somalia, South Sudan, and others. Nairobi is the capital; key languages include English and Swahili; the listed currency is Kenyan shilling (KES); population is about 57.5M."
   },
   "KIR": {
     "demographics": {
@@ -6276,7 +6365,8 @@
         "label": "South Tarawa, Kiribati",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Kiribati is a sovereign country in Micronesia; coastlines, ports, and air links shape many of its outside connections. South Tarawa is the capital; key languages include English and Gilbertese; the listed currencies are Australian dollar (AUD) and Kiribati dollar (KID); population is about 136.5K."
   },
   "UNK": {
     "demographics": {
@@ -6334,7 +6424,14 @@
       "Its international calling code is +383.",
       "The listed currency code is EUR."
     ],
-    "images": []
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pristina_view_from_sky_2019.jpg",
+        "label": "Pristina, Kosovo",
+        "source": "Wikimedia Commons"
+      }
+    ],
+    "snapshotAbout": "Kosovo is a partially recognized profile in Southeast Europe bordered by Albania, North Macedonia, Montenegro, and others. Pristina is the capital; key languages include Albanian and Serbian; the listed currency is Euro (EUR); population is shown where available."
   },
   "KWT": {
     "demographics": {
@@ -6402,7 +6499,8 @@
         "label": "Kuwait City, Kuwait",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Kuwait is a sovereign country in Western Asia with coastal access and land borders with Iraq and Saudi Arabia. Kuwait City is the capital; key languages include Arabic; the listed currency is Kuwaiti dinar (KWD); population is about 4.9M."
   },
   "KGZ": {
     "demographics": {
@@ -6473,7 +6571,8 @@
         "label": "Bishkek, Kyrgyzstan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Kyrgyzstan is a sovereign country in Central Asia bordered by China, Kazakhstan, Tajikistan, and others. Bishkek is the capital; key languages include Kyrgyz and Russian; the listed currency is Kyrgyzstani som (KGS); population is about 7.3M."
   },
   "LAO": {
     "demographics": {
@@ -6544,7 +6643,8 @@
         "label": "Vientiane, Laos",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Laos is a sovereign country in South-Eastern Asia bordered by Myanmar, Cambodia, China, and others. Vientiane is the capital; key languages include Lao; the listed currency is Lao kip (LAK); population is about 7.9M."
   },
   "LVA": {
     "demographics": {
@@ -6614,7 +6714,8 @@
         "label": "Riga, Latvia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Latvia is a sovereign country in Northern Europe with coastal access and land borders with Belarus, Estonia, Lithuania, and others. Riga is the capital; key languages include Latvian; the listed currency is Euro (EUR); population is about 1.8M."
   },
   "LBN": {
     "demographics": {
@@ -6683,7 +6784,8 @@
         "label": "Beirut, Lebanon",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Lebanon is a sovereign country in Western Asia with coastal access and land borders with Israel and Syria. Beirut is the capital; key languages include Arabic and French; the listed currency is Lebanese pound (LBP); population is about 5.8M."
   },
   "LSO": {
     "demographics": {
@@ -6751,7 +6853,8 @@
         "label": "Maseru, Lesotho",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Lesotho is a sovereign country in Southern Africa bordered by South Africa. Maseru is the capital; key languages include English and Sotho; the listed currencies are Lesotho loti (LSL) and South African rand (ZAR); population is about 2.4M."
   },
   "LBR": {
     "demographics": {
@@ -6820,7 +6923,8 @@
         "label": "Monrovia, Liberia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Liberia is a sovereign country in Western Africa with coastal access and land borders with Guinea, Ivory Coast, and Sierra Leone. Monrovia is the capital; key languages include English; the listed currency is Liberian dollar (LRD); population is about 5.7M."
   },
   "LBY": {
     "demographics": {
@@ -6892,7 +6996,8 @@
         "label": "Tripoli, Libya",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Libya is a sovereign country in Northern Africa with coastal access and land borders with Algeria, Chad, Egypt, and others. Tripoli is the capital; key languages include Arabic; the listed currency is Libyan dinar (LYD); population is about 7.5M."
   },
   "LIE": {
     "demographics": {
@@ -6960,7 +7065,8 @@
         "label": "Vaduz, Liechtenstein",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Liechtenstein is a sovereign country in Western Europe bordered by Austria and Switzerland. Vaduz is the capital; key languages include German; the listed currency is Swiss franc (CHF); population is about 41K."
   },
   "LTU": {
     "demographics": {
@@ -7030,7 +7136,8 @@
         "label": "Vilnius, Lithuania",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Lithuania is a sovereign country in Northern Europe with coastal access and land borders with Belarus, Latvia, Poland, and others. Vilnius is the capital; key languages include Lithuanian; the listed currency is Euro (EUR); population is about 2.9M."
   },
   "LUX": {
     "demographics": {
@@ -7101,7 +7208,8 @@
         "label": "Luxembourg, Luxembourg",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Luxembourg is a sovereign country in Western Europe bordered by Belgium, France, and Germany. Luxembourg is the capital; key languages include German, French, and Luxembourgish; the listed currency is Euro (EUR); population is about 687K."
   },
   "MDG": {
     "demographics": {
@@ -7167,7 +7275,8 @@
         "label": "Antananarivo, Madagascar",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Madagascar is a sovereign country in Eastern Africa; coastlines, ports, and air links shape many of its outside connections. Antananarivo is the capital; key languages include French and Malagasy; the listed currency is Malagasy ariary (MGA); population is about 32.7M."
   },
   "MWI": {
     "demographics": {
@@ -7237,7 +7346,8 @@
         "label": "Lilongwe, Malawi",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Malawi is a sovereign country in Eastern Africa bordered by Mozambique, Tanzania, and Zambia. Lilongwe is the capital; key languages include English and Chewa; the listed currency is Malawian kwacha (MWK); population is about 22.2M."
   },
   "MYS": {
     "demographics": {
@@ -7307,7 +7417,8 @@
         "label": "Kuala Lumpur, Malaysia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Malaysia is a sovereign country in South-Eastern Asia with coastal access and land borders with Brunei, Indonesia, and Thailand. Kuala Lumpur is the capital; key languages include English and Malay; the listed currency is Malaysian ringgit (MYR); population is about 36M."
   },
   "MDV": {
     "demographics": {
@@ -7372,7 +7483,8 @@
         "label": "Malé, Maldives",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Maldives is a sovereign country in Southern Asia; coastlines, ports, and air links shape many of its outside connections. Malé is the capital; key languages include Maldivian; the listed currency is Maldivian rufiyaa (MVR); population is about 529.7K."
   },
   "MLI": {
     "demographics": {
@@ -7445,7 +7557,8 @@
         "label": "Bamako, Mali",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Mali is a sovereign country in Western Africa bordered by Algeria, Burkina Faso, Guinea, and others. Bamako is the capital; key languages include French; the listed currency is West African CFA franc (XOF); population is about 25.2M."
   },
   "MLT": {
     "demographics": {
@@ -7511,7 +7624,8 @@
         "label": "Valletta, Malta",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Malta is a sovereign country in Southern Europe; coastlines, ports, and air links shape many of its outside connections. Valletta is the capital; key languages include English and Maltese; the listed currency is Euro (EUR); population is about 579.7K."
   },
   "MHL": {
     "demographics": {
@@ -7577,7 +7691,8 @@
         "label": "Majuro, Marshall Islands",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Marshall Islands is a sovereign country in Micronesia; coastlines, ports, and air links shape many of its outside connections. Majuro is the capital; key languages include English and Marshallese; the listed currency is United States dollar (USD); population is about 36.3K."
   },
   "MRT": {
     "demographics": {
@@ -7646,7 +7761,8 @@
         "label": "Nouakchott, Mauritania",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Mauritania is a sovereign country in Western Africa with coastal access and land borders with Algeria, Mali, Senegal, and others. Nouakchott is the capital; key languages include Arabic; the listed currency is Mauritanian ouguiya (MRU); population is about 5.3M."
   },
   "MUS": {
     "demographics": {
@@ -7713,7 +7829,8 @@
         "label": "Port Louis, Mauritius",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Mauritius is a sovereign country in Eastern Africa; coastlines, ports, and air links shape many of its outside connections. Port Louis is the capital; key languages include English, French, and Mauritian Creole; the listed currency is Mauritian rupee (MUR); population is about 1.2M."
   },
   "MEX": {
     "demographics": {
@@ -7782,7 +7899,8 @@
         "label": "Mexico City, Mexico",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Mexico links North America and Central America, with Pacific, Gulf of Mexico, and Caribbean coastlines. It is known for Indigenous and Spanish colonial heritage, manufacturing, tourism, agriculture, and a federal system centered on Mexico City."
   },
   "FSM": {
     "demographics": {
@@ -7846,7 +7964,8 @@
         "label": "Palikir, Micronesia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Micronesia is a sovereign country in Micronesia; coastlines, ports, and air links shape many of its outside connections. Palikir is the capital; key languages include English; currency data is shown where available; population is about 113.7K."
   },
   "MDA": {
     "demographics": {
@@ -7914,7 +8033,8 @@
         "label": "Chișinău, Moldova",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Moldova is a sovereign country in Eastern Europe bordered by Romania and Ukraine. Chișinău is the capital; key languages include Moldavian; the listed currency is Moldovan leu (MDL); population is about 2.4M."
   },
   "MCO": {
     "demographics": {
@@ -7981,7 +8101,8 @@
         "label": "Monaco, Monaco",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Monaco is a sovereign country in Western Europe with coastal access and land borders with France. Monaco is the capital; key languages include French; the listed currency is Euro (EUR); population is about 38.3K."
   },
   "MNG": {
     "demographics": {
@@ -8049,7 +8170,8 @@
         "label": "Ulan Bator, Mongolia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Mongolia is a sovereign country in Eastern Asia bordered by China and Russia. Ulan Bator is the capital; key languages include Mongolian; the listed currency is Mongolian tögrög (MNT); population is about 3.6M."
   },
   "MNE": {
     "demographics": {
@@ -8120,7 +8242,8 @@
         "label": "Podgorica, Montenegro",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Montenegro is a sovereign country in Southeast Europe with coastal access and land borders with Albania, Bosnia and Herzegovina, Croatia, and others. Podgorica is the capital; key languages include Montenegrin; the listed currency is Euro (EUR); population is about 623.1K."
   },
   "MAR": {
     "demographics": {
@@ -8189,7 +8312,8 @@
         "label": "Rabat, Morocco",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Morocco is a sovereign country in Northern Africa with coastal access and land borders with Algeria, ESH, and Spain. Rabat is the capital; key languages include Arabic and Berber; the listed currency is Moroccan dirham (MAD); population is about 38.4M."
   },
   "MOZ": {
     "demographics": {
@@ -8261,7 +8385,8 @@
         "label": "Maputo, Mozambique",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Mozambique is a sovereign country in Eastern Africa with coastal access and land borders with Malawi, South Africa, Eswatini, and others. Maputo is the capital; key languages include Portuguese; the listed currency is Mozambican metical (MZN); population is about 35.6M."
   },
   "MMR": {
     "demographics": {
@@ -8332,7 +8457,8 @@
         "label": "Naypyidaw, Myanmar",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Myanmar is a sovereign country in South-Eastern Asia with coastal access and land borders with Bangladesh, China, India, and others. Naypyidaw is the capital; key languages include Burmese; the listed currency is Burmese kyat (MMK); population is about 54.9M."
   },
   "NAM": {
     "demographics": {
@@ -8410,7 +8536,8 @@
         "label": "Windhoek, Namibia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Namibia is a sovereign country in Southern Africa with coastal access and land borders with Angola, Botswana, South Africa, and others. Windhoek is the capital; key languages include Afrikaans, German, and English; the listed currencies are Namibian dollar (NAD) and South African rand (ZAR); population is about 3.1M."
   },
   "NRU": {
     "demographics": {
@@ -8476,7 +8603,8 @@
         "label": "Yaren, Nauru",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Nauru is a sovereign country in Micronesia; coastlines, ports, and air links shape many of its outside connections. Yaren is the capital; key languages include English and Nauru; the listed currency is Australian dollar (AUD); population is about 12K."
   },
   "NPL": {
     "demographics": {
@@ -8544,7 +8672,8 @@
         "label": "Kathmandu, Nepal",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Nepal is a sovereign country in Southern Asia bordered by China and India. Kathmandu is the capital; key languages include Nepali; the listed currency is Nepalese rupee (NPR); population is about 29.6M."
   },
   "NLD": {
     "demographics": {
@@ -8612,7 +8741,8 @@
         "label": "Amsterdam, Netherlands",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Netherlands is a sovereign country in Western Europe with coastal access and land borders with Belgium and Germany. Amsterdam is the capital; key languages include Dutch; the listed currency is Euro (EUR); population is about 18.1M."
   },
   "NZL": {
     "demographics": {
@@ -8679,7 +8809,8 @@
         "label": "Wellington, New Zealand",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "New Zealand is a sovereign country in Australia and New Zealand; coastlines, ports, and air links shape many of its outside connections. Wellington is the capital; key languages include English, Māori, and New Zealand Sign Language; the listed currency is New Zealand dollar (NZD); population is about 5.3M."
   },
   "NIC": {
     "demographics": {
@@ -8747,7 +8878,8 @@
         "label": "Managua, Nicaragua",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Nicaragua is a sovereign country in Central America with coastal access and land borders with Costa Rica and Honduras. Managua is the capital; key languages include Spanish; the listed currency is Nicaraguan córdoba (NIO); population is about 7M."
   },
   "NER": {
     "demographics": {
@@ -8820,7 +8952,8 @@
         "label": "Niamey, Niger",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Niger is a sovereign country in Western Africa bordered by Algeria, Benin, Burkina Faso, and others. Niamey is the capital; key languages include French; the listed currency is West African CFA franc (XOF); population is about 27.9M."
   },
   "NGA": {
     "demographics": {
@@ -8890,7 +9023,8 @@
         "label": "Abuja, Nigeria",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Nigeria is a sovereign country in Western Africa with coastal access and land borders with Benin, Cameroon, Chad, and others. Abuja is the capital; key languages include English; the listed currency is Nigerian naira (NGN); population is about 237.5M."
   },
   "NIU": {
     "demographics": {
@@ -8949,7 +9083,8 @@
         "label": "Alofi, Niue",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Niue is a self-governing Pacific island profile in Polynesia; coastlines, ports, and air links shape many of its outside connections. Alofi is the capital; key languages include English and Niuean; the listed currency is New Zealand dollar (NZD); population is shown where available."
   },
   "PRK": {
     "demographics": {
@@ -9018,7 +9153,8 @@
         "label": "Pyongyang, North Korea",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "North Korea is a sovereign country in Eastern Asia with coastal access and land borders with China, South Korea, and Russia. Pyongyang is the capital; key languages include Korean; the listed currency is North Korean won (KPW); population is about 26.6M."
   },
   "MKD": {
     "demographics": {
@@ -9089,7 +9225,8 @@
         "label": "Skopje, North Macedonia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "North Macedonia is a sovereign country in Southeast Europe bordered by Albania, Bulgaria, Greece, and others. Skopje is the capital; key languages include Macedonian; the listed currency is denar (MKD); population is about 1.8M."
   },
   "NOR": {
     "demographics": {
@@ -9160,7 +9297,8 @@
         "label": "Oslo, Norway",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Norway is a sovereign country in Northern Europe with coastal access and land borders with Finland, Sweden, and Russia. Oslo is the capital; key languages include Norwegian Nynorsk, Norwegian Bokmål, and Sami; the listed currency is Norwegian krone (NOK); population is about 5.6M."
   },
   "OMN": {
     "demographics": {
@@ -9229,7 +9367,8 @@
         "label": "Muscat, Oman",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Oman is a sovereign country in Western Asia with coastal access and land borders with Saudi Arabia, United Arab Emirates, and Yemen. Muscat is the capital; key languages include Arabic; the listed currency is Omani rial (OMR); population is about 5.5M."
   },
   "PAK": {
     "demographics": {
@@ -9300,7 +9439,8 @@
         "label": "Islamabad, Pakistan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Pakistan is a sovereign country in Southern Asia with coastal access and land borders with Afghanistan, China, India, and others. Islamabad is the capital; key languages include English and Urdu; the listed currency is Pakistani rupee (PKR); population is about 255.2M."
   },
   "PLW": {
     "demographics": {
@@ -9366,7 +9506,8 @@
         "label": "Ngerulmud, Palau",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Palau is a sovereign country in Micronesia; coastlines, ports, and air links shape many of its outside connections. Ngerulmud is the capital; key languages include English and Palauan; the listed currency is United States dollar (USD); population is about 17.7K."
   },
   "PSE": {
     "demographics": {
@@ -9435,7 +9576,8 @@
         "label": "Ramallah, Palestine",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Palestine is a UN observer state in Western Asia with coastal access and land borders with Israel, Egypt, and Jordan. Ramallah is the capital; key languages include Arabic; the listed currencies are Egyptian pound (EGP) and Israeli new shekel (ILS); population is about 5.4M."
   },
   "PAN": {
     "demographics": {
@@ -9503,7 +9645,8 @@
         "label": "Panama City, Panama",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Panama is a sovereign country in Central America with coastal access and land borders with Colombia and Costa Rica. Panama City is the capital; key languages include Spanish; the listed currencies are Panamanian balboa (PAB) and United States dollar (USD); population is about 4.6M."
   },
   "PNG": {
     "demographics": {
@@ -9572,7 +9715,8 @@
         "label": "Port Moresby, Papua New Guinea",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Papua New Guinea is a sovereign country in Melanesia with coastal access and land borders with Indonesia. Port Moresby is the capital; key languages include English, Hiri Motu, and Tok Pisin; the listed currency is Papua New Guinean kina (PGK); population is about 10.8M."
   },
   "PRY": {
     "demographics": {
@@ -9642,7 +9786,8 @@
         "label": "Asunción, Paraguay",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Paraguay is a sovereign country in South America bordered by Argentina, Bolivia, and Brazil. Asunción is the capital; key languages include Guaraní and Spanish; the listed currency is Paraguayan guaraní (PYG); population is about 7M."
   },
   "PER": {
     "demographics": {
@@ -9715,7 +9860,8 @@
         "label": "Lima, Peru",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Peru is a sovereign country in South America with coastal access and land borders with Bolivia, Brazil, Chile, and others. Lima is the capital; key languages include Aymara, Quechua, and Spanish; the listed currency is Peruvian sol (PEN); population is about 34.6M."
   },
   "PHL": {
     "demographics": {
@@ -9781,7 +9927,8 @@
         "label": "Manila, Philippines",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Philippines is a sovereign country in South-Eastern Asia; coastlines, ports, and air links shape many of its outside connections. Manila is the capital; key languages include English and Filipino; the listed currency is Philippine peso (PHP); population is about 116.8M."
   },
   "POL": {
     "demographics": {
@@ -9854,7 +10001,8 @@
         "label": "Warsaw, Poland",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Poland is a sovereign country in Central Europe with coastal access and land borders with Belarus, Czechia, Germany, and others. Warsaw is the capital; key languages include Polish; the listed currency is Polish złoty (PLN); population is about 36.4M."
   },
   "PRT": {
     "demographics": {
@@ -9921,7 +10069,8 @@
         "label": "Lisbon, Portugal",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Portugal is a sovereign country in Southern Europe with coastal access and land borders with Spain. Lisbon is the capital; key languages include Portuguese; the listed currency is Euro (EUR); population is about 10.8M."
   },
   "QAT": {
     "demographics": {
@@ -9988,7 +10137,8 @@
         "label": "Doha, Qatar",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Qatar is a sovereign country in Western Asia with coastal access and land borders with Saudi Arabia. Doha is the capital; key languages include Arabic; the listed currency is Qatari riyal (QAR); population is about 3M."
   },
   "ROU": {
     "demographics": {
@@ -10059,7 +10209,8 @@
         "label": "Bucharest, Romania",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Romania is a sovereign country in Southeast Europe with coastal access and land borders with Bulgaria, Hungary, Moldova, and others. Bucharest is the capital; key languages include Romanian; the listed currency is Romanian leu (RON); population is about 19M."
   },
   "RUS": {
     "demographics": {
@@ -10139,7 +10290,8 @@
         "label": "Moscow, Russia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Russia is a sovereign country in Eastern Europe with coastal access and land borders with Azerbaijan, Belarus, China, and others. Moscow is the capital; key languages include Russian; the listed currency is Russian ruble (RUB); population is about 143.5M."
   },
   "RWA": {
     "demographics": {
@@ -10211,7 +10363,8 @@
         "label": "Kigali, Rwanda",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Rwanda is a sovereign country in Eastern Africa bordered by Burundi, DR Congo, Tanzania, and others. Kigali is the capital; key languages include English, French, and Kinyarwanda; the listed currency is Rwandan franc (RWF); population is about 14.6M."
   },
   "KNA": {
     "demographics": {
@@ -10276,7 +10429,8 @@
         "label": "Basseterre, Saint Kitts and Nevis",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Saint Kitts and Nevis is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Basseterre is the capital; key languages include English; the listed currency is Eastern Caribbean dollar (XCD); population is about 46.9K."
   },
   "LCA": {
     "demographics": {
@@ -10341,7 +10495,8 @@
         "label": "Castries, Saint Lucia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Saint Lucia is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Castries is the capital; key languages include English; the listed currency is Eastern Caribbean dollar (XCD); population is about 180.1K."
   },
   "VCT": {
     "demographics": {
@@ -10406,7 +10561,8 @@
         "label": "Kingstown, Saint Vincent and the Grenadines",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Saint Vincent and the Grenadines is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Kingstown is the capital; key languages include English; the listed currency is Eastern Caribbean dollar (XCD); population is about 99.9K."
   },
   "WSM": {
     "demographics": {
@@ -10472,7 +10628,8 @@
         "label": "Apia, Samoa",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Samoa is a sovereign country in Polynesia; coastlines, ports, and air links shape many of its outside connections. Apia is the capital; key languages include English and Samoan; the listed currency is Samoan tālā (WST); population is about 219.3K."
   },
   "SMR": {
     "demographics": {
@@ -10539,7 +10696,8 @@
         "label": "City of San Marino, San Marino",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "San Marino is a sovereign country in Southern Europe bordered by Italy. City of San Marino is the capital; key languages include Italian; the listed currency is Euro (EUR); population is about 34.1K."
   },
   "STP": {
     "demographics": {
@@ -10604,7 +10762,8 @@
         "label": "São Tomé, São Tomé and Príncipe",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "São Tomé and Príncipe is a sovereign country in Middle Africa; coastlines, ports, and air links shape many of its outside connections. São Tomé is the capital; key languages include Portuguese; the listed currency is São Tomé and Príncipe dobra (STN); population is about 240.3K."
   },
   "SAU": {
     "demographics": {
@@ -10677,7 +10836,8 @@
         "label": "Riyadh, Saudi Arabia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Saudi Arabia is a sovereign country in Western Asia with coastal access and land borders with Iraq, Jordan, Kuwait, and others. Riyadh is the capital; key languages include Arabic; the listed currency is Saudi riyal (SAR); population is about 37M."
   },
   "SEN": {
     "demographics": {
@@ -10748,7 +10908,8 @@
         "label": "Dakar, Senegal",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Senegal is a sovereign country in Western Africa with coastal access and land borders with Gambia, Guinea, Guinea-Bissau, and others. Dakar is the capital; key languages include French; the listed currency is West African CFA franc (XOF); population is about 18.9M."
   },
   "SRB": {
     "demographics": {
@@ -10822,7 +10983,8 @@
         "label": "Belgrade, Serbia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Serbia is a sovereign country in Southeast Europe bordered by Bosnia and Herzegovina, Bulgaria, Croatia, and others. Belgrade is the capital; key languages include Serbian; the listed currency is Serbian dinar (RSD); population is about 6.5M."
   },
   "SYC": {
     "demographics": {
@@ -10889,7 +11051,8 @@
         "label": "Victoria, Seychelles",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Seychelles is a sovereign country in Eastern Africa; coastlines, ports, and air links shape many of its outside connections. Victoria is the capital; key languages include Seychellois Creole, English, and French; the listed currency is Seychellois rupee (SCR); population is about 122.7K."
   },
   "SLE": {
     "demographics": {
@@ -10957,7 +11120,8 @@
         "label": "Freetown, Sierra Leone",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Sierra Leone is a sovereign country in Western Africa with coastal access and land borders with Guinea and Liberia. Freetown is the capital; key languages include English; the listed currency is Sierra Leonean leone (SLE); population is about 8.8M."
   },
   "SGP": {
     "demographics": {
@@ -11025,7 +11189,8 @@
         "label": "Singapore, Singapore",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Singapore is a compact island city-state at the southern end of the Malay Peninsula, on one of the world’s busiest shipping routes. It is known for global finance, port logistics, aviation, clean urban systems, and multicultural daily life."
   },
   "SVK": {
     "demographics": {
@@ -11096,7 +11261,8 @@
         "label": "Bratislava, Slovakia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Slovakia is a sovereign country in Central Europe bordered by Austria, Czechia, Hungary, and others. Bratislava is the capital; key languages include Slovak; the listed currency is Euro (EUR); population is about 5.4M."
   },
   "SVN": {
     "demographics": {
@@ -11166,7 +11332,8 @@
         "label": "Ljubljana, Slovenia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Slovenia is a sovereign country in Central Europe with coastal access and land borders with Austria, Croatia, Italy, and others. Ljubljana is the capital; key languages include Slovene; the listed currency is Euro (EUR); population is about 2.1M."
   },
   "SLB": {
     "demographics": {
@@ -11231,7 +11398,8 @@
         "label": "Honiara, Solomon Islands",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Solomon Islands is a sovereign country in Melanesia; coastlines, ports, and air links shape many of its outside connections. Honiara is the capital; key languages include English; the listed currency is Solomon Islands dollar (SBD); population is about 838.6K."
   },
   "SOM": {
     "demographics": {
@@ -11301,7 +11469,8 @@
         "label": "Mogadishu, Somalia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Somalia is a sovereign country in Eastern Africa with coastal access and land borders with Djibouti, Ethiopia, and Kenya. Mogadishu is the capital; key languages include Arabic and Somali; the listed currency is Somali shilling (SOS); population is about 19.7M."
   },
   "ZAF": {
     "demographics": {
@@ -11383,7 +11552,8 @@
         "label": "Pretoria, South Africa",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "South Africa occupies the southern tip of Africa, where Atlantic and Indian Ocean routes meet. It is known for mineral wealth, biodiversity, major cities, wildlife, 11 official languages, and modern democratic institutions."
   },
   "KOR": {
     "demographics": {
@@ -11450,7 +11620,8 @@
         "label": "Seoul, South Korea",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "South Korea is a sovereign country in Eastern Asia with coastal access and land borders with North Korea. Seoul is the capital; key languages include Korean; the listed currency is South Korean won (KRW); population is about 51.7M."
   },
   "SSD": {
     "demographics": {
@@ -11522,7 +11693,8 @@
         "label": "Juba, South Sudan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "South Sudan is a sovereign country in Middle Africa bordered by Central African Republic, DR Congo, Ethiopia, and others. Juba is the capital; key languages include English; the listed currency is South Sudanese pound (SSP); population is about 12.2M."
   },
   "ESP": {
     "demographics": {
@@ -11592,7 +11764,8 @@
         "label": "Madrid, Spain",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Spain is a sovereign country in Southern Europe with coastal access and land borders with Andorra, France, GIB, and others. Madrid is the capital; key languages include Spanish; the listed currency is Euro (EUR); population is about 49.4M."
   },
   "LKA": {
     "demographics": {
@@ -11660,7 +11833,8 @@
         "label": "Colombo, Sri Lanka",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Sri Lanka is a sovereign country in Southern Asia with coastal access and land borders with India. Colombo is the capital; key languages include Sinhala and Tamil; the listed currency is Sri Lankan rupee (LKR); population is about 21.8M."
   },
   "SDN": {
     "demographics": {
@@ -11734,7 +11908,8 @@
         "label": "Khartoum, Sudan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Sudan is a sovereign country in Northern Africa with coastal access and land borders with Central African Republic, Chad, Egypt, and others. Khartoum is the capital; key languages include Arabic and English; the listed currency is Sudanese pound (SDG); population is about 51.7M."
   },
   "SUR": {
     "demographics": {
@@ -11802,7 +11977,8 @@
         "label": "Paramaribo, Suriname",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Suriname is a sovereign country in South America with coastal access and land borders with Brazil, GUF, and Guyana. Paramaribo is the capital; key languages include Dutch; the listed currency is Surinamese dollar (SRD); population is about 639.9K."
   },
   "SWE": {
     "demographics": {
@@ -11870,7 +12046,8 @@
         "label": "Stockholm, Sweden",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Sweden is a sovereign country in Northern Europe with coastal access and land borders with Finland and Norway. Stockholm is the capital; key languages include Swedish; the listed currency is Swedish krona (SEK); population is about 10.6M."
   },
   "CHE": {
     "demographics": {
@@ -11944,7 +12121,8 @@
         "label": "Bern, Switzerland",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Switzerland is a sovereign country in Western Europe bordered by Austria, France, Italy, and others. Bern is the capital; key languages include French, Swiss German, and Italian; the listed currency is Swiss franc (CHF); population is about 9.1M."
   },
   "SYR": {
     "demographics": {
@@ -12015,7 +12193,8 @@
         "label": "Damascus, Syria",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Syria is a sovereign country in Western Asia with coastal access and land borders with Iraq, Israel, Jordan, and others. Damascus is the capital; key languages include Arabic; the listed currency is Syrian pound (SYP); population is about 25.6M."
   },
   "TWN": {
     "demographics": {
@@ -12067,7 +12246,14 @@
       "Its international calling code is +886.",
       "The listed currency code is TWD."
     ],
-    "images": []
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Taipei_Skyline_2022.06.29.jpg",
+        "label": "Taipei skyline",
+        "source": "Wikimedia Commons"
+      }
+    ],
+    "snapshotAbout": "Taiwan is a partially recognized profile in Eastern Asia; coastlines, ports, and air links shape many of its outside connections. Taipei is the capital; key languages include Chinese; the listed currency is New Taiwan dollar (TWD); population is shown where available."
   },
   "TJK": {
     "demographics": {
@@ -12138,7 +12324,8 @@
         "label": "Dushanbe, Tajikistan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Tajikistan is a sovereign country in Central Asia bordered by Afghanistan, China, Kyrgyzstan, and others. Dushanbe is the capital; key languages include Russian and Tajik; the listed currency is Tajikistani somoni (TJS); population is about 10.8M."
   },
   "TZA": {
     "demographics": {
@@ -12213,7 +12400,8 @@
         "label": "Dodoma, Tanzania",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Tanzania is a sovereign country in Eastern Africa with coastal access and land borders with Burundi, DR Congo, Kenya, and others. Dodoma is the capital; key languages include English and Swahili; the listed currency is Tanzanian shilling (TZS); population is about 70.5M."
   },
   "THA": {
     "demographics": {
@@ -12283,7 +12471,8 @@
         "label": "Bangkok, Thailand",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Thailand is a sovereign country in South-Eastern Asia with coastal access and land borders with Myanmar, Cambodia, Laos, and others. Bangkok is the capital; key languages include Thai; the listed currency is Thai baht (THB); population is about 71.6M."
   },
   "TLS": {
     "demographics": {
@@ -12351,7 +12540,8 @@
         "label": "Dili, Timor-Leste",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Timor-Leste is a sovereign country in South-Eastern Asia with coastal access and land borders with Indonesia. Dili is the capital; key languages include Portuguese and Tetum; the listed currency is United States dollar (USD); population is about 1.4M."
   },
   "TGO": {
     "demographics": {
@@ -12420,7 +12610,8 @@
         "label": "Lomé, Togo",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Togo is a sovereign country in Western Africa with coastal access and land borders with Benin, Burkina Faso, and Ghana. Lomé is the capital; key languages include French; the listed currency is West African CFA franc (XOF); population is about 8.6M."
   },
   "TON": {
     "demographics": {
@@ -12486,7 +12677,8 @@
         "label": "Nuku'alofa, Tonga",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Tonga is a sovereign country in Polynesia; coastlines, ports, and air links shape many of its outside connections. Nuku'alofa is the capital; key languages include English and Tongan; the listed currency is Tongan paʻanga (TOP); population is about 103.7K."
   },
   "TTO": {
     "demographics": {
@@ -12551,7 +12743,8 @@
         "label": "Port of Spain, Trinidad and Tobago",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Trinidad and Tobago is a sovereign country in Caribbean; coastlines, ports, and air links shape many of its outside connections. Port of Spain is the capital; key languages include English; the listed currency is Trinidad and Tobago dollar (TTD); population is about 1.4M."
   },
   "TUN": {
     "demographics": {
@@ -12619,7 +12812,8 @@
         "label": "Tunis, Tunisia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Tunisia is a sovereign country in Northern Africa with coastal access and land borders with Algeria and Libya. Tunis is the capital; key languages include Arabic; the listed currency is Tunisian dinar (TND); population is about 12.3M."
   },
   "TUR": {
     "demographics": {
@@ -12693,7 +12887,8 @@
         "label": "Ankara, Türkiye",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Türkiye is a sovereign country in Western Asia with coastal access and land borders with Armenia, Azerbaijan, Bulgaria, and others. Ankara is the capital; key languages include Turkish; the listed currency is Turkish lira (TRY); population is about 85.9M."
   },
   "TKM": {
     "demographics": {
@@ -12764,7 +12959,8 @@
         "label": "Ashgabat, Turkmenistan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Turkmenistan is a sovereign country in Central Asia bordered by Afghanistan, Iran, Kazakhstan, and others. Ashgabat is the capital; key languages include Russian and Turkmen; the listed currency is Turkmenistan manat (TMT); population is about 7.6M."
   },
   "TUV": {
     "demographics": {
@@ -12830,7 +13026,8 @@
         "label": "Funafuti, Tuvalu",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Tuvalu is a sovereign country in Polynesia; coastlines, ports, and air links shape many of its outside connections. Funafuti is the capital; key languages include English and Tuvaluan; the listed currencies are Australian dollar (AUD) and Tuvaluan dollar (TVD); population is about 9.5K."
   },
   "UGA": {
     "demographics": {
@@ -12902,7 +13099,8 @@
         "label": "Kampala, Uganda",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Uganda is a sovereign country in Eastern Africa bordered by DR Congo, Kenya, Rwanda, and others. Kampala is the capital; key languages include English and Swahili; the listed currency is Ugandan shilling (UGX); population is about 51.4M."
   },
   "UKR": {
     "demographics": {
@@ -12975,7 +13173,8 @@
         "label": "Kyiv, Ukraine",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Ukraine is a sovereign country in Eastern Europe with coastal access and land borders with Belarus, Hungary, Moldova, and others. Kyiv is the capital; key languages include Ukrainian; the listed currency is Ukrainian hryvnia (UAH); population is about 39M."
   },
   "ARE": {
     "demographics": {
@@ -13043,7 +13242,8 @@
         "label": "Abu Dhabi, United Arab Emirates",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "United Arab Emirates is a sovereign country in Western Asia with coastal access and land borders with Oman and Saudi Arabia. Abu Dhabi is the capital; key languages include Arabic; the listed currency is United Arab Emirates dirham (AED); population is about 11.5M."
   },
   "GBR": {
     "demographics": {
@@ -13110,7 +13310,8 @@
         "label": "London, United Kingdom",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "United Kingdom is a sovereign country in Northern Europe with coastal access and land borders with Ireland. London is the capital; key languages include English; the listed currency is British pound (GBP); population is about 69.5M."
   },
   "USA": {
     "demographics": {
@@ -13178,7 +13379,8 @@
         "label": "Washington D.C., United States",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "The United States spans North America between Canada and Mexico, with Atlantic, Pacific, Arctic, and Gulf coastlines. It is a federal republic of 50 states and one federal district, known for innovation, higher education, culture, finance, and global influence."
   },
   "URY": {
     "demographics": {
@@ -13246,7 +13448,8 @@
         "label": "Montevideo, Uruguay",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Uruguay is a sovereign country in South America with coastal access and land borders with Argentina and Brazil. Montevideo is the capital; key languages include Spanish; the listed currency is Uruguayan peso (UYU); population is about 3.4M."
   },
   "UZB": {
     "demographics": {
@@ -13318,7 +13521,8 @@
         "label": "Tashkent, Uzbekistan",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Uzbekistan is a sovereign country in Central Asia bordered by Afghanistan, Kazakhstan, Kyrgyzstan, and others. Tashkent is the capital; key languages include Russian and Uzbek; the listed currency is Uzbekistani soʻm (UZS); population is about 37.1M."
   },
   "VUT": {
     "demographics": {
@@ -13385,7 +13589,8 @@
         "label": "Port Vila, Vanuatu",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Vanuatu is a sovereign country in Melanesia; coastlines, ports, and air links shape many of its outside connections. Port Vila is the capital; key languages include Bislama, English, and French; the listed currency is Vanuatu vatu (VUV); population is about 335.2K."
   },
   "VAT": {
     "demographics": {
@@ -13446,7 +13651,8 @@
         "label": "Vatican City, Vatican City",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Vatican City is a UN observer state and city-state in Southern Europe bordered by Italy. Vatican City is the capital; key languages include Italian and Latin; the listed currency is Euro (EUR); population is shown where available."
   },
   "VEN": {
     "demographics": {
@@ -13515,7 +13721,8 @@
         "label": "Caracas, Venezuela",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Venezuela is a sovereign country in South America with coastal access and land borders with Brazil, Colombia, and Guyana. Caracas is the capital; key languages include Spanish; the listed currency is Venezuelan bolívar soberano (VES); population is about 28.5M."
   },
   "VNM": {
     "demographics": {
@@ -13584,7 +13791,8 @@
         "label": "Hanoi, Vietnam",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Vietnam is a sovereign country in South-Eastern Asia with coastal access and land borders with Cambodia, China, and Laos. Hanoi is the capital; key languages include Vietnamese; the listed currency is Vietnamese đồng (VND); population is about 101.6M."
   },
   "YEM": {
     "demographics": {
@@ -13652,7 +13860,8 @@
         "label": "Sana'a, Yemen",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Yemen is a sovereign country in Western Asia with coastal access and land borders with Oman and Saudi Arabia. Sana'a is the capital; key languages include Arabic; the listed currency is Yemeni rial (YER); population is about 41.8M."
   },
   "ZMB": {
     "demographics": {
@@ -13726,7 +13935,8 @@
         "label": "Lusaka, Zambia",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Zambia is a sovereign country in Eastern Africa bordered by Angola, Botswana, DR Congo, and others. Lusaka is the capital; key languages include English; the listed currency is Zambian kwacha (ZMW); population is about 21.9M."
   },
   "ZWE": {
     "demographics": {
@@ -13810,7 +14020,8 @@
         "label": "Harare, Zimbabwe",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Zimbabwe is a sovereign country in Eastern Africa bordered by Botswana, Mozambique, South Africa, and others. Harare is the capital; key languages include Chibarwe, English, and Kalanga; the listed currencies are Botswana pula (BWP) and Chinese yuan (CNY); population is about 17M."
   },
   "HKG": {
     "demographics": {
@@ -13878,7 +14089,8 @@
         "label": "Hong Kong skyline",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Hong Kong is a special administrative region on China’s southern coast. It is known for its high-density skyline, deep-water port, financial services, Cantonese culture, and role as a gateway between mainland China and global markets."
   },
   "ENG": {
     "demographics": {
@@ -13942,7 +14154,8 @@
         "label": "Palace of Westminster, London",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "England is a constituent country and nation within the United Kingdom. It contains London, the UK capital, and is known for literature, science, industry, sport, finance, education, and long-running global cultural influence."
   },
   "SCT": {
     "demographics": {
@@ -14007,7 +14220,8 @@
         "label": "Edinburgh Castle",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Scotland is a constituent country and nation within the United Kingdom, with its own parliament and legal tradition. It is known for the Highlands, islands, universities, engineering history, energy resources, and distinctive cultural identity."
   },
   "WLS": {
     "demographics": {
@@ -14071,7 +14285,8 @@
         "label": "Cardiff Bay",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Wales is a constituent country and nation within the United Kingdom, with Cardiff as its capital. It is known for the Welsh language, mountains, coastlines, rugby, music, industrial heritage, and a strong devolved identity."
   },
   "NIR": {
     "demographics": {
@@ -14136,6 +14351,7 @@
         "label": "Giant's Causeway",
         "source": "Wikimedia Commons"
       }
-    ]
+    ],
+    "snapshotAbout": "Northern Ireland is a constituent nation within the United Kingdom on the island of Ireland. It is known for Belfast, the Giant’s Causeway, shared Irish and British cultural connections, and devolved government."
   }
 }
