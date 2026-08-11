@@ -108,7 +108,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Korab",
-      "geography": "Albania is in Southeast Europe. Its listed area is 28,748 km².",
+      "geography": "Albania is in Southeast Europe and has coastal access. Its listed area is 28,748 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -129,7 +129,7 @@
     "facts": [
       "Tirana is the capital city.",
       "Albania covers 28,748 km².",
-      "Albania is not classified as landlocked.",
+      "Albania has coastal access.",
       "It shares land borders with Montenegro, Greece, North Macedonia, Kosovo.",
       "Listed official languages include Albanian.",
       "Its international calling code is +355.",
@@ -179,7 +179,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Tahat",
-      "geography": "Algeria is in Northern Africa. Its listed area is 2,381,741 km².",
+      "geography": "Algeria is in Northern Africa and has coastal access. Its listed area is 2,381,741 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -202,8 +202,8 @@
     "facts": [
       "Algiers is the capital city.",
       "Algeria covers 2,381,741 km².",
-      "Algeria is not classified as landlocked.",
-      "It shares land borders with Tunisia, Libya, Niger, Mauritania, Mali and 1 more.",
+      "Algeria has coastal access.",
+      "It shares land borders with Tunisia, Libya, Niger, ESH, Mauritania and 2 more.",
       "Listed official languages include Arabic.",
       "Its international calling code is +213.",
       "The latest published population in this atlas is 47.4M (2025).",
@@ -321,7 +321,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Moco",
-      "geography": "Angola is in Middle Africa. Its listed area is 1,246,700 km².",
+      "geography": "Angola is in Middle Africa and has coastal access. Its listed area is 1,246,700 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -342,7 +342,7 @@
     "facts": [
       "Luanda is the capital city.",
       "Angola covers 1,246,700 km².",
-      "Angola is not classified as landlocked.",
+      "Angola has coastal access.",
       "It shares land borders with Congo, DR Congo, Zambia, Namibia.",
       "Listed official languages include Portuguese.",
       "Its international calling code is +244.",
@@ -392,7 +392,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Obama",
-      "geography": "Antigua and Barbuda is in Caribbean. Its listed area is 442 km².",
+      "geography": "Antigua and Barbuda is an island or coastal profile in Caribbean. Its listed area is 442 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -408,8 +408,8 @@
     "facts": [
       "Saint John's is the capital city.",
       "Antigua and Barbuda covers 442 km².",
-      "Antigua and Barbuda is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Antigua and Barbuda has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +1268.",
       "The latest published population in this atlas is 94.2K (2025).",
@@ -459,7 +459,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Aconcagua",
-      "geography": "Argentina is in South America. Its listed area is 2,780,400 km².",
+      "geography": "Argentina is in South America and has coastal access. Its listed area is 2,780,400 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -481,7 +481,7 @@
     "facts": [
       "Buenos Aires is the capital city.",
       "Argentina covers 2,780,400 km².",
-      "Argentina is not classified as landlocked.",
+      "Argentina has coastal access.",
       "It shares land borders with Bolivia, Brazil, Chile, Paraguay, Uruguay.",
       "Listed official languages include Guaraní, Spanish.",
       "Its international calling code is +54.",
@@ -578,7 +578,7 @@
         "value": 12.280732733366705,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 38.3,
       "officialLanguages": [
         "English"
       ],
@@ -602,24 +602,24 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mawson Peak",
-      "geography": "Australia is in Australia and New Zealand. Its listed area is 7,692,024 km².",
+      "geography": "Australia is an island or coastal profile in Australia and New Zealand. Its listed area is 7,692,024 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Left",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "UTC+8 to UTC+11",
+      "plugTypes": "Type I",
+      "tipping": "Optional; not required but appreciated for good service",
+      "emergencyNumbers": "000",
       "callingCode": "+61"
     },
     "neighbors": [],
     "facts": [
       "Canberra is the capital city.",
       "Australia covers 7,692,024 km².",
-      "Australia is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Australia is an island profile with no land borders.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +61.",
       "The latest published population in this atlas is 27.6M (2025).",
@@ -816,7 +816,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Alvernia",
-      "geography": "Bahamas is in Caribbean. Its listed area is 13,943 km².",
+      "geography": "Bahamas is an island or coastal profile in Caribbean. Its listed area is 13,943 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -832,8 +832,8 @@
     "facts": [
       "Nassau is the capital city.",
       "Bahamas covers 13,943 km².",
-      "Bahamas is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Bahamas has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +1242.",
       "The latest published population in this atlas is 403K (2025).",
@@ -882,7 +882,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mountain of Smoke",
-      "geography": "Bahrain is in Western Asia. Its listed area is 765 km².",
+      "geography": "Bahrain is an island or coastal profile in Western Asia. Its listed area is 765 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -898,8 +898,8 @@
     "facts": [
       "Manama is the capital city.",
       "Bahrain covers 765 km².",
-      "Bahrain is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Bahrain has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Arabic.",
       "Its international calling code is +973.",
       "The latest published population in this atlas is 1.6M (2025).",
@@ -948,7 +948,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mowdok tiang",
-      "geography": "Bangladesh is in Southern Asia. Its listed area is 147,570 km².",
+      "geography": "Bangladesh is in Southern Asia and has coastal access. Its listed area is 147,570 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -967,7 +967,7 @@
     "facts": [
       "Dhaka is the capital city.",
       "Bangladesh covers 147,570 km².",
-      "Bangladesh is not classified as landlocked.",
+      "Bangladesh has coastal access.",
       "It shares land borders with Myanmar, India.",
       "Listed official languages include Bengali.",
       "Its international calling code is +880.",
@@ -1017,7 +1017,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Hillaby",
-      "geography": "Barbados is in Caribbean. Its listed area is 430 km².",
+      "geography": "Barbados is an island or coastal profile in Caribbean. Its listed area is 430 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -1033,8 +1033,8 @@
     "facts": [
       "Bridgetown is the capital city.",
       "Barbados covers 430 km².",
-      "Barbados is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Barbados has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +1246.",
       "The latest published population in this atlas is 282.6K (2025).",
@@ -1158,7 +1158,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Signal de Botrange",
-      "geography": "Belgium is in Western Europe. Its listed area is 30,528 km².",
+      "geography": "Belgium is in Western Europe and has coastal access. Its listed area is 30,528 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -1179,7 +1179,7 @@
     "facts": [
       "Brussels is the capital city.",
       "Belgium covers 30,528 km².",
-      "Belgium is not classified as landlocked.",
+      "Belgium has coastal access.",
       "It shares land borders with France, Germany, Luxembourg, Netherlands.",
       "Listed official languages include German, French, Dutch.",
       "Its international calling code is +32.",
@@ -1231,7 +1231,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Doyle's Delight",
-      "geography": "Belize is in Central America. Its listed area is 22,966 km².",
+      "geography": "Belize is in Central America and has coastal access. Its listed area is 22,966 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -1250,7 +1250,7 @@
     "facts": [
       "Belmopan is the capital city.",
       "Belize covers 22,966 km².",
-      "Belize is not classified as landlocked.",
+      "Belize has coastal access.",
       "It shares land borders with Guatemala, Mexico.",
       "Listed official languages include Belizean Creole, English, Spanish.",
       "Its international calling code is +501.",
@@ -1300,7 +1300,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mont Sokbaro",
-      "geography": "Benin is in Western Africa. Its listed area is 112,622 km².",
+      "geography": "Benin is in Western Africa and has coastal access. Its listed area is 112,622 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -1321,7 +1321,7 @@
     "facts": [
       "Porto-Novo is the capital city.",
       "Benin covers 112,622 km².",
-      "Benin is not classified as landlocked.",
+      "Benin has coastal access.",
       "It shares land borders with Burkina Faso, Niger, Nigeria, Togo.",
       "Listed official languages include French.",
       "Its international calling code is +229.",
@@ -1517,7 +1517,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Maglić",
-      "geography": "Bosnia and Herzegovina is in Southeast Europe. Its listed area is 51,209 km².",
+      "geography": "Bosnia and Herzegovina is in Southeast Europe and has coastal access. Its listed area is 51,209 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -1537,7 +1537,7 @@
     "facts": [
       "Sarajevo is the capital city.",
       "Bosnia and Herzegovina covers 51,209 km².",
-      "Bosnia and Herzegovina is not classified as landlocked.",
+      "Bosnia and Herzegovina has coastal access.",
       "It shares land borders with Croatia, Montenegro, Serbia.",
       "Listed official languages include Bosnian, Croatian, Serbian.",
       "Its international calling code is +387.",
@@ -1635,7 +1635,7 @@
         "value": 11.822700351210202,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 34.2,
       "officialLanguages": [
         "Portuguese"
       ],
@@ -1659,16 +1659,16 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Pico da Neblina",
-      "geography": "Brazil is in South America. Its listed area is 8,515,767 km².",
+      "geography": "Brazil is in South America and has coastal access. Its listed area is 8,515,767 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "UTC-5 to UTC-2",
+      "plugTypes": "Type C / N",
+      "tipping": "Service charge is often included; extra tipping is optional",
+      "emergencyNumbers": "Police 190; ambulance 192; fire 193",
       "callingCode": "+55"
     },
     "neighbors": [
@@ -1685,8 +1685,8 @@
     "facts": [
       "Brasília is the capital city.",
       "Brazil covers 8,515,767 km².",
-      "Brazil is not classified as landlocked.",
-      "It shares land borders with Argentina, Bolivia, Colombia, Guyana, Paraguay and 4 more.",
+      "Brazil has coastal access.",
+      "It shares land borders with Argentina, Bolivia, Colombia, GUF, Guyana and 5 more.",
       "Listed official languages include Portuguese.",
       "Its international calling code is +55.",
       "The latest published population in this atlas is 212.8M (2025).",
@@ -1735,7 +1735,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Bukit Pagon",
-      "geography": "Brunei is in South-Eastern Asia. Its listed area is 5,765 km².",
+      "geography": "Brunei is in South-Eastern Asia and has coastal access. Its listed area is 5,765 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -1753,7 +1753,7 @@
     "facts": [
       "Bandar Seri Begawan is the capital city.",
       "Brunei covers 5,765 km².",
-      "Brunei is not classified as landlocked.",
+      "Brunei has coastal access.",
       "It shares land borders with Malaysia.",
       "Listed official languages include Malay.",
       "Its international calling code is +673.",
@@ -1803,7 +1803,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Musala",
-      "geography": "Bulgaria is in Southeast Europe. Its listed area is 110,879 km².",
+      "geography": "Bulgaria is in Southeast Europe and has coastal access. Its listed area is 110,879 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -1825,7 +1825,7 @@
     "facts": [
       "Sofia is the capital city.",
       "Bulgaria covers 110,879 km².",
-      "Bulgaria is not classified as landlocked.",
+      "Bulgaria has coastal access.",
       "It shares land borders with Greece, North Macedonia, Romania, Serbia, Türkiye.",
       "Listed official languages include Bulgarian.",
       "Its international calling code is +359.",
@@ -2019,7 +2019,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Phnom Aural",
-      "geography": "Cambodia is in South-Eastern Asia. Its listed area is 181,035 km².",
+      "geography": "Cambodia is in South-Eastern Asia and has coastal access. Its listed area is 181,035 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2039,7 +2039,7 @@
     "facts": [
       "Phnom Penh is the capital city.",
       "Cambodia covers 181,035 km².",
-      "Cambodia is not classified as landlocked.",
+      "Cambodia has coastal access.",
       "It shares land borders with Laos, Thailand, Vietnam.",
       "Listed official languages include Khmer.",
       "Its international calling code is +855.",
@@ -2090,7 +2090,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Cameroon",
-      "geography": "Cameroon is in Middle Africa. Its listed area is 475,442 km².",
+      "geography": "Cameroon is in Middle Africa and has coastal access. Its listed area is 475,442 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2113,7 +2113,7 @@
     "facts": [
       "Yaoundé is the capital city.",
       "Cameroon covers 475,442 km².",
-      "Cameroon is not classified as landlocked.",
+      "Cameroon has coastal access.",
       "It shares land borders with Central African Republic, Chad, Congo, Equatorial Guinea, Gabon and 1 more.",
       "Listed official languages include English, French.",
       "Its international calling code is +237.",
@@ -2139,7 +2139,7 @@
         "value": 17.124297974611395,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 41.8,
       "officialLanguages": [
         "English",
         "French"
@@ -2164,16 +2164,16 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Mount Logan",
-      "geography": "Canada is in North America. Its listed area is 9,984,670 km².",
+      "geography": "Canada is in North America and has coastal access. Its listed area is 9,984,670 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "UTC-8 to UTC-3:30",
+      "plugTypes": "Type A / B",
+      "tipping": "Customary in restaurants and service settings",
+      "emergencyNumbers": "911",
       "callingCode": "+1204"
     },
     "neighbors": [
@@ -2182,7 +2182,7 @@
     "facts": [
       "Ottawa is the capital city.",
       "Canada covers 9,984,670 km².",
-      "Canada is not classified as landlocked.",
+      "Canada has coastal access.",
       "It shares land borders with United States.",
       "Listed official languages include English, French.",
       "Its international calling code is +1204.",
@@ -2232,7 +2232,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Pico do Fogo",
-      "geography": "Cape Verde is in Western Africa. Its listed area is 4,033 km².",
+      "geography": "Cape Verde is an island or coastal profile in Western Africa. Its listed area is 4,033 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2248,8 +2248,8 @@
     "facts": [
       "Praia is the capital city.",
       "Cape Verde covers 4,033 km².",
-      "Cape Verde is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Cape Verde has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Portuguese.",
       "Its international calling code is +238.",
       "The latest published population in this atlas is 527.3K (2025).",
@@ -2446,7 +2446,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Ojos del Salado",
-      "geography": "Chile is in South America. Its listed area is 756,102 km².",
+      "geography": "Chile is in South America and has coastal access. Its listed area is 756,102 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2466,7 +2466,7 @@
     "facts": [
       "Santiago is the capital city.",
       "Chile covers 756,102 km².",
-      "Chile is not classified as landlocked.",
+      "Chile has coastal access.",
       "It shares land borders with Argentina, Bolivia, Peru.",
       "Listed official languages include Spanish.",
       "Its international calling code is +56.",
@@ -2492,7 +2492,7 @@
         "value": 33.65700896517281,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 39.8,
       "officialLanguages": [
         "Chinese"
       ],
@@ -2516,16 +2516,16 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Everest",
-      "geography": "China is in Eastern Asia. Its listed area is 9,706,961 km².",
+      "geography": "China is in Eastern Asia and has coastal access. Its listed area is 9,706,961 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "China Standard Time (UTC+8)",
+      "plugTypes": "Type A / C / I",
+      "tipping": "Not customary in most everyday settings",
+      "emergencyNumbers": "Police 110; ambulance 120; fire 119",
       "callingCode": "+86"
     },
     "neighbors": [
@@ -2547,8 +2547,8 @@
     "facts": [
       "Beijing is the capital city.",
       "China covers 9,706,961 km².",
-      "China is not classified as landlocked.",
-      "It shares land borders with Afghanistan, Bhutan, Myanmar, India, Kazakhstan and 9 more.",
+      "China has coastal access.",
+      "It shares land borders with Afghanistan, Bhutan, Myanmar, Hong Kong, India and 11 more.",
       "Listed official languages include Chinese.",
       "Its international calling code is +86.",
       "The latest published population in this atlas is 1.4B (2025).",
@@ -2597,7 +2597,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Pico Cristóbal Colón",
-      "geography": "Colombia is in South America. Its listed area is 1,141,748 km².",
+      "geography": "Colombia is in South America and has coastal access. Its listed area is 1,141,748 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2619,7 +2619,7 @@
     "facts": [
       "Bogotá is the capital city.",
       "Colombia covers 1,141,748 km².",
-      "Colombia is not classified as landlocked.",
+      "Colombia has coastal access.",
       "It shares land borders with Brazil, Ecuador, Panama, Peru, Venezuela.",
       "Listed official languages include Spanish.",
       "Its international calling code is +57.",
@@ -2671,7 +2671,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Karthala",
-      "geography": "Comoros is in Eastern Africa. Its listed area is 1,862 km².",
+      "geography": "Comoros is an island or coastal profile in Eastern Africa. Its listed area is 1,862 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2687,8 +2687,8 @@
     "facts": [
       "Moroni is the capital city.",
       "Comoros covers 1,862 km².",
-      "Comoros is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Comoros has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Arabic, French, Comorian.",
       "Its international calling code is +269.",
       "The latest published population in this atlas is 882.8K (2025).",
@@ -2739,7 +2739,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mont Nabemba",
-      "geography": "Congo is in Middle Africa. Its listed area is 342,000 km².",
+      "geography": "Congo is in Middle Africa and has coastal access. Its listed area is 342,000 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2761,7 +2761,7 @@
     "facts": [
       "Brazzaville is the capital city.",
       "Congo covers 342,000 km².",
-      "Congo is not classified as landlocked.",
+      "Congo has coastal access.",
       "It shares land borders with Angola, Cameroon, Central African Republic, DR Congo, Gabon.",
       "Listed official languages include French, Kikongo, Lingala.",
       "Its international calling code is +242.",
@@ -2806,7 +2806,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Te Manga",
-      "geography": "Cook Islands is in Polynesia. Its listed area is 236 km².",
+      "geography": "Cook Islands is an island or coastal profile in Polynesia. Its listed area is 236 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2822,8 +2822,8 @@
     "facts": [
       "Avarua is the capital city.",
       "Cook Islands covers 236 km².",
-      "Cook Islands is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Cook Islands has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Cook Islands Māori.",
       "Its international calling code is +682.",
       "The listed currency code is CKD."
@@ -2871,7 +2871,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Cerro Chirripó",
-      "geography": "Costa Rica is in Central America. Its listed area is 51,100 km².",
+      "geography": "Costa Rica is in Central America and has coastal access. Its listed area is 51,100 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2890,7 +2890,7 @@
     "facts": [
       "San José is the capital city.",
       "Costa Rica covers 51,100 km².",
-      "Costa Rica is not classified as landlocked.",
+      "Costa Rica has coastal access.",
       "It shares land borders with Nicaragua, Panama.",
       "Listed official languages include Spanish.",
       "Its international calling code is +506.",
@@ -2940,7 +2940,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Dinara",
-      "geography": "Croatia is in Southeast Europe. Its listed area is 56,594 km².",
+      "geography": "Croatia is in Southeast Europe and has coastal access. Its listed area is 56,594 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -2962,7 +2962,7 @@
     "facts": [
       "Zagreb is the capital city.",
       "Croatia covers 56,594 km².",
-      "Croatia is not classified as landlocked.",
+      "Croatia has coastal access.",
       "It shares land borders with Bosnia and Herzegovina, Hungary, Montenegro, Serbia, Slovenia.",
       "Listed official languages include Croatian.",
       "Its international calling code is +385.",
@@ -3012,7 +3012,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Pico Turquino",
-      "geography": "Cuba is in Caribbean. Its listed area is 109,884 km².",
+      "geography": "Cuba is an island or coastal profile in Caribbean. Its listed area is 109,884 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3028,8 +3028,8 @@
     "facts": [
       "Havana is the capital city.",
       "Cuba covers 109,884 km².",
-      "Cuba is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Cuba has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Spanish.",
       "Its international calling code is +53.",
       "The latest published population in this atlas is 10.9M (2025).",
@@ -3079,7 +3079,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Olympus",
-      "geography": "Cyprus is in Southern Europe. Its listed area is 9,251 km².",
+      "geography": "Cyprus is an island or coastal profile in Southern Europe. Its listed area is 9,251 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3095,8 +3095,8 @@
     "facts": [
       "Nicosia is the capital city.",
       "Cyprus covers 9,251 km².",
-      "Cyprus is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Cyprus has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Greek, Turkish.",
       "Its international calling code is +357.",
       "The latest published population in this atlas is 1.4M (2025).",
@@ -3217,7 +3217,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Møllehøj",
-      "geography": "Denmark is in Northern Europe. Its listed area is 43,094 km².",
+      "geography": "Denmark is in Northern Europe and has coastal access. Its listed area is 43,094 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3235,7 +3235,7 @@
     "facts": [
       "Copenhagen is the capital city.",
       "Denmark covers 43,094 km².",
-      "Denmark is not classified as landlocked.",
+      "Denmark has coastal access.",
       "It shares land borders with Germany.",
       "Listed official languages include Danish.",
       "Its international calling code is +45.",
@@ -3286,7 +3286,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mousa Ali",
-      "geography": "Djibouti is in Eastern Africa. Its listed area is 23,200 km².",
+      "geography": "Djibouti is in Eastern Africa and has coastal access. Its listed area is 23,200 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3306,7 +3306,7 @@
     "facts": [
       "Djibouti is the capital city.",
       "Djibouti covers 23,200 km².",
-      "Djibouti is not classified as landlocked.",
+      "Djibouti has coastal access.",
       "It shares land borders with Eritrea, Ethiopia, Somalia.",
       "Listed official languages include Arabic, French.",
       "Its international calling code is +253.",
@@ -3356,7 +3356,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Morne Diablotins",
-      "geography": "Dominica is in Caribbean. Its listed area is 751 km².",
+      "geography": "Dominica is an island or coastal profile in Caribbean. Its listed area is 751 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3372,8 +3372,8 @@
     "facts": [
       "Roseau is the capital city.",
       "Dominica covers 751 km².",
-      "Dominica is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Dominica has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +1767.",
       "The latest published population in this atlas is 65.9K (2025).",
@@ -3422,7 +3422,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Pico Duarte",
-      "geography": "Dominican Republic is in Caribbean. Its listed area is 48,671 km².",
+      "geography": "Dominican Republic is in Caribbean and has coastal access. Its listed area is 48,671 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3440,7 +3440,7 @@
     "facts": [
       "Santo Domingo is the capital city.",
       "Dominican Republic covers 48,671 km².",
-      "Dominican Republic is not classified as landlocked.",
+      "Dominican Republic has coastal access.",
       "It shares land borders with Haiti.",
       "Listed official languages include Spanish.",
       "Its international calling code is +1809.",
@@ -3494,7 +3494,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Stanley",
-      "geography": "DR Congo is in Middle Africa. Its listed area is 2,344,858 km².",
+      "geography": "DR Congo is in Middle Africa and has coastal access. Its listed area is 2,344,858 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3520,7 +3520,7 @@
     "facts": [
       "Kinshasa is the capital city.",
       "DR Congo covers 2,344,858 km².",
-      "DR Congo is not classified as landlocked.",
+      "DR Congo has coastal access.",
       "It shares land borders with Angola, Burundi, Central African Republic, Congo, Rwanda and 4 more.",
       "Listed official languages include French, Kikongo, Lingala, Tshiluba.",
       "Its international calling code is +243.",
@@ -3570,7 +3570,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Chimborazo",
-      "geography": "Ecuador is in South America. Its listed area is 276,841 km².",
+      "geography": "Ecuador is in South America and has coastal access. Its listed area is 276,841 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3589,7 +3589,7 @@
     "facts": [
       "Quito is the capital city.",
       "Ecuador covers 276,841 km².",
-      "Ecuador is not classified as landlocked.",
+      "Ecuador has coastal access.",
       "It shares land borders with Colombia, Peru.",
       "Listed official languages include Spanish.",
       "Its international calling code is +593.",
@@ -3639,7 +3639,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Catherine",
-      "geography": "Egypt is in Northern Africa. Its listed area is 1,002,450 km².",
+      "geography": "Egypt is in Northern Africa and has coastal access. Its listed area is 1,002,450 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3660,7 +3660,7 @@
     "facts": [
       "Cairo is the capital city.",
       "Egypt covers 1,002,450 km².",
-      "Egypt is not classified as landlocked.",
+      "Egypt has coastal access.",
       "It shares land borders with Israel, Libya, Palestine, Sudan.",
       "Listed official languages include Arabic.",
       "Its international calling code is +20.",
@@ -3710,7 +3710,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Cerro El Pital",
-      "geography": "El Salvador is in Central America. Its listed area is 21,041 km².",
+      "geography": "El Salvador is in Central America and has coastal access. Its listed area is 21,041 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3729,7 +3729,7 @@
     "facts": [
       "San Salvador is the capital city.",
       "El Salvador covers 21,041 km².",
-      "El Salvador is not classified as landlocked.",
+      "El Salvador has coastal access.",
       "It shares land borders with Guatemala, Honduras.",
       "Listed official languages include Spanish.",
       "Its international calling code is +503.",
@@ -3781,7 +3781,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Pico Basilé",
-      "geography": "Equatorial Guinea is in Middle Africa. Its listed area is 28,051 km².",
+      "geography": "Equatorial Guinea is in Middle Africa and has coastal access. Its listed area is 28,051 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3800,7 +3800,7 @@
     "facts": [
       "Malabo is the capital city.",
       "Equatorial Guinea covers 28,051 km².",
-      "Equatorial Guinea is not classified as landlocked.",
+      "Equatorial Guinea has coastal access.",
       "It shares land borders with Cameroon, Gabon.",
       "Listed official languages include French, Portuguese, Spanish.",
       "Its international calling code is +240.",
@@ -3852,7 +3852,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Emba Soira",
-      "geography": "Eritrea is in Eastern Africa. Its listed area is 117,600 km².",
+      "geography": "Eritrea is in Eastern Africa and has coastal access. Its listed area is 117,600 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3872,7 +3872,7 @@
     "facts": [
       "Asmara is the capital city.",
       "Eritrea covers 117,600 km².",
-      "Eritrea is not classified as landlocked.",
+      "Eritrea has coastal access.",
       "It shares land borders with Djibouti, Ethiopia, Sudan.",
       "Listed official languages include Arabic, English, Tigrinya.",
       "Its international calling code is +291.",
@@ -3922,7 +3922,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Suur Munamägi",
-      "geography": "Estonia is in Northern Europe. Its listed area is 45,227 km².",
+      "geography": "Estonia is in Northern Europe and has coastal access. Its listed area is 45,227 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -3941,7 +3941,7 @@
     "facts": [
       "Tallinn is the capital city.",
       "Estonia covers 45,227 km².",
-      "Estonia is not classified as landlocked.",
+      "Estonia has coastal access.",
       "It shares land borders with Latvia, Russia.",
       "Listed official languages include Estonian.",
       "Its international calling code is +372.",
@@ -4136,7 +4136,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Tomanivi",
-      "geography": "Fiji is in Melanesia. Its listed area is 18,272 km².",
+      "geography": "Fiji is an island or coastal profile in Melanesia. Its listed area is 18,272 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4152,8 +4152,8 @@
     "facts": [
       "Suva is the capital city.",
       "Fiji covers 18,272 km².",
-      "Fiji is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Fiji has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Fijian, Fiji Hindi.",
       "Its international calling code is +679.",
       "The latest published population in this atlas is 933.2K (2025).",
@@ -4203,7 +4203,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Halti",
-      "geography": "Finland is in Northern Europe. Its listed area is 338,424 km².",
+      "geography": "Finland is in Northern Europe and has coastal access. Its listed area is 338,424 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4223,7 +4223,7 @@
     "facts": [
       "Helsinki is the capital city.",
       "Finland covers 338,424 km².",
-      "Finland is not classified as landlocked.",
+      "Finland has coastal access.",
       "It shares land borders with Norway, Sweden, Russia.",
       "Listed official languages include Finnish, Swedish.",
       "Its international calling code is +358.",
@@ -4249,7 +4249,7 @@
         "value": 21.155034943641596,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 42.3,
       "officialLanguages": [
         "French"
       ],
@@ -4273,16 +4273,16 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Mont Blanc",
-      "geography": "France is in Western Europe. Its listed area is 551,695 km².",
+      "geography": "France is in Western Europe and has coastal access. Its listed area is 551,695 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "UTC+1 / UTC+2 in mainland France",
+      "plugTypes": "Type C / E",
+      "tipping": "Service is usually included; small rounding is common",
+      "emergencyNumbers": "112; ambulance 15; police 17; fire 18",
       "callingCode": "+33"
     },
     "neighbors": [
@@ -4298,7 +4298,7 @@
     "facts": [
       "Paris is the capital city.",
       "France covers 551,695 km².",
-      "France is not classified as landlocked.",
+      "France has coastal access.",
       "It shares land borders with Andorra, Belgium, Germany, Italy, Luxembourg and 3 more.",
       "Listed official languages include French.",
       "Its international calling code is +33.",
@@ -4348,7 +4348,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mont Bengoué",
-      "geography": "Gabon is in Middle Africa. Its listed area is 267,668 km².",
+      "geography": "Gabon is in Middle Africa and has coastal access. Its listed area is 267,668 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4368,7 +4368,7 @@
     "facts": [
       "Libreville is the capital city.",
       "Gabon covers 267,668 km².",
-      "Gabon is not classified as landlocked.",
+      "Gabon has coastal access.",
       "It shares land borders with Cameroon, Congo, Equatorial Guinea.",
       "Listed official languages include French.",
       "Its international calling code is +241.",
@@ -4418,7 +4418,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": null,
-      "geography": "Gambia is in Western Africa. Its listed area is 10,689 km².",
+      "geography": "Gambia is in Western Africa and has coastal access. Its listed area is 10,689 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4436,7 +4436,7 @@
     "facts": [
       "Banjul is the capital city.",
       "Gambia covers 10,689 km².",
-      "Gambia is not classified as landlocked.",
+      "Gambia has coastal access.",
       "It shares land borders with Senegal.",
       "Listed official languages include English.",
       "Its international calling code is +220.",
@@ -4486,7 +4486,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Shkhara",
-      "geography": "Georgia is in Western Asia. Its listed area is 69,700 km².",
+      "geography": "Georgia is in Western Asia and has coastal access. Its listed area is 69,700 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4507,7 +4507,7 @@
     "facts": [
       "Tbilisi is the capital city.",
       "Georgia covers 69,700 km².",
-      "Georgia is not classified as landlocked.",
+      "Georgia has coastal access.",
       "It shares land borders with Armenia, Azerbaijan, Russia, Türkiye.",
       "Listed official languages include Georgian.",
       "Its international calling code is +995.",
@@ -4533,7 +4533,7 @@
         "value": 17.861777946380002,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 45.5,
       "officialLanguages": [
         "German"
       ],
@@ -4557,16 +4557,16 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Zugspitze",
-      "geography": "Germany is in Western Europe. Its listed area is 357,114 km².",
+      "geography": "Germany is in Western Europe and has coastal access. Its listed area is 357,114 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "UTC+1 / UTC+2",
+      "plugTypes": "Type C / F",
+      "tipping": "Optional; rounding up or 5–10% is common",
+      "emergencyNumbers": "112; police 110",
       "callingCode": "+49"
     },
     "neighbors": [
@@ -4583,7 +4583,7 @@
     "facts": [
       "Berlin is the capital city.",
       "Germany covers 357,114 km².",
-      "Germany is not classified as landlocked.",
+      "Germany has coastal access.",
       "It shares land borders with Austria, Belgium, Czechia, Denmark, France and 4 more.",
       "Listed official languages include German.",
       "Its international calling code is +49.",
@@ -4633,7 +4633,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Afadja",
-      "geography": "Ghana is in Western Africa. Its listed area is 238,533 km².",
+      "geography": "Ghana is in Western Africa and has coastal access. Its listed area is 238,533 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4653,7 +4653,7 @@
     "facts": [
       "Accra is the capital city.",
       "Ghana covers 238,533 km².",
-      "Ghana is not classified as landlocked.",
+      "Ghana has coastal access.",
       "It shares land borders with Burkina Faso, Ivory Coast, Togo.",
       "Listed official languages include English.",
       "Its international calling code is +233.",
@@ -4703,7 +4703,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Olympus",
-      "geography": "Greece is in Southern Europe. Its listed area is 131,990 km².",
+      "geography": "Greece is in Southern Europe and has coastal access. Its listed area is 131,990 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4724,7 +4724,7 @@
     "facts": [
       "Athens is the capital city.",
       "Greece covers 131,990 km².",
-      "Greece is not classified as landlocked.",
+      "Greece has coastal access.",
       "It shares land borders with Albania, Bulgaria, Türkiye, North Macedonia.",
       "Listed official languages include Greek.",
       "Its international calling code is +30.",
@@ -4774,7 +4774,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Saint Catherine",
-      "geography": "Grenada is in Caribbean. Its listed area is 344 km².",
+      "geography": "Grenada is an island or coastal profile in Caribbean. Its listed area is 344 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4790,8 +4790,8 @@
     "facts": [
       "St. George's is the capital city.",
       "Grenada covers 344 km².",
-      "Grenada is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Grenada has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +1473.",
       "The latest published population in this atlas is 117.3K (2025).",
@@ -4840,7 +4840,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Volcán Tajumulco",
-      "geography": "Guatemala is in Central America. Its listed area is 108,889 km².",
+      "geography": "Guatemala is in Central America and has coastal access. Its listed area is 108,889 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4861,7 +4861,7 @@
     "facts": [
       "Guatemala City is the capital city.",
       "Guatemala covers 108,889 km².",
-      "Guatemala is not classified as landlocked.",
+      "Guatemala has coastal access.",
       "It shares land borders with Belize, El Salvador, Honduras, Mexico.",
       "Listed official languages include Spanish.",
       "Its international calling code is +502.",
@@ -4911,7 +4911,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Richard-Molard",
-      "geography": "Guinea is in Western Africa. Its listed area is 245,857 km².",
+      "geography": "Guinea is in Western Africa and has coastal access. Its listed area is 245,857 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -4934,7 +4934,7 @@
     "facts": [
       "Conakry is the capital city.",
       "Guinea covers 245,857 km².",
-      "Guinea is not classified as landlocked.",
+      "Guinea has coastal access.",
       "It shares land borders with Ivory Coast, Guinea-Bissau, Liberia, Mali, Senegal and 1 more.",
       "Listed official languages include French.",
       "Its international calling code is +224.",
@@ -4985,7 +4985,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Monte Torin",
-      "geography": "Guinea-Bissau is in Western Africa. Its listed area is 36,125 km².",
+      "geography": "Guinea-Bissau is in Western Africa and has coastal access. Its listed area is 36,125 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5004,7 +5004,7 @@
     "facts": [
       "Bissau is the capital city.",
       "Guinea-Bissau covers 36,125 km².",
-      "Guinea-Bissau is not classified as landlocked.",
+      "Guinea-Bissau has coastal access.",
       "It shares land borders with Guinea, Senegal.",
       "Listed official languages include Portuguese, Upper Guinea Creole.",
       "Its international calling code is +245.",
@@ -5054,7 +5054,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Roraima",
-      "geography": "Guyana is in South America. Its listed area is 214,969 km².",
+      "geography": "Guyana is in South America and has coastal access. Its listed area is 214,969 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5074,7 +5074,7 @@
     "facts": [
       "Georgetown is the capital city.",
       "Guyana covers 214,969 km².",
-      "Guyana is not classified as landlocked.",
+      "Guyana has coastal access.",
       "It shares land borders with Brazil, Suriname, Venezuela.",
       "Listed official languages include English.",
       "Its international calling code is +592.",
@@ -5125,7 +5125,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Peak la Selle",
-      "geography": "Haiti is in Caribbean. Its listed area is 27,750 km².",
+      "geography": "Haiti is in Caribbean and has coastal access. Its listed area is 27,750 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5143,7 +5143,7 @@
     "facts": [
       "Port-au-Prince is the capital city.",
       "Haiti covers 27,750 km².",
-      "Haiti is not classified as landlocked.",
+      "Haiti has coastal access.",
       "It shares land borders with Dominican Republic.",
       "Listed official languages include French, Haitian Creole.",
       "Its international calling code is +509.",
@@ -5193,7 +5193,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Cerro Las Minas",
-      "geography": "Honduras is in Central America. Its listed area is 112,492 km².",
+      "geography": "Honduras is in Central America and has coastal access. Its listed area is 112,492 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5213,7 +5213,7 @@
     "facts": [
       "Tegucigalpa is the capital city.",
       "Honduras covers 112,492 km².",
-      "Honduras is not classified as landlocked.",
+      "Honduras has coastal access.",
       "It shares land borders with Guatemala, El Salvador, Nicaragua.",
       "Listed official languages include Spanish.",
       "Its international calling code is +504.",
@@ -5337,7 +5337,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Hvannadalshnúkur",
-      "geography": "Iceland is in Northern Europe. Its listed area is 103,000 km².",
+      "geography": "Iceland is an island or coastal profile in Northern Europe. Its listed area is 103,000 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5353,8 +5353,8 @@
     "facts": [
       "Reykjavik is the capital city.",
       "Iceland covers 103,000 km².",
-      "Iceland is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Iceland is an island profile with no land borders.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Icelandic.",
       "Its international calling code is +354.",
       "The latest published population in this atlas is 392.4K (2025).",
@@ -5379,7 +5379,7 @@
         "value": 64.31084422760401,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 28.8,
       "officialLanguages": [
         "English",
         "Hindi",
@@ -5405,16 +5405,16 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Kanchenjunga",
-      "geography": "India is in Southern Asia. Its listed area is 3,287,590 km².",
+      "geography": "India is in Southern Asia and has coastal access. Its listed area is 3,287,590 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Left",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "India Standard Time (UTC+5:30)",
+      "plugTypes": "Type C / D / M",
+      "tipping": "Common in hospitality and personal services",
+      "emergencyNumbers": "112 national emergency; ambulance 108 in many states",
       "callingCode": "+91"
     },
     "neighbors": [
@@ -5428,7 +5428,7 @@
     "facts": [
       "New Delhi is the capital city.",
       "India covers 3,287,590 km².",
-      "India is not classified as landlocked.",
+      "India has coastal access.",
       "It shares land borders with Bangladesh, Bhutan, Myanmar, China, Nepal and 1 more.",
       "Listed official languages include English, Hindi, Tamil.",
       "Its international calling code is +91.",
@@ -5478,7 +5478,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Puncak Jaya",
-      "geography": "Indonesia is in South-Eastern Asia. Its listed area is 1,904,569 km².",
+      "geography": "Indonesia is in South-Eastern Asia and has coastal access. Its listed area is 1,904,569 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5498,7 +5498,7 @@
     "facts": [
       "Jakarta is the capital city.",
       "Indonesia covers 1,904,569 km².",
-      "Indonesia is not classified as landlocked.",
+      "Indonesia has coastal access.",
       "It shares land borders with Timor-Leste, Malaysia, Papua New Guinea.",
       "Listed official languages include Indonesian.",
       "Its international calling code is +62.",
@@ -5548,7 +5548,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Damavand",
-      "geography": "Iran is in Southern Asia. Its listed area is 1,648,195 km².",
+      "geography": "Iran is in Southern Asia and has coastal access. Its listed area is 1,648,195 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5572,7 +5572,7 @@
     "facts": [
       "Tehran is the capital city.",
       "Iran covers 1,648,195 km².",
-      "Iran is not classified as landlocked.",
+      "Iran has coastal access.",
       "It shares land borders with Afghanistan, Armenia, Azerbaijan, Iraq, Pakistan and 2 more.",
       "Listed official languages include Persian (Farsi).",
       "Its international calling code is +98.",
@@ -5624,7 +5624,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Cheekha Dar",
-      "geography": "Iraq is in Western Asia. Its listed area is 438,317 km².",
+      "geography": "Iraq is in Western Asia and has coastal access. Its listed area is 438,317 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5647,7 +5647,7 @@
     "facts": [
       "Baghdad is the capital city.",
       "Iraq covers 438,317 km².",
-      "Iraq is not classified as landlocked.",
+      "Iraq has coastal access.",
       "It shares land borders with Iran, Jordan, Kuwait, Saudi Arabia, Syria and 1 more.",
       "Listed official languages include Arabic, Aramaic, Sorani.",
       "Its international calling code is +964.",
@@ -5698,7 +5698,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Carrauntoohil",
-      "geography": "Ireland is in Northern Europe. Its listed area is 70,273 km².",
+      "geography": "Ireland is in Northern Europe and has coastal access. Its listed area is 70,273 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5716,7 +5716,7 @@
     "facts": [
       "Dublin is the capital city.",
       "Ireland covers 70,273 km².",
-      "Ireland is not classified as landlocked.",
+      "Ireland has coastal access.",
       "It shares land borders with United Kingdom.",
       "Listed official languages include English, Irish.",
       "Its international calling code is +353.",
@@ -5767,7 +5767,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Meron",
-      "geography": "Israel is in Western Asia. Its listed area is 20,770 km².",
+      "geography": "Israel is in Western Asia and has coastal access. Its listed area is 20,770 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5789,7 +5789,7 @@
     "facts": [
       "Jerusalem is the capital city.",
       "Israel covers 20,770 km².",
-      "Israel is not classified as landlocked.",
+      "Israel has coastal access.",
       "It shares land borders with Egypt, Jordan, Lebanon, Palestine, Syria.",
       "Listed official languages include Arabic, Hebrew.",
       "Its international calling code is +972.",
@@ -5815,7 +5815,7 @@
         "value": 30.319138198321994,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 48.4,
       "officialLanguages": [
         "Italian"
       ],
@@ -5839,16 +5839,16 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mont Blanc",
-      "geography": "Italy is in Southern Europe. Its listed area is 301,336 km².",
+      "geography": "Italy is in Southern Europe and has coastal access. Its listed area is 301,336 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "UTC+1 / UTC+2",
+      "plugTypes": "Type C / F / L",
+      "tipping": "Optional; small rounding or a modest tip is common",
+      "emergencyNumbers": "112",
       "callingCode": "+39"
     },
     "neighbors": [
@@ -5862,7 +5862,7 @@
     "facts": [
       "Rome is the capital city.",
       "Italy covers 301,336 km².",
-      "Italy is not classified as landlocked.",
+      "Italy has coastal access.",
       "It shares land borders with Austria, France, San Marino, Slovenia, Switzerland and 1 more.",
       "Listed official languages include Italian.",
       "Its international calling code is +39.",
@@ -5912,7 +5912,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Richard-Molard",
-      "geography": "Ivory Coast is in Western Africa. Its listed area is 322,463 km².",
+      "geography": "Ivory Coast is in Western Africa and has coastal access. Its listed area is 322,463 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -5934,7 +5934,7 @@
     "facts": [
       "Yamoussoukro is the capital city.",
       "Ivory Coast covers 322,463 km².",
-      "Ivory Coast is not classified as landlocked.",
+      "Ivory Coast has coastal access.",
       "It shares land borders with Burkina Faso, Ghana, Guinea, Liberia, Mali.",
       "Listed official languages include French.",
       "Its international calling code is +225.",
@@ -5985,7 +5985,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Blue Mountain Peak",
-      "geography": "Jamaica is in Caribbean. Its listed area is 10,991 km².",
+      "geography": "Jamaica is an island or coastal profile in Caribbean. Its listed area is 10,991 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -6001,8 +6001,8 @@
     "facts": [
       "Kingston is the capital city.",
       "Jamaica covers 10,991 km².",
-      "Jamaica is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Jamaica has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Jamaican Patois.",
       "Its international calling code is +1876.",
       "The latest published population in this atlas is 2.8M (2025).",
@@ -6027,7 +6027,7 @@
         "value": 7.699855057921397,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 49.9,
       "officialLanguages": [
         "Japanese"
       ],
@@ -6051,24 +6051,24 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Fuji",
-      "geography": "Japan is in Eastern Asia. Its listed area is 377,930 km².",
-      "majorRivers": null,
-      "naturalResources": null
+      "geography": "Japan is an island nation in Eastern Asia made up of four main islands and many smaller islands. Its listed area is 377,930 km².",
+      "majorRivers": "Shinano, Tone, Ishikari",
+      "naturalResources": "Fish, forests, and limited mineral resources"
     },
     "dailyLife": {
       "drivingSide": "Left",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "Japan Standard Time (UTC+9)",
+      "plugTypes": "Type A / B",
+      "tipping": "Not customary; service is normally included",
+      "emergencyNumbers": "Police 110; fire/ambulance 119; coast guard 118",
       "callingCode": "+81"
     },
     "neighbors": [],
     "facts": [
       "Tokyo is the capital city.",
       "Japan covers 377,930 km².",
-      "Japan is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Japan is an island nation with no land borders.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Japanese.",
       "Its international calling code is +81.",
       "The latest published population in this atlas is 123.4M (2025).",
@@ -6117,7 +6117,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Jabal Umm ad Dami",
-      "geography": "Jordan is in Western Asia. Its listed area is 89,342 km².",
+      "geography": "Jordan is in Western Asia and has coastal access. Its listed area is 89,342 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -6139,7 +6139,7 @@
     "facts": [
       "Amman is the capital city.",
       "Jordan covers 89,342 km².",
-      "Jordan is not classified as landlocked.",
+      "Jordan has coastal access.",
       "It shares land borders with Iraq, Israel, Palestine, Saudi Arabia, Syria.",
       "Listed official languages include Arabic.",
       "Its international calling code is +962.",
@@ -6263,7 +6263,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Kenya",
-      "geography": "Kenya is in Eastern Africa. Its listed area is 580,367 km².",
+      "geography": "Kenya is in Eastern Africa and has coastal access. Its listed area is 580,367 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -6285,7 +6285,7 @@
     "facts": [
       "Nairobi is the capital city.",
       "Kenya covers 580,367 km².",
-      "Kenya is not classified as landlocked.",
+      "Kenya has coastal access.",
       "It shares land borders with Ethiopia, Somalia, South Sudan, Tanzania, Uganda.",
       "Listed official languages include English, Swahili.",
       "Its international calling code is +254.",
@@ -6336,7 +6336,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Banaba Island",
-      "geography": "Kiribati is in Micronesia. Its listed area is 811 km².",
+      "geography": "Kiribati is an island or coastal profile in Micronesia. Its listed area is 811 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -6352,8 +6352,8 @@
     "facts": [
       "South Tarawa is the capital city.",
       "Kiribati covers 811 km².",
-      "Kiribati is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Kiribati has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Gilbertese.",
       "Its international calling code is +686.",
       "The latest published population in this atlas is 136.5K (2025).",
@@ -6467,7 +6467,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mutla Ridge",
-      "geography": "Kuwait is in Western Asia. Its listed area is 17,818 km².",
+      "geography": "Kuwait is in Western Asia and has coastal access. Its listed area is 17,818 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -6486,7 +6486,7 @@
     "facts": [
       "Kuwait City is the capital city.",
       "Kuwait covers 17,818 km².",
-      "Kuwait is not classified as landlocked.",
+      "Kuwait has coastal access.",
       "It shares land borders with Iraq, Saudi Arabia.",
       "Listed official languages include Arabic.",
       "Its international calling code is +965.",
@@ -6680,7 +6680,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Gaiziņkalns",
-      "geography": "Latvia is in Northern Europe. Its listed area is 64,559 km².",
+      "geography": "Latvia is in Northern Europe and has coastal access. Its listed area is 64,559 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -6701,7 +6701,7 @@
     "facts": [
       "Riga is the capital city.",
       "Latvia covers 64,559 km².",
-      "Latvia is not classified as landlocked.",
+      "Latvia has coastal access.",
       "It shares land borders with Belarus, Estonia, Lithuania, Russia.",
       "Listed official languages include Latvian.",
       "Its international calling code is +371.",
@@ -6752,7 +6752,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Qurnat as Sawda'",
-      "geography": "Lebanon is in Western Asia. Its listed area is 10,452 km².",
+      "geography": "Lebanon is in Western Asia and has coastal access. Its listed area is 10,452 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -6771,7 +6771,7 @@
     "facts": [
       "Beirut is the capital city.",
       "Lebanon covers 10,452 km².",
-      "Lebanon is not classified as landlocked.",
+      "Lebanon has coastal access.",
       "It shares land borders with Israel, Syria.",
       "Listed official languages include Arabic, French.",
       "Its international calling code is +961.",
@@ -6890,7 +6890,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Wuteve",
-      "geography": "Liberia is in Western Africa. Its listed area is 111,369 km².",
+      "geography": "Liberia is in Western Africa and has coastal access. Its listed area is 111,369 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -6910,7 +6910,7 @@
     "facts": [
       "Monrovia is the capital city.",
       "Liberia covers 111,369 km².",
-      "Liberia is not classified as landlocked.",
+      "Liberia has coastal access.",
       "It shares land borders with Guinea, Ivory Coast, Sierra Leone.",
       "Listed official languages include English.",
       "Its international calling code is +231.",
@@ -6960,7 +6960,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Bikku Bitti",
-      "geography": "Libya is in Northern Africa. Its listed area is 1,759,540 km².",
+      "geography": "Libya is in Northern Africa and has coastal access. Its listed area is 1,759,540 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -6983,7 +6983,7 @@
     "facts": [
       "Tripoli is the capital city.",
       "Libya covers 1,759,540 km².",
-      "Libya is not classified as landlocked.",
+      "Libya has coastal access.",
       "It shares land borders with Algeria, Chad, Egypt, Niger, Sudan and 1 more.",
       "Listed official languages include Arabic.",
       "Its international calling code is +218.",
@@ -7102,7 +7102,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Aukštojas Hill",
-      "geography": "Lithuania is in Northern Europe. Its listed area is 65,300 km².",
+      "geography": "Lithuania is in Northern Europe and has coastal access. Its listed area is 65,300 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -7123,7 +7123,7 @@
     "facts": [
       "Vilnius is the capital city.",
       "Lithuania covers 65,300 km².",
-      "Lithuania is not classified as landlocked.",
+      "Lithuania has coastal access.",
       "It shares land borders with Belarus, Latvia, Poland, Russia.",
       "Listed official languages include Lithuanian.",
       "Its international calling code is +370.",
@@ -7246,7 +7246,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Maromokotro",
-      "geography": "Madagascar is in Eastern Africa. Its listed area is 587,041 km².",
+      "geography": "Madagascar is an island or coastal profile in Eastern Africa. Its listed area is 587,041 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -7262,8 +7262,8 @@
     "facts": [
       "Antananarivo is the capital city.",
       "Madagascar covers 587,041 km².",
-      "Madagascar is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Madagascar has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include French, Malagasy.",
       "Its international calling code is +261.",
       "The latest published population in this atlas is 32.7M (2025).",
@@ -7384,7 +7384,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Kinabalu",
-      "geography": "Malaysia is in South-Eastern Asia. Its listed area is 330,803 km².",
+      "geography": "Malaysia is in South-Eastern Asia and has coastal access. Its listed area is 330,803 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -7404,7 +7404,7 @@
     "facts": [
       "Kuala Lumpur is the capital city.",
       "Malaysia covers 330,803 km².",
-      "Malaysia is not classified as landlocked.",
+      "Malaysia has coastal access.",
       "It shares land borders with Brunei, Indonesia, Thailand.",
       "Listed official languages include English, Malay.",
       "Its international calling code is +60.",
@@ -7454,7 +7454,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Addu City",
-      "geography": "Maldives is in Southern Asia. Its listed area is 300 km².",
+      "geography": "Maldives is an island or coastal profile in Southern Asia. Its listed area is 300 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -7470,8 +7470,8 @@
     "facts": [
       "Malé is the capital city.",
       "Maldives covers 300 km².",
-      "Maldives is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Maldives is an island profile with no land borders.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Maldivian.",
       "Its international calling code is +960.",
       "The latest published population in this atlas is 529.7K (2025).",
@@ -7595,7 +7595,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Ta' Dmejrek",
-      "geography": "Malta is in Southern Europe. Its listed area is 316 km².",
+      "geography": "Malta is an island or coastal profile in Southern Europe. Its listed area is 316 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -7611,8 +7611,8 @@
     "facts": [
       "Valletta is the capital city.",
       "Malta covers 316 km².",
-      "Malta is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Malta has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Maltese.",
       "Its international calling code is +356.",
       "The latest published population in this atlas is 579.7K (2025).",
@@ -7662,7 +7662,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Likiep Atoll",
-      "geography": "Marshall Islands is in Micronesia. Its listed area is 181 km².",
+      "geography": "Marshall Islands is an island or coastal profile in Micronesia. Its listed area is 181 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -7678,8 +7678,8 @@
     "facts": [
       "Majuro is the capital city.",
       "Marshall Islands covers 181 km².",
-      "Marshall Islands is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Marshall Islands has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Marshallese.",
       "Its international calling code is +692.",
       "The latest published population in this atlas is 36.3K (2025).",
@@ -7728,7 +7728,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Kediet ej Jill",
-      "geography": "Mauritania is in Western Africa. Its listed area is 1,030,700 km².",
+      "geography": "Mauritania is in Western Africa and has coastal access. Its listed area is 1,030,700 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -7748,8 +7748,8 @@
     "facts": [
       "Nouakchott is the capital city.",
       "Mauritania covers 1,030,700 km².",
-      "Mauritania is not classified as landlocked.",
-      "It shares land borders with Algeria, Mali, Senegal.",
+      "Mauritania has coastal access.",
+      "It shares land borders with Algeria, Mali, Senegal, ESH.",
       "Listed official languages include Arabic.",
       "Its international calling code is +222.",
       "The latest published population in this atlas is 5.3M (2025).",
@@ -7800,7 +7800,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Piton de la Petite Rivière Noire",
-      "geography": "Mauritius is in Eastern Africa. Its listed area is 2,040 km².",
+      "geography": "Mauritius is an island or coastal profile in Eastern Africa. Its listed area is 2,040 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -7816,8 +7816,8 @@
     "facts": [
       "Port Louis is the capital city.",
       "Mauritius covers 2,040 km².",
-      "Mauritius is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Mauritius has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, French, Mauritian Creole.",
       "Its international calling code is +230.",
       "The latest published population in this atlas is 1.2M (2025).",
@@ -7842,7 +7842,7 @@
         "value": 19.9591069370277,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 30.6,
       "officialLanguages": [
         "Spanish"
       ],
@@ -7866,16 +7866,16 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Citlaltepetl",
-      "geography": "Mexico is in North America. Its listed area is 1,964,375 km².",
+      "geography": "Mexico is in North America and has coastal access. Its listed area is 1,964,375 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "UTC-8 to UTC-5",
+      "plugTypes": "Type A / B",
+      "tipping": "Customary in restaurants and tourism settings",
+      "emergencyNumbers": "911",
       "callingCode": "+52"
     },
     "neighbors": [
@@ -7886,7 +7886,7 @@
     "facts": [
       "Mexico City is the capital city.",
       "Mexico covers 1,964,375 km².",
-      "Mexico is not classified as landlocked.",
+      "Mexico has coastal access.",
       "It shares land borders with Belize, Guatemala, United States.",
       "Listed official languages include Spanish.",
       "Its international calling code is +52.",
@@ -7936,7 +7936,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Dolohmwar",
-      "geography": "Micronesia is in Micronesia. Its listed area is 702 km².",
+      "geography": "Micronesia is an island or coastal profile in Micronesia. Its listed area is 702 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -7952,8 +7952,8 @@
     "facts": [
       "Palikir is the capital city.",
       "Micronesia covers 702 km².",
-      "Micronesia is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Micronesia has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +691.",
       "The latest published population in this atlas is 113.7K (2025)."
@@ -8070,7 +8070,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Chemin des Révoires",
-      "geography": "Monaco is in Western Europe. Its listed area is 2.02 km².",
+      "geography": "Monaco is in Western Europe and has coastal access. Its listed area is 2.02 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8088,7 +8088,7 @@
     "facts": [
       "Monaco is the capital city.",
       "Monaco covers 2.02 km².",
-      "Monaco is not classified as landlocked.",
+      "Monaco has coastal access.",
       "It shares land borders with France.",
       "Listed official languages include French.",
       "Its international calling code is +377.",
@@ -8207,7 +8207,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Zla Kolata",
-      "geography": "Montenegro is in Southeast Europe. Its listed area is 13,812 km².",
+      "geography": "Montenegro is in Southeast Europe and has coastal access. Its listed area is 13,812 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8229,7 +8229,7 @@
     "facts": [
       "Podgorica is the capital city.",
       "Montenegro covers 13,812 km².",
-      "Montenegro is not classified as landlocked.",
+      "Montenegro has coastal access.",
       "It shares land borders with Albania, Bosnia and Herzegovina, Croatia, Kosovo, Serbia.",
       "Listed official languages include Montenegrin.",
       "Its international calling code is +382.",
@@ -8280,7 +8280,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Jbel Toubkal",
-      "geography": "Morocco is in Northern Africa. Its listed area is 446,550 km².",
+      "geography": "Morocco is in Northern Africa and has coastal access. Its listed area is 446,550 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8299,8 +8299,8 @@
     "facts": [
       "Rabat is the capital city.",
       "Morocco covers 446,550 km².",
-      "Morocco is not classified as landlocked.",
-      "It shares land borders with Algeria, Spain.",
+      "Morocco has coastal access.",
+      "It shares land borders with Algeria, ESH, Spain.",
       "Listed official languages include Arabic, Berber.",
       "Its international calling code is +212.",
       "The latest published population in this atlas is 38.4M (2025).",
@@ -8349,7 +8349,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Monte Binga",
-      "geography": "Mozambique is in Eastern Africa. Its listed area is 801,590 km².",
+      "geography": "Mozambique is in Eastern Africa and has coastal access. Its listed area is 801,590 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8372,7 +8372,7 @@
     "facts": [
       "Maputo is the capital city.",
       "Mozambique covers 801,590 km².",
-      "Mozambique is not classified as landlocked.",
+      "Mozambique has coastal access.",
       "It shares land borders with Malawi, South Africa, Eswatini, Tanzania, Zambia and 1 more.",
       "Listed official languages include Portuguese.",
       "Its international calling code is +258.",
@@ -8422,7 +8422,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Hkakabo Razi",
-      "geography": "Myanmar is in South-Eastern Asia. Its listed area is 676,578 km².",
+      "geography": "Myanmar is in South-Eastern Asia and has coastal access. Its listed area is 676,578 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8444,7 +8444,7 @@
     "facts": [
       "Naypyidaw is the capital city.",
       "Myanmar covers 676,578 km².",
-      "Myanmar is not classified as landlocked.",
+      "Myanmar has coastal access.",
       "It shares land borders with Bangladesh, China, India, Laos, Thailand.",
       "Listed official languages include Burmese.",
       "Its international calling code is +95.",
@@ -8502,7 +8502,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Brandberg",
-      "geography": "Namibia is in Southern Africa. Its listed area is 825,615 km².",
+      "geography": "Namibia is in Southern Africa and has coastal access. Its listed area is 825,615 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8523,7 +8523,7 @@
     "facts": [
       "Windhoek is the capital city.",
       "Namibia covers 825,615 km².",
-      "Namibia is not classified as landlocked.",
+      "Namibia has coastal access.",
       "It shares land borders with Angola, Botswana, South Africa, Zambia.",
       "Listed official languages include Afrikaans, German, English, Herero.",
       "Its international calling code is +264.",
@@ -8574,7 +8574,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Command Ridge",
-      "geography": "Nauru is in Micronesia. Its listed area is 21 km².",
+      "geography": "Nauru is an island or coastal profile in Micronesia. Its listed area is 21 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8590,8 +8590,8 @@
     "facts": [
       "Yaren is the capital city.",
       "Nauru covers 21 km².",
-      "Nauru is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Nauru has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Nauru.",
       "Its international calling code is +674.",
       "The latest published population in this atlas is 12K (2025).",
@@ -8709,7 +8709,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Mount Scenery",
-      "geography": "Netherlands is in Western Europe. Its listed area is 41,850 km².",
+      "geography": "Netherlands is in Western Europe and has coastal access. Its listed area is 41,850 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8728,7 +8728,7 @@
     "facts": [
       "Amsterdam is the capital city.",
       "Netherlands covers 41,850 km².",
-      "Netherlands is not classified as landlocked.",
+      "Netherlands has coastal access.",
       "It shares land borders with Belgium, Germany.",
       "Listed official languages include Dutch.",
       "Its international calling code is +31.",
@@ -8780,7 +8780,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Aoraki / Mount Cook",
-      "geography": "New Zealand is in Australia and New Zealand. Its listed area is 270,467 km².",
+      "geography": "New Zealand is an island or coastal profile in Australia and New Zealand. Its listed area is 270,467 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8796,8 +8796,8 @@
     "facts": [
       "Wellington is the capital city.",
       "New Zealand covers 270,467 km².",
-      "New Zealand is not classified as landlocked.",
-      "It has no listed land borders.",
+      "New Zealand is an island profile with no land borders.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Māori, New Zealand Sign Language.",
       "Its international calling code is +64.",
       "The latest published population in this atlas is 5.3M (2025).",
@@ -8846,7 +8846,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Cerro Mogotón",
-      "geography": "Nicaragua is in Central America. Its listed area is 130,373 km².",
+      "geography": "Nicaragua is in Central America and has coastal access. Its listed area is 130,373 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -8865,7 +8865,7 @@
     "facts": [
       "Managua is the capital city.",
       "Nicaragua covers 130,373 km².",
-      "Nicaragua is not classified as landlocked.",
+      "Nicaragua has coastal access.",
       "It shares land borders with Costa Rica, Honduras.",
       "Listed official languages include Spanish.",
       "Its international calling code is +505.",
@@ -8989,7 +8989,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Chappal Waddi",
-      "geography": "Nigeria is in Western Africa. Its listed area is 923,768 km².",
+      "geography": "Nigeria is in Western Africa and has coastal access. Its listed area is 923,768 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9010,7 +9010,7 @@
     "facts": [
       "Abuja is the capital city.",
       "Nigeria covers 923,768 km².",
-      "Nigeria is not classified as landlocked.",
+      "Nigeria has coastal access.",
       "It shares land borders with Benin, Cameroon, Chad, Niger.",
       "Listed official languages include English.",
       "Its international calling code is +234.",
@@ -9055,7 +9055,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Niue Highest Point",
-      "geography": "Niue is in Polynesia. Its listed area is 260 km².",
+      "geography": "Niue is an island or coastal profile in Polynesia. Its listed area is 260 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9071,8 +9071,8 @@
     "facts": [
       "Alofi is the capital city.",
       "Niue covers 260 km².",
-      "Niue is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Niue has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Niuean.",
       "Its international calling code is +683.",
       "The listed currency code is NZD."
@@ -9120,7 +9120,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Baekdu Mountain",
-      "geography": "North Korea is in Eastern Asia. Its listed area is 120,538 km².",
+      "geography": "North Korea is in Eastern Asia and has coastal access. Its listed area is 120,538 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9140,7 +9140,7 @@
     "facts": [
       "Pyongyang is the capital city.",
       "North Korea covers 120,538 km².",
-      "North Korea is not classified as landlocked.",
+      "North Korea has coastal access.",
       "It shares land borders with China, South Korea, Russia.",
       "Listed official languages include Korean.",
       "Its international calling code is +850.",
@@ -9264,7 +9264,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Galdhøpiggen",
-      "geography": "Norway is in Northern Europe. Its listed area is 323,802 km².",
+      "geography": "Norway is in Northern Europe and has coastal access. Its listed area is 323,802 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9284,7 +9284,7 @@
     "facts": [
       "Oslo is the capital city.",
       "Norway covers 323,802 km².",
-      "Norway is not classified as landlocked.",
+      "Norway has coastal access.",
       "It shares land borders with Finland, Sweden, Russia.",
       "Listed official languages include Norwegian Nynorsk, Norwegian Bokmål, Sami.",
       "Its international calling code is +47.",
@@ -9334,7 +9334,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Jebel Shams",
-      "geography": "Oman is in Western Asia. Its listed area is 309,500 km².",
+      "geography": "Oman is in Western Asia and has coastal access. Its listed area is 309,500 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9354,7 +9354,7 @@
     "facts": [
       "Muscat is the capital city.",
       "Oman covers 309,500 km².",
-      "Oman is not classified as landlocked.",
+      "Oman has coastal access.",
       "It shares land borders with Saudi Arabia, United Arab Emirates, Yemen.",
       "Listed official languages include Arabic.",
       "Its international calling code is +968.",
@@ -9405,7 +9405,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "K2",
-      "geography": "Pakistan is in Southern Asia. Its listed area is 881,912 km².",
+      "geography": "Pakistan is in Southern Asia and has coastal access. Its listed area is 881,912 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9426,7 +9426,7 @@
     "facts": [
       "Islamabad is the capital city.",
       "Pakistan covers 881,912 km².",
-      "Pakistan is not classified as landlocked.",
+      "Pakistan has coastal access.",
       "It shares land borders with Afghanistan, China, India, Iran.",
       "Listed official languages include English, Urdu.",
       "Its international calling code is +92.",
@@ -9477,7 +9477,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Ngerchelchuus",
-      "geography": "Palau is in Micronesia. Its listed area is 459 km².",
+      "geography": "Palau is an island or coastal profile in Micronesia. Its listed area is 459 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9493,8 +9493,8 @@
     "facts": [
       "Ngerulmud is the capital city.",
       "Palau covers 459 km².",
-      "Palau is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Palau has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Palauan.",
       "Its international calling code is +680.",
       "The latest published population in this atlas is 17.7K (2025).",
@@ -9543,7 +9543,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Nabi Yunis",
-      "geography": "Palestine is in Western Asia. Its listed area is 6,220 km².",
+      "geography": "Palestine is in Western Asia and has coastal access. Its listed area is 6,220 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9563,7 +9563,7 @@
     "facts": [
       "Ramallah is the capital city.",
       "Palestine covers 6,220 km².",
-      "Palestine is not classified as landlocked.",
+      "Palestine has coastal access.",
       "It shares land borders with Israel, Egypt, Jordan.",
       "Listed official languages include Arabic.",
       "Its international calling code is +970.",
@@ -9613,7 +9613,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Volcan Baru",
-      "geography": "Panama is in Central America. Its listed area is 75,417 km².",
+      "geography": "Panama is in Central America and has coastal access. Its listed area is 75,417 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9632,7 +9632,7 @@
     "facts": [
       "Panama City is the capital city.",
       "Panama covers 75,417 km².",
-      "Panama is not classified as landlocked.",
+      "Panama has coastal access.",
       "It shares land borders with Colombia, Costa Rica.",
       "Listed official languages include Spanish.",
       "Its international calling code is +507.",
@@ -9684,7 +9684,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Wilhelm",
-      "geography": "Papua New Guinea is in Melanesia. Its listed area is 462,840 km².",
+      "geography": "Papua New Guinea is in Melanesia and has coastal access. Its listed area is 462,840 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9702,7 +9702,7 @@
     "facts": [
       "Port Moresby is the capital city.",
       "Papua New Guinea covers 462,840 km².",
-      "Papua New Guinea is not classified as landlocked.",
+      "Papua New Guinea has coastal access.",
       "It shares land borders with Indonesia.",
       "Listed official languages include English, Hiri Motu, Tok Pisin.",
       "Its international calling code is +675.",
@@ -9825,7 +9825,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Huascarán",
-      "geography": "Peru is in South America. Its listed area is 1,285,216 km².",
+      "geography": "Peru is in South America and has coastal access. Its listed area is 1,285,216 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9847,7 +9847,7 @@
     "facts": [
       "Lima is the capital city.",
       "Peru covers 1,285,216 km².",
-      "Peru is not classified as landlocked.",
+      "Peru has coastal access.",
       "It shares land borders with Bolivia, Brazil, Chile, Colombia, Ecuador.",
       "Listed official languages include Aymara, Quechua, Spanish.",
       "Its international calling code is +51.",
@@ -9898,7 +9898,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Apo",
-      "geography": "Philippines is in South-Eastern Asia. Its listed area is 342,353 km².",
+      "geography": "Philippines is an island or coastal profile in South-Eastern Asia. Its listed area is 342,353 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9914,8 +9914,8 @@
     "facts": [
       "Manila is the capital city.",
       "Philippines covers 342,353 km².",
-      "Philippines is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Philippines has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Filipino.",
       "Its international calling code is +63.",
       "The latest published population in this atlas is 116.8M (2025).",
@@ -9964,7 +9964,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Rysy",
-      "geography": "Poland is in Central Europe. Its listed area is 312,679 km².",
+      "geography": "Poland is in Central Europe and has coastal access. Its listed area is 312,679 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -9988,7 +9988,7 @@
     "facts": [
       "Warsaw is the capital city.",
       "Poland covers 312,679 km².",
-      "Poland is not classified as landlocked.",
+      "Poland has coastal access.",
       "It shares land borders with Belarus, Czechia, Germany, Lithuania, Russia and 2 more.",
       "Listed official languages include Polish.",
       "Its international calling code is +48.",
@@ -10038,7 +10038,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Pico",
-      "geography": "Portugal is in Southern Europe. Its listed area is 92,090 km².",
+      "geography": "Portugal is in Southern Europe and has coastal access. Its listed area is 92,090 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10056,7 +10056,7 @@
     "facts": [
       "Lisbon is the capital city.",
       "Portugal covers 92,090 km².",
-      "Portugal is not classified as landlocked.",
+      "Portugal has coastal access.",
       "It shares land borders with Spain.",
       "Listed official languages include Portuguese.",
       "Its international calling code is +351.",
@@ -10106,7 +10106,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Qurayn Abu al Bawl",
-      "geography": "Qatar is in Western Asia. Its listed area is 11,586 km².",
+      "geography": "Qatar is in Western Asia and has coastal access. Its listed area is 11,586 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10124,7 +10124,7 @@
     "facts": [
       "Doha is the capital city.",
       "Qatar covers 11,586 km².",
-      "Qatar is not classified as landlocked.",
+      "Qatar has coastal access.",
       "It shares land borders with Saudi Arabia.",
       "Listed official languages include Arabic.",
       "Its international calling code is +974.",
@@ -10174,7 +10174,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Moldoveanu Peak",
-      "geography": "Romania is in Southeast Europe. Its listed area is 238,391 km².",
+      "geography": "Romania is in Southeast Europe and has coastal access. Its listed area is 238,391 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10196,7 +10196,7 @@
     "facts": [
       "Bucharest is the capital city.",
       "Romania covers 238,391 km².",
-      "Romania is not classified as landlocked.",
+      "Romania has coastal access.",
       "It shares land borders with Bulgaria, Hungary, Moldova, Serbia, Ukraine.",
       "Listed official languages include Romanian.",
       "Its international calling code is +40.",
@@ -10246,7 +10246,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Mount Elbrus",
-      "geography": "Russia is in Eastern Europe. Its listed area is 17,098,242 km².",
+      "geography": "Russia is in Eastern Europe and has coastal access. Its listed area is 17,098,242 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10277,7 +10277,7 @@
     "facts": [
       "Moscow is the capital city.",
       "Russia covers 17,098,242 km².",
-      "Russia is not classified as landlocked.",
+      "Russia has coastal access.",
       "It shares land borders with Azerbaijan, Belarus, China, Estonia, Finland and 9 more.",
       "Listed official languages include Russian.",
       "Its international calling code is +73.",
@@ -10400,7 +10400,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Liamuiga",
-      "geography": "Saint Kitts and Nevis is in Caribbean. Its listed area is 261 km².",
+      "geography": "Saint Kitts and Nevis is an island or coastal profile in Caribbean. Its listed area is 261 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10416,8 +10416,8 @@
     "facts": [
       "Basseterre is the capital city.",
       "Saint Kitts and Nevis covers 261 km².",
-      "Saint Kitts and Nevis is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Saint Kitts and Nevis has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +1869.",
       "The latest published population in this atlas is 46.9K (2025).",
@@ -10466,7 +10466,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Gimie",
-      "geography": "Saint Lucia is in Caribbean. Its listed area is 616 km².",
+      "geography": "Saint Lucia is an island or coastal profile in Caribbean. Its listed area is 616 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10482,8 +10482,8 @@
     "facts": [
       "Castries is the capital city.",
       "Saint Lucia covers 616 km².",
-      "Saint Lucia is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Saint Lucia has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +1758.",
       "The latest published population in this atlas is 180.1K (2025).",
@@ -10532,7 +10532,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "La Soufrière",
-      "geography": "Saint Vincent and the Grenadines is in Caribbean. Its listed area is 389 km².",
+      "geography": "Saint Vincent and the Grenadines is an island or coastal profile in Caribbean. Its listed area is 389 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10548,8 +10548,8 @@
     "facts": [
       "Kingstown is the capital city.",
       "Saint Vincent and the Grenadines covers 389 km².",
-      "Saint Vincent and the Grenadines is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Saint Vincent and the Grenadines has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +1784.",
       "The latest published population in this atlas is 99.9K (2025).",
@@ -10599,7 +10599,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Silisili",
-      "geography": "Samoa is in Polynesia. Its listed area is 2,842 km².",
+      "geography": "Samoa is an island or coastal profile in Polynesia. Its listed area is 2,842 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10615,8 +10615,8 @@
     "facts": [
       "Apia is the capital city.",
       "Samoa covers 2,842 km².",
-      "Samoa is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Samoa has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Samoan.",
       "Its international calling code is +685.",
       "The latest published population in this atlas is 219.3K (2025).",
@@ -10733,7 +10733,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Pico de São Tomé",
-      "geography": "São Tomé and Príncipe is in Middle Africa. Its listed area is 964 km².",
+      "geography": "São Tomé and Príncipe is an island or coastal profile in Middle Africa. Its listed area is 964 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10749,8 +10749,8 @@
     "facts": [
       "São Tomé is the capital city.",
       "São Tomé and Príncipe covers 964 km².",
-      "São Tomé and Príncipe is not classified as landlocked.",
-      "It has no listed land borders.",
+      "São Tomé and Príncipe has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Portuguese.",
       "Its international calling code is +239.",
       "The latest published population in this atlas is 240.3K (2025).",
@@ -10799,7 +10799,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Jabal Sawda",
-      "geography": "Saudi Arabia is in Western Asia. Its listed area is 2,149,690 km².",
+      "geography": "Saudi Arabia is in Western Asia and has coastal access. Its listed area is 2,149,690 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10823,7 +10823,7 @@
     "facts": [
       "Riyadh is the capital city.",
       "Saudi Arabia covers 2,149,690 km².",
-      "Saudi Arabia is not classified as landlocked.",
+      "Saudi Arabia has coastal access.",
       "It shares land borders with Iraq, Jordan, Kuwait, Oman, Qatar and 2 more.",
       "Listed official languages include Arabic.",
       "Its international calling code is +966.",
@@ -10873,7 +10873,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Népin Cliff",
-      "geography": "Senegal is in Western Africa. Its listed area is 196,722 km².",
+      "geography": "Senegal is in Western Africa and has coastal access. Its listed area is 196,722 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -10895,7 +10895,7 @@
     "facts": [
       "Dakar is the capital city.",
       "Senegal covers 196,722 km².",
-      "Senegal is not classified as landlocked.",
+      "Senegal has coastal access.",
       "It shares land borders with Gambia, Guinea, Guinea-Bissau, Mali, Mauritania.",
       "Listed official languages include French.",
       "Its international calling code is +221.",
@@ -11022,7 +11022,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Morne Seychellois",
-      "geography": "Seychelles is in Eastern Africa. Its listed area is 452 km².",
+      "geography": "Seychelles is an island or coastal profile in Eastern Africa. Its listed area is 452 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -11038,8 +11038,8 @@
     "facts": [
       "Victoria is the capital city.",
       "Seychelles covers 452 km².",
-      "Seychelles is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Seychelles has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Seychellois Creole, English, French.",
       "Its international calling code is +248.",
       "The latest published population in this atlas is 122.7K (2025).",
@@ -11088,7 +11088,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Bintumani",
-      "geography": "Sierra Leone is in Western Africa. Its listed area is 71,740 km².",
+      "geography": "Sierra Leone is in Western Africa and has coastal access. Its listed area is 71,740 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -11107,7 +11107,7 @@
     "facts": [
       "Freetown is the capital city.",
       "Sierra Leone covers 71,740 km².",
-      "Sierra Leone is not classified as landlocked.",
+      "Sierra Leone has coastal access.",
       "It shares land borders with Guinea, Liberia.",
       "Listed official languages include English.",
       "Its international calling code is +232.",
@@ -11133,7 +11133,7 @@
         "value": 0,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 42.8,
       "officialLanguages": [
         "English",
         "Malay",
@@ -11160,24 +11160,24 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Bukit Timah",
-      "geography": "Singapore is in South-Eastern Asia. Its listed area is 710 km².",
+      "geography": "Singapore is an island or coastal profile in South-Eastern Asia. Its listed area is 710 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Left",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "Singapore Time (UTC+8)",
+      "plugTypes": "Type G",
+      "tipping": "Not expected; service charge is common",
+      "emergencyNumbers": "Police 999; ambulance/fire 995",
       "callingCode": "+65"
     },
     "neighbors": [],
     "facts": [
       "Singapore is the capital city.",
       "Singapore covers 710 km².",
-      "Singapore is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Singapore is an island profile with no land borders.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Malay, Tamil, Chinese.",
       "Its international calling code is +65.",
       "The latest published population in this atlas is 6.1M (2025).",
@@ -11298,7 +11298,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Triglav",
-      "geography": "Slovenia is in Central Europe. Its listed area is 20,273 km².",
+      "geography": "Slovenia is in Central Europe and has coastal access. Its listed area is 20,273 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -11319,7 +11319,7 @@
     "facts": [
       "Ljubljana is the capital city.",
       "Slovenia covers 20,273 km².",
-      "Slovenia is not classified as landlocked.",
+      "Slovenia has coastal access.",
       "It shares land borders with Austria, Croatia, Italy, Hungary.",
       "Listed official languages include Slovene.",
       "Its international calling code is +386.",
@@ -11369,7 +11369,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Popomanaseu",
-      "geography": "Solomon Islands is in Melanesia. Its listed area is 28,896 km².",
+      "geography": "Solomon Islands is an island or coastal profile in Melanesia. Its listed area is 28,896 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -11385,8 +11385,8 @@
     "facts": [
       "Honiara is the capital city.",
       "Solomon Islands covers 28,896 km².",
-      "Solomon Islands is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Solomon Islands has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +677.",
       "The latest published population in this atlas is 838.6K (2025).",
@@ -11436,7 +11436,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Shimbiris",
-      "geography": "Somalia is in Eastern Africa. Its listed area is 637,657 km².",
+      "geography": "Somalia is in Eastern Africa and has coastal access. Its listed area is 637,657 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -11456,7 +11456,7 @@
     "facts": [
       "Mogadishu is the capital city.",
       "Somalia covers 637,657 km².",
-      "Somalia is not classified as landlocked.",
+      "Somalia has coastal access.",
       "It shares land borders with Djibouti, Ethiopia, Kenya.",
       "Listed official languages include Arabic, Somali.",
       "Its international calling code is +252.",
@@ -11482,7 +11482,7 @@
         "value": 36.1845988997478,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 28.3,
       "officialLanguages": [
         "Afrikaans",
         "English",
@@ -11516,16 +11516,16 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mafadi",
-      "geography": "South Africa is in Southern Africa. Its listed area is 1,221,037 km².",
+      "geography": "South Africa is in Southern Africa and has coastal access. Its listed area is 1,221,037 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Left",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "South Africa Standard Time (UTC+2)",
+      "plugTypes": "Type C / M / N",
+      "tipping": "Customary in restaurants and service settings",
+      "emergencyNumbers": "112 mobile; police 10111; ambulance 10177",
       "callingCode": "+27"
     },
     "neighbors": [
@@ -11539,7 +11539,7 @@
     "facts": [
       "Pretoria is the capital city.",
       "South Africa covers 1,221,037 km².",
-      "South Africa is not classified as landlocked.",
+      "South Africa has coastal access.",
       "It shares land borders with Botswana, Lesotho, Mozambique, Namibia, Eswatini and 1 more.",
       "Listed official languages include Afrikaans, English, Southern Ndebele, Northern Sotho.",
       "Its international calling code is +27.",
@@ -11565,7 +11565,7 @@
         "value": 18.825973669332598,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 45.5,
       "officialLanguages": [
         "Korean"
       ],
@@ -11589,16 +11589,16 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Hallasan",
-      "geography": "South Korea is in Eastern Asia. Its listed area is 100,210 km².",
+      "geography": "South Korea is in Eastern Asia and has coastal access. Its listed area is 100,210 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "Korea Standard Time (UTC+9)",
+      "plugTypes": "Type C / F",
+      "tipping": "Not customary in most everyday settings",
+      "emergencyNumbers": "Police 112; fire/ambulance 119",
       "callingCode": "+82"
     },
     "neighbors": [
@@ -11607,7 +11607,7 @@
     "facts": [
       "Seoul is the capital city.",
       "South Korea covers 100,210 km².",
-      "South Korea is not classified as landlocked.",
+      "South Korea has coastal access.",
       "It shares land borders with North Korea.",
       "Listed official languages include Korean.",
       "Its international calling code is +82.",
@@ -11706,7 +11706,7 @@
         "value": 19.485074896086203,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 45.2,
       "officialLanguages": [
         "Spanish"
       ],
@@ -11730,16 +11730,16 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Teide",
-      "geography": "Spain is in Southern Europe. Its listed area is 505,992 km².",
+      "geography": "Spain is in Southern Europe and has coastal access. Its listed area is 505,992 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "UTC+1 / UTC+2; Canary Islands UTC+0 / UTC+1",
+      "plugTypes": "Type C / F",
+      "tipping": "Optional; small tips are common for good service",
+      "emergencyNumbers": "112",
       "callingCode": "+34"
     },
     "neighbors": [
@@ -11751,8 +11751,8 @@
     "facts": [
       "Madrid is the capital city.",
       "Spain covers 505,992 km².",
-      "Spain is not classified as landlocked.",
-      "It shares land borders with Andorra, France, Portugal, Morocco.",
+      "Spain has coastal access.",
+      "It shares land borders with Andorra, France, GIB, Portugal, Morocco.",
       "Listed official languages include Spanish.",
       "Its international calling code is +34.",
       "The latest published population in this atlas is 49.4M (2025).",
@@ -11802,7 +11802,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Pidurutalagala",
-      "geography": "Sri Lanka is in Southern Asia. Its listed area is 65,610 km².",
+      "geography": "Sri Lanka is in Southern Asia and has coastal access. Its listed area is 65,610 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -11820,7 +11820,7 @@
     "facts": [
       "Colombo is the capital city.",
       "Sri Lanka covers 65,610 km².",
-      "Sri Lanka is not classified as landlocked.",
+      "Sri Lanka has coastal access.",
       "It shares land borders with India.",
       "Listed official languages include Sinhala, Tamil.",
       "Its international calling code is +94.",
@@ -11871,7 +11871,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Deriba Caldera",
-      "geography": "Sudan is in Northern Africa. Its listed area is 1,886,068 km².",
+      "geography": "Sudan is in Northern Africa and has coastal access. Its listed area is 1,886,068 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -11895,7 +11895,7 @@
     "facts": [
       "Khartoum is the capital city.",
       "Sudan covers 1,886,068 km².",
-      "Sudan is not classified as landlocked.",
+      "Sudan has coastal access.",
       "It shares land borders with Central African Republic, Chad, Egypt, Eritrea, Ethiopia and 2 more.",
       "Listed official languages include Arabic, English.",
       "Its international calling code is +249.",
@@ -11945,7 +11945,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Julianatop",
-      "geography": "Suriname is in South America. Its listed area is 163,820 km².",
+      "geography": "Suriname is in South America and has coastal access. Its listed area is 163,820 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -11964,8 +11964,8 @@
     "facts": [
       "Paramaribo is the capital city.",
       "Suriname covers 163,820 km².",
-      "Suriname is not classified as landlocked.",
-      "It shares land borders with Brazil, Guyana.",
+      "Suriname has coastal access.",
+      "It shares land borders with Brazil, GUF, Guyana.",
       "Listed official languages include Dutch.",
       "Its international calling code is +597.",
       "The latest published population in this atlas is 639.9K (2025).",
@@ -12014,7 +12014,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Kebnekaise",
-      "geography": "Sweden is in Northern Europe. Its listed area is 450,295 km².",
+      "geography": "Sweden is in Northern Europe and has coastal access. Its listed area is 450,295 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12033,7 +12033,7 @@
     "facts": [
       "Stockholm is the capital city.",
       "Sweden covers 450,295 km².",
-      "Sweden is not classified as landlocked.",
+      "Sweden has coastal access.",
       "It shares land borders with Finland, Norway.",
       "Listed official languages include Swedish.",
       "Its international calling code is +46.",
@@ -12158,7 +12158,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Hermon",
-      "geography": "Syria is in Western Asia. Its listed area is 185,180 km².",
+      "geography": "Syria is in Western Asia and has coastal access. Its listed area is 185,180 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12180,7 +12180,7 @@
     "facts": [
       "Damascus is the capital city.",
       "Syria covers 185,180 km².",
-      "Syria is not classified as landlocked.",
+      "Syria has coastal access.",
       "It shares land borders with Iraq, Israel, Jordan, Lebanon, Türkiye.",
       "Listed official languages include Arabic.",
       "Its international calling code is +963.",
@@ -12224,7 +12224,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": null,
-      "geography": "Taiwan is in Eastern Asia. Its listed area is 36,193 km².",
+      "geography": "Taiwan is an island or coastal profile in Eastern Asia. Its listed area is 36,193 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12240,8 +12240,8 @@
     "facts": [
       "Taipei is the capital city.",
       "Taiwan covers 36,193 km².",
-      "Taiwan is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Taiwan is an island profile with no land borders.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Chinese.",
       "Its international calling code is +886.",
       "The listed currency code is TWD."
@@ -12362,7 +12362,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Kibo",
-      "geography": "Tanzania is in Eastern Africa. Its listed area is 945,087 km².",
+      "geography": "Tanzania is in Eastern Africa and has coastal access. Its listed area is 945,087 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12387,7 +12387,7 @@
     "facts": [
       "Dodoma is the capital city.",
       "Tanzania covers 945,087 km².",
-      "Tanzania is not classified as landlocked.",
+      "Tanzania has coastal access.",
       "It shares land borders with Burundi, DR Congo, Kenya, Malawi, Mozambique and 3 more.",
       "Listed official languages include English, Swahili.",
       "Its international calling code is +255.",
@@ -12413,7 +12413,7 @@
         "value": 37.2006622863704,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 40.5,
       "officialLanguages": [
         "Thai"
       ],
@@ -12437,16 +12437,16 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Doi Inthanon",
-      "geography": "Thailand is in South-Eastern Asia. Its listed area is 513,120 km².",
+      "geography": "Thailand is in South-Eastern Asia and has coastal access. Its listed area is 513,120 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Left",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "Indochina Time (UTC+7)",
+      "plugTypes": "Type A / B / C / O",
+      "tipping": "Optional; small tips are common in tourism settings",
+      "emergencyNumbers": "Emergency 191; tourist police 1155; ambulance 1669",
       "callingCode": "+66"
     },
     "neighbors": [
@@ -12458,7 +12458,7 @@
     "facts": [
       "Bangkok is the capital city.",
       "Thailand covers 513,120 km².",
-      "Thailand is not classified as landlocked.",
+      "Thailand has coastal access.",
       "It shares land borders with Myanmar, Cambodia, Laos, Malaysia.",
       "Listed official languages include Thai.",
       "Its international calling code is +66.",
@@ -12509,7 +12509,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Tatamailau",
-      "geography": "Timor-Leste is in South-Eastern Asia. Its listed area is 14,874 km².",
+      "geography": "Timor-Leste is in South-Eastern Asia and has coastal access. Its listed area is 14,874 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12527,7 +12527,7 @@
     "facts": [
       "Dili is the capital city.",
       "Timor-Leste covers 14,874 km².",
-      "Timor-Leste is not classified as landlocked.",
+      "Timor-Leste has coastal access.",
       "It shares land borders with Indonesia.",
       "Listed official languages include Portuguese, Tetum.",
       "Its international calling code is +670.",
@@ -12577,7 +12577,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Agou",
-      "geography": "Togo is in Western Africa. Its listed area is 56,785 km².",
+      "geography": "Togo is in Western Africa and has coastal access. Its listed area is 56,785 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12597,7 +12597,7 @@
     "facts": [
       "Lomé is the capital city.",
       "Togo covers 56,785 km².",
-      "Togo is not classified as landlocked.",
+      "Togo has coastal access.",
       "It shares land borders with Benin, Burkina Faso, Ghana.",
       "Listed official languages include French.",
       "Its international calling code is +228.",
@@ -12648,7 +12648,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Kao",
-      "geography": "Tonga is in Polynesia. Its listed area is 747 km².",
+      "geography": "Tonga is an island or coastal profile in Polynesia. Its listed area is 747 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12664,8 +12664,8 @@
     "facts": [
       "Nuku'alofa is the capital city.",
       "Tonga covers 747 km².",
-      "Tonga is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Tonga has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Tongan.",
       "Its international calling code is +676.",
       "The latest published population in this atlas is 103.7K (2025).",
@@ -12714,7 +12714,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "El Cerro del Aripo",
-      "geography": "Trinidad and Tobago is in Caribbean. Its listed area is 5,130 km².",
+      "geography": "Trinidad and Tobago is an island or coastal profile in Caribbean. Its listed area is 5,130 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12730,8 +12730,8 @@
     "facts": [
       "Port of Spain is the capital city.",
       "Trinidad and Tobago covers 5,130 km².",
-      "Trinidad and Tobago is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Trinidad and Tobago has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English.",
       "Its international calling code is +1868.",
       "The latest published population in this atlas is 1.4M (2025).",
@@ -12780,7 +12780,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Jebel ech Chambi",
-      "geography": "Tunisia is in Northern Africa. Its listed area is 163,610 km².",
+      "geography": "Tunisia is in Northern Africa and has coastal access. Its listed area is 163,610 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12799,7 +12799,7 @@
     "facts": [
       "Tunis is the capital city.",
       "Tunisia covers 163,610 km².",
-      "Tunisia is not classified as landlocked.",
+      "Tunisia has coastal access.",
       "It shares land borders with Algeria, Libya.",
       "Listed official languages include Arabic.",
       "Its international calling code is +216.",
@@ -12849,7 +12849,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Mount Ararat",
-      "geography": "Türkiye is in Western Asia. Its listed area is 783,562 km².",
+      "geography": "Türkiye is in Western Asia and has coastal access. Its listed area is 783,562 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -12874,7 +12874,7 @@
     "facts": [
       "Ankara is the capital city.",
       "Türkiye covers 783,562 km².",
-      "Türkiye is not classified as landlocked.",
+      "Türkiye has coastal access.",
       "It shares land borders with Armenia, Azerbaijan, Bulgaria, Georgia, Greece and 3 more.",
       "Listed official languages include Turkish.",
       "Its international calling code is +90.",
@@ -12997,7 +12997,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Niulakita",
-      "geography": "Tuvalu is in Polynesia. Its listed area is 26 km².",
+      "geography": "Tuvalu is an island or coastal profile in Polynesia. Its listed area is 26 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -13013,8 +13013,8 @@
     "facts": [
       "Funafuti is the capital city.",
       "Tuvalu covers 26 km².",
-      "Tuvalu is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Tuvalu has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include English, Tuvaluan.",
       "Its international calling code is +688.",
       "The latest published population in this atlas is 9.5K (2025).",
@@ -13136,7 +13136,7 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Hoverla",
-      "geography": "Ukraine is in Eastern Europe. Its listed area is 603,500 km².",
+      "geography": "Ukraine is in Eastern Europe and has coastal access. Its listed area is 603,500 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -13160,7 +13160,7 @@
     "facts": [
       "Kyiv is the capital city.",
       "Ukraine covers 603,500 km².",
-      "Ukraine is not classified as landlocked.",
+      "Ukraine has coastal access.",
       "It shares land borders with Belarus, Hungary, Moldova, Poland, Romania and 2 more.",
       "Listed official languages include Ukrainian.",
       "Its international calling code is +380.",
@@ -13186,7 +13186,7 @@
         "value": 14.038235867598303,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 33.6,
       "officialLanguages": [
         "Arabic"
       ],
@@ -13210,16 +13210,16 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Jebel Jais",
-      "geography": "United Arab Emirates is in Western Asia. Its listed area is 83,600 km².",
+      "geography": "United Arab Emirates is in Western Asia and has coastal access. Its listed area is 83,600 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "Gulf Standard Time (UTC+4)",
+      "plugTypes": "Type G",
+      "tipping": "Common in hospitality and service settings",
+      "emergencyNumbers": "Police 999; ambulance 998; fire 997",
       "callingCode": "+971"
     },
     "neighbors": [
@@ -13229,7 +13229,7 @@
     "facts": [
       "Abu Dhabi is the capital city.",
       "United Arab Emirates covers 83,600 km².",
-      "United Arab Emirates is not classified as landlocked.",
+      "United Arab Emirates has coastal access.",
       "It shares land borders with Oman, Saudi Arabia.",
       "Listed official languages include Arabic.",
       "Its international calling code is +971.",
@@ -13255,7 +13255,7 @@
         "value": 16.676391921729007,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 40.6,
       "officialLanguages": [
         "English"
       ],
@@ -13279,16 +13279,16 @@
     "environment": {
       "climate": "Cool temperate to continental zones",
       "highestPoint": "Ben Nevis",
-      "geography": "United Kingdom is in Northern Europe. Its listed area is 242,900 km².",
+      "geography": "United Kingdom is in Northern Europe and has coastal access. Its listed area is 242,900 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Left",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "GMT / BST",
+      "plugTypes": "Type G",
+      "tipping": "Optional; common in restaurants when service is not included",
+      "emergencyNumbers": "999 / 112",
       "callingCode": "+44"
     },
     "neighbors": [
@@ -13297,7 +13297,7 @@
     "facts": [
       "London is the capital city.",
       "United Kingdom covers 242,900 km².",
-      "United Kingdom is not classified as landlocked.",
+      "United Kingdom has coastal access.",
       "It shares land borders with Ireland.",
       "Listed official languages include English.",
       "Its international calling code is +44.",
@@ -13323,7 +13323,7 @@
         "value": 19.807826697213102,
         "year": "2025"
       },
-      "medianAge": null,
+      "medianAge": 38.9,
       "officialLanguages": [
         "English"
       ],
@@ -13347,16 +13347,16 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": null,
-      "geography": "United States is in North America. Its listed area is 9,372,610 km².",
+      "geography": "United States is in North America and has coastal access. Its listed area is 9,372,610 km².",
       "majorRivers": null,
       "naturalResources": null
     },
     "dailyLife": {
       "drivingSide": "Right",
-      "timeZones": null,
-      "plugTypes": null,
-      "tipping": null,
-      "emergencyNumbers": null,
+      "timeZones": "UTC-10 to UTC-5; many territories use additional zones",
+      "plugTypes": "Type A / B",
+      "tipping": "Customary in restaurants and service settings",
+      "emergencyNumbers": "911",
       "callingCode": "+1201"
     },
     "neighbors": [
@@ -13366,7 +13366,7 @@
     "facts": [
       "Washington D.C. is the capital city.",
       "United States covers 9,372,610 km².",
-      "United States is not classified as landlocked.",
+      "United States has coastal access.",
       "It shares land borders with Canada, Mexico.",
       "Listed official languages include English.",
       "Its international calling code is +1201.",
@@ -13416,7 +13416,7 @@
     "environment": {
       "climate": "Temperate to subtropical zones",
       "highestPoint": "Cerro Catedral",
-      "geography": "Uruguay is in South America. Its listed area is 181,034 km².",
+      "geography": "Uruguay is in South America and has coastal access. Its listed area is 181,034 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -13435,7 +13435,7 @@
     "facts": [
       "Montevideo is the capital city.",
       "Uruguay covers 181,034 km².",
-      "Uruguay is not classified as landlocked.",
+      "Uruguay has coastal access.",
       "It shares land borders with Argentina, Brazil.",
       "Listed official languages include Spanish.",
       "Its international calling code is +598.",
@@ -13560,7 +13560,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Mount Tabwemasana",
-      "geography": "Vanuatu is in Melanesia. Its listed area is 12,189 km².",
+      "geography": "Vanuatu is an island or coastal profile in Melanesia. Its listed area is 12,189 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -13576,8 +13576,8 @@
     "facts": [
       "Port Vila is the capital city.",
       "Vanuatu covers 12,189 km².",
-      "Vanuatu is not classified as landlocked.",
-      "It has no listed land borders.",
+      "Vanuatu has no land borders; sea and air links shape outside connections.",
+      "Sea routes, ports, and air links shape many outside connections.",
       "Listed official languages include Bislama, English, French.",
       "Its international calling code is +678.",
       "The latest published population in this atlas is 335.2K (2025).",
@@ -13688,7 +13688,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Pico Bolívar",
-      "geography": "Venezuela is in South America. Its listed area is 916,445 km².",
+      "geography": "Venezuela is in South America and has coastal access. Its listed area is 916,445 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -13708,7 +13708,7 @@
     "facts": [
       "Caracas is the capital city.",
       "Venezuela covers 916,445 km².",
-      "Venezuela is not classified as landlocked.",
+      "Venezuela has coastal access.",
       "It shares land borders with Brazil, Colombia, Guyana.",
       "Listed official languages include Spanish.",
       "Its international calling code is +58.",
@@ -13758,7 +13758,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Fansipan",
-      "geography": "Vietnam is in South-Eastern Asia. Its listed area is 331,212 km².",
+      "geography": "Vietnam is in South-Eastern Asia and has coastal access. Its listed area is 331,212 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -13778,7 +13778,7 @@
     "facts": [
       "Hanoi is the capital city.",
       "Vietnam covers 331,212 km².",
-      "Vietnam is not classified as landlocked.",
+      "Vietnam has coastal access.",
       "It shares land borders with Cambodia, China, Laos.",
       "Listed official languages include Vietnamese.",
       "Its international calling code is +84.",
@@ -13828,7 +13828,7 @@
     "environment": {
       "climate": "Tropical to subtropical zones",
       "highestPoint": "Jabal an Nabi Shu'ayb",
-      "geography": "Yemen is in Western Asia. Its listed area is 527,968 km².",
+      "geography": "Yemen is in Western Asia and has coastal access. Its listed area is 527,968 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -13847,7 +13847,7 @@
     "facts": [
       "Sana'a is the capital city.",
       "Yemen covers 527,968 km².",
-      "Yemen is not classified as landlocked.",
+      "Yemen has coastal access.",
       "It shares land borders with Oman, Saudi Arabia.",
       "Listed official languages include Arabic.",
       "Its international calling code is +967.",
@@ -14058,7 +14058,7 @@
     "environment": {
       "climate": "Temperate maritime climate",
       "highestPoint": null,
-      "geography": "Hong Kong sits on the South China Sea around Hong Kong Island, Kowloon, the New Territories, and many outlying islands. Its listed area is 1,107 km².",
+      "geography": "Hong Kong is in Eastern Asia and has coastal access. Its listed area is 1,107 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -14066,22 +14066,22 @@
       "drivingSide": "Left",
       "timeZones": "Hong Kong Time (UTC+8)",
       "plugTypes": "Type G",
-      "tipping": null,
-      "emergencyNumbers": "999 / 112",
+      "tipping": "Service charge is common; small extra tips are optional",
+      "emergencyNumbers": "999",
       "callingCode": "+852"
     },
     "neighbors": [
       "China"
     ],
     "facts": [
+      "Hong Kong has coastal access.",
+      "It shares land borders with China.",
       "Hong Kong is a special administrative region of China.",
       "Hong Kong is one of the world's most densely populated major urban areas.",
       "The Hong Kong dollar is the listed currency.",
       "Chinese and English are official languages.",
       "Victoria Harbour is central to its port and skyline identity.",
-      "The latest published population in this atlas is 7.5M (2025).",
-      "Hong Kong uses left-hand traffic.",
-      "The international calling code is +852."
+      "The latest published population in this atlas is 7.5M (2025)."
     ],
     "images": [
       {
@@ -14122,7 +14122,7 @@
     "environment": {
       "climate": "Temperate maritime climate",
       "highestPoint": null,
-      "geography": "England occupies the southern and central part of Great Britain, with coastlines on the North Sea, English Channel, Irish Sea, and Atlantic approaches. Its listed area is 130,279 km².",
+      "geography": "England is in Northern Europe and has coastal access. Its listed area is 130,279 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -14130,7 +14130,7 @@
       "drivingSide": "Left",
       "timeZones": "GMT / BST",
       "plugTypes": "Type G",
-      "tipping": null,
+      "tipping": "Optional; common in restaurants when service is not included",
       "emergencyNumbers": "999 / 112",
       "callingCode": "+44"
     },
@@ -14139,14 +14139,14 @@
       "Wales"
     ],
     "facts": [
+      "England has coastal access.",
+      "It shares land borders with Scotland, Wales.",
       "England is one of the four nations of the United Kingdom.",
       "London is both England's capital and the capital of the UK.",
       "England shares land borders with Scotland and Wales.",
       "The listed currency is pound sterling.",
       "English is the main official language used in public life.",
-      "The latest published population in this atlas is 58.6M (2024).",
-      "England uses left-hand traffic.",
-      "The international calling code is +44."
+      "The latest published population in this atlas is 58.6M (2024)."
     ],
     "images": [
       {
@@ -14189,7 +14189,7 @@
     "environment": {
       "climate": "Temperate maritime climate",
       "highestPoint": null,
-      "geography": "Scotland occupies the northern part of Great Britain and includes many islands, with Atlantic and North Sea coastlines. Its listed area is 77,933 km².",
+      "geography": "Scotland is in Northern Europe and has coastal access. Its listed area is 77,933 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -14197,7 +14197,7 @@
       "drivingSide": "Left",
       "timeZones": "GMT / BST",
       "plugTypes": "Type G",
-      "tipping": null,
+      "tipping": "Optional; common in restaurants when service is not included",
       "emergencyNumbers": "999 / 112",
       "callingCode": "+44"
     },
@@ -14205,14 +14205,14 @@
       "England"
     ],
     "facts": [
+      "Scotland has coastal access.",
+      "It shares land borders with England.",
       "Scotland is one of the four nations of the United Kingdom.",
       "Edinburgh is the capital and Glasgow is the largest city by population.",
       "Scotland shares a land border with England.",
       "The listed currency is pound sterling.",
       "English, Scots, and Scottish Gaelic are important languages in Scottish identity.",
-      "The latest published population in this atlas is 5.5M (2024).",
-      "Scotland uses left-hand traffic.",
-      "The international calling code is +44."
+      "The latest published population in this atlas is 5.5M (2024)."
     ],
     "images": [
       {
@@ -14254,7 +14254,7 @@
     "environment": {
       "climate": "Temperate maritime climate",
       "highestPoint": null,
-      "geography": "Wales lies on the western side of Great Britain, with a long coastline facing the Irish Sea and Bristol Channel. Its listed area is 20,779 km².",
+      "geography": "Wales is in Northern Europe and has coastal access. Its listed area is 20,779 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -14262,7 +14262,7 @@
       "drivingSide": "Left",
       "timeZones": "GMT / BST",
       "plugTypes": "Type G",
-      "tipping": null,
+      "tipping": "Optional; common in restaurants when service is not included",
       "emergencyNumbers": "999 / 112",
       "callingCode": "+44"
     },
@@ -14270,14 +14270,14 @@
       "England"
     ],
     "facts": [
+      "Wales has coastal access.",
+      "It shares land borders with England.",
       "Wales is one of the four nations of the United Kingdom.",
       "Cardiff is the capital city.",
       "Welsh and English are official languages in Wales.",
       "Wales shares a land border with England.",
       "The listed currency is pound sterling.",
-      "The latest published population in this atlas is 3.2M (2024).",
-      "Wales uses left-hand traffic.",
-      "The international calling code is +44."
+      "The latest published population in this atlas is 3.2M (2024)."
     ],
     "images": [
       {
@@ -14320,7 +14320,7 @@
     "environment": {
       "climate": "Temperate maritime climate",
       "highestPoint": null,
-      "geography": "Northern Ireland occupies the northeastern part of the island of Ireland, with an Atlantic-facing coastline and a land border with Ireland. Its listed area is 14,130 km².",
+      "geography": "Northern Ireland is in Northern Europe and has coastal access. Its listed area is 14,130 km².",
       "majorRivers": null,
       "naturalResources": null
     },
@@ -14328,7 +14328,7 @@
       "drivingSide": "Left",
       "timeZones": "GMT / BST",
       "plugTypes": "Type G",
-      "tipping": null,
+      "tipping": "Optional; common in restaurants when service is not included",
       "emergencyNumbers": "999 / 112",
       "callingCode": "+44"
     },
@@ -14336,14 +14336,14 @@
       "Ireland"
     ],
     "facts": [
+      "Northern Ireland has coastal access.",
+      "It shares land borders with Ireland.",
       "Northern Ireland is one of the four nations of the United Kingdom.",
       "Belfast is the capital and largest city.",
       "Northern Ireland shares a land border with Ireland.",
       "The listed currency is pound sterling.",
       "English, Irish, and Ulster Scots are important languages in public and cultural life.",
-      "The latest published population in this atlas is 1.9M (2024).",
-      "Northern Ireland uses left-hand traffic.",
-      "The international calling code is +44."
+      "The latest published population in this atlas is 1.9M (2024)."
     ],
     "images": [
       {

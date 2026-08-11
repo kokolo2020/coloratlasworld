@@ -37,6 +37,23 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const gdpRank = getGdpRank(country.cca3);
   const populationRatio = metrics.population?.value ? metrics.population.value / COUNTRY_AVERAGE_POPULATION : null;
   const populationBar = populationRatio ? Math.min(100, Math.max(4, populationRatio * 34)) : 0;
+  const connectionSummary = country.borders.length
+    ? `${country.borders.length} listed ${country.borders.length === 1 ? "connection" : "connections"}`
+    : country.landlocked
+      ? "Landlocked profile"
+      : "Island/coastal profile";
+  const connectionNote = country.borders.length
+    ? country.landlocked
+      ? "This profile has land borders and no coastline."
+      : "This profile has coastal access and listed land connections."
+    : country.landlocked
+      ? "This profile has no coastline or listed land-border neighbors."
+      : "No land borders; sea and air links shape outside connections.";
+  const medianAgeLabel = enrichment.demographics.medianAge != null ? `${enrichment.demographics.medianAge} years` : "Comparable value pending";
+  const timeZoneLabel = enrichment.dailyLife.timeZones || "Profile-specific value pending";
+  const plugTypeLabel = enrichment.dailyLife.plugTypes || "Profile-specific value pending";
+  const tippingLabel = enrichment.dailyLife.tipping || "Local customs vary by setting";
+  const emergencyLabel = enrichment.dailyLife.emergencyNumbers || "Emergency numbers vary; check official guidance";
   const sourceUrl = country.cca3 === "HKG"
     ? "https://data.worldbank.org/country/hong-kong-sar-china"
     : country.cca2.startsWith("GB-")
@@ -120,7 +137,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               <small>World Bank · {enrichment.demographics.urbanPercent.year}</small>
             </> : <p className="availability-note">Urban and rural shares are not available in the comparable dataset.</p>}
             <dl className="data-list">
-              <div><dt>Median age</dt><dd>{enrichment.demographics.medianAge ?? "Not in current dataset"}</dd></div>
+              <div><dt>Median age</dt><dd>{medianAgeLabel}</dd></div>
               <div><dt>Languages</dt><dd>{enrichment.demographics.officialLanguages.length ? enrichment.demographics.officialLanguages.join(", ") : "Not published"}</dd></div>
               <div><dt>Capital / principal city</dt><dd>{enrichment.demographics.largestCities.join(", ") || country.capital || "Not published"}</dd></div>
             </dl>
@@ -143,7 +160,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
               <div><dt>Government</dt><dd>{enrichment.government.type || "Not published"}</dd></div>
               <div><dt>Head of state</dt><dd>{enrichment.government.headOfState || "Not published"}</dd></div>
               <div><dt>Head of government</dt><dd>{enrichment.government.headOfGovernment || "Not published"}</dd></div>
-              <div><dt>Current constitution</dt><dd>{enrichment.government.constitutionDate || "Not in current dataset"}</dd></div>
+              <div><dt>Current constitution</dt><dd>{enrichment.government.constitutionDate || "Comparable date pending"}</dd></div>
             </dl>
             <small>Wikidata snapshot · retrieved {enrichment.government.retrieved}</small>
           </article>
@@ -154,9 +171,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             <dl className="data-list">
               <div><dt>Climate</dt><dd>{enrichment.environment.climate}</dd></div>
               <div><dt>Geography</dt><dd>{enrichment.environment.geography}</dd></div>
-              <div><dt>Highest point</dt><dd>{enrichment.environment.highestPoint || "Not in current dataset"}</dd></div>
-              <div><dt>Major rivers</dt><dd>{enrichment.environment.majorRivers || "Not in current dataset"}</dd></div>
-              <div><dt>Natural resources</dt><dd>{enrichment.environment.naturalResources || "Not in current dataset"}</dd></div>
+              <div><dt>Highest point</dt><dd>{enrichment.environment.highestPoint || "Profile-specific value pending"}</dd></div>
+              <div><dt>Major rivers</dt><dd>{enrichment.environment.majorRivers || "Profile-specific value pending"}</dd></div>
+              <div><dt>Natural resources</dt><dd>{enrichment.environment.naturalResources || "Profile-specific value pending"}</dd></div>
             </dl>
           </article>
 
@@ -166,10 +183,10 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             <dl className="data-list compact-list">
               <div><dt>Driving side</dt><dd>{enrichment.dailyLife.drivingSide}</dd></div>
               <div><dt>Calling code</dt><dd>{enrichment.dailyLife.callingCode || "Not published"}</dd></div>
-              <div><dt>Time zones</dt><dd>{enrichment.dailyLife.timeZones || "Verify locally"}</dd></div>
-              <div><dt>Plug types</dt><dd>{enrichment.dailyLife.plugTypes || "Verify locally"}</dd></div>
-              <div><dt>Tipping</dt><dd>{enrichment.dailyLife.tipping || "Local customs vary"}</dd></div>
-              <div><dt>Emergency numbers</dt><dd>{enrichment.dailyLife.emergencyNumbers || "Verify before travel"}</dd></div>
+              <div><dt>Time zones</dt><dd>{timeZoneLabel}</dd></div>
+              <div><dt>Plug types</dt><dd>{plugTypeLabel}</dd></div>
+              <div><dt>Tipping</dt><dd>{tippingLabel}</dd></div>
+              <div><dt>Emergency numbers</dt><dd>{emergencyLabel}</dd></div>
             </dl>
           </article>
 
@@ -183,7 +200,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
 
       <section className="neighbors-section">
         <div><p className="eyebrow"><span /> Connected places</p><h2>Neighboring profiles</h2><p>Continue exploring across each listed land border or connected geography.</p></div>
-        <div className="neighbor-chips">{neighbors.length ? neighbors.map((neighbor) => neighbor && <Link key={neighbor.cca3} href={`/countries/${neighbor.slug}`}><img src={flagUrl(neighbor.cca2)} alt="" />{neighbor.name}<span>→</span></Link>) : <p>No land-border neighbors are listed for this profile.</p>}</div>
+        <div className="neighbor-chips">{neighbors.length ? neighbors.map((neighbor) => neighbor && <Link key={neighbor.cca3} href={`/countries/${neighbor.slug}`}><img src={flagUrl(neighbor.cca2)} alt="" />{neighbor.name}<span>→</span></Link>) : <p>{connectionNote}</p>}</div>
       </section>
 
       <section className="gallery-section">
@@ -199,7 +216,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <div className="detail-title"><p className="eyebrow"><span /> People & place</p><h2>Country<br /><em>essentials.</em></h2></div>
         <div className="detail-cards">
           <article><span>Languages</span><h3>{languages.length ? languages.join(", ") : "Not published"}</h3><p>Languages listed in the open country catalog for {country.name}.</p></article>
-          <article><span>Connections</span><h3>{country.borders.length ? `${country.borders.length} listed ${country.borders.length === 1 ? "connection" : "connections"}` : "No listed land borders"}</h3><p>{country.landlocked ? "This profile has no coastline." : "This profile is not classified as landlocked."}</p></article>
+          <article><span>Connections</span><h3>{connectionSummary}</h3><p>{connectionNote}</p></article>
           <article><span>Currency</span><h3>{currencyLabel}</h3><p>The primary currency code and name used in the country catalog.</p></article>
         </div>
       </section>
