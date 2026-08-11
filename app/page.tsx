@@ -334,7 +334,7 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
         <CountrySearch variant="hero" />
         <div className="country-directory-grid">
           {COUNTRIES.map((country) => (
-            <Link className="country-directory-card" href={`/countries/${country.slug}`} key={country.cca3}>
+            <Link className="country-directory-card" href={`/?country=${country.slug}`} key={country.cca3}>
               <img src={flagUrl(country.cca2)} alt="" loading="lazy" />
               <span><strong>{country.name}</strong><small>{displayRegion(country)} · {country.cca2}</small></span>
               <b aria-hidden="true">→</b>

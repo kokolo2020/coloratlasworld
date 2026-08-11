@@ -120,10 +120,8 @@ export default function CountrySnapshot({
   }, [open]);
 
   function close() {
-    setOpen(false);
-    const url = new URL(window.location.href);
-    url.searchParams.delete("country");
-    window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+    const slug = activeSlug || firstSlug;
+    window.location.href = slug ? `/countries/${slug}` : "/";
   }
 
   const selected = findSnapshot(activeSlug) || snapshotList[0];
