@@ -9,7 +9,6 @@ const highlights = [
   { value: "0", label: "clutter or geography jargon" },
 ];
 
-const SNAPSHOT_COUNTRIES = COUNTRIES.map((country) => country.slug);
 const WHITE_FLAG_CARD_COUNTRIES = new Set(["AT", "CY", "FI", "GE", "GR", "ID", "IL", "JP", "KR", "MC", "MT", "PL", "SG", "SM", "VA"]);
 
 const PROFILE_OVERRIDES: Record<string, Partial<CountrySnapshotData>> = {
@@ -244,12 +243,13 @@ function buildSnapshot(slug: string): CountrySnapshotData {
 
 export default async function Home({ searchParams }: { searchParams?: Promise<{ country?: string }> }) {
   const params = await searchParams;
-  const snapshots = SNAPSHOT_COUNTRIES.map(buildSnapshot);
-  const initialCountry = params?.country;
+  const initialCountry = params?.country?.toLowerCase();
+  const activeCountry = initialCountry ? getCountryBySlug(initialCountry) : null;
+  const snapshot = buildSnapshot(activeCountry?.slug || "united-states");
 
   return (
     <main>
-      <CountrySnapshot data={snapshots} initialOpen={Boolean(initialCountry && SNAPSHOT_COUNTRIES.includes(initialCountry))} initialCountry={initialCountry} />
+      <CountrySnapshot data={snapshot} initialOpen={Boolean(activeCountry)} initialCountry={snapshot.slug} />
       <nav className="site-nav" aria-label="Primary navigation">
         <Link className="brand" href="/" aria-label="Color Atlas World home">
           <span className="brand-mark">✦</span>
@@ -305,9 +305,9 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
           <p className="eyebrow"><span /> Featured country</p>
           <h2>Begin anywhere.<br /><em>Explore deeply.</em></h2>
           <p>Every country now has the same polished profile: flag, map, people, geography, economy, identity, and sources.</p>
-          <Link className="text-link" href="/countries/united-states">Explore the full USA profile <span>→</span></Link>
+          <Link className="text-link" href="/?country=united-states">Explore the USA snapshot <span>→</span></Link>
         </div>
-        <Link className="country-feature-card" href="/countries/united-states">
+        <Link className="country-feature-card" href="/?country=united-states">
           <div className="feature-flag"><img src="/flags/us.svg" alt="" /></div>
           <div className="feature-card-body">
             <div className="feature-title-row">
@@ -334,7 +334,7 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
         <CountrySearch variant="hero" />
         <div className="country-directory-grid">
           {COUNTRIES.map((country) => (
-            <Link className="country-directory-card" href={`/countries/${country.slug}`} key={country.cca3}>
+            <Link className="country-directory-card" href={`/?country=${country.slug}`} key={country.cca3}>
               <img src={flagUrl(country.cca2)} alt="" loading="lazy" />
               <span><strong>{country.name}</strong><small>{displayRegion(country)} · {country.cca2}</small></span>
               <b aria-hidden="true">→</b>

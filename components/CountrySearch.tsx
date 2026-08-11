@@ -1,7 +1,20 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { COUNTRY_SEARCH_INDEX } from "@/lib/countries";
+import countriesData from "@/data/countries.json";
+
+function slugifyCountry(name: string) {
+  return name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+const COUNTRY_SEARCH_INDEX = countriesData.map((country) => ({
+  name: country.name,
+  slug: slugifyCountry(country.name),
+  terms: [country.name, country.officialName, country.cca2, country.cca3, ...country.aliases,
+    ...(country.cca2 === "US" ? ["USA", "America"] : []),
+    ...(country.cca2 === "GB" ? ["UK", "Britain", "Great Britain"] : []),
+  ].join(" ").toLowerCase(),
+}));
 
 export default function CountrySearch({ variant = "compact" }: { variant?: "hero" | "compact" }) {
   const [query, setQuery] = useState("");
@@ -16,8 +29,7 @@ export default function CountrySearch({ variant = "compact" }: { variant?: "hero
       || COUNTRY_SEARCH_INDEX.find((item) => item.terms.includes(term));
     if (!result) return setMessage("Country not found. Try a full name or two-letter code.");
     setMessage("");
-    window.history.pushState({}, "", `?country=${result.slug}`);
-    window.dispatchEvent(new CustomEvent("coloratlas:open-snapshot"));
+    window.location.href = `/?country=${result.slug}`;
   }
 
   return (
