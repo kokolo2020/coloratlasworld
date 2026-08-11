@@ -2051,6 +2051,45 @@
     ]
   },
   {
+    "name": "England",
+    "officialName": "England",
+    "cca2": "GB-ENG",
+    "cca3": "ENG",
+    "capital": "London",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "status": "Constituent country / nation of the United Kingdom",
+    "currencies": {
+      "GBP": {
+        "name": "Pound sterling",
+        "symbol": "£"
+      }
+    },
+    "languages": {
+      "eng": "English"
+    },
+    "latlng": [
+      52.3555,
+      -1.1743
+    ],
+    "area": 130279,
+    "landlocked": false,
+    "borders": [
+      "SCT",
+      "WLS"
+    ],
+    "flag": "🏴",
+    "demonym": "English",
+    "callingCode": "+44",
+    "aliases": [
+      "GB-ENG",
+      "England",
+      "English",
+      "UK nation",
+      "United Kingdom constituent country"
+    ]
+  },
+  {
     "name": "Equatorial Guinea",
     "officialName": "Republic of Equatorial Guinea",
     "cca2": "GQ",
@@ -2851,6 +2890,45 @@
       "HN",
       "Republic of Honduras",
       "República de Honduras"
+    ]
+  },
+  {
+    "name": "Hong Kong",
+    "officialName": "Hong Kong Special Administrative Region of the People's Republic of China",
+    "cca2": "HK",
+    "cca3": "HKG",
+    "capital": "Hong Kong",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "status": "Special administrative region of China",
+    "currencies": {
+      "HKD": {
+        "name": "Hong Kong dollar",
+        "symbol": "$"
+      }
+    },
+    "languages": {
+      "zho": "Chinese",
+      "eng": "English"
+    },
+    "latlng": [
+      22.3193,
+      114.1694
+    ],
+    "area": 1107,
+    "landlocked": false,
+    "borders": [
+      "CHN"
+    ],
+    "flag": "🇭🇰",
+    "demonym": "Hong Konger",
+    "callingCode": "+852",
+    "aliases": [
+      "HK",
+      "HKG",
+      "Hong Kong SAR",
+      "Hong Kong Special Administrative Region",
+      "香港"
     ]
   },
   {
@@ -5015,6 +5093,47 @@
     ]
   },
   {
+    "name": "Northern Ireland",
+    "officialName": "Northern Ireland",
+    "cca2": "GB-NIR",
+    "cca3": "NIR",
+    "capital": "Belfast",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "status": "Constituent nation of the United Kingdom",
+    "currencies": {
+      "GBP": {
+        "name": "Pound sterling",
+        "symbol": "£"
+      }
+    },
+    "languages": {
+      "eng": "English",
+      "gle": "Irish",
+      "sco": "Ulster Scots"
+    },
+    "latlng": [
+      54.7877,
+      -6.4923
+    ],
+    "area": 14130,
+    "landlocked": false,
+    "borders": [
+      "IRL"
+    ],
+    "flag": "🇬🇧",
+    "demonym": "Northern Irish",
+    "callingCode": "+44",
+    "aliases": [
+      "GB-NIR",
+      "Northern Ireland",
+      "NI",
+      "Ulster",
+      "UK nation",
+      "United Kingdom constituent nation"
+    ]
+  },
+  {
     "name": "Norway",
     "officialName": "Kingdom of Norway",
     "cca2": "NO",
@@ -5882,6 +6001,47 @@
       "SA",
       "Kingdom of Saudi Arabia",
       "Al-Mamlakah al-‘Arabiyyah as-Su‘ūdiyyah"
+    ]
+  },
+  {
+    "name": "Scotland",
+    "officialName": "Scotland",
+    "cca2": "GB-SCT",
+    "cca3": "SCT",
+    "capital": "Edinburgh",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "status": "Constituent country / nation of the United Kingdom",
+    "currencies": {
+      "GBP": {
+        "name": "Pound sterling",
+        "symbol": "£"
+      }
+    },
+    "languages": {
+      "eng": "English",
+      "gla": "Scottish Gaelic",
+      "sco": "Scots"
+    },
+    "latlng": [
+      56.4907,
+      -4.2026
+    ],
+    "area": 77933,
+    "landlocked": false,
+    "borders": [
+      "ENG"
+    ],
+    "flag": "🏴",
+    "demonym": "Scottish",
+    "callingCode": "+44",
+    "aliases": [
+      "GB-SCT",
+      "Scotland",
+      "Scottish",
+      "Alba",
+      "UK nation",
+      "United Kingdom constituent country"
     ]
   },
   {
@@ -7495,6 +7655,47 @@
       "Socialist Republic of Vietnam",
       "Cộng hòa Xã hội chủ nghĩa Việt Nam",
       "Viet Nam"
+    ]
+  },
+  {
+    "name": "Wales",
+    "officialName": "Wales",
+    "cca2": "GB-WLS",
+    "cca3": "WLS",
+    "capital": "Cardiff",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "status": "Constituent country / nation of the United Kingdom",
+    "currencies": {
+      "GBP": {
+        "name": "Pound sterling",
+        "symbol": "£"
+      }
+    },
+    "languages": {
+      "eng": "English",
+      "cym": "Welsh"
+    },
+    "latlng": [
+      52.1307,
+      -3.7837
+    ],
+    "area": 20779,
+    "landlocked": false,
+    "borders": [
+      "ENG"
+    ],
+    "flag": "🏴",
+    "demonym": "Welsh",
+    "callingCode": "+44",
+    "aliases": [
+      "GB-WLS",
+      "GB-CYM",
+      "Wales",
+      "Welsh",
+      "Cymru",
+      "UK nation",
+      "United Kingdom constituent country"
     ]
   },
   {

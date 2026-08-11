@@ -23,11 +23,11 @@ export default function CountrySearch({ variant = "compact" }: { variant?: "hero
   function submit(event: FormEvent) {
     event.preventDefault();
     const term = query.trim().toLowerCase();
-    if (!term) return setMessage("Type a country name or code.");
+    if (!term) return setMessage("Type a profile name or code.");
     const result = COUNTRY_SEARCH_INDEX.find((item) => item.name.toLowerCase() === term || item.terms.split(" ").includes(term))
       || COUNTRY_SEARCH_INDEX.find((item) => item.name.toLowerCase().startsWith(term))
       || COUNTRY_SEARCH_INDEX.find((item) => item.terms.includes(term));
-    if (!result) return setMessage("Country not found. Try a full name or two-letter code.");
+    if (!result) return setMessage("Profile not found. Try a full name, alias, or code.");
     setMessage("");
     window.location.href = `/?country=${result.slug}`;
   }
@@ -36,8 +36,8 @@ export default function CountrySearch({ variant = "compact" }: { variant?: "hero
     <div className={`country-search-wrap ${variant}`}>
       <form className="country-search" onSubmit={submit} role="search">
         <span aria-hidden="true">⌕</span>
-        <label className="sr-only" htmlFor={`country-search-${variant}`}>Search countries</label>
-        <input id={`country-search-${variant}`} value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search any country or code…" autoComplete="off" />
+        <label className="sr-only" htmlFor={`country-search-${variant}`}>Search world profiles</label>
+        <input id={`country-search-${variant}`} value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search any country, nation, or code…" autoComplete="off" />
         <button type="submit">Explore</button>
       </form>
       {message && <p className="search-message" role="status">{message}</p>}

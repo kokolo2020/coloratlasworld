@@ -18,6 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function CountryPage({ params }: { params: Promise<{ slug: string }> }) {
   const country = getCountryBySlug((await params).slug);
   if (!country) notFound();
+  const profileCount = COUNTRIES.length;
+  const profileStatus = country.status || "Sovereign country profile";
   const metrics = getMetrics(country.cca3);
   const region = displayRegion(country);
   const currencies = Object.entries(country.currencies);
@@ -35,6 +37,11 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const gdpRank = getGdpRank(country.cca3);
   const populationRatio = metrics.population?.value ? metrics.population.value / COUNTRY_AVERAGE_POPULATION : null;
   const populationBar = populationRatio ? Math.min(100, Math.max(4, populationRatio * 34)) : 0;
+  const sourceUrl = country.cca3 === "HKG"
+    ? "https://data.worldbank.org/country/hong-kong-sar-china"
+    : country.cca2.startsWith("GB-")
+      ? "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates"
+      : `https://data.worldbank.org/country/${country.cca2.toLowerCase()}`;
 
   const quickStats = [
     { label: "Population", value: population, note: metrics.population ? `World Bank · ${metrics.population.year}` : "No recent World Bank value" },
@@ -48,21 +55,21 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       <nav className="site-nav country-nav" aria-label="Primary navigation">
         <Link className="brand" href="/"><span className="brand-mark">✦</span><span>Color Atlas World</span></Link>
         <CountrySearch />
-        <Link className="back-link" href="/#countries">All countries</Link>
+        <Link className="back-link" href="/#countries">All profiles</Link>
       </nav>
 
       <header className="country-hero">
         <div className="country-hero-copy">
           <p className="breadcrumb"><Link href="/">World</Link><span>/</span><span>{region}</span><span>/</span><strong>{country.name}</strong></p>
-          <div className="country-kicker"><span>{country.cca2}</span>{country.officialName}</div>
+          <div className="country-kicker"><span>{country.cca2}</span>{country.officialName}<small>{profileStatus}</small></div>
           <h1>{country.name}</h1>
-          <p>{country.name} is in {country.subregion}. This profile brings its flag, geography, people, languages, and latest available economic indicators into one clear visual story.</p>
+          <p>{country.name} is in {country.subregion}. This profile brings its status, flag, geography, people, languages, and latest available indicators into one clear visual story.</p>
           <div className="hero-actions"><a className="primary-button" href="#overview">Explore the profile <span>↓</span></a><a className="secondary-button" href="#sources">View sources</a></div>
         </div>
         <div className="country-flag-stage">
-          <div className="flag-label"><span>National flag</span><span>{country.cca3} · {country.profileNumber.toString().padStart(3, "0")} / 199</span></div>
+          <div className="flag-label"><span>Flag</span><span>{country.cca3} · {country.profileNumber.toString().padStart(3, "0")} / {profileCount}</span></div>
           <img src={flagUrl(country.cca2)} alt={`Flag of ${country.name}`} />
-          <p>{country.flag} The national flag of {country.name}. Country code: {country.cca2} / {country.cca3}.</p>
+          <p>{country.flag} The flag shown for {country.name}. Profile code: {country.cca2} / {country.cca3}.</p>
         </div>
       </header>
 
@@ -74,7 +81,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <article className="profile-story">
           <p className="eyebrow"><span /> At a glance</p>
           <h2>Meet<br /><em>{country.name}.</em></h2>
-          <p className="large-copy">{country.name} is {country.landlocked ? "a landlocked country" : "a country"} in {country.subregion}. Its official name is {country.officialName}.</p>
+          <p className="large-copy">{country.name} is {country.landlocked ? "a landlocked profile" : "a world profile"} in {country.subregion}. Its status is {profileStatus.toLowerCase()}.</p>
           <div className="fact-columns">
             <div><small>Region</small><strong>{country.subregion}</strong></div>
             <div><small>Demonym</small><strong>{country.demonym || "Not published"}</strong></div>
@@ -125,7 +132,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             <h3>Placed in context</h3>
             <div className="comparison-row"><div><span>Population</span><strong>{populationRatio ? `${populationRatio.toFixed(1)}× atlas average` : "Not available"}</strong></div><div className="comparison-track"><i style={{width:`${populationBar}%`}} /></div></div>
             <div className="comparison-row"><div><span>GDP</span><strong>{gdpRank ? `#${gdpRank.rank} of ${gdpRank.total}` : "Not ranked"}</strong></div><div className="comparison-track"><i style={{width:gdpRank ? `${Math.max(4,100-(gdpRank.rank/gdpRank.total)*100)}%` : "0%"}} /></div></div>
-            <p className="context-note">Population compares the 199 atlas profiles. GDP ranking includes profiles with a published World Bank value.</p>
+            <p className="context-note">Population compares the {profileCount} atlas profiles. GDP ranking includes profiles with a published World Bank value.</p>
           </article>
 
           <article className="depth-card history-card">
@@ -175,7 +182,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       </section>
 
       <section className="neighbors-section">
-        <div><p className="eyebrow"><span /> Connected places</p><h2>Neighboring countries</h2><p>Continue exploring across each listed land border.</p></div>
+        <div><p className="eyebrow"><span /> Connected places</p><h2>Neighboring profiles</h2><p>Continue exploring across each listed land border or connected geography.</p></div>
         <div className="neighbor-chips">{neighbors.length ? neighbors.map((neighbor) => neighbor && <Link key={neighbor.cca3} href={`/countries/${neighbor.slug}`}><img src={flagUrl(neighbor.cca2)} alt="" />{neighbor.name}<span>→</span></Link>) : <p>No land-border neighbors are listed for this profile.</p>}</div>
       </section>
 
@@ -192,7 +199,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <div className="detail-title"><p className="eyebrow"><span /> People & place</p><h2>Country<br /><em>essentials.</em></h2></div>
         <div className="detail-cards">
           <article><span>Languages</span><h3>{languages.length ? languages.join(", ") : "Not published"}</h3><p>Languages listed in the open country catalog for {country.name}.</p></article>
-          <article><span>Neighbors</span><h3>{country.borders.length ? `${country.borders.length} land ${country.borders.length === 1 ? "border" : "borders"}` : "No listed land borders"}</h3><p>{country.landlocked ? "The country has no coastline." : "The country is not classified as landlocked."}</p></article>
+          <article><span>Connections</span><h3>{country.borders.length ? `${country.borders.length} listed ${country.borders.length === 1 ? "connection" : "connections"}` : "No listed land borders"}</h3><p>{country.landlocked ? "This profile has no coastline." : "This profile is not classified as landlocked."}</p></article>
           <article><span>Currency</span><h3>{currencyLabel}</h3><p>The primary currency code and name used in the country catalog.</p></article>
         </div>
       </section>
@@ -210,7 +217,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       <section className="sources" id="sources">
         <div><p className="eyebrow"><span /> Sources & notes</p><h2>Numbers you can trace.</h2><p>Statistics show their reference year because country data changes. Unavailable values are clearly marked instead of estimated.</p></div>
         <ul>
-          <li><a href={`https://data.worldbank.org/country/${country.cca2.toLowerCase()}`} target="_blank" rel="noreferrer">World Bank — population and economy ↗</a></li>
+          <li><a href={sourceUrl} target="_blank" rel="noreferrer">Primary statistics source — population and economy where available ↗</a></li>
           <li><a href="https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS" target="_blank" rel="noreferrer">World Bank — urban population share ↗</a></li>
           <li><a href={enrichment.government.sourceUrl || "https://www.wikidata.org"} target="_blank" rel="noreferrer">Wikidata — government and current officeholders ↗</a></li>
           <li><a href="https://github.com/mledoze/countries" target="_blank" rel="noreferrer">Open country catalog — names, codes and geography ↗</a></li>
@@ -218,7 +225,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         </ul>
       </section>
 
-      <section className="next-country"><span>Color Atlas World · Profile {country.profileNumber.toString().padStart(3, "0")}</span><h2>Next: {next.name}</h2><p>Continue through the atlas or search for any of 199 countries.</p><div className="next-actions"><Link className="primary-button" href={`/countries/${next.slug}`}>Open {next.name} →</Link></div><CountrySearch variant="hero" /></section>
+      <section className="next-country"><span>Color Atlas World · Profile {country.profileNumber.toString().padStart(3, "0")}</span><h2>Next: {next.name}</h2><p>Continue through the atlas or search for any of {profileCount} world profiles.</p><div className="next-actions"><Link className="primary-button" href={`/countries/${next.slug}`}>Open {next.name} →</Link></div><CountrySearch variant="hero" /></section>
       <footer className="site-footer country-footer"><Link className="brand" href="/"><span className="brand-mark">✦</span><span>Color Atlas World</span></Link><p>Explore the world, one country at a time.</p><span>© 2026 Color Atlas World</span></footer>
     </main>
   );

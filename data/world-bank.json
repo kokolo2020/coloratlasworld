@@ -4262,5 +4262,67 @@
       "value": 8.10671343048909,
       "year": "2025"
     }
+  },
+  "HKG": {
+    "population": {
+      "value": 7498900,
+      "year": "2025"
+    },
+    "lifeExpectancy": {
+      "value": 85,
+      "year": "2024"
+    },
+    "gdp": {
+      "value": 427310315921.993,
+      "year": "2025"
+    },
+    "gdpPerCapita": {
+      "value": 56983.1,
+      "year": "2025"
+    },
+    "gdpGrowth": {
+      "value": 3.5,
+      "year": "2025"
+    }
+  },
+  "ENG": {
+    "population": {
+      "value": 58620101,
+      "year": "2024"
+    },
+    "lifeExpectancy": null,
+    "gdp": null,
+    "gdpPerCapita": null,
+    "gdpGrowth": null
+  },
+  "SCT": {
+    "population": {
+      "value": 5546900,
+      "year": "2024"
+    },
+    "lifeExpectancy": null,
+    "gdp": null,
+    "gdpPerCapita": null,
+    "gdpGrowth": null
+  },
+  "WLS": {
+    "population": {
+      "value": 3186581,
+      "year": "2024"
+    },
+    "lifeExpectancy": null,
+    "gdp": null,
+    "gdpPerCapita": null,
+    "gdpGrowth": null
+  },
+  "NIR": {
+    "population": {
+      "value": 1927855,
+      "year": "2024"
+    },
+    "lifeExpectancy": null,
+    "gdp": null,
+    "gdpPerCapita": null,
+    "gdpGrowth": null
   }
 }

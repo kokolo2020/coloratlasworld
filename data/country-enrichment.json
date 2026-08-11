@@ -13811,5 +13811,331 @@
         "source": "Wikimedia Commons"
       }
     ]
+  },
+  "HKG": {
+    "demographics": {
+      "urbanPercent": {
+        "value": 100,
+        "year": "2024"
+      },
+      "ruralPercent": {
+        "value": 0,
+        "year": "2024"
+      },
+      "medianAge": 47,
+      "officialLanguages": [
+        "Chinese",
+        "English"
+      ],
+      "largestCities": [
+        "Hong Kong"
+      ],
+      "compositionNote": "Population and identity categories vary by census and source; this profile uses neutral educational summary data."
+    },
+    "history": {
+      "currentStateSince": null,
+      "summary": "Hong Kong is a special administrative region on China's southern coast. It is known for its high-density skyline, deep-water port, financial services, Cantonese culture, and role as a gateway between mainland China and global markets."
+    },
+    "government": {
+      "type": "Special administrative region",
+      "headOfState": null,
+      "headOfGovernment": null,
+      "constitutionDate": null,
+      "retrieved": "2026-08-11",
+      "sourceUrl": null
+    },
+    "environment": {
+      "climate": "Temperate maritime climate",
+      "highestPoint": null,
+      "geography": "Hong Kong sits on the South China Sea around Hong Kong Island, Kowloon, the New Territories, and many outlying islands. Its listed area is 1,107 km².",
+      "majorRivers": null,
+      "naturalResources": null
+    },
+    "dailyLife": {
+      "drivingSide": "Left",
+      "timeZones": "Hong Kong Time (UTC+8)",
+      "plugTypes": "Type G",
+      "tipping": null,
+      "emergencyNumbers": "999 / 112",
+      "callingCode": "+852"
+    },
+    "neighbors": [
+      "China"
+    ],
+    "facts": [
+      "Hong Kong is a special administrative region of China.",
+      "Hong Kong is one of the world's most densely populated major urban areas.",
+      "The Hong Kong dollar is the listed currency.",
+      "Chinese and English are official languages.",
+      "Victoria Harbour is central to its port and skyline identity.",
+      "The latest published population in this atlas is 7.5M (2025).",
+      "Hong Kong uses left-hand traffic.",
+      "The international calling code is +852."
+    ],
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hong_Kong_Skyline_Restitch_-_Dec_2007.jpg",
+        "label": "Hong Kong skyline",
+        "source": "Wikimedia Commons"
+      }
+    ]
+  },
+  "ENG": {
+    "demographics": {
+      "urbanPercent": null,
+      "ruralPercent": null,
+      "medianAge": 40.2,
+      "officialLanguages": [
+        "English"
+      ],
+      "largestCities": [
+        "London",
+        "Birmingham",
+        "Manchester"
+      ],
+      "compositionNote": "Population and identity categories vary by census and source; this profile uses neutral educational summary data."
+    },
+    "history": {
+      "currentStateSince": null,
+      "summary": "England is a constituent country and nation within the United Kingdom. It contains London, the UK capital, and has shaped global culture through literature, science, industry, sport, finance, and education."
+    },
+    "government": {
+      "type": "Constituent country within a parliamentary constitutional monarchy",
+      "headOfState": null,
+      "headOfGovernment": null,
+      "constitutionDate": null,
+      "retrieved": "2026-08-11",
+      "sourceUrl": null
+    },
+    "environment": {
+      "climate": "Temperate maritime climate",
+      "highestPoint": null,
+      "geography": "England occupies the southern and central part of Great Britain, with coastlines on the North Sea, English Channel, Irish Sea, and Atlantic approaches. Its listed area is 130,279 km².",
+      "majorRivers": null,
+      "naturalResources": null
+    },
+    "dailyLife": {
+      "drivingSide": "Left",
+      "timeZones": "GMT / BST",
+      "plugTypes": "Type G",
+      "tipping": null,
+      "emergencyNumbers": "999 / 112",
+      "callingCode": "+44"
+    },
+    "neighbors": [
+      "Scotland",
+      "Wales"
+    ],
+    "facts": [
+      "England is one of the four nations of the United Kingdom.",
+      "London is both England's capital and the capital of the UK.",
+      "England shares land borders with Scotland and Wales.",
+      "The listed currency is pound sterling.",
+      "English is the main official language used in public life.",
+      "The latest published population in this atlas is 58.6M (2024).",
+      "England uses left-hand traffic.",
+      "The international calling code is +44."
+    ],
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg",
+        "label": "Palace of Westminster, London",
+        "source": "Wikimedia Commons"
+      }
+    ]
+  },
+  "SCT": {
+    "demographics": {
+      "urbanPercent": null,
+      "ruralPercent": null,
+      "medianAge": 42.8,
+      "officialLanguages": [
+        "English",
+        "Scottish Gaelic",
+        "Scots"
+      ],
+      "largestCities": [
+        "Glasgow",
+        "Edinburgh",
+        "Aberdeen"
+      ],
+      "compositionNote": "Population and identity categories vary by census and source; this profile uses neutral educational summary data."
+    },
+    "history": {
+      "currentStateSince": null,
+      "summary": "Scotland is a constituent country and nation within the United Kingdom, with its own parliament and legal tradition. It is known for the Highlands, islands, universities, engineering history, energy resources, and distinctive cultural identity."
+    },
+    "government": {
+      "type": "Constituent country with devolved parliament",
+      "headOfState": null,
+      "headOfGovernment": null,
+      "constitutionDate": null,
+      "retrieved": "2026-08-11",
+      "sourceUrl": null
+    },
+    "environment": {
+      "climate": "Temperate maritime climate",
+      "highestPoint": null,
+      "geography": "Scotland occupies the northern part of Great Britain and includes many islands, with Atlantic and North Sea coastlines. Its listed area is 77,933 km².",
+      "majorRivers": null,
+      "naturalResources": null
+    },
+    "dailyLife": {
+      "drivingSide": "Left",
+      "timeZones": "GMT / BST",
+      "plugTypes": "Type G",
+      "tipping": null,
+      "emergencyNumbers": "999 / 112",
+      "callingCode": "+44"
+    },
+    "neighbors": [
+      "England"
+    ],
+    "facts": [
+      "Scotland is one of the four nations of the United Kingdom.",
+      "Edinburgh is the capital and Glasgow is the largest city by population.",
+      "Scotland shares a land border with England.",
+      "The listed currency is pound sterling.",
+      "English, Scots, and Scottish Gaelic are important languages in Scottish identity.",
+      "The latest published population in this atlas is 5.5M (2024).",
+      "Scotland uses left-hand traffic.",
+      "The international calling code is +44."
+    ],
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Edinburgh_Castle_from_the_south_east.JPG",
+        "label": "Edinburgh Castle",
+        "source": "Wikimedia Commons"
+      }
+    ]
+  },
+  "WLS": {
+    "demographics": {
+      "urbanPercent": null,
+      "ruralPercent": null,
+      "medianAge": 42.8,
+      "officialLanguages": [
+        "Welsh",
+        "English"
+      ],
+      "largestCities": [
+        "Cardiff",
+        "Swansea",
+        "Newport"
+      ],
+      "compositionNote": "Population and identity categories vary by census and source; this profile uses neutral educational summary data."
+    },
+    "history": {
+      "currentStateSince": null,
+      "summary": "Wales is a constituent country and nation within the United Kingdom, known for the Welsh language, mountains, coastlines, rugby, music, and industrial heritage. Cardiff is its capital and main urban center."
+    },
+    "government": {
+      "type": "Constituent country with devolved parliament",
+      "headOfState": null,
+      "headOfGovernment": null,
+      "constitutionDate": null,
+      "retrieved": "2026-08-11",
+      "sourceUrl": null
+    },
+    "environment": {
+      "climate": "Temperate maritime climate",
+      "highestPoint": null,
+      "geography": "Wales lies on the western side of Great Britain, with a long coastline facing the Irish Sea and Bristol Channel. Its listed area is 20,779 km².",
+      "majorRivers": null,
+      "naturalResources": null
+    },
+    "dailyLife": {
+      "drivingSide": "Left",
+      "timeZones": "GMT / BST",
+      "plugTypes": "Type G",
+      "tipping": null,
+      "emergencyNumbers": "999 / 112",
+      "callingCode": "+44"
+    },
+    "neighbors": [
+      "England"
+    ],
+    "facts": [
+      "Wales is one of the four nations of the United Kingdom.",
+      "Cardiff is the capital city.",
+      "Welsh and English are official languages in Wales.",
+      "Wales shares a land border with England.",
+      "The listed currency is pound sterling.",
+      "The latest published population in this atlas is 3.2M (2024).",
+      "Wales uses left-hand traffic.",
+      "The international calling code is +44."
+    ],
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cardiff_Bay_Wales.jpg",
+        "label": "Cardiff Bay",
+        "source": "Wikimedia Commons"
+      }
+    ]
+  },
+  "NIR": {
+    "demographics": {
+      "urbanPercent": null,
+      "ruralPercent": null,
+      "medianAge": 40.3,
+      "officialLanguages": [
+        "English",
+        "Irish",
+        "Ulster Scots"
+      ],
+      "largestCities": [
+        "Belfast",
+        "Derry/Londonderry",
+        "Lisburn"
+      ],
+      "compositionNote": "Population and identity categories vary by census and source; this profile uses neutral educational summary data."
+    },
+    "history": {
+      "currentStateSince": null,
+      "summary": "Northern Ireland is a constituent nation within the United Kingdom on the island of Ireland. It is known for Belfast, the Giant's Causeway, shared Irish and British cultural connections, and a devolved political settlement."
+    },
+    "government": {
+      "type": "Constituent nation with devolved assembly",
+      "headOfState": null,
+      "headOfGovernment": null,
+      "constitutionDate": null,
+      "retrieved": "2026-08-11",
+      "sourceUrl": null
+    },
+    "environment": {
+      "climate": "Temperate maritime climate",
+      "highestPoint": null,
+      "geography": "Northern Ireland occupies the northeastern part of the island of Ireland, with an Atlantic-facing coastline and a land border with Ireland. Its listed area is 14,130 km².",
+      "majorRivers": null,
+      "naturalResources": null
+    },
+    "dailyLife": {
+      "drivingSide": "Left",
+      "timeZones": "GMT / BST",
+      "plugTypes": "Type G",
+      "tipping": null,
+      "emergencyNumbers": "999 / 112",
+      "callingCode": "+44"
+    },
+    "neighbors": [
+      "Ireland"
+    ],
+    "facts": [
+      "Northern Ireland is one of the four nations of the United Kingdom.",
+      "Belfast is the capital and largest city.",
+      "Northern Ireland shares a land border with Ireland.",
+      "The listed currency is pound sterling.",
+      "English, Irish, and Ulster Scots are important languages in public and cultural life.",
+      "The latest published population in this atlas is 1.9M (2024).",
+      "Northern Ireland uses left-hand traffic.",
+      "The international calling code is +44."
+    ],
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Giants_Causeway_(14).JPG",
+        "label": "Giant's Causeway",
+        "source": "Wikimedia Commons"
+      }
+    ]
   }
 }

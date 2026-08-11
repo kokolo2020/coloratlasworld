@@ -105,6 +105,7 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .breadcrumb { display:flex; gap:10px; font-size:11px; text-transform:uppercase; letter-spacing:.12em; color:#9fc8c3; }
 .country-kicker { color:#f2c76f; text-transform:uppercase; letter-spacing:.15em; font-size:11px; font-weight:800; margin-top:65px; }
 .country-kicker span { display:inline-grid; place-items:center; width:40px; height:40px; border:1px solid rgba(255,255,255,.3); border-radius:50%; margin-right:12px; }
+.country-kicker small { display:block; width:max-content; max-width:620px; margin-top:12px; padding:7px 10px; border:1px solid rgba(242,199,111,.32); border-radius:999px; color:#d8ebe8; font-size:10px; letter-spacing:.1em; }
 .country-hero h1 { font-size:clamp(80px,9vw,134px); line-height:.76; letter-spacing:-.07em; margin:30px 0 42px; }
 .country-hero-copy>p:last-of-type { max-width:610px; color:#c4d7d4; line-height:1.7; font-size:18px; }
 .hero-actions { margin-top:30px; display:flex; gap:14px; align-items:center; }
@@ -5476,6 +5477,21 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .poster-official {
   margin-top:8px;
   font-size:22px;
+}
+
+.poster-status {
+  display:inline-flex;
+  max-width:420px;
+  margin:0 0 6px;
+  padding:4px 9px;
+  border-radius:999px;
+  background:#eef6f5;
+  color:#14777b;
+  font-size:9px;
+  font-weight:900;
+  line-height:1.15;
+  text-transform:uppercase;
+  letter-spacing:.08em;
 }
 
 .poster-lede {

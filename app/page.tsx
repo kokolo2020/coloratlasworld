@@ -3,13 +3,15 @@ import CountrySearch from "../components/CountrySearch";
 import CountrySnapshot, { CountrySnapshotData } from "../components/CountrySnapshot";
 import { COUNTRIES, displayRegion, flagUrl, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getMetrics } from "../lib/countries";
 
+const PROFILE_COUNT = COUNTRIES.length;
+
 const highlights = [
-  { value: "199", label: "complete country profiles" },
+  { value: PROFILE_COUNT.toString(), label: "world profiles" },
   { value: "1", label: "searchable world atlas" },
   { value: "0", label: "clutter or geography jargon" },
 ];
 
-const WHITE_FLAG_CARD_COUNTRIES = new Set(["AT", "CY", "FI", "GE", "GR", "ID", "IL", "JP", "KR", "MC", "MT", "PL", "SG", "SM", "VA"]);
+const WHITE_FLAG_CARD_COUNTRIES = new Set(["AT", "CY", "FI", "GB-ENG", "GB-WLS", "GE", "GR", "ID", "IL", "JP", "KR", "MC", "MT", "PL", "SG", "SM", "VA"]);
 
 const PROFILE_OVERRIDES: Record<string, Partial<CountrySnapshotData>> = {
   "united-states": {
@@ -207,6 +209,7 @@ function buildSnapshot(slug: string): CountrySnapshotData {
     name: country.name,
     officialName: country.officialName,
     code: country.cca2,
+    status: country.status,
     region: displayRegion(country),
     flagUrl: flagUrl(country.cca2),
     fullFlagUrl: flagUrl(country.cca2),
@@ -258,20 +261,20 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
         <div className="nav-links">
           <a href="#explore">Explore</a>
           <a href="#about">About</a>
-          <a className="nav-cta" href="#countries">Browse 199 countries</a>
+          <a className="nav-cta" href="#countries">Browse {PROFILE_COUNT} profiles</a>
         </div>
       </nav>
 
       <section className="home-hero">
         <div className="hero-copy">
           <p className="eyebrow"><span /> A living atlas for curious people</p>
-          <h1>Every country,<br /><em>clearly explained.</em></h1>
+          <h1>Every profile,<br /><em>clearly explained.</em></h1>
           <p className="hero-lede">
-            Search a country and discover its flag, people, economy, geography,
+            Search a country, nation, or special region and discover its flag, people, economy, geography,
             culture, and defining facts in one beautiful profile.
           </p>
           <CountrySearch variant="hero" />
-          <p className="search-note">Try “Canada”, “Cambodia”, “Japan”, “UK”, or “BR”</p>
+          <p className="search-note">Try “Canada”, “Hong Kong”, “Scotland”, “Japan”, “UK”, or “BR”</p>
         </div>
 
         <div className="hero-atlas" aria-label="United States profile preview">
@@ -304,7 +307,7 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
         <div className="section-heading">
           <p className="eyebrow"><span /> Featured country</p>
           <h2>Begin anywhere.<br /><em>Explore deeply.</em></h2>
-          <p>Every country now has the same polished profile: flag, map, people, geography, economy, identity, and sources.</p>
+          <p>Every world profile now has the same polished format: flag, map, people, geography, economy, identity, and sources.</p>
           <Link className="text-link" href="/countries/united-states">Explore the full USA profile <span>→</span></Link>
         </div>
         <Link className="country-feature-card" href="/countries/united-states">
@@ -327,9 +330,9 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
         <div className="country-directory-head">
           <div>
             <p className="eyebrow"><span /> The complete atlas</p>
-            <h2>Choose from<br /><em>199 countries.</em></h2>
+            <h2>Choose from<br /><em>{PROFILE_COUNT} world profiles.</em></h2>
           </div>
-          <p>Search by country name, common alias, or two- and three-letter country code—or browse the full directory below.</p>
+          <p>Search by country name, UK nation, special region, common alias, or code—or browse the full directory below.</p>
         </div>
         <CountrySearch variant="hero" />
         <div className="country-directory-grid">
@@ -346,7 +349,7 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
       <section className="principles" id="about">
         <div><span>01</span><h3>Trusted numbers</h3><p>Core statistics include their year and link back to authoritative sources.</p></div>
         <div><span>02</span><h3>Designed to teach</h3><p>Dense information becomes a clear visual story that works on every screen.</p></div>
-        <div><span>03</span><h3>One global system</h3><p>All 199 country profiles share the same structure, navigation, sourcing, and visual language.</p></div>
+        <div><span>03</span><h3>One global system</h3><p>All {PROFILE_COUNT} world profiles share the same structure, navigation, sourcing, and visual language.</p></div>
       </section>
 
       <footer className="site-footer">

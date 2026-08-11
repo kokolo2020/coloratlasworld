@@ -62,7 +62,10 @@ export function getMetrics(code: string): CountryMetrics {
   };
 }
 
-export function flagUrl(code: string) { return `https://flagcdn.com/${code.toLowerCase()}.svg`; }
+export function flagUrl(code: string) {
+  if (code === "GB-NIR") return "https://flagcdn.com/gb.svg";
+  return `https://flagcdn.com/${code.toLowerCase()}.svg`;
+}
 export function formatNumber(value?: number | null) {
   if (value == null) return "Not published";
   return new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(value);

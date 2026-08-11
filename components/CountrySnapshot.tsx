@@ -10,6 +10,7 @@ export type CountrySnapshotData = {
   name: string;
   officialName: string;
   code: string;
+  status?: string;
   region: string;
   flagUrl: string;
   fullFlagUrl?: string;
@@ -180,6 +181,7 @@ export default function CountrySnapshot({
           <header className="poster-title">
             <h2 id="snapshot-title"><span>{selected.name.toUpperCase()}</span> Country Profile</h2>
             <p className="poster-official">* {selected.officialName} *</p>
+            {selected.status && <p className="poster-status">{selected.status}</p>}
             <p className="poster-lede">{selected.lede || `${selected.name} is a ${selected.region} country with a distinctive culture, economy, and place in world affairs.`}</p>
           </header>
 
