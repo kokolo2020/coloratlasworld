@@ -79,7 +79,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <Link className="back-link" href="/#countries">All profiles</Link>
       </nav>
 
-      <CountryProfileTabs report={specialReport ? <CountryTrajectory data={specialReport} /> : null}>
+      <CountryProfileTabs report={specialReport ? <CountryTrajectory data={specialReport} flagSrc={flagUrl(country.cca2)} /> : null}>
       <header className="country-hero">
         <div className="country-hero-copy">
           <p className="breadcrumb"><Link href="/">World</Link><span>/</span><span>{region}</span><span>/</span><strong>{country.name}</strong></p>

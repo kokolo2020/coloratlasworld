@@ -166,7 +166,7 @@ function latestYear(data: TrendData) {
   return Math.max(...data.series.map((series) => series.latest?.year ?? 0));
 }
 
-export default function CountryTrajectory({ data }: { data: TrendData }) {
+export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; flagSrc?: string }) {
   const heroes = heroKeys.map((key) => getSeries(data, key)).filter(Boolean) as TrendSeries[];
   const chartSeries = chartKeys.map((key) => getSeries(data, key)).filter(Boolean) as TrendSeries[];
   const population = getSeries(data, "population");
@@ -179,9 +179,17 @@ export default function CountryTrajectory({ data }: { data: TrendData }) {
     <section className="trajectory-section" id="special-report-content">
       <div className="trajectory-report-shell">
         <div className="trajectory-heading">
-          <p className="eyebrow"><span /> Verified data & AI projection</p>
-          <h2>{data.countryName}<br /><em>Special Report.</em></h2>
-          <p>{data.narrative.thesis}</p>
+          <div className="trajectory-heading-copy">
+            <p className="eyebrow"><span /> Verified data & AI projection</p>
+            <h2>{data.countryName}<br /><em>Special Report.</em></h2>
+            <p>{data.narrative.thesis}</p>
+          </div>
+          {flagSrc && (
+            <figure className="trajectory-flag-card">
+              <img src={flagSrc} alt={`Flag of ${data.countryName}`} />
+              <figcaption><span>{data.countryCode}</span><strong>{data.countryName}</strong><small>National flag</small></figcaption>
+            </figure>
+          )}
         </div>
 
         <div className="trajectory-brief">
