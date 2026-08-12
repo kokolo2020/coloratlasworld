@@ -163,7 +163,8 @@ function ScenarioBand({ series }: { series: TrendSeries }) {
 }
 
 function latestYear(data: TrendData) {
-  return Math.max(...data.series.map((series) => series.latest?.year ?? 0));
+  const years = data.series.map((series) => series.latest?.year).filter((year): year is number => typeof year === "number");
+  return years.length ? Math.max(...years) : null;
 }
 
 export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; flagSrc?: string }) {
@@ -174,6 +175,7 @@ export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; 
   const life = getSeries(data, "lifeExpectancy");
   const internet = getSeries(data, "internetUse");
   const sourceYear = latestYear(data);
+  const hasProjectionSeries = Boolean(population || life || fertility || internet);
 
   return (
     <section className="trajectory-section" id="special-report-content">
@@ -195,13 +197,13 @@ export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; 
         <div className="trajectory-brief">
           <article>
             <span>Data window</span>
-            <strong>2000-{sourceYear}</strong>
+            <strong>{sourceYear ? `2000-${sourceYear}` : "Data pending"}</strong>
             <small>{data.source.name}</small>
           </article>
           <article>
             <span>Projection horizon</span>
-            <strong>2035</strong>
-            <small>Low / base / high scenarios</small>
+            <strong>{data.series.length ? "2035" : "Pending"}</strong>
+            <small>{data.series.length ? "Low / base / high scenarios" : "Requires long-run series"}</small>
           </article>
           <article>
             <span>Report scope</span>
@@ -211,7 +213,7 @@ export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; 
         </div>
 
         <div className="trajectory-feature-grid">
-          {heroes.map((series) => {
+          {heroes.length ? heroes.map((series) => {
             const projection = series.scenarios?.base || series.forecast.at(-1);
             return (
               <article key={series.key}>
@@ -221,7 +223,14 @@ export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; 
                 <b>{changeText(series)}</b>
               </article>
             );
-          })}
+          }) : (
+            <article className="trajectory-availability">
+              <small>Comparable series</small>
+              <strong>Limited</strong>
+              <span>World Bank long-run indicator coverage is not available for this profile.</span>
+              <b>The report keeps this visible instead of substituting unsupported estimates.</b>
+            </article>
+          )}
         </div>
 
         <div className="trajectory-dashboard">
@@ -243,13 +252,14 @@ export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; 
               {life && <div><strong>{formatTrendValue(life, life.scenarios?.base?.value)}</strong><span>Life expectancy</span></div>}
               {fertility && <div><strong>{formatTrendValue(fertility, fertility.scenarios?.base?.value)}</strong><span>Fertility rate</span></div>}
               {internet && <div><strong>{formatTrendValue(internet, internet.scenarios?.base?.value)}</strong><span>Internet access</span></div>}
+              {!hasProjectionSeries && <div className="projection-empty"><strong>Pending</strong><span>Comparable projection data is unavailable.</span></div>}
             </div>
             <p>{data.narrative.projectionNote}</p>
           </article>
         </div>
 
         <div className="trajectory-grid">
-          {chartSeries.map((series) => {
+          {chartSeries.length ? chartSeries.map((series) => {
             const first = series.history[0];
             const projection = series.scenarios?.base || series.forecast.at(-1);
             return (
@@ -271,7 +281,17 @@ export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; 
                 <p>{methodLabel(series.method)} · {series.unit}</p>
               </article>
             );
-          })}
+          }) : (
+            <article className="trajectory-card trajectory-wide-note">
+              <div className="trajectory-card-head">
+                <div>
+                  <small>availability · World Bank API</small>
+                  <h3>Long-run series pending</h3>
+                </div>
+              </div>
+              <p>This profile does not currently have enough comparable World Bank indicator history for charting. Basic Info remains available above, and the report tab will fill automatically when a country-level series is added to the dataset.</p>
+            </article>
+          )}
         </div>
 
         <div className="trajectory-note">

@@ -191,6 +191,7 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .trajectory-feature-grid strong { margin:11px 0 7px; font-family:var(--font-display); font-size:34px; line-height:1.02; color:#fff; overflow-wrap:anywhere; }
 .trajectory-feature-grid span { color:#bed4ce; font-size:11px; line-height:1.45; }
 .trajectory-feature-grid b { margin-top:14px; color:#f2c76f; font-size:11px; line-height:1.45; }
+.trajectory-feature-grid .trajectory-availability { grid-column:1/-1; }
 .trajectory-dashboard { display:grid; grid-template-columns:.85fr 1.15fr; gap:16px; margin-bottom:16px; }
 .trajectory-insight-panel,.trajectory-projection-panel { min-width:0; border-radius:26px; padding:30px; }
 .trajectory-insight-panel h3,.trajectory-projection-panel h3 { margin:10px 0 22px; font-size:34px; line-height:1.02; color:white; }
@@ -202,6 +203,7 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .projection-rings strong,.projection-rings span { display:block; min-width:0; overflow-wrap:anywhere; }
 .projection-rings strong { font-family:var(--font-display); font-size:28px; color:#fff; line-height:1.02; }
 .projection-rings span { margin-top:9px; color:#bed4ce; font-size:10px; text-transform:uppercase; letter-spacing:.1em; font-weight:900; }
+.projection-rings .projection-empty { grid-column:1/-1; }
 .trajectory-projection-panel p { margin:20px 0 0; color:#bed4ce; line-height:1.65; font-size:13px; }
 .trajectory-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
 .trajectory-card { min-width:0; padding:24px; border-radius:24px; }
@@ -232,6 +234,8 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .scenario-values span { min-width:0; color:#fff; font-size:11px; overflow-wrap:anywhere; }
 .scenario-values small { display:block; color:#9fc8c3; text-transform:uppercase; letter-spacing:.11em; font-size:7px; font-weight:900; }
 .trajectory-card>p { margin:13px 0 0; color:#9fc8c3; font-size:11px; line-height:1.5; }
+.trajectory-wide-note { grid-column:1/-1; }
+.trajectory-wide-note>p { max-width:820px; font-size:15px; }
 .trajectory-note { margin-top:18px; display:grid; grid-template-columns:auto 1fr auto; gap:14px; align-items:center; padding:18px 20px; border:1px solid rgba(242,199,111,.2); border-radius:20px; background:rgba(242,199,111,.1); }
 .trajectory-note strong { color:#f2c76f; }
 .trajectory-note span { color:#d8e8e4; font-size:13px; line-height:1.55; }

@@ -1,22 +1,16 @@
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 
-const countries = [
-  {
-    code: "USA",
-    name: "United States",
-    lens: "Scale, innovation, immigration, and a resilient consumer economy.",
-  },
-  {
-    code: "JPN",
-    name: "Japan",
-    lens: "Longevity, population aging, technology depth, and slow-growth pressure.",
-  },
-  {
-    code: "GBR",
-    name: "United Kingdom",
-    lens: "A mature services economy navigating demographics, inflation, and post-Brexit adjustment.",
-  },
-];
+const countries = JSON.parse(await readFile("data/countries.json", "utf8"));
+
+const worldBankCodeOverrides = {
+  UNK: "XKX",
+};
+
+const customLens = {
+  USA: "Scale, innovation, immigration, and a resilient consumer economy.",
+  JPN: "Longevity, population aging, technology depth, and slow-growth pressure.",
+  GBR: "A mature services economy navigating demographics, inflation, and post-Brexit adjustment.",
+};
 
 const indicators = [
   { key: "gdpGrowth", label: "GDP growth", code: "NY.GDP.MKTP.KD.ZG", unit: "% annual", kind: "percent", method: "average", group: "economy" },
@@ -32,6 +26,10 @@ const indicators = [
   { key: "co2PerCapita", label: "CO2 per person", code: "EN.GHG.CO2.PC.CE.AR5", unit: "t CO2e/capita", kind: "rate", method: "linear", group: "environment", min: 0 },
   { key: "internetUse", label: "Internet access", code: "IT.NET.USER.ZS", unit: "% of people", kind: "percent", method: "linear", group: "technology", min: 0, max: 100 },
 ];
+
+function worldBankCode(country) {
+  return worldBankCodeOverrides[country.cca3] || country.cca3;
+}
 
 function clamp(value, indicator) {
   let next = value;
@@ -74,7 +72,7 @@ function averageForecast(points, indicator, years, multiplier = 1) {
 function forecast(points, indicator, multiplier = 1) {
   const latest = points.at(-1);
   if (!latest || points.length < 3) return [];
-  const years = Array.from({ length: 2035 - latest.year }, (_, index) => latest.year + index + 1);
+  const years = Array.from({ length: Math.max(0, 2035 - latest.year) }, (_, index) => latest.year + index + 1);
   if (!years.length) return [];
   if (indicator.method === "cagr") return cagrForecast(points, indicator, years, multiplier);
   if (indicator.method === "average") return averageForecast(points, indicator, years, multiplier);
@@ -106,16 +104,7 @@ function changeSummary(points, indicator) {
   };
 }
 
-async function fetchIndicator(country, indicator) {
-  const url = `https://api.worldbank.org/v2/country/${country.code}/indicator/${indicator.code}?format=json&per_page=20000`;
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`World Bank request failed for ${country.code} ${indicator.code}: ${response.status}`);
-  const payload = await response.json();
-  const rows = Array.isArray(payload?.[1]) ? payload[1] : [];
-  const history = rows
-    .map((row) => ({ year: Number(row.date), value: row.value == null ? null : Number(row.value) }))
-    .filter((row) => Number.isFinite(row.year) && row.value != null && Number.isFinite(row.value) && row.year >= 2000)
-    .sort((a, b) => a.year - b.year);
+function buildSeries(indicator, history) {
   const baseForecast = forecast(history, indicator, 1);
   return {
     key: indicator.key,
@@ -138,8 +127,33 @@ async function fetchIndicator(country, indicator) {
   };
 }
 
+async function fetchIndicatorRows(indicator) {
+  const url = `https://api.worldbank.org/v2/country/all/indicator/${indicator.code}?format=json&per_page=20000`;
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`World Bank request failed for ${indicator.code}: ${response.status}`);
+  const payload = await response.json();
+  const rows = Array.isArray(payload?.[1]) ? payload[1] : [];
+  const byCountry = new Map();
+  for (const row of rows) {
+    const code = row.countryiso3code;
+    const year = Number(row.date);
+    const value = row.value == null ? null : Number(row.value);
+    if (!code || !Number.isFinite(year) || value == null || !Number.isFinite(value) || year < 2000) continue;
+    if (!byCountry.has(code)) byCountry.set(code, []);
+    byCountry.get(code).push({ year, value });
+  }
+  for (const list of byCountry.values()) list.sort((a, b) => a.year - b.year);
+  return byCountry;
+}
+
 function findSeries(series, key) {
   return series.find((item) => item.key === key);
+}
+
+function countryLens(country) {
+  if (customLens[country.cca3]) return customLens[country.cca3];
+  const geography = country.landlocked ? "landlocked geography" : "regional connectivity";
+  return `${country.subregion} context, ${geography}, demographic direction, and long-run development indicators.`;
 }
 
 function buildNarrative(country, series) {
@@ -150,7 +164,7 @@ function buildNarrative(country, series) {
   const urban = findSeries(series, "urbanization");
   const story = [
     `${country.name} is profiled through long-run World Bank indicators covering the economy, population, health, work, technology, and environment.`,
-    country.lens,
+    countryLens(country),
   ];
   const insights = [];
   if (population?.change) {
@@ -170,6 +184,9 @@ function buildNarrative(country, series) {
   if (urban?.latest && urban.latest.value > 80) {
     insights.push("The population is highly urbanized, so future growth is likely to concentrate in metro areas and service economies.");
   }
+  if (!insights.length) {
+    insights.push("Comparable long-run World Bank series are limited for this profile, so the report keeps the availability gap visible.");
+  }
   return {
     thesis: story.join(" "),
     insights: insights.slice(0, 4),
@@ -177,28 +194,40 @@ function buildNarrative(country, series) {
   };
 }
 
-async function buildCountry(country) {
-  const series = [];
-  for (const indicator of indicators) {
-    series.push(await fetchIndicator(country, indicator));
-  }
+function buildCountry(country, indicatorData) {
+  const code = worldBankCode(country);
+  const series = indicators
+    .map((indicator) => {
+      const history = indicatorData.get(indicator.key)?.get(code) || [];
+      return history.length ? buildSeries(indicator, history) : null;
+    })
+    .filter(Boolean);
+
   return {
-    countryCode: country.code,
+    countryCode: country.cca3,
     countryName: country.name,
     retrievedAt: new Date().toISOString().slice(0, 10),
     source: {
       name: "World Bank Open Data API",
-      url: `https://api.worldbank.org/v2/country/${country.code}/indicator`,
+      url: `https://api.worldbank.org/v2/country/${code}/indicator`,
     },
     narrative: buildNarrative(country, series),
     series,
   };
 }
 
+const indicatorData = new Map();
+for (const indicator of indicators) {
+  indicatorData.set(indicator.key, await fetchIndicatorRows(indicator));
+  console.log(`Fetched ${indicator.label}.`);
+}
+
 const reports = {};
 for (const country of countries) {
-  reports[country.code] = await buildCountry(country);
+  reports[country.cca3] = buildCountry(country, indicatorData);
 }
 
 await writeFile("data/special-reports.json", `${JSON.stringify(reports, null, 2)}\n`);
-console.log(`Generated special reports for ${countries.map((country) => country.code).join(", ")}.`);
+const complete = Object.values(reports).filter((report) => report.series.length >= 6).length;
+const limited = Object.values(reports).filter((report) => report.series.length < 6).length;
+console.log(`Generated special reports for ${Object.keys(reports).length} profiles. ${complete} have 6+ series; ${limited} have limited data.`);
