@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /analytics
+Disallow: /api/
+
+Sitemap: https://coloratlasworld.com/sitemap.xml
+Sitemap: https://coloratlasworld.com/sitemap-countries.xml
