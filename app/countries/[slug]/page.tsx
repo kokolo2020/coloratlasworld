@@ -79,6 +79,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <Link className="back-link" href="/#countries">All profiles</Link>
       </nav>
 
+      <CountryProfileTabs report={specialReport ? <CountryTrajectory data={specialReport} /> : null}>
       <header className="country-hero">
         <div className="country-hero-copy">
           <p className="breadcrumb"><Link href="/">World</Link><span>/</span><span>{region}</span><span>/</span><strong>{country.name}</strong></p>
@@ -124,7 +125,6 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <div className="economy-stat"><small>GDP growth</small><strong>{metrics.gdpGrowth ? `${metrics.gdpGrowth.value.toFixed(1)}%` : "Not published"}</strong><span>{metrics.gdpGrowth ? `${metrics.gdpGrowth.year} annual growth` : "No recent value"}</span></div>
       </section>
 
-      <CountryProfileTabs report={specialReport ? <CountryTrajectory data={specialReport} /> : null}>
         <section className="depth-section">
         <div className="depth-heading">
           <p className="eyebrow"><span /> A deeper profile</p>

@@ -176,7 +176,7 @@ export default function CountryTrajectory({ data }: { data: TrendData }) {
   const sourceYear = latestYear(data);
 
   return (
-    <section className="trajectory-section" id="special-report">
+    <section className="trajectory-section" id="special-report-content">
       <div className="trajectory-report-shell">
         <div className="trajectory-heading">
           <p className="eyebrow"><span /> Verified data & AI projection</p>
