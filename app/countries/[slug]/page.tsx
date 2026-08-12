@@ -63,12 +63,72 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       ? "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates"
       : `https://data.worldbank.org/country/${country.cca2.toLowerCase()}`;
   const specialReport = (specialReports as Record<string, TrendData>)[country.cca3];
+  const coordinateLabel = `${Math.abs(lat).toFixed(1)}° ${lat >= 0 ? "N" : "S"}, ${Math.abs(lng).toFixed(1)}° ${lng >= 0 ? "E" : "W"}`;
+  const borderLabel = neighbors.length
+    ? `${neighbors.slice(0, 4).map((neighbor) => neighbor?.name).join(", ")}${neighbors.length > 4 ? ` +${neighbors.length - 4} more` : ""}`
+    : connectionNote;
 
   const quickStats = [
     { label: "Population", value: population, note: metrics.population ? `World Bank · ${metrics.population.year}` : "No recent World Bank value" },
     { label: "Capital", value: country.capital || "Not published", note: country.officialName },
     { label: "Currency", value: currencies[0]?.[0] || "Not published", note: currencyLabel },
     { label: "Life expectancy", value: life, note: metrics.lifeExpectancy ? `World Bank · ${metrics.lifeExpectancy.year}` : "No recent World Bank value" },
+  ];
+  const basicDataGroups = [
+    {
+      title: "Identity",
+      items: [
+        ["Official name", country.officialName],
+        ["Status", profileStatus],
+        ["Demonym", country.demonym || "Not published"],
+        ["Codes", `${country.cca2} / ${country.cca3}`],
+      ],
+    },
+    {
+      title: "People",
+      items: [
+        ["Population", metrics.population ? `${population} · ${metrics.population.year}` : population],
+        ["Median age", medianAgeLabel],
+        ["Languages", languages.length ? languages.join(", ") : "Not published"],
+        ["Largest cities", enrichment.demographics.largestCities.join(", ") || country.capital || "Not published"],
+      ],
+    },
+    {
+      title: "Place",
+      items: [
+        ["Region", region],
+        ["Subregion", country.subregion],
+        ["Area", formatArea(country.area)],
+        ["Coordinates", coordinateLabel],
+      ],
+    },
+    {
+      title: "Practical",
+      items: [
+        ["Currency", currencyLabel],
+        ["Calling code", country.callingCode || "Not published"],
+        ["Time zones", timeZoneLabel],
+        ["Emergency", emergencyLabel],
+      ],
+    },
+    {
+      title: "Government",
+      items: [
+        ["Type", enrichment.government.type || "Not published"],
+        ["Head of state", enrichment.government.headOfState || "Not published"],
+        ["Head of government", enrichment.government.headOfGovernment || "Not published"],
+        ["Constitution", enrichment.government.constitutionDate || "Comparable date pending"],
+      ],
+    },
+    {
+      title: "Geography",
+      items: [
+        ["Connections", borderLabel],
+        ["Climate", enrichment.environment.climate],
+        ["Highest point", enrichment.environment.highestPoint || "Profile-specific value pending"],
+        ["Driving side", enrichment.dailyLife.drivingSide],
+      ],
+    },
   ];
 
   return (
@@ -97,6 +157,29 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
 
       <section className="quick-stat-grid" id="overview">
         {quickStats.map((stat, index) => <div className="quick-stat" key={stat.label}><span>0{index + 1}</span><small>{stat.label}</small><strong>{stat.value}</strong><p>{stat.note}</p></div>)}
+      </section>
+
+      <section className="basic-data-board" aria-label={`${country.name} expanded basic facts`}>
+        <div className="basic-data-heading">
+          <p className="eyebrow"><span /> Basic info</p>
+          <h2>Expanded country facts</h2>
+          <p>Core identity, people, geography, government, and practical reference data in one scan-friendly board.</p>
+        </div>
+        <div className="basic-data-grid">
+          {basicDataGroups.map((group) => (
+            <article key={group.title}>
+              <h3>{group.title}</h3>
+              <dl>
+                {group.items.map(([label, value]) => (
+                  <div key={label}>
+                    <dt>{label}</dt>
+                    <dd>{value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="profile-grid">

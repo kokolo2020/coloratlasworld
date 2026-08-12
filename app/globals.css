@@ -123,6 +123,17 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .quick-stat small { margin-top:18px; text-transform:uppercase; letter-spacing:.15em; font-size:9px; }
 .quick-stat strong { margin-top:8px; font-family:var(--font-display); font-size:30px; }
 .quick-stat p { font-size:11px; color:#71807e; }
+.basic-data-board { padding:72px max(5vw,44px); background:#f6f0e5; border-bottom:1px solid var(--line); }
+.basic-data-heading { max-width:1320px; margin:0 auto 26px; display:grid; grid-template-columns:minmax(240px,.62fr) minmax(0,1fr); gap:28px; align-items:end; }
+.basic-data-heading h2 { font-size:clamp(38px,4.4vw,66px); line-height:.92; margin:12px 0 0; }
+.basic-data-heading>p:last-child { color:#5c6b68; line-height:1.65; max-width:610px; justify-self:end; }
+.basic-data-grid { max-width:1320px; margin:auto; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+.basic-data-grid article { min-width:0; background:#fffaf2; border:1px solid var(--line); border-radius:20px; padding:24px; box-shadow:0 20px 55px rgba(8,47,53,.055); }
+.basic-data-grid h3 { margin:0 0 18px; font-family:var(--font-display); font-size:28px; line-height:1; color:var(--ink); }
+.basic-data-grid dl { margin:0; display:grid; gap:13px; }
+.basic-data-grid dl div { display:grid; grid-template-columns:minmax(92px,.42fr) minmax(0,1fr); gap:14px; padding-top:13px; border-top:1px solid rgba(8,47,53,.1); }
+.basic-data-grid dt { color:#6d7c7a; text-transform:uppercase; letter-spacing:.12em; font-size:9px; font-weight:900; }
+.basic-data-grid dd { margin:0; color:var(--ink); font-size:13px; line-height:1.35; font-weight:800; overflow-wrap:anywhere; }
 .profile-grid { max-width:1320px; margin:auto; padding:130px 44px; display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }
 .large-copy { font-size:20px; line-height:1.7; color:var(--ink-2); }
 .fact-columns { margin-top:50px; display:grid; grid-template-columns:1fr 1fr; gap:0; border-top:1px solid var(--line); border-left:1px solid var(--line); }
@@ -314,6 +325,10 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   .country-kicker { margin-top:35px; }
   .quick-stat-grid { grid-template-columns:1fr 1fr; }
   .quick-stat { min-height:155px; padding:24px; }
+  .basic-data-board { padding:58px 24px; }
+  .basic-data-heading { grid-template-columns:1fr; gap:18px; }
+  .basic-data-heading>p:last-child { justify-self:start; }
+  .basic-data-grid { grid-template-columns:1fr 1fr; }
   .economy-band { grid-template-columns:1fr; }
   .detail-cards article { grid-template-columns:1fr; gap:9px; }
 }
@@ -334,6 +349,8 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   .country-hero h1 { font-size:66px; }
   .quick-stat-grid { grid-template-columns:1fr; }
   .fact-columns { grid-template-columns:1fr; }
+  .basic-data-grid { grid-template-columns:1fr; }
+  .basic-data-grid dl div { grid-template-columns:1fr; gap:5px; }
   .trajectory-brief,.trajectory-feature-grid,.trajectory-grid,.projection-rings { grid-template-columns:1fr; }
   .trajectory-values { grid-template-columns:1fr; }
   .map-card img { height:260px; }
