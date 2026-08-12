@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CountrySearch from "@/components/CountrySearch";
+import CountryTrajectory, { TrendData } from "@/components/CountryTrajectory";
+import specialReports from "@/data/special-reports.json";
 import { COUNTRIES, COUNTRY_AVERAGE_POPULATION, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getGdpRank, getMetrics } from "@/lib/countries";
 
 export function generateStaticParams() { return COUNTRIES.map(({ slug }) => ({ slug })); }
@@ -59,6 +61,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     : country.cca2.startsWith("GB-")
       ? "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates"
       : `https://data.worldbank.org/country/${country.cca2.toLowerCase()}`;
+  const specialReport = (specialReports as Record<string, TrendData>)[country.cca3];
 
   const quickStats = [
     { label: "Population", value: population, note: metrics.population ? `World Bank · ${metrics.population.year}` : "No recent World Bank value" },
@@ -119,6 +122,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <div className="economy-stat"><small>GDP per person</small><strong>{formatMoney(metrics.gdpPerCapita?.value)}</strong><span>{metrics.gdpPerCapita ? `${metrics.gdpPerCapita.year} · current USD` : "No recent value"}</span></div>
         <div className="economy-stat"><small>GDP growth</small><strong>{metrics.gdpGrowth ? `${metrics.gdpGrowth.value.toFixed(1)}%` : "Not published"}</strong><span>{metrics.gdpGrowth ? `${metrics.gdpGrowth.year} annual growth` : "No recent value"}</span></div>
       </section>
+
+      {specialReport && <CountryTrajectory data={specialReport} />}
 
       <section className="depth-section">
         <div className="depth-heading">
