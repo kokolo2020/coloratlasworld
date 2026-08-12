@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import CountryProfileTabs from "@/components/CountryProfileTabs";
 import CountrySearch from "@/components/CountrySearch";
 import CountryTrajectory, { TrendData } from "@/components/CountryTrajectory";
 import specialReports from "@/data/special-reports.json";
@@ -123,9 +124,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <div className="economy-stat"><small>GDP growth</small><strong>{metrics.gdpGrowth ? `${metrics.gdpGrowth.value.toFixed(1)}%` : "Not published"}</strong><span>{metrics.gdpGrowth ? `${metrics.gdpGrowth.year} annual growth` : "No recent value"}</span></div>
       </section>
 
-      {specialReport && <CountryTrajectory data={specialReport} />}
-
-      <section className="depth-section">
+      <CountryProfileTabs report={specialReport ? <CountryTrajectory data={specialReport} /> : null}>
+        <section className="depth-section">
         <div className="depth-heading">
           <p className="eyebrow"><span /> A deeper profile</p>
           <h2>People, systems<br /><em>& everyday life.</em></h2>
@@ -201,32 +201,32 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             <ul className="fact-list">{enrichment.facts.slice(0,8).map((fact) => <li key={fact}>{fact}</li>)}</ul>
           </article>
         </div>
-      </section>
+        </section>
 
-      <section className="neighbors-section">
+        <section className="neighbors-section">
         <div><p className="eyebrow"><span /> Connected places</p><h2>Neighboring profiles</h2><p>Continue exploring across each listed land border or connected geography.</p></div>
         <div className="neighbor-chips">{neighbors.length ? neighbors.map((neighbor) => neighbor && <Link key={neighbor.cca3} href={`/countries/${neighbor.slug}`}><img src={flagUrl(neighbor.cca2)} alt="" />{neighbor.name}<span>→</span></Link>) : <p>{connectionNote}</p>}</div>
-      </section>
+        </section>
 
-      <section className="gallery-section">
+        <section className="gallery-section">
         <div><p className="eyebrow"><span /> Visual atlas</p><h2>{country.name} in view</h2></div>
         <div className="gallery-grid">
           {enrichment.images[0] && <figure className="gallery-card gallery-photo"><img src={enrichment.images[0].url} alt={`${enrichment.images[0].label} in ${country.name}`} /><figcaption>{enrichment.images[0].label}<small>{enrichment.images[0].source}</small></figcaption></figure>}
           <figure className="gallery-card gallery-flag"><img src={flagUrl(country.cca2)} alt={`Flag of ${country.name}`} /><figcaption>National flag<small>FlagCDN</small></figcaption></figure>
           <figure className="gallery-card gallery-map"><iframe title={`Detail map of ${country.name}`} src={`https://www.openstreetmap.org/export/embed.html?bbox=${encodeURIComponent(bbox)}&layer=mapnik&marker=${lat}%2C${lng}`} loading="lazy" /><figcaption>Country location<small>OpenStreetMap</small></figcaption></figure>
         </div>
-      </section>
+        </section>
 
-      <section className="detail-section">
+        <section className="detail-section">
         <div className="detail-title"><p className="eyebrow"><span /> People & place</p><h2>Country<br /><em>essentials.</em></h2></div>
         <div className="detail-cards">
           <article><span>Languages</span><h3>{languages.length ? languages.join(", ") : "Not published"}</h3><p>Languages listed in the open country catalog for {country.name}.</p></article>
           <article><span>Connections</span><h3>{connectionSummary}</h3><p>{connectionNote}</p></article>
           <article><span>Currency</span><h3>{currencyLabel}</h3><p>The primary currency code and name used in the country catalog.</p></article>
         </div>
-      </section>
+        </section>
 
-      <section className="timeline-section">
+        <section className="timeline-section">
         <div><p className="eyebrow"><span /> Identity card</p><h2>Four essentials</h2></div>
         <div className="timeline-list">
           <div><strong>{country.cca2}</strong><span>Two-letter country code</span></div>
@@ -234,9 +234,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <div><strong>{country.capital || "—"}</strong><span>Capital city</span></div>
           <div><strong>{region}</strong><span>World region</span></div>
         </div>
-      </section>
+        </section>
 
-      <section className="sources" id="sources">
+        <section className="sources" id="sources">
         <div><p className="eyebrow"><span /> Sources & notes</p><h2>Numbers you can trace.</h2><p>Statistics show their reference year because country data changes. Unavailable values are clearly marked instead of estimated.</p></div>
         <ul>
           <li><a href={sourceUrl} target="_blank" rel="noreferrer">Primary statistics source — population and economy where available ↗</a></li>
@@ -245,7 +245,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <li><a href="https://github.com/mledoze/countries" target="_blank" rel="noreferrer">Open country catalog — names, codes and geography ↗</a></li>
           <li><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap — map data ↗</a></li>
         </ul>
-      </section>
+        </section>
+      </CountryProfileTabs>
 
       <section className="next-country"><span>Color Atlas World · Profile {country.profileNumber.toString().padStart(3, "0")}</span><h2>Next: {next.name}</h2><p>Continue through the atlas or search for any of {profileCount} world profiles.</p><div className="next-actions"><Link className="primary-button" href={`/countries/${next.slug}`}>Open {next.name} →</Link></div><CountrySearch variant="hero" /></section>
       <footer className="site-footer country-footer"><Link className="brand" href="/"><span className="brand-mark">✦</span><span>Color Atlas World</span></Link><p>Explore the world, one country at a time.</p><span>© 2026 Color Atlas World</span></footer>
