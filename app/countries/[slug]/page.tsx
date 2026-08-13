@@ -4,8 +4,17 @@ import { notFound } from "next/navigation";
 import CountryProfileTabs from "@/components/CountryProfileTabs";
 import CountrySearch from "@/components/CountrySearch";
 import CountryTrajectory, { TrendData } from "@/components/CountryTrajectory";
+import nationalAnthems from "@/data/national-anthems.json";
 import specialReports from "@/data/special-reports.json";
 import { COUNTRIES, COUNTRY_AVERAGE_POPULATION, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getGdpRank, getMetrics } from "@/lib/countries";
+
+type NationalAnthem = {
+  title: string;
+  type: string;
+  credit: string;
+  audioUrl: string;
+  sourceUrl: string;
+};
 
 export function generateStaticParams() { return COUNTRIES.map(({ slug }) => ({ slug })); }
 
@@ -67,15 +76,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const borderLabel = neighbors.length
     ? `${neighbors.slice(0, 4).map((neighbor) => neighbor?.name).join(", ")}${neighbors.length > 4 ? ` +${neighbors.length - 4} more` : ""}`
     : connectionNote;
-  const nationalAnthem = country.cca3 === "CAN"
-    ? {
-      title: "O Canada",
-      type: "Instrumental version",
-      credit: "Toronto Symphony Orchestra · conducted by Peter Oundjian",
-      audioUrl: "https://www.canada.ca/content/dam/pch/audios/services/anthems-canada/O-Canada.mp3",
-      sourceUrl: "https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html",
-    }
-    : null;
+  const nationalAnthem = (nationalAnthems as Record<string, NationalAnthem>)[country.cca3] || null;
 
   const quickStats = [
     { label: "Population", value: population, note: metrics.population ? `World Bank · ${metrics.population.year}` : "No recent World Bank value" },
@@ -347,7 +348,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <li><a href={sourceUrl} target="_blank" rel="noreferrer">Primary statistics source — population and economy where available ↗</a></li>
           <li><a href="https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS" target="_blank" rel="noreferrer">World Bank — urban population share ↗</a></li>
           <li><a href={enrichment.government.sourceUrl || "https://www.wikidata.org"} target="_blank" rel="noreferrer">Wikidata — government and current officeholders ↗</a></li>
-          {nationalAnthem && <li><a href={nationalAnthem.sourceUrl} target="_blank" rel="noreferrer">Official national anthem source — {nationalAnthem.title} ↗</a></li>}
+          {nationalAnthem && <li><a href={nationalAnthem.sourceUrl} target="_blank" rel="noreferrer">National anthem audio source — {nationalAnthem.title} ↗</a></li>}
           <li><a href="https://github.com/mledoze/countries" target="_blank" rel="noreferrer">Open country catalog — names, codes and geography ↗</a></li>
           <li><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap — map data ↗</a></li>
         </ul>
