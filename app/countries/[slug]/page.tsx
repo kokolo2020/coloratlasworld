@@ -68,7 +68,13 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     ? `${neighbors.slice(0, 4).map((neighbor) => neighbor?.name).join(", ")}${neighbors.length > 4 ? ` +${neighbors.length - 4} more` : ""}`
     : connectionNote;
   const nationalAnthem = country.cca3 === "CAN"
-    ? { title: "O Canada", sourceUrl: "https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html" }
+    ? {
+      title: "O Canada",
+      type: "Instrumental version",
+      credit: "Toronto Symphony Orchestra · conducted by Peter Oundjian",
+      audioUrl: "https://www.canada.ca/content/dam/pch/audios/services/anthems-canada/O-Canada.mp3",
+      sourceUrl: "https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html",
+    }
     : null;
 
   const quickStats = [
@@ -85,7 +91,6 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         ["Status", profileStatus],
         ["Demonym", country.demonym || "Not published"],
         ["Codes", `${country.cca2} / ${country.cca3}`],
-        ...(nationalAnthem ? [["National anthem", nationalAnthem.title]] : []),
       ],
     },
     {
@@ -162,6 +167,19 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       <section className="quick-stat-grid" id="overview">
         {quickStats.map((stat, index) => <div className="quick-stat" key={stat.label}><span>0{index + 1}</span><small>{stat.label}</small><strong>{stat.value}</strong><p>{stat.note}</p></div>)}
       </section>
+
+      {nationalAnthem && (
+        <section className="anthem-strip" aria-label={`${country.name} national anthem`}>
+          <div>
+            <span>National anthem</span>
+            <strong>{nationalAnthem.title}</strong>
+            <small>{nationalAnthem.type} · {nationalAnthem.credit}</small>
+          </div>
+          <audio controls preload="none" src={nationalAnthem.audioUrl}>
+            <a href={nationalAnthem.audioUrl}>Play {nationalAnthem.title}</a>
+          </audio>
+        </section>
+      )}
 
       <section className="basic-data-board" aria-label={`${country.name} expanded basic facts`}>
         <div className="basic-data-heading">
