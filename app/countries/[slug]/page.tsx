@@ -67,6 +67,9 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const borderLabel = neighbors.length
     ? `${neighbors.slice(0, 4).map((neighbor) => neighbor?.name).join(", ")}${neighbors.length > 4 ? ` +${neighbors.length - 4} more` : ""}`
     : connectionNote;
+  const nationalAnthem = country.cca3 === "CAN"
+    ? { title: "O Canada", sourceUrl: "https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html" }
+    : null;
 
   const quickStats = [
     { label: "Population", value: population, note: metrics.population ? `World Bank · ${metrics.population.year}` : "No recent World Bank value" },
@@ -82,6 +85,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         ["Status", profileStatus],
         ["Demonym", country.demonym || "Not published"],
         ["Codes", `${country.cca2} / ${country.cca3}`],
+        ...(nationalAnthem ? [["National anthem", nationalAnthem.title]] : []),
       ],
     },
     {
@@ -325,6 +329,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <li><a href={sourceUrl} target="_blank" rel="noreferrer">Primary statistics source — population and economy where available ↗</a></li>
           <li><a href="https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS" target="_blank" rel="noreferrer">World Bank — urban population share ↗</a></li>
           <li><a href={enrichment.government.sourceUrl || "https://www.wikidata.org"} target="_blank" rel="noreferrer">Wikidata — government and current officeholders ↗</a></li>
+          {nationalAnthem && <li><a href={nationalAnthem.sourceUrl} target="_blank" rel="noreferrer">Official national anthem source — {nationalAnthem.title} ↗</a></li>}
           <li><a href="https://github.com/mledoze/countries" target="_blank" rel="noreferrer">Open country catalog — names, codes and geography ↗</a></li>
           <li><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap — map data ↗</a></li>
         </ul>
