@@ -6,6 +6,13 @@
     "audioUrl": "https://www.canada.ca/content/dam/pch/audios/services/anthems-canada/O-Canada.mp3",
     "sourceUrl": "https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html"
   },
+  "SGP": {
+    "title": "Majulah Singapura",
+    "type": "Instrumental version",
+    "credit": "Singapore Armed Forces Band · National Heritage Board",
+    "audioUrl": "https://assets.app.optical.gov.sg/nhb/production/published/collections/nhb_pages/%252Fwhat-we-do%252Four-work%252Fcommunity-engagement%252Feducation%252Fresources%252Fnational-symbols%252Fnational-anthem/836a7a60-1a96-4d8f-8398-bfa49d3cb01f.wav",
+    "sourceUrl": "https://www.nhb.gov.sg/what-we-do/our-work/community-engagement/education/resources/national-symbols/national-anthem"
+  },
   "HRV": {
     "title": "Lijepa naša domovino",
     "type": "Instrumental audio",
