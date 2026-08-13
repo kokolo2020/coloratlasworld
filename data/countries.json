@@ -195,6 +195,32 @@
     ]
   },
   {
+    "name": "Antarctica",
+    "officialName": "Antarctica",
+    "cca2": "AQ",
+    "cca3": "ATA",
+    "capital": null,
+    "region": "Antarctic",
+    "subregion": "Antarctica",
+    "currencies": {},
+    "languages": {},
+    "latlng": [
+      -82.8628,
+      135
+    ],
+    "area": 14000000,
+    "landlocked": false,
+    "borders": [],
+    "flag": "🇦🇶",
+    "demonym": null,
+    "callingCode": "+672",
+    "aliases": [
+      "AQ",
+      "Antarctic Treaty area"
+    ],
+    "status": "Antarctic Treaty / continent profile"
+  },
+  {
     "name": "Antigua and Barbuda",
     "officialName": "Antigua and Barbuda",
     "cca2": "AG",
@@ -2295,6 +2321,39 @@
     ]
   },
   {
+    "name": "Falkland Islands",
+    "officialName": "Falkland Islands",
+    "cca2": "FK",
+    "cca3": "FLK",
+    "capital": "Stanley",
+    "region": "Americas",
+    "subregion": "South America",
+    "currencies": {
+      "FKP": {
+        "name": "Falkland Islands pound",
+        "symbol": "£"
+      }
+    },
+    "languages": {
+      "eng": "English"
+    },
+    "latlng": [
+      -51.75,
+      -59
+    ],
+    "area": 12173,
+    "landlocked": false,
+    "borders": [],
+    "flag": "🇫🇰",
+    "demonym": "Falkland Islander",
+    "callingCode": "+500",
+    "aliases": [
+      "FK",
+      "Islas Malvinas"
+    ],
+    "status": "British Overseas Territory; sovereignty disputed with Argentina"
+  },
+  {
     "name": "Fiji",
     "officialName": "Republic of Fiji",
     "cca2": "FJ",
@@ -2637,6 +2696,40 @@
       "Hellenic Republic",
       "Ελληνική Δημοκρατία"
     ]
+  },
+  {
+    "name": "Greenland",
+    "officialName": "Greenland",
+    "cca2": "GL",
+    "cca3": "GRL",
+    "capital": "Nuuk",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "currencies": {
+      "DKK": {
+        "name": "Danish krone",
+        "symbol": "kr"
+      }
+    },
+    "languages": {
+      "kal": "Greenlandic"
+    },
+    "latlng": [
+      72,
+      -40
+    ],
+    "area": 2166086,
+    "landlocked": false,
+    "borders": [],
+    "flag": "🇬🇱",
+    "demonym": "Greenlandic",
+    "callingCode": "+299",
+    "aliases": [
+      "GL",
+      "Kalaallit Nunaat",
+      "Grønland"
+    ],
+    "status": "Autonomous territory within the Kingdom of Denmark"
   },
   {
     "name": "Grenada",

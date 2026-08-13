@@ -4324,5 +4324,41 @@
     "gdp": null,
     "gdpPerCapita": null,
     "gdpGrowth": null
+  },
+  "ATA": {
+    "population": null,
+    "lifeExpectancy": null,
+    "gdp": null,
+    "gdpPerCapita": null,
+    "gdpGrowth": null
+  },
+  "GRL": {
+    "population": {
+      "value": 56831,
+      "year": "2025"
+    },
+    "lifeExpectancy": {
+      "value": 70.2734146341463,
+      "year": "2024"
+    },
+    "gdp": {
+      "value": 3326543974.39193,
+      "year": "2023"
+    },
+    "gdpPerCapita": {
+      "value": 58498.9707973609,
+      "year": "2023"
+    },
+    "gdpGrowth": {
+      "value": 0.865961986998158,
+      "year": "2023"
+    }
+  },
+  "FLK": {
+    "population": null,
+    "lifeExpectancy": null,
+    "gdp": null,
+    "gdpPerCapita": null,
+    "gdpGrowth": null
   }
 }

@@ -2,7 +2,7 @@
   "AFG": {
     "countryCode": "AFG",
     "countryName": "Afghanistan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/AFG/indicator"
@@ -2202,7 +2202,7 @@
   "ALB": {
     "countryCode": "ALB",
     "countryName": "Albania",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ALB/indicator"
@@ -4431,7 +4431,7 @@
   "DZA": {
     "countryCode": "DZA",
     "countryName": "Algeria",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/DZA/indicator"
@@ -6659,7 +6659,7 @@
   "AND": {
     "countryCode": "AND",
     "countryName": "Andorra",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/AND/indicator"
@@ -8332,7 +8332,7 @@
   "AGO": {
     "countryCode": "AGO",
     "countryName": "Angola",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/AGO/indicator"
@@ -10557,10 +10557,29 @@
       }
     ]
   },
+  "ATA": {
+    "countryCode": "ATA",
+    "countryName": "Antarctica",
+    "retrievedAt": "2026-08-13",
+    "source": {
+      "name": "Atlas educational continent profile",
+      "url": "https://www.ats.aq/"
+    },
+    "narrative": {
+      "thesis": "Antarctica is included as an educational continent profile, not a sovereign country. It is governed through the Antarctic Treaty System, has no permanent resident population, and is central to global climate, science, and polar research.",
+      "insights": [
+        "Antarctica is a continent rather than a sovereign state, so standard country indicators are not comparable.",
+        "The Antarctic Treaty System sets the governance context for scientific activity and territorial claims.",
+        "No projection is shown because long-run country-level economic and population series are not applicable."
+      ],
+      "projectionNote": "No projection is shown because comparable long-run country-level indicator data is unavailable or not applicable for this profile."
+    },
+    "series": []
+  },
   "ATG": {
     "countryCode": "ATG",
     "countryName": "Antigua and Barbuda",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ATG/indicator"
@@ -12605,7 +12624,7 @@
   "ARG": {
     "countryCode": "ARG",
     "countryName": "Argentina",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ARG/indicator"
@@ -14762,7 +14781,7 @@
   "ARM": {
     "countryCode": "ARM",
     "countryName": "Armenia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ARM/indicator"
@@ -16991,7 +17010,7 @@
   "AUS": {
     "countryCode": "AUS",
     "countryName": "Australia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/AUS/indicator"
@@ -19208,7 +19227,7 @@
   "AUT": {
     "countryCode": "AUT",
     "countryName": "Austria",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/AUT/indicator"
@@ -21437,7 +21456,7 @@
   "AZE": {
     "countryCode": "AZE",
     "countryName": "Azerbaijan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/AZE/indicator"
@@ -23658,7 +23677,7 @@
   "BHS": {
     "countryCode": "BHS",
     "countryName": "Bahamas",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BHS/indicator"
@@ -25887,7 +25906,7 @@
   "BHR": {
     "countryCode": "BHR",
     "countryName": "Bahrain",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BHR/indicator"
@@ -28116,7 +28135,7 @@
   "BGD": {
     "countryCode": "BGD",
     "countryName": "Bangladesh",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BGD/indicator"
@@ -30344,7 +30363,7 @@
   "BRB": {
     "countryCode": "BRB",
     "countryName": "Barbados",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BRB/indicator"
@@ -32561,7 +32580,7 @@
   "BLR": {
     "countryCode": "BLR",
     "countryName": "Belarus",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BLR/indicator"
@@ -34778,7 +34797,7 @@
   "BEL": {
     "countryCode": "BEL",
     "countryName": "Belgium",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BEL/indicator"
@@ -37007,7 +37026,7 @@
   "BLZ": {
     "countryCode": "BLZ",
     "countryName": "Belize",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BLZ/indicator"
@@ -39227,7 +39246,7 @@
   "BEN": {
     "countryCode": "BEN",
     "countryName": "Benin",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BEN/indicator"
@@ -41455,7 +41474,7 @@
   "BTN": {
     "countryCode": "BTN",
     "countryName": "Bhutan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BTN/indicator"
@@ -43684,7 +43703,7 @@
   "BOL": {
     "countryCode": "BOL",
     "countryName": "Bolivia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BOL/indicator"
@@ -45912,7 +45931,7 @@
   "BIH": {
     "countryCode": "BIH",
     "countryName": "Bosnia and Herzegovina",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BIH/indicator"
@@ -48117,7 +48136,7 @@
   "BWA": {
     "countryCode": "BWA",
     "countryName": "Botswana",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BWA/indicator"
@@ -50341,7 +50360,7 @@
   "BRA": {
     "countryCode": "BRA",
     "countryName": "Brazil",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BRA/indicator"
@@ -52570,7 +52589,7 @@
   "BRN": {
     "countryCode": "BRN",
     "countryName": "Brunei",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BRN/indicator"
@@ -54799,7 +54818,7 @@
   "BGR": {
     "countryCode": "BGR",
     "countryName": "Bulgaria",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BGR/indicator"
@@ -57028,7 +57047,7 @@
   "BFA": {
     "countryCode": "BFA",
     "countryName": "Burkina Faso",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BFA/indicator"
@@ -59256,7 +59275,7 @@
   "BDI": {
     "countryCode": "BDI",
     "countryName": "Burundi",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/BDI/indicator"
@@ -61484,7 +61503,7 @@
   "KHM": {
     "countryCode": "KHM",
     "countryName": "Cambodia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/KHM/indicator"
@@ -63712,7 +63731,7 @@
   "CMR": {
     "countryCode": "CMR",
     "countryName": "Cameroon",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CMR/indicator"
@@ -65940,7 +65959,7 @@
   "CAN": {
     "countryCode": "CAN",
     "countryName": "Canada",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CAN/indicator"
@@ -68169,7 +68188,7 @@
   "CPV": {
     "countryCode": "CPV",
     "countryName": "Cape Verde",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CPV/indicator"
@@ -70398,7 +70417,7 @@
   "CAF": {
     "countryCode": "CAF",
     "countryName": "Central African Republic",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CAF/indicator"
@@ -72618,7 +72637,7 @@
   "TCD": {
     "countryCode": "TCD",
     "countryName": "Chad",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TCD/indicator"
@@ -74846,7 +74865,7 @@
   "CHL": {
     "countryCode": "CHL",
     "countryName": "Chile",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CHL/indicator"
@@ -77075,7 +77094,7 @@
   "CHN": {
     "countryCode": "CHN",
     "countryName": "China",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CHN/indicator"
@@ -79304,7 +79323,7 @@
   "COL": {
     "countryCode": "COL",
     "countryName": "Colombia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/COL/indicator"
@@ -81533,7 +81552,7 @@
   "COM": {
     "countryCode": "COM",
     "countryName": "Comoros",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/COM/indicator"
@@ -83753,7 +83772,7 @@
   "COG": {
     "countryCode": "COG",
     "countryName": "Congo",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/COG/indicator"
@@ -85981,7 +86000,7 @@
   "COK": {
     "countryCode": "COK",
     "countryName": "Cook Islands",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/COK/indicator"
@@ -85998,7 +86017,7 @@
   "CRI": {
     "countryCode": "CRI",
     "countryName": "Costa Rica",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CRI/indicator"
@@ -88227,7 +88246,7 @@
   "HRV": {
     "countryCode": "HRV",
     "countryName": "Croatia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/HRV/indicator"
@@ -90456,7 +90475,7 @@
   "CUB": {
     "countryCode": "CUB",
     "countryName": "Cuba",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CUB/indicator"
@@ -92501,7 +92520,7 @@
   "CYP": {
     "countryCode": "CYP",
     "countryName": "Cyprus",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CYP/indicator"
@@ -94730,7 +94749,7 @@
   "CZE": {
     "countryCode": "CZE",
     "countryName": "Czechia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CZE/indicator"
@@ -96959,7 +96978,7 @@
   "DNK": {
     "countryCode": "DNK",
     "countryName": "Denmark",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/DNK/indicator"
@@ -99188,7 +99207,7 @@
   "DJI": {
     "countryCode": "DJI",
     "countryName": "Djibouti",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/DJI/indicator"
@@ -101356,7 +101375,7 @@
   "DMA": {
     "countryCode": "DMA",
     "countryName": "Dominica",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/DMA/indicator"
@@ -103397,7 +103416,7 @@
   "DOM": {
     "countryCode": "DOM",
     "countryName": "Dominican Republic",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/DOM/indicator"
@@ -105625,7 +105644,7 @@
   "COD": {
     "countryCode": "COD",
     "countryName": "DR Congo",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/COD/indicator"
@@ -107849,7 +107868,7 @@
   "ECU": {
     "countryCode": "ECU",
     "countryName": "Ecuador",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ECU/indicator"
@@ -110077,7 +110096,7 @@
   "EGY": {
     "countryCode": "EGY",
     "countryName": "Egypt",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/EGY/indicator"
@@ -112305,7 +112324,7 @@
   "SLV": {
     "countryCode": "SLV",
     "countryName": "El Salvador",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SLV/indicator"
@@ -114534,7 +114553,7 @@
   "ENG": {
     "countryCode": "ENG",
     "countryName": "England",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ENG/indicator"
@@ -114551,7 +114570,7 @@
   "GNQ": {
     "countryCode": "GNQ",
     "countryName": "Equatorial Guinea",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GNQ/indicator"
@@ -116779,7 +116798,7 @@
   "ERI": {
     "countryCode": "ERI",
     "countryName": "Eritrea",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ERI/indicator"
@@ -118807,7 +118826,7 @@
   "EST": {
     "countryCode": "EST",
     "countryName": "Estonia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/EST/indicator"
@@ -121036,7 +121055,7 @@
   "SWZ": {
     "countryCode": "SWZ",
     "countryName": "Eswatini",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SWZ/indicator"
@@ -123264,7 +123283,7 @@
   "ETH": {
     "countryCode": "ETH",
     "countryName": "Ethiopia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ETH/indicator"
@@ -125489,10 +125508,29 @@
       }
     ]
   },
+  "FLK": {
+    "countryCode": "FLK",
+    "countryName": "Falkland Islands",
+    "retrievedAt": "2026-08-13",
+    "source": {
+      "name": "Atlas educational territory profile",
+      "url": "https://www.falklands.gov.fk/"
+    },
+    "narrative": {
+      "thesis": "The Falkland Islands are included as an educational territory profile. They are a self-governing British Overseas Territory in the South Atlantic, with sovereignty disputed by Argentina.",
+      "insights": [
+        "The Falkland Islands are a territory profile, not a sovereign-state profile.",
+        "Comparable World Bank long-run country indicators are not published for this atlas entry.",
+        "The Basic Info page emphasizes governance, geography, language, currency, and the sovereignty-dispute note."
+      ],
+      "projectionNote": "No projection is shown because comparable long-run country-level indicator data is unavailable or not applicable for this profile."
+    },
+    "series": []
+  },
   "FJI": {
     "countryCode": "FJI",
     "countryName": "Fiji",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/FJI/indicator"
@@ -127720,7 +127758,7 @@
   "FIN": {
     "countryCode": "FIN",
     "countryName": "Finland",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/FIN/indicator"
@@ -129949,7 +129987,7 @@
   "FRA": {
     "countryCode": "FRA",
     "countryName": "France",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/FRA/indicator"
@@ -132178,7 +132216,7 @@
   "GAB": {
     "countryCode": "GAB",
     "countryName": "Gabon",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GAB/indicator"
@@ -134407,7 +134445,7 @@
   "GMB": {
     "countryCode": "GMB",
     "countryName": "Gambia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GMB/indicator"
@@ -136635,7 +136673,7 @@
   "GEO": {
     "countryCode": "GEO",
     "countryName": "Georgia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GEO/indicator"
@@ -138863,7 +138901,7 @@
   "DEU": {
     "countryCode": "DEU",
     "countryName": "Germany",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/DEU/indicator"
@@ -141092,7 +141130,7 @@
   "GHA": {
     "countryCode": "GHA",
     "countryName": "Ghana",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GHA/indicator"
@@ -143320,7 +143358,7 @@
   "GRC": {
     "countryCode": "GRC",
     "countryName": "Greece",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GRC/indicator"
@@ -145546,10 +145584,1871 @@
       }
     ]
   },
+  "GRL": {
+    "countryCode": "GRL",
+    "countryName": "Greenland",
+    "retrievedAt": "2026-08-13",
+    "source": {
+      "name": "World Bank Open Data API",
+      "url": "https://api.worldbank.org/v2/country/GRL/indicator"
+    },
+    "narrative": {
+      "thesis": "Greenland is profiled through long-run World Bank indicators covering the economy, population, health, work, technology, and environment. Northern America context, regional connectivity, demographic direction, and long-run development indicators.",
+      "insights": [
+        "Population has moved up since 2000, giving the report a clear demographic baseline.",
+        "Life expectancy is higher than in 2000, showing the direction of health and longevity conditions.",
+        "Recent GDP growth averages 1.5% across the latest 5 available observations.",
+        "Low fertility is a central long-term pressure in the projection scenarios."
+      ],
+      "projectionNote": "2035 scenarios are simple educational trend projections from recent historical observations. They are not official forecasts."
+    },
+    "series": [
+      {
+        "key": "gdpGrowth",
+        "label": "GDP growth",
+        "code": "NY.GDP.MKTP.KD.ZG",
+        "unit": "% annual",
+        "kind": "percent",
+        "method": "average",
+        "group": "economy",
+        "latest": {
+          "year": 2023,
+          "value": 0.865961986998158
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 7.10159688181619
+          },
+          {
+            "year": 2001,
+            "value": 1.26903507902787
+          },
+          {
+            "year": 2002,
+            "value": -0.971177310665553
+          },
+          {
+            "year": 2003,
+            "value": 4.43004572118211
+          },
+          {
+            "year": 2004,
+            "value": 6.90658283676629
+          },
+          {
+            "year": 2005,
+            "value": 4.98749177090193
+          },
+          {
+            "year": 2006,
+            "value": 5.55569490080012
+          },
+          {
+            "year": 2007,
+            "value": 2.3524379811805
+          },
+          {
+            "year": 2008,
+            "value": 6.1661327018619
+          },
+          {
+            "year": 2009,
+            "value": 0.865952328886948
+          },
+          {
+            "year": 2010,
+            "value": 1.73582505889665
+          },
+          {
+            "year": 2011,
+            "value": -0.496519391959083
+          },
+          {
+            "year": 2012,
+            "value": 1.39419335955625
+          },
+          {
+            "year": 2013,
+            "value": -1.29828069335511
+          },
+          {
+            "year": 2014,
+            "value": 4.7421356730152
+          },
+          {
+            "year": 2015,
+            "value": -2.52931802394475
+          },
+          {
+            "year": 2016,
+            "value": 4.68195410972302
+          },
+          {
+            "year": 2017,
+            "value": 0.0527281828800312
+          },
+          {
+            "year": 2018,
+            "value": 0.62306542854094
+          },
+          {
+            "year": 2019,
+            "value": 2.83217756798683
+          },
+          {
+            "year": 2020,
+            "value": 0.250789762104304
+          },
+          {
+            "year": 2021,
+            "value": 1.63409410992996
+          },
+          {
+            "year": 2022,
+            "value": 2.00455580865604
+          },
+          {
+            "year": 2023,
+            "value": 0.865961986998158
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2023,
+          "absolute": -6.235634894818031,
+          "percent": -87.8060948627558,
+          "direction": "down",
+          "unit": "% annual"
+        },
+        "forecast": [
+          {
+            "year": 2024,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2025,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2026,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2027,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2028,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2029,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2030,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2031,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2032,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2033,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2034,
+            "value": 1.5158144605889734
+          },
+          {
+            "year": 2035,
+            "value": 1.5158144605889734
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 1.288366094832188
+          },
+          "base": {
+            "year": 2035,
+            "value": 1.5158144605889734
+          },
+          "high": {
+            "year": 2035,
+            "value": 1.743262826345759
+          }
+        },
+        "confidence": "Low"
+      },
+      {
+        "key": "gdp",
+        "label": "GDP",
+        "code": "NY.GDP.MKTP.CD",
+        "unit": "current US$",
+        "kind": "money",
+        "method": "cagr",
+        "group": "economy",
+        "latest": {
+          "year": 2023,
+          "value": 3326543974.39193
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 1068025016.00862
+          },
+          {
+            "year": 2001,
+            "value": 1086170703.9816
+          },
+          {
+            "year": 2002,
+            "value": 1169136716.03557
+          },
+          {
+            "year": 2003,
+            "value": 1558759823.08169
+          },
+          {
+            "year": 2004,
+            "value": 1822499769.23938
+          },
+          {
+            "year": 2005,
+            "value": 1849802648.36391
+          },
+          {
+            "year": 2006,
+            "value": 2013106929.50031
+          },
+          {
+            "year": 2007,
+            "value": 2249811295.6608
+          },
+          {
+            "year": 2008,
+            "value": 2499092314.41875
+          },
+          {
+            "year": 2009,
+            "value": 2529963903.22685
+          },
+          {
+            "year": 2010,
+            "value": 2503167187.49305
+          },
+          {
+            "year": 2011,
+            "value": 2684461375.46585
+          },
+          {
+            "year": 2012,
+            "value": 2609678486.36749
+          },
+          {
+            "year": 2013,
+            "value": 2684946990.12448
+          },
+          {
+            "year": 2014,
+            "value": 2842065708.35962
+          },
+          {
+            "year": 2015,
+            "value": 2499113022.81675
+          },
+          {
+            "year": 2016,
+            "value": 2707139544.46695
+          },
+          {
+            "year": 2017,
+            "value": 2851613679.03433
+          },
+          {
+            "year": 2018,
+            "value": 3055782146.15957
+          },
+          {
+            "year": 2019,
+            "value": 2997309971.87623
+          },
+          {
+            "year": 2020,
+            "value": 3089625554.40473
+          },
+          {
+            "year": 2021,
+            "value": 3293578467.57327
+          },
+          {
+            "year": 2022,
+            "value": 3152334771.77992
+          },
+          {
+            "year": 2023,
+            "value": 3326543974.39193
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2023,
+          "absolute": 2258518958.3833103,
+          "percent": 211.46685934602507,
+          "direction": "up",
+          "unit": "current US$"
+        },
+        "forecast": [
+          {
+            "year": 2024,
+            "value": 3398591948.33657
+          },
+          {
+            "year": 2025,
+            "value": 3472200373.7856803
+          },
+          {
+            "year": 2026,
+            "value": 3547403047.7881513
+          },
+          {
+            "year": 2027,
+            "value": 3624234499.3864713
+          },
+          {
+            "year": 2028,
+            "value": 3702730005.4706173
+          },
+          {
+            "year": 2029,
+            "value": 3782925606.975313
+          },
+          {
+            "year": 2030,
+            "value": 3864858125.428098
+          },
+          {
+            "year": 2031,
+            "value": 3948565179.855801
+          },
+          {
+            "year": 2032,
+            "value": 4034085204.057184
+          },
+          {
+            "year": 2033,
+            "value": 4121457464.249686
+          },
+          {
+            "year": 2034,
+            "value": 4210722077.0983653
+          },
+          {
+            "year": 2035,
+            "value": 4301920028.135329
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 3934139455.0658193
+          },
+          "base": {
+            "year": 2035,
+            "value": 4301920028.135329
+          },
+          "high": {
+            "year": 2035,
+            "value": 4700975589.087707
+          }
+        },
+        "confidence": "Low"
+      },
+      {
+        "key": "gdpPerCapita",
+        "label": "GDP per capita",
+        "code": "NY.GDP.PCAP.CD",
+        "unit": "current US$",
+        "kind": "money",
+        "method": "cagr",
+        "group": "economy",
+        "latest": {
+          "year": 2023,
+          "value": 58498.9707973609
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 19009.0774407515
+          },
+          {
+            "year": 2001,
+            "value": 19265.5191468738
+          },
+          {
+            "year": 2002,
+            "value": 20657.9506323097
+          },
+          {
+            "year": 2003,
+            "value": 27466.6494525504
+          },
+          {
+            "year": 2004,
+            "value": 32030.9987915109
+          },
+          {
+            "year": 2005,
+            "value": 32489.7277309899
+          },
+          {
+            "year": 2006,
+            "value": 35457.6297578214
+          },
+          {
+            "year": 2007,
+            "value": 39780.9441368721
+          },
+          {
+            "year": 2008,
+            "value": 44366.7858688175
+          },
+          {
+            "year": 2009,
+            "value": 44918.8413832155
+          },
+          {
+            "year": 2010,
+            "value": 44277.1993400972
+          },
+          {
+            "year": 2011,
+            "value": 47186.8759969388
+          },
+          {
+            "year": 2012,
+            "value": 45936.9562817724
+          },
+          {
+            "year": 2013,
+            "value": 47535.4883792376
+          },
+          {
+            "year": 2014,
+            "value": 50485.2244135291
+          },
+          {
+            "year": 2015,
+            "value": 44536.3549705377
+          },
+          {
+            "year": 2016,
+            "value": 48181.7453541266
+          },
+          {
+            "year": 2017,
+            "value": 50765.7494665372
+          },
+          {
+            "year": 2018,
+            "value": 54545.135857765
+          },
+          {
+            "year": 2019,
+            "value": 53309.2035905065
+          },
+          {
+            "year": 2020,
+            "value": 54812.6661771023
+          },
+          {
+            "year": 2021,
+            "value": 58135.9939910203
+          },
+          {
+            "year": 2022,
+            "value": 55635.0006491223
+          },
+          {
+            "year": 2023,
+            "value": 58498.9707973609
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2023,
+          "absolute": 39489.8933566094,
+          "percent": 207.74229301602665,
+          "direction": "up",
+          "unit": "current US$"
+        },
+        "forecast": [
+          {
+            "year": 2024,
+            "value": 59725.700468799536
+          },
+          {
+            "year": 2025,
+            "value": 60978.15479259148
+          },
+          {
+            "year": 2026,
+            "value": 62256.87321744666
+          },
+          {
+            "year": 2027,
+            "value": 63562.40650437213
+          },
+          {
+            "year": 2028,
+            "value": 64895.31696389213
+          },
+          {
+            "year": 2029,
+            "value": 66256.17869824273
+          },
+          {
+            "year": 2030,
+            "value": 67645.57784864526
+          },
+          {
+            "year": 2031,
+            "value": 69064.11284776511
+          },
+          {
+            "year": 2032,
+            "value": 70512.39467746462
+          },
+          {
+            "year": 2033,
+            "value": 71991.04713196114
+          },
+          {
+            "year": 2034,
+            "value": 73500.70708650342
+          },
+          {
+            "year": 2035,
+            "value": 75042.02477168228
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 68818.40801926517
+          },
+          "base": {
+            "year": 2035,
+            "value": 75042.02477168228
+          },
+          "high": {
+            "year": 2035,
+            "value": 81777.74545709894
+          }
+        },
+        "confidence": "Low"
+      },
+      {
+        "key": "population",
+        "label": "Population",
+        "code": "SP.POP.TOTL",
+        "unit": "people",
+        "kind": "count",
+        "method": "cagr",
+        "group": "people",
+        "latest": {
+          "year": 2025,
+          "value": 56831
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 56185
+          },
+          {
+            "year": 2001,
+            "value": 56379
+          },
+          {
+            "year": 2002,
+            "value": 56595
+          },
+          {
+            "year": 2003,
+            "value": 56751
+          },
+          {
+            "year": 2004,
+            "value": 56898
+          },
+          {
+            "year": 2005,
+            "value": 56935
+          },
+          {
+            "year": 2006,
+            "value": 56775
+          },
+          {
+            "year": 2007,
+            "value": 56555
+          },
+          {
+            "year": 2008,
+            "value": 56328
+          },
+          {
+            "year": 2009,
+            "value": 56323
+          },
+          {
+            "year": 2010,
+            "value": 56534
+          },
+          {
+            "year": 2011,
+            "value": 56890
+          },
+          {
+            "year": 2012,
+            "value": 56810
+          },
+          {
+            "year": 2013,
+            "value": 56483
+          },
+          {
+            "year": 2014,
+            "value": 56295
+          },
+          {
+            "year": 2015,
+            "value": 56114
+          },
+          {
+            "year": 2016,
+            "value": 56186
+          },
+          {
+            "year": 2017,
+            "value": 56172
+          },
+          {
+            "year": 2018,
+            "value": 56023
+          },
+          {
+            "year": 2019,
+            "value": 56225
+          },
+          {
+            "year": 2020,
+            "value": 56367
+          },
+          {
+            "year": 2021,
+            "value": 56653
+          },
+          {
+            "year": 2022,
+            "value": 56661
+          },
+          {
+            "year": 2023,
+            "value": 56865
+          },
+          {
+            "year": 2024,
+            "value": 56836
+          },
+          {
+            "year": 2025,
+            "value": 56831
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2025,
+          "absolute": 646,
+          "percent": 1.1497730711043872,
+          "direction": "up",
+          "unit": "people"
+        },
+        "forecast": [
+          {
+            "year": 2026,
+            "value": 56903.20196319532
+          },
+          {
+            "year": 2027,
+            "value": 56975.4956566697
+          },
+          {
+            "year": 2028,
+            "value": 57047.88119696351
+          },
+          {
+            "year": 2029,
+            "value": 57120.3587007652
+          },
+          {
+            "year": 2030,
+            "value": 57192.92828491147
+          },
+          {
+            "year": 2031,
+            "value": 57265.59006638742
+          },
+          {
+            "year": 2032,
+            "value": 57338.344162326815
+          },
+          {
+            "year": 2033,
+            "value": 57411.190690012205
+          },
+          {
+            "year": 2034,
+            "value": 57484.12976687519
+          },
+          {
+            "year": 2035,
+            "value": 57557.161510496495
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 57302.06062884407
+          },
+          "base": {
+            "year": 2035,
+            "value": 57557.161510496495
+          },
+          "high": {
+            "year": 2035,
+            "value": 57813.28404409993
+          }
+        },
+        "confidence": "High"
+      },
+      {
+        "key": "populationGrowth",
+        "label": "Population growth",
+        "code": "SP.POP.GROW",
+        "unit": "% annual",
+        "kind": "percent",
+        "method": "linear",
+        "group": "people",
+        "latest": {
+          "year": 2025,
+          "value": -0.00879762816511268
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 0.151400483121501
+          },
+          {
+            "year": 2001,
+            "value": 0.344693138270771
+          },
+          {
+            "year": 2002,
+            "value": 0.382389334180998
+          },
+          {
+            "year": 2003,
+            "value": 0.275263526725236
+          },
+          {
+            "year": 2004,
+            "value": 0.258691377800952
+          },
+          {
+            "year": 2005,
+            "value": 0.0650075132923012
+          },
+          {
+            "year": 2006,
+            "value": -0.281417827094618
+          },
+          {
+            "year": 2007,
+            "value": -0.388247200827777
+          },
+          {
+            "year": 2008,
+            "value": -0.402186876651222
+          },
+          {
+            "year": 2009,
+            "value": -0.00887697402292811
+          },
+          {
+            "year": 2010,
+            "value": 0.373924959638993
+          },
+          {
+            "year": 2011,
+            "value": 0.62773516895633
+          },
+          {
+            "year": 2012,
+            "value": -0.14072121935205
+          },
+          {
+            "year": 2013,
+            "value": -0.577265864735276
+          },
+          {
+            "year": 2014,
+            "value": -0.333398666658893
+          },
+          {
+            "year": 2015,
+            "value": -0.322038549275343
+          },
+          {
+            "year": 2016,
+            "value": 0.128227978389047
+          },
+          {
+            "year": 2017,
+            "value": -0.0249203440297217
+          },
+          {
+            "year": 2018,
+            "value": -0.265609140509557
+          },
+          {
+            "year": 2019,
+            "value": 0.359917714454119
+          },
+          {
+            "year": 2020,
+            "value": 0.252238303411568
+          },
+          {
+            "year": 2021,
+            "value": 0.506106194434674
+          },
+          {
+            "year": 2022,
+            "value": 0.0141200557976914
+          },
+          {
+            "year": 2023,
+            "value": 0.359389425458904
+          },
+          {
+            "year": 2024,
+            "value": -0.0510109860579076
+          },
+          {
+            "year": 2025,
+            "value": -0.00879762816511268
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2025,
+          "absolute": -0.16019811128661368,
+          "percent": -105.8108322930862,
+          "direction": "down",
+          "unit": "% annual"
+        },
+        "forecast": [
+          {
+            "year": 2026,
+            "value": -0.00318791427595274
+          },
+          {
+            "year": 2027,
+            "value": 0.002421799613207201
+          },
+          {
+            "year": 2028,
+            "value": 0.00803151350236714
+          },
+          {
+            "year": 2029,
+            "value": 0.013641227391527082
+          },
+          {
+            "year": 2030,
+            "value": 0.019250941280687023
+          },
+          {
+            "year": 2031,
+            "value": 0.02486065516984696
+          },
+          {
+            "year": 2032,
+            "value": 0.0304703690590069
+          },
+          {
+            "year": 2033,
+            "value": 0.03608008294816684
+          },
+          {
+            "year": 2034,
+            "value": 0.041689796837326785
+          },
+          {
+            "year": 2035,
+            "value": 0.04729951072648673
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 0.027665512114426936
+          },
+          "base": {
+            "year": 2035,
+            "value": 0.04729951072648673
+          },
+          "high": {
+            "year": 2035,
+            "value": 0.06693350933854653
+          }
+        },
+        "confidence": "High"
+      },
+      {
+        "key": "lifeExpectancy",
+        "label": "Life expectancy",
+        "code": "SP.DYN.LE00.IN",
+        "unit": "years",
+        "kind": "years",
+        "method": "linear",
+        "group": "health",
+        "latest": {
+          "year": 2024,
+          "value": 70.2734146341463
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 64.8034146341463
+          },
+          {
+            "year": 2001,
+            "value": 65.0058536585366
+          },
+          {
+            "year": 2002,
+            "value": 65.419512195122
+          },
+          {
+            "year": 2003,
+            "value": 66.1229268292683
+          },
+          {
+            "year": 2004,
+            "value": 66.8080487804878
+          },
+          {
+            "year": 2005,
+            "value": 67.3051219512195
+          },
+          {
+            "year": 2006,
+            "value": 67.8180487804878
+          },
+          {
+            "year": 2007,
+            "value": 68.2739024390244
+          },
+          {
+            "year": 2008,
+            "value": 68.5660975609756
+          },
+          {
+            "year": 2009,
+            "value": 69.0321951219512
+          },
+          {
+            "year": 2010,
+            "value": 69.349756097561
+          },
+          {
+            "year": 2011,
+            "value": 69.6146341463415
+          },
+          {
+            "year": 2012,
+            "value": 69.959512195122
+          },
+          {
+            "year": 2013,
+            "value": 70.2917073170732
+          },
+          {
+            "year": 2014,
+            "value": 70.5082926829268
+          },
+          {
+            "year": 2015,
+            "value": 70.909756097561
+          },
+          {
+            "year": 2016,
+            "value": 71.1990243902439
+          },
+          {
+            "year": 2017,
+            "value": 71.2563414634146
+          },
+          {
+            "year": 2018,
+            "value": 71.3609756097561
+          },
+          {
+            "year": 2019,
+            "value": 71.4092682926829
+          },
+          {
+            "year": 2020,
+            "value": 71.2858536585366
+          },
+          {
+            "year": 2021,
+            "value": 71.2614634146342
+          },
+          {
+            "year": 2022,
+            "value": 71.230243902439
+          },
+          {
+            "year": 2023,
+            "value": 70.9724390243902
+          },
+          {
+            "year": 2024,
+            "value": 70.2734146341463
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2024,
+          "absolute": 5.469999999999999,
+          "percent": 8.440913231010112,
+          "direction": "up",
+          "unit": "years"
+        },
+        "forecast": [
+          {
+            "year": 2025,
+            "value": 70.22574427198813
+          },
+          {
+            "year": 2026,
+            "value": 70.17807390982996
+          },
+          {
+            "year": 2027,
+            "value": 70.13040354767179
+          },
+          {
+            "year": 2028,
+            "value": 70.08273318551362
+          },
+          {
+            "year": 2029,
+            "value": 70.03506282335545
+          },
+          {
+            "year": 2030,
+            "value": 69.98739246119729
+          },
+          {
+            "year": 2031,
+            "value": 69.93972209903912
+          },
+          {
+            "year": 2032,
+            "value": 69.89205173688094
+          },
+          {
+            "year": 2033,
+            "value": 69.84438137472277
+          },
+          {
+            "year": 2034,
+            "value": 69.7967110125646
+          },
+          {
+            "year": 2035,
+            "value": 69.74904065040643
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 69.93257154471539
+          },
+          "base": {
+            "year": 2035,
+            "value": 69.74904065040643
+          },
+          "high": {
+            "year": 2035,
+            "value": 69.56550975609747
+          }
+        },
+        "confidence": "High"
+      },
+      {
+        "key": "fertilityRate",
+        "label": "Fertility rate",
+        "code": "SP.DYN.TFRT.IN",
+        "unit": "births per woman",
+        "kind": "rate",
+        "method": "linear",
+        "group": "people",
+        "latest": {
+          "year": 2024,
+          "value": 1.706
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 2.406
+          },
+          {
+            "year": 2001,
+            "value": 2.506
+          },
+          {
+            "year": 2002,
+            "value": 2.613
+          },
+          {
+            "year": 2003,
+            "value": 2.328
+          },
+          {
+            "year": 2004,
+            "value": 2.442
+          },
+          {
+            "year": 2005,
+            "value": 2.326
+          },
+          {
+            "year": 2006,
+            "value": 2.28
+          },
+          {
+            "year": 2007,
+            "value": 2.223
+          },
+          {
+            "year": 2008,
+            "value": 2.249
+          },
+          {
+            "year": 2009,
+            "value": 2.344
+          },
+          {
+            "year": 2010,
+            "value": 2.184
+          },
+          {
+            "year": 2011,
+            "value": 2.097
+          },
+          {
+            "year": 2012,
+            "value": 2.006
+          },
+          {
+            "year": 2013,
+            "value": 2.069
+          },
+          {
+            "year": 2014,
+            "value": 1.987
+          },
+          {
+            "year": 2015,
+            "value": 2.116
+          },
+          {
+            "year": 2016,
+            "value": 2.066
+          },
+          {
+            "year": 2017,
+            "value": 2.125
+          },
+          {
+            "year": 2018,
+            "value": 2.024
+          },
+          {
+            "year": 2019,
+            "value": 2.115
+          },
+          {
+            "year": 2020,
+            "value": 2.109
+          },
+          {
+            "year": 2021,
+            "value": 1.82
+          },
+          {
+            "year": 2022,
+            "value": 1.818
+          },
+          {
+            "year": 2023,
+            "value": 1.769
+          },
+          {
+            "year": 2024,
+            "value": 1.706
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2024,
+          "absolute": -0.7000000000000002,
+          "percent": -29.09393183707399,
+          "direction": "down",
+          "unit": "births per woman"
+        },
+        "forecast": [
+          {
+            "year": 2025,
+            "value": 1.6579878787878788
+          },
+          {
+            "year": 2026,
+            "value": 1.6099757575757576
+          },
+          {
+            "year": 2027,
+            "value": 1.5619636363636364
+          },
+          {
+            "year": 2028,
+            "value": 1.513951515151515
+          },
+          {
+            "year": 2029,
+            "value": 1.4659393939393939
+          },
+          {
+            "year": 2030,
+            "value": 1.4179272727272727
+          },
+          {
+            "year": 2031,
+            "value": 1.3699151515151515
+          },
+          {
+            "year": 2032,
+            "value": 1.3219030303030301
+          },
+          {
+            "year": 2033,
+            "value": 1.273890909090909
+          },
+          {
+            "year": 2034,
+            "value": 1.2258787878787878
+          },
+          {
+            "year": 2035,
+            "value": 1.1778666666666666
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 1.3627133333333332
+          },
+          "base": {
+            "year": 2035,
+            "value": 1.1778666666666666
+          },
+          "high": {
+            "year": 2035,
+            "value": 0.9930199999999999
+          }
+        },
+        "confidence": "High"
+      },
+      {
+        "key": "urbanization",
+        "label": "Urban population",
+        "code": "SP.URB.TOTL.IN.ZS",
+        "unit": "% of total",
+        "kind": "percent",
+        "method": "linear",
+        "group": "people",
+        "latest": {
+          "year": 2025,
+          "value": 88.5740108655152
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 81.4517822265625
+          },
+          {
+            "year": 2001,
+            "value": 81.7906112670898
+          },
+          {
+            "year": 2002,
+            "value": 82.0752868652344
+          },
+          {
+            "year": 2003,
+            "value": 82.3485946655273
+          },
+          {
+            "year": 2004,
+            "value": 82.5634307861328
+          },
+          {
+            "year": 2005,
+            "value": 82.6899108886719
+          },
+          {
+            "year": 2006,
+            "value": 82.8471984863281
+          },
+          {
+            "year": 2007,
+            "value": 83.2039566040039
+          },
+          {
+            "year": 2008,
+            "value": 83.621826171875
+          },
+          {
+            "year": 2009,
+            "value": 83.8556137084961
+          },
+          {
+            "year": 2010,
+            "value": 84.2784881591797
+          },
+          {
+            "year": 2011,
+            "value": 84.5286026000977
+          },
+          {
+            "year": 2012,
+            "value": 84.8864593505859
+          },
+          {
+            "year": 2013,
+            "value": 85.3725891113281
+          },
+          {
+            "year": 2014,
+            "value": 85.6772384643555
+          },
+          {
+            "year": 2015,
+            "value": 86.046257019043
+          },
+          {
+            "year": 2016,
+            "value": 86.2261047363281
+          },
+          {
+            "year": 2017,
+            "value": 86.3915557861328
+          },
+          {
+            "year": 2018,
+            "value": 86.72509765625
+          },
+          {
+            "year": 2019,
+            "value": 87.0217895507812
+          },
+          {
+            "year": 2020,
+            "value": 87.2840881978115
+          },
+          {
+            "year": 2021,
+            "value": 87.5452017613678
+          },
+          {
+            "year": 2022,
+            "value": 87.8049405256832
+          },
+          {
+            "year": 2023,
+            "value": 88.0631147749908
+          },
+          {
+            "year": 2024,
+            "value": 88.3195347935238
+          },
+          {
+            "year": 2025,
+            "value": 88.5740108655152
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2025,
+          "absolute": 7.122228638952706,
+          "percent": 8.744104111978599,
+          "direction": "up",
+          "unit": "% of total"
+        },
+        "forecast": [
+          {
+            "year": 2026,
+            "value": 88.84023910973573
+          },
+          {
+            "year": 2027,
+            "value": 89.10646735395626
+          },
+          {
+            "year": 2028,
+            "value": 89.37269559817679
+          },
+          {
+            "year": 2029,
+            "value": 89.63892384239732
+          },
+          {
+            "year": 2030,
+            "value": 89.90515208661785
+          },
+          {
+            "year": 2031,
+            "value": 90.17138033083837
+          },
+          {
+            "year": 2032,
+            "value": 90.4376085750589
+          },
+          {
+            "year": 2033,
+            "value": 90.70383681927943
+          },
+          {
+            "year": 2034,
+            "value": 90.97006506349996
+          },
+          {
+            "year": 2035,
+            "value": 91.2362933077205
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 90.30449445294865
+          },
+          "base": {
+            "year": 2035,
+            "value": 91.2362933077205
+          },
+          "high": {
+            "year": 2035,
+            "value": 92.16809216249234
+          }
+        },
+        "confidence": "High"
+      },
+      {
+        "key": "co2PerCapita",
+        "label": "CO2 per person",
+        "code": "EN.GHG.CO2.PC.CE.AR5",
+        "unit": "t CO2e/capita",
+        "kind": "rate",
+        "method": "linear",
+        "group": "environment",
+        "latest": {
+          "year": 2024,
+          "value": 10.4528819762123
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 0.0231378481801192
+          },
+          {
+            "year": 2001,
+            "value": 0.0248319409709289
+          },
+          {
+            "year": 2002,
+            "value": 0.0247371675943105
+          },
+          {
+            "year": 2003,
+            "value": 0.0246691688252189
+          },
+          {
+            "year": 2004,
+            "value": 10.6137298323315
+          },
+          {
+            "year": 2005,
+            "value": 10.728023184333
+          },
+          {
+            "year": 2006,
+            "value": 11.001321003963
+          },
+          {
+            "year": 2007,
+            "value": 10.8796746529927
+          },
+          {
+            "year": 2008,
+            "value": 11.2253231075131
+          },
+          {
+            "year": 2009,
+            "value": 9.77220673614687
+          },
+          {
+            "year": 2010,
+            "value": 11.3701489369229
+          },
+          {
+            "year": 2011,
+            "value": 12.0038671119705
+          },
+          {
+            "year": 2012,
+            "value": 9.48600598486182
+          },
+          {
+            "year": 2013,
+            "value": 9.51436715471912
+          },
+          {
+            "year": 2014,
+            "value": 8.54072297717382
+          },
+          {
+            "year": 2015,
+            "value": 9.24546458994191
+          },
+          {
+            "year": 2016,
+            "value": 9.18200263410814
+          },
+          {
+            "year": 2017,
+            "value": 8.95641956846828
+          },
+          {
+            "year": 2018,
+            "value": 9.0730592792246
+          },
+          {
+            "year": 2019,
+            "value": 9.31791907514451
+          },
+          {
+            "year": 2020,
+            "value": 9.35831248780315
+          },
+          {
+            "year": 2021,
+            "value": 9.67998164263146
+          },
+          {
+            "year": 2022,
+            "value": 10.4198655159634
+          },
+          {
+            "year": 2023,
+            "value": 10.2857645300273
+          },
+          {
+            "year": 2024,
+            "value": 10.4528819762123
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2024,
+          "absolute": 10.429744128032182,
+          "percent": 45076.55183334534,
+          "direction": "up",
+          "unit": "t CO2e/capita"
+        },
+        "forecast": [
+          {
+            "year": 2025,
+            "value": 10.62119397614092
+          },
+          {
+            "year": 2026,
+            "value": 10.789505976069542
+          },
+          {
+            "year": 2027,
+            "value": 10.957817975998163
+          },
+          {
+            "year": 2028,
+            "value": 11.126129975926784
+          },
+          {
+            "year": 2029,
+            "value": 11.294441975855404
+          },
+          {
+            "year": 2030,
+            "value": 11.462753975784025
+          },
+          {
+            "year": 2031,
+            "value": 11.631065975712646
+          },
+          {
+            "year": 2032,
+            "value": 11.799377975641267
+          },
+          {
+            "year": 2033,
+            "value": 11.967689975569888
+          },
+          {
+            "year": 2034,
+            "value": 12.136001975498509
+          },
+          {
+            "year": 2035,
+            "value": 12.30431397542713
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 11.65631277570194
+          },
+          "base": {
+            "year": 2035,
+            "value": 12.30431397542713
+          },
+          "high": {
+            "year": 2035,
+            "value": 12.95231517515232
+          }
+        },
+        "confidence": "High"
+      },
+      {
+        "key": "internetUse",
+        "label": "Internet access",
+        "code": "IT.NET.USER.ZS",
+        "unit": "% of people",
+        "kind": "percent",
+        "method": "linear",
+        "group": "technology",
+        "latest": {
+          "year": 2017,
+          "value": 69.4824617821988
+        },
+        "history": [
+          {
+            "year": 2000,
+            "value": 31.7478112321162
+          },
+          {
+            "year": 2001,
+            "value": 35.4641368915684
+          },
+          {
+            "year": 2002,
+            "value": 44.154789028418
+          },
+          {
+            "year": 2003,
+            "value": 54.5342598293605
+          },
+          {
+            "year": 2004,
+            "value": 56.0990147610533
+          },
+          {
+            "year": 2005,
+            "value": 57.7034045008656
+          },
+          {
+            "year": 2006,
+            "value": 59.361687268664
+          },
+          {
+            "year": 2007,
+            "value": 61.07
+          },
+          {
+            "year": 2008,
+            "value": 62.82
+          },
+          {
+            "year": 2009,
+            "value": 62.83
+          },
+          {
+            "year": 2010,
+            "value": 63
+          },
+          {
+            "year": 2011,
+            "value": 64
+          },
+          {
+            "year": 2012,
+            "value": 64.8960100995989
+          },
+          {
+            "year": 2013,
+            "value": 65.8
+          },
+          {
+            "year": 2014,
+            "value": 66.7
+          },
+          {
+            "year": 2015,
+            "value": 67.600443481006
+          },
+          {
+            "year": 2016,
+            "value": 68.500873675421
+          },
+          {
+            "year": 2017,
+            "value": 69.4824617821988
+          }
+        ],
+        "change": {
+          "fromYear": 2000,
+          "toYear": 2017,
+          "absolute": 37.7346505500826,
+          "percent": 118.85748681757971,
+          "direction": "up",
+          "unit": "% of people"
+        },
+        "forecast": [
+          {
+            "year": 2018,
+            "value": 70.28042832203617
+          },
+          {
+            "year": 2019,
+            "value": 71.07839486187355
+          },
+          {
+            "year": 2020,
+            "value": 71.87636140171092
+          },
+          {
+            "year": 2021,
+            "value": 72.67432794154831
+          },
+          {
+            "year": 2022,
+            "value": 73.47229448138569
+          },
+          {
+            "year": 2023,
+            "value": 74.27026102122306
+          },
+          {
+            "year": 2024,
+            "value": 75.06822756106044
+          },
+          {
+            "year": 2025,
+            "value": 75.86619410089781
+          },
+          {
+            "year": 2026,
+            "value": 76.66416064073519
+          },
+          {
+            "year": 2027,
+            "value": 77.46212718057258
+          },
+          {
+            "year": 2028,
+            "value": 78.26009372040996
+          },
+          {
+            "year": 2029,
+            "value": 79.05806026024733
+          },
+          {
+            "year": 2030,
+            "value": 79.8560268000847
+          },
+          {
+            "year": 2031,
+            "value": 80.65399333992208
+          },
+          {
+            "year": 2032,
+            "value": 81.45195987975946
+          },
+          {
+            "year": 2033,
+            "value": 82.24992641959685
+          },
+          {
+            "year": 2034,
+            "value": 83.04789295943422
+          },
+          {
+            "year": 2035,
+            "value": 83.8458594992716
+          }
+        ],
+        "scenarios": {
+          "low": {
+            "year": 2035,
+            "value": 78.81867029829611
+          },
+          "base": {
+            "year": 2035,
+            "value": 83.8458594992716
+          },
+          "high": {
+            "year": 2035,
+            "value": 88.87304870024707
+          }
+        },
+        "confidence": "Low"
+      }
+    ]
+  },
   "GRD": {
     "countryCode": "GRD",
     "countryName": "Grenada",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GRD/indicator"
@@ -147594,7 +149493,7 @@
   "GTM": {
     "countryCode": "GTM",
     "countryName": "Guatemala",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GTM/indicator"
@@ -149822,7 +151721,7 @@
   "GIN": {
     "countryCode": "GIN",
     "countryName": "Guinea",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GIN/indicator"
@@ -152030,7 +153929,7 @@
   "GNB": {
     "countryCode": "GNB",
     "countryName": "Guinea-Bissau",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GNB/indicator"
@@ -154258,7 +156157,7 @@
   "GUY": {
     "countryCode": "GUY",
     "countryName": "Guyana",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GUY/indicator"
@@ -156486,7 +158385,7 @@
   "HTI": {
     "countryCode": "HTI",
     "countryName": "Haiti",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/HTI/indicator"
@@ -158714,7 +160613,7 @@
   "HND": {
     "countryCode": "HND",
     "countryName": "Honduras",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/HND/indicator"
@@ -160942,7 +162841,7 @@
   "HKG": {
     "countryCode": "HKG",
     "countryName": "Hong Kong",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/HKG/indicator"
@@ -163171,7 +165070,7 @@
   "HUN": {
     "countryCode": "HUN",
     "countryName": "Hungary",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/HUN/indicator"
@@ -165400,7 +167299,7 @@
   "ISL": {
     "countryCode": "ISL",
     "countryName": "Iceland",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ISL/indicator"
@@ -167629,7 +169528,7 @@
   "IND": {
     "countryCode": "IND",
     "countryName": "India",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/IND/indicator"
@@ -169857,7 +171756,7 @@
   "IDN": {
     "countryCode": "IDN",
     "countryName": "Indonesia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/IDN/indicator"
@@ -172085,7 +173984,7 @@
   "IRN": {
     "countryCode": "IRN",
     "countryName": "Iran",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/IRN/indicator"
@@ -174314,7 +176213,7 @@
   "IRQ": {
     "countryCode": "IRQ",
     "countryName": "Iraq",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/IRQ/indicator"
@@ -176538,7 +178437,7 @@
   "IRL": {
     "countryCode": "IRL",
     "countryName": "Ireland",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/IRL/indicator"
@@ -178767,7 +180666,7 @@
   "ISR": {
     "countryCode": "ISR",
     "countryName": "Israel",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ISR/indicator"
@@ -180996,7 +182895,7 @@
   "ITA": {
     "countryCode": "ITA",
     "countryName": "Italy",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ITA/indicator"
@@ -183225,7 +185124,7 @@
   "CIV": {
     "countryCode": "CIV",
     "countryName": "Ivory Coast",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CIV/indicator"
@@ -185453,7 +187352,7 @@
   "JAM": {
     "countryCode": "JAM",
     "countryName": "Jamaica",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/JAM/indicator"
@@ -187682,7 +189581,7 @@
   "JPN": {
     "countryCode": "JPN",
     "countryName": "Japan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/JPN/indicator"
@@ -189911,7 +191810,7 @@
   "JOR": {
     "countryCode": "JOR",
     "countryName": "Jordan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/JOR/indicator"
@@ -192140,7 +194039,7 @@
   "KAZ": {
     "countryCode": "KAZ",
     "countryName": "Kazakhstan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/KAZ/indicator"
@@ -194368,7 +196267,7 @@
   "KEN": {
     "countryCode": "KEN",
     "countryName": "Kenya",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/KEN/indicator"
@@ -196596,7 +198495,7 @@
   "KIR": {
     "countryCode": "KIR",
     "countryName": "Kiribati",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/KIR/indicator"
@@ -198612,7 +200511,7 @@
   "UNK": {
     "countryCode": "UNK",
     "countryName": "Kosovo",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/XKX/indicator"
@@ -200215,7 +202114,7 @@
   "KWT": {
     "countryCode": "KWT",
     "countryName": "Kuwait",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/KWT/indicator"
@@ -202444,7 +204343,7 @@
   "KGZ": {
     "countryCode": "KGZ",
     "countryName": "Kyrgyzstan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/KGZ/indicator"
@@ -204672,7 +206571,7 @@
   "LAO": {
     "countryCode": "LAO",
     "countryName": "Laos",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LAO/indicator"
@@ -206900,7 +208799,7 @@
   "LVA": {
     "countryCode": "LVA",
     "countryName": "Latvia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LVA/indicator"
@@ -209129,7 +211028,7 @@
   "LBN": {
     "countryCode": "LBN",
     "countryName": "Lebanon",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LBN/indicator"
@@ -211322,7 +213221,7 @@
   "LSO": {
     "countryCode": "LSO",
     "countryName": "Lesotho",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LSO/indicator"
@@ -213550,7 +215449,7 @@
   "LBR": {
     "countryCode": "LBR",
     "countryName": "Liberia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LBR/indicator"
@@ -215770,7 +217669,7 @@
   "LBY": {
     "countryCode": "LBY",
     "countryName": "Libya",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LBY/indicator"
@@ -217999,7 +219898,7 @@
   "LIE": {
     "countryCode": "LIE",
     "countryName": "Liechtenstein",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LIE/indicator"
@@ -219672,7 +221571,7 @@
   "LTU": {
     "countryCode": "LTU",
     "countryName": "Lithuania",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LTU/indicator"
@@ -221901,7 +223800,7 @@
   "LUX": {
     "countryCode": "LUX",
     "countryName": "Luxembourg",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LUX/indicator"
@@ -224130,7 +226029,7 @@
   "MDG": {
     "countryCode": "MDG",
     "countryName": "Madagascar",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MDG/indicator"
@@ -226358,7 +228257,7 @@
   "MWI": {
     "countryCode": "MWI",
     "countryName": "Malawi",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MWI/indicator"
@@ -228586,7 +230485,7 @@
   "MYS": {
     "countryCode": "MYS",
     "countryName": "Malaysia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MYS/indicator"
@@ -230815,7 +232714,7 @@
   "MDV": {
     "countryCode": "MDV",
     "countryName": "Maldives",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MDV/indicator"
@@ -233044,7 +234943,7 @@
   "MLI": {
     "countryCode": "MLI",
     "countryName": "Mali",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MLI/indicator"
@@ -235272,7 +237171,7 @@
   "MLT": {
     "countryCode": "MLT",
     "countryName": "Malta",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MLT/indicator"
@@ -237501,7 +239400,7 @@
   "MHL": {
     "countryCode": "MHL",
     "countryName": "Marshall Islands",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MHL/indicator"
@@ -239361,7 +241260,7 @@
   "MRT": {
     "countryCode": "MRT",
     "countryName": "Mauritania",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MRT/indicator"
@@ -241589,7 +243488,7 @@
   "MUS": {
     "countryCode": "MUS",
     "countryName": "Mauritius",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MUS/indicator"
@@ -243818,7 +245717,7 @@
   "MEX": {
     "countryCode": "MEX",
     "countryName": "Mexico",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MEX/indicator"
@@ -246047,7 +247946,7 @@
   "FSM": {
     "countryCode": "FSM",
     "countryName": "Micronesia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/FSM/indicator"
@@ -248087,7 +249986,7 @@
   "MDA": {
     "countryCode": "MDA",
     "countryName": "Moldova",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MDA/indicator"
@@ -250316,7 +252215,7 @@
   "MCO": {
     "countryCode": "MCO",
     "countryName": "Monaco",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MCO/indicator"
@@ -251989,7 +253888,7 @@
   "MNG": {
     "countryCode": "MNG",
     "countryName": "Mongolia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MNG/indicator"
@@ -254209,7 +256108,7 @@
   "MNE": {
     "countryCode": "MNE",
     "countryName": "Montenegro",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MNE/indicator"
@@ -256213,7 +258112,7 @@
   "MAR": {
     "countryCode": "MAR",
     "countryName": "Morocco",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MAR/indicator"
@@ -258441,7 +260340,7 @@
   "MOZ": {
     "countryCode": "MOZ",
     "countryName": "Mozambique",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MOZ/indicator"
@@ -260649,7 +262548,7 @@
   "MMR": {
     "countryCode": "MMR",
     "countryName": "Myanmar",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MMR/indicator"
@@ -262873,7 +264772,7 @@
   "NAM": {
     "countryCode": "NAM",
     "countryName": "Namibia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NAM/indicator"
@@ -265089,7 +266988,7 @@
   "NRU": {
     "countryCode": "NRU",
     "countryName": "Nauru",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NRU/indicator"
@@ -266924,7 +268823,7 @@
   "NPL": {
     "countryCode": "NPL",
     "countryName": "Nepal",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NPL/indicator"
@@ -269152,7 +271051,7 @@
   "NLD": {
     "countryCode": "NLD",
     "countryName": "Netherlands",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NLD/indicator"
@@ -271381,7 +273280,7 @@
   "NZL": {
     "countryCode": "NZL",
     "countryName": "New Zealand",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NZL/indicator"
@@ -273610,7 +275509,7 @@
   "NIC": {
     "countryCode": "NIC",
     "countryName": "Nicaragua",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NIC/indicator"
@@ -275838,7 +277737,7 @@
   "NER": {
     "countryCode": "NER",
     "countryName": "Niger",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NER/indicator"
@@ -278066,7 +279965,7 @@
   "NGA": {
     "countryCode": "NGA",
     "countryName": "Nigeria",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NGA/indicator"
@@ -280294,7 +282193,7 @@
   "NIU": {
     "countryCode": "NIU",
     "countryName": "Niue",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NIU/indicator"
@@ -280311,7 +282210,7 @@
   "PRK": {
     "countryCode": "PRK",
     "countryName": "North Korea",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PRK/indicator"
@@ -281803,7 +283702,7 @@
   "MKD": {
     "countryCode": "MKD",
     "countryName": "North Macedonia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/MKD/indicator"
@@ -284032,7 +285931,7 @@
   "NIR": {
     "countryCode": "NIR",
     "countryName": "Northern Ireland",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NIR/indicator"
@@ -284049,7 +285948,7 @@
   "NOR": {
     "countryCode": "NOR",
     "countryName": "Norway",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/NOR/indicator"
@@ -286278,7 +288177,7 @@
   "OMN": {
     "countryCode": "OMN",
     "countryName": "Oman",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/OMN/indicator"
@@ -288502,7 +290401,7 @@
   "PAK": {
     "countryCode": "PAK",
     "countryName": "Pakistan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PAK/indicator"
@@ -290714,7 +292613,7 @@
   "PLW": {
     "countryCode": "PLW",
     "countryName": "Palau",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PLW/indicator"
@@ -292674,7 +294573,7 @@
   "PSE": {
     "countryCode": "PSE",
     "countryName": "Palestine",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PSE/indicator"
@@ -294715,7 +296614,7 @@
   "PAN": {
     "countryCode": "PAN",
     "countryName": "Panama",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PAN/indicator"
@@ -296943,7 +298842,7 @@
   "PNG": {
     "countryCode": "PNG",
     "countryName": "Papua New Guinea",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PNG/indicator"
@@ -299171,7 +301070,7 @@
   "PRY": {
     "countryCode": "PRY",
     "countryName": "Paraguay",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PRY/indicator"
@@ -301399,7 +303298,7 @@
   "PER": {
     "countryCode": "PER",
     "countryName": "Peru",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PER/indicator"
@@ -303628,7 +305527,7 @@
   "PHL": {
     "countryCode": "PHL",
     "countryName": "Philippines",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PHL/indicator"
@@ -305856,7 +307755,7 @@
   "POL": {
     "countryCode": "POL",
     "countryName": "Poland",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/POL/indicator"
@@ -308085,7 +309984,7 @@
   "PRT": {
     "countryCode": "PRT",
     "countryName": "Portugal",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/PRT/indicator"
@@ -310314,7 +312213,7 @@
   "QAT": {
     "countryCode": "QAT",
     "countryName": "Qatar",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/QAT/indicator"
@@ -312543,7 +314442,7 @@
   "ROU": {
     "countryCode": "ROU",
     "countryName": "Romania",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ROU/indicator"
@@ -314772,7 +316671,7 @@
   "RUS": {
     "countryCode": "RUS",
     "countryName": "Russia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/RUS/indicator"
@@ -317001,7 +318900,7 @@
   "RWA": {
     "countryCode": "RWA",
     "countryName": "Rwanda",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/RWA/indicator"
@@ -319225,7 +321124,7 @@
   "KNA": {
     "countryCode": "KNA",
     "countryName": "Saint Kitts and Nevis",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/KNA/indicator"
@@ -321270,7 +323169,7 @@
   "LCA": {
     "countryCode": "LCA",
     "countryName": "Saint Lucia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LCA/indicator"
@@ -323499,7 +325398,7 @@
   "VCT": {
     "countryCode": "VCT",
     "countryName": "Saint Vincent and the Grenadines",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/VCT/indicator"
@@ -325728,7 +327627,7 @@
   "WSM": {
     "countryCode": "WSM",
     "countryName": "Samoa",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/WSM/indicator"
@@ -327956,7 +329855,7 @@
   "SMR": {
     "countryCode": "SMR",
     "countryName": "San Marino",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SMR/indicator"
@@ -329773,7 +331672,7 @@
   "STP": {
     "countryCode": "STP",
     "countryName": "São Tomé and Príncipe",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/STP/indicator"
@@ -332001,7 +333900,7 @@
   "SAU": {
     "countryCode": "SAU",
     "countryName": "Saudi Arabia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SAU/indicator"
@@ -334230,7 +336129,7 @@
   "SCT": {
     "countryCode": "SCT",
     "countryName": "Scotland",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SCT/indicator"
@@ -334247,7 +336146,7 @@
   "SEN": {
     "countryCode": "SEN",
     "countryName": "Senegal",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SEN/indicator"
@@ -336475,7 +338374,7 @@
   "SRB": {
     "countryCode": "SRB",
     "countryName": "Serbia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SRB/indicator"
@@ -338504,7 +340403,7 @@
   "SYC": {
     "countryCode": "SYC",
     "countryName": "Seychelles",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SYC/indicator"
@@ -340540,7 +342439,7 @@
   "SLE": {
     "countryCode": "SLE",
     "countryName": "Sierra Leone",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SLE/indicator"
@@ -342740,7 +344639,7 @@
   "SGP": {
     "countryCode": "SGP",
     "countryName": "Singapore",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SGP/indicator"
@@ -344969,7 +346868,7 @@
   "SVK": {
     "countryCode": "SVK",
     "countryName": "Slovakia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SVK/indicator"
@@ -347198,7 +349097,7 @@
   "SVN": {
     "countryCode": "SVN",
     "countryName": "Slovenia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SVN/indicator"
@@ -349427,7 +351326,7 @@
   "SLB": {
     "countryCode": "SLB",
     "countryName": "Solomon Islands",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SLB/indicator"
@@ -351655,7 +353554,7 @@
   "SOM": {
     "countryCode": "SOM",
     "countryName": "Somalia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SOM/indicator"
@@ -353687,7 +355586,7 @@
   "ZAF": {
     "countryCode": "ZAF",
     "countryName": "South Africa",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ZAF/indicator"
@@ -355915,7 +357814,7 @@
   "KOR": {
     "countryCode": "KOR",
     "countryName": "South Korea",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/KOR/indicator"
@@ -358144,7 +360043,7 @@
   "SSD": {
     "countryCode": "SSD",
     "countryName": "South Sudan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SSD/indicator"
@@ -360004,7 +361903,7 @@
   "ESP": {
     "countryCode": "ESP",
     "countryName": "Spain",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ESP/indicator"
@@ -362233,7 +364132,7 @@
   "LKA": {
     "countryCode": "LKA",
     "countryName": "Sri Lanka",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/LKA/indicator"
@@ -364461,7 +366360,7 @@
   "SDN": {
     "countryCode": "SDN",
     "countryName": "Sudan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SDN/indicator"
@@ -366653,7 +368552,7 @@
   "SUR": {
     "countryCode": "SUR",
     "countryName": "Suriname",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SUR/indicator"
@@ -368861,7 +370760,7 @@
   "SWE": {
     "countryCode": "SWE",
     "countryName": "Sweden",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SWE/indicator"
@@ -371090,7 +372989,7 @@
   "CHE": {
     "countryCode": "CHE",
     "countryName": "Switzerland",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/CHE/indicator"
@@ -373319,7 +375218,7 @@
   "SYR": {
     "countryCode": "SYR",
     "countryName": "Syria",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/SYR/indicator"
@@ -375547,7 +377446,7 @@
   "TWN": {
     "countryCode": "TWN",
     "countryName": "Taiwan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TWN/indicator"
@@ -375564,7 +377463,7 @@
   "TJK": {
     "countryCode": "TJK",
     "countryName": "Tajikistan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TJK/indicator"
@@ -377788,7 +379687,7 @@
   "TZA": {
     "countryCode": "TZA",
     "countryName": "Tanzania",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TZA/indicator"
@@ -380016,7 +381915,7 @@
   "THA": {
     "countryCode": "THA",
     "countryName": "Thailand",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/THA/indicator"
@@ -382245,7 +384144,7 @@
   "TLS": {
     "countryCode": "TLS",
     "countryName": "Timor-Leste",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TLS/indicator"
@@ -384445,7 +386344,7 @@
   "TGO": {
     "countryCode": "TGO",
     "countryName": "Togo",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TGO/indicator"
@@ -386673,7 +388572,7 @@
   "TON": {
     "countryCode": "TON",
     "countryName": "Tonga",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TON/indicator"
@@ -388901,7 +390800,7 @@
   "TTO": {
     "countryCode": "TTO",
     "countryName": "Trinidad and Tobago",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TTO/indicator"
@@ -391130,7 +393029,7 @@
   "TUN": {
     "countryCode": "TUN",
     "countryName": "Tunisia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TUN/indicator"
@@ -393350,7 +395249,7 @@
   "TUR": {
     "countryCode": "TUR",
     "countryName": "Türkiye",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TUR/indicator"
@@ -395579,7 +397478,7 @@
   "TKM": {
     "countryCode": "TKM",
     "countryName": "Turkmenistan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TKM/indicator"
@@ -397623,7 +399522,7 @@
   "TUV": {
     "countryCode": "TUV",
     "countryName": "Tuvalu",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/TUV/indicator"
@@ -399517,7 +401416,7 @@
   "UGA": {
     "countryCode": "UGA",
     "countryName": "Uganda",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/UGA/indicator"
@@ -401745,7 +403644,7 @@
   "UKR": {
     "countryCode": "UKR",
     "countryName": "Ukraine",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/UKR/indicator"
@@ -403974,7 +405873,7 @@
   "ARE": {
     "countryCode": "ARE",
     "countryName": "United Arab Emirates",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ARE/indicator"
@@ -406171,7 +408070,7 @@
   "GBR": {
     "countryCode": "GBR",
     "countryName": "United Kingdom",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/GBR/indicator"
@@ -408400,7 +410299,7 @@
   "USA": {
     "countryCode": "USA",
     "countryName": "United States",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/USA/indicator"
@@ -410629,7 +412528,7 @@
   "URY": {
     "countryCode": "URY",
     "countryName": "Uruguay",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/URY/indicator"
@@ -412858,7 +414757,7 @@
   "UZB": {
     "countryCode": "UZB",
     "countryName": "Uzbekistan",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/UZB/indicator"
@@ -415042,7 +416941,7 @@
   "VUT": {
     "countryCode": "VUT",
     "countryName": "Vanuatu",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/VUT/indicator"
@@ -417270,7 +419169,7 @@
   "VAT": {
     "countryCode": "VAT",
     "countryName": "Vatican City",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/VAT/indicator"
@@ -417287,7 +419186,7 @@
   "VEN": {
     "countryCode": "VEN",
     "countryName": "Venezuela",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/VEN/indicator"
@@ -419472,7 +421371,7 @@
   "VNM": {
     "countryCode": "VNM",
     "countryName": "Vietnam",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/VNM/indicator"
@@ -421700,7 +423599,7 @@
   "WLS": {
     "countryCode": "WLS",
     "countryName": "Wales",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/WLS/indicator"
@@ -421717,7 +423616,7 @@
   "YEM": {
     "countryCode": "YEM",
     "countryName": "Yemen",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/YEM/indicator"
@@ -423937,7 +425836,7 @@
   "ZMB": {
     "countryCode": "ZMB",
     "countryName": "Zambia",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ZMB/indicator"
@@ -426165,7 +428064,7 @@
   "ZWE": {
     "countryCode": "ZWE",
     "countryName": "Zimbabwe",
-    "retrievedAt": "2026-08-12",
+    "retrievedAt": "2026-08-13",
     "source": {
       "name": "World Bank Open Data API",
       "url": "https://api.worldbank.org/v2/country/ZWE/indicator"

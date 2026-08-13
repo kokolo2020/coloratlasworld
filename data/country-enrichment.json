@@ -14353,5 +14353,195 @@
       }
     ],
     "snapshotAbout": "Northern Ireland is a constituent nation within the United Kingdom on the island of Ireland. It is known for Belfast, the Giant’s Causeway, shared Irish and British cultural connections, and devolved government."
+  },
+  "ATA": {
+    "demographics": {
+      "urbanPercent": null,
+      "ruralPercent": null,
+      "medianAge": null,
+      "officialLanguages": [],
+      "largestCities": [
+        "McMurdo Station"
+      ],
+      "compositionNote": "Antarctica has no permanent resident population; people live there mainly as seasonal researchers and support staff."
+    },
+    "history": {
+      "currentStateSince": 1959,
+      "summary": "Antarctica is governed through the Antarctic Treaty System rather than as a sovereign country. It is included here as an educational continent profile because it is a major world region with scientific stations, treaty governance, and unique environmental importance."
+    },
+    "government": {
+      "type": "Antarctic Treaty System",
+      "headOfState": null,
+      "headOfGovernment": null,
+      "constitutionDate": "Antarctic Treaty signed 1959; entered into force 1961",
+      "retrieved": "2026-08-13",
+      "sourceUrl": "https://www.ats.aq/"
+    },
+    "environment": {
+      "climate": "Polar ice-cap climate",
+      "highestPoint": "Vinson Massif",
+      "geography": "Antarctica is Earth’s southernmost continent, surrounding the South Pole. It is ice-covered, has no permanent population, and is governed by international treaty arrangements.",
+      "majorRivers": null,
+      "naturalResources": "Scientific research, freshwater locked in ice, marine ecosystems"
+    },
+    "dailyLife": {
+      "drivingSide": "Station-dependent",
+      "timeZones": "Station-dependent; many use supply-country time",
+      "plugTypes": "Station-dependent",
+      "tipping": "Not applicable for normal tourism and research-station settings",
+      "emergencyNumbers": "Station and expedition-specific",
+      "callingCode": "+672"
+    },
+    "neighbors": [],
+    "facts": [
+      "Antarctica is a continent, not a sovereign country.",
+      "It is governed through the Antarctic Treaty System.",
+      "There is no permanent resident population.",
+      "Research stations host seasonal scientists and support teams.",
+      "Vinson Massif is the highest point.",
+      "The continent covers about 14,000,000 km².",
+      "Tourism is limited and regulated through expedition operators.",
+      "It is included as an educational atlas profile."
+    ],
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/AntarcticaDomeCSnow.jpg",
+        "label": "Antarctic ice landscape",
+        "source": "Wikimedia Commons"
+      }
+    ],
+    "snapshotAbout": "Antarctica is Earth’s southernmost continent and is included as an educational profile, not a sovereign country. It has no permanent resident population and is governed through the Antarctic Treaty System, with activity centered on scientific research and carefully managed expeditions."
+  },
+  "GRL": {
+    "demographics": {
+      "urbanPercent": {
+        "value": 88.5740108655152,
+        "year": "2025"
+      },
+      "ruralPercent": {
+        "value": 11.4259891344848,
+        "year": "2025"
+      },
+      "medianAge": null,
+      "officialLanguages": [
+        "Greenlandic"
+      ],
+      "largestCities": [
+        "Nuuk",
+        "Sisimiut",
+        "Ilulissat"
+      ],
+      "compositionNote": "Greenland population data is commonly reported for an autonomous territory rather than a sovereign state."
+    },
+    "history": {
+      "currentStateSince": 1979,
+      "summary": "Greenland is an autonomous territory within the Kingdom of Denmark. Home rule was introduced in 1979 and expanded self-government began in 2009, while Denmark retains responsibility for areas such as foreign affairs and defense."
+    },
+    "government": {
+      "type": "Autonomous territory within the Kingdom of Denmark",
+      "headOfState": "Frederik X",
+      "headOfGovernment": "Prime Minister of Greenland",
+      "constitutionDate": "Self-Government Act, 2009",
+      "retrieved": "2026-08-13",
+      "sourceUrl": "https://naalakkersuisut.gl/"
+    },
+    "environment": {
+      "climate": "Arctic and subarctic climate",
+      "highestPoint": "Gunnbjørn Fjeld",
+      "geography": "Greenland is the world’s largest island and lies mostly within the Arctic. Its settlements are concentrated along ice-free coastal areas, while the interior is dominated by the Greenland Ice Sheet.",
+      "majorRivers": null,
+      "naturalResources": "Fish, minerals, hydropower potential"
+    },
+    "dailyLife": {
+      "drivingSide": "Right",
+      "timeZones": "UTC-1 to UTC-4 depending on area and season",
+      "plugTypes": "Type C / E / F / K",
+      "tipping": "Not expected; appreciated for exceptional service",
+      "emergencyNumbers": "112",
+      "callingCode": "+299"
+    },
+    "neighbors": [
+      "DNK"
+    ],
+    "facts": [
+      "Greenland is an autonomous territory within the Kingdom of Denmark.",
+      "Nuuk is the capital and largest city.",
+      "Greenland is the world’s largest island.",
+      "The Greenland Ice Sheet covers most of the land area.",
+      "Greenlandic is the official language.",
+      "The listed currency is the Danish krone.",
+      "Its international calling code is +299.",
+      "World Bank indicators are available for several Greenland data series."
+    ],
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nuuk_center.jpg",
+        "label": "Nuuk, Greenland",
+        "source": "Wikimedia Commons"
+      }
+    ],
+    "snapshotAbout": "Greenland is an autonomous territory within the Kingdom of Denmark and the world’s largest island. Nuuk is the capital; Greenlandic is the official language; the listed currency is the Danish krone; population is about 56.8K."
+  },
+  "FLK": {
+    "demographics": {
+      "urbanPercent": null,
+      "ruralPercent": null,
+      "medianAge": null,
+      "officialLanguages": [
+        "English"
+      ],
+      "largestCities": [
+        "Stanley"
+      ],
+      "compositionNote": "Comparable World Bank demographic series are not published for this territory in the atlas dataset."
+    },
+    "history": {
+      "currentStateSince": null,
+      "summary": "The Falkland Islands are a self-governing British Overseas Territory in the South Atlantic. Sovereignty is disputed by Argentina, which refers to the islands as Islas Malvinas; the profile uses neutral educational wording."
+    },
+    "government": {
+      "type": "Self-governing British Overseas Territory",
+      "headOfState": "Charles III",
+      "headOfGovernment": null,
+      "constitutionDate": "Constitution Order, 2008",
+      "retrieved": "2026-08-13",
+      "sourceUrl": "https://www.falklands.gov.fk/"
+    },
+    "environment": {
+      "climate": "Cool maritime climate",
+      "highestPoint": "Mount Usborne",
+      "geography": "The Falkland Islands are an archipelago in the South Atlantic, east of southern South America. The territory has coastal access and no land borders.",
+      "majorRivers": null,
+      "naturalResources": "Fisheries, wildlife, pastureland, offshore hydrocarbons"
+    },
+    "dailyLife": {
+      "drivingSide": "Left",
+      "timeZones": "Falkland Islands Time (UTC-3)",
+      "plugTypes": "Type G",
+      "tipping": "Optional; local customs vary by setting",
+      "emergencyNumbers": "999",
+      "callingCode": "+500"
+    },
+    "neighbors": [
+      "ARG"
+    ],
+    "facts": [
+      "The Falkland Islands are a British Overseas Territory.",
+      "Sovereignty is disputed with Argentina.",
+      "Stanley is the capital and largest settlement.",
+      "English is the official language.",
+      "The listed currency is the Falkland Islands pound.",
+      "The territory has no land borders.",
+      "Its international calling code is +500.",
+      "The islands are in the South Atlantic east of southern South America."
+    ],
+    "images": [
+      {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanley_Falkland_Islands.jpg",
+        "label": "Stanley, Falkland Islands",
+        "source": "Wikimedia Commons"
+      }
+    ],
+    "snapshotAbout": "The Falkland Islands are a self-governing British Overseas Territory in the South Atlantic, included as an educational territory profile. Stanley is the capital; English is the official language; the listed currency is the Falkland Islands pound; sovereignty is disputed with Argentina."
   }
 }
