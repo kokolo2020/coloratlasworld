@@ -14,7 +14,15 @@ type NationalAnthem = {
   credit: string;
   audioUrl: string;
   sourceUrl: string;
+  durationSeconds?: number;
 };
+
+function formatDuration(seconds?: number) {
+  if (!seconds) return null;
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = Math.round(seconds % 60).toString().padStart(2, "0");
+  return `${minutes}:${remainingSeconds}`;
+}
 
 export function generateStaticParams() { return COUNTRIES.map(({ slug }) => ({ slug })); }
 
@@ -77,6 +85,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     ? `${neighbors.slice(0, 4).map((neighbor) => neighbor?.name).join(", ")}${neighbors.length > 4 ? ` +${neighbors.length - 4} more` : ""}`
     : connectionNote;
   const nationalAnthem = (nationalAnthems as Record<string, NationalAnthem>)[country.cca3] || null;
+  const nationalAnthemDuration = formatDuration(nationalAnthem?.durationSeconds);
 
   const quickStats = [
     { label: "Population", value: population, note: metrics.population ? `World Bank · ${metrics.population.year}` : "No recent World Bank value" },
@@ -174,7 +183,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <div>
             <span>National anthem</span>
             <strong>{nationalAnthem.title}</strong>
-            <small>{nationalAnthem.type} · {nationalAnthem.credit}</small>
+            <small>{nationalAnthem.type} · {nationalAnthem.credit}{nationalAnthemDuration ? ` · ${nationalAnthemDuration}` : ""}</small>
           </div>
           <audio controls preload="none" src={nationalAnthem.audioUrl}>
             <a href={nationalAnthem.audioUrl}>Play {nationalAnthem.title}</a>

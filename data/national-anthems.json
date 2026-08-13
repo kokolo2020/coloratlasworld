@@ -4,580 +4,1471 @@
     "type": "Instrumental version",
     "credit": "Toronto Symphony Orchestra · conducted by Peter Oundjian",
     "audioUrl": "https://www.canada.ca/content/dam/pch/audios/services/anthems-canada/O-Canada.mp3",
-    "sourceUrl": "https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html"
+    "sourceUrl": "https://www.canada.ca/en/canadian-heritage/services/anthem-canada.html",
+    "durationSeconds": 95
   },
   "SGP": {
     "title": "Majulah Singapura",
     "type": "Instrumental version",
     "credit": "Singapore Armed Forces Band · National Heritage Board",
     "audioUrl": "https://assets.app.optical.gov.sg/nhb/production/published/collections/nhb_pages/%252Fwhat-we-do%252Four-work%252Fcommunity-engagement%252Feducation%252Fresources%252Fnational-symbols%252Fnational-anthem/836a7a60-1a96-4d8f-8398-bfa49d3cb01f.wav",
-    "sourceUrl": "https://www.nhb.gov.sg/what-we-do/our-work/community-engagement/education/resources/national-symbols/national-anthem"
+    "sourceUrl": "https://www.nhb.gov.sg/what-we-do/our-work/community-engagement/education/resources/national-symbols/national-anthem",
+    "durationSeconds": 94
+  },
+  "PRT": {
+    "title": "A Portuguesa",
+    "type": "National anthem audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20Portuguesa.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Portuguesa.ogg",
+    "durationSeconds": 70
+  },
+  "AUS": {
+    "title": "Advance Australia Fair",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons · U.S. Navy Band",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/U.S.%20Navy%20Band%2C%20Advance%20Australia%20Fair%20%28instrumental%29.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:U.S._Navy_Band,_Advance_Australia_Fair_(instrumental).ogg",
+    "durationSeconds": 54
+  },
+  "NLD": {
+    "title": "Wilhelmus",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wilhelmus%20koor.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q131713",
+    "durationSeconds": 122
   },
   "HRV": {
     "title": "Lijepa naša domovino",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lijepa%20nasa%20domovino%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q146502"
+    "sourceUrl": "https://www.wikidata.org/entity/Q146502",
+    "durationSeconds": 59
   },
   "TZA": {
     "title": "Mungu ibariki Afrika",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tanzanian%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q154035"
+    "sourceUrl": "https://www.wikidata.org/entity/Q154035",
+    "durationSeconds": 52
   },
   "DNK": {
-    "title": "Der er et yndigt land",
+    "title": "Kong Christian stod ved højen mast",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Der%20er%20et%20yndigt%20land.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q165747"
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Kong%20Kristian%20stod%20ved%20h%C3%B8jen%20mast.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q908519",
+    "durationSeconds": 70
   },
   "GRC": {
     "title": "Hymn to Liberty",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hymn%20to%20liberty%20instrumental.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q176665"
+    "sourceUrl": "https://www.wikidata.org/entity/Q176665",
+    "durationSeconds": 45
   },
   "JAM": {
     "title": "Jamaica, Land We Love",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/%22Jamaica%2C%20Land%20We%20Love%22%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q204643"
+    "sourceUrl": "https://www.wikidata.org/entity/Q204643",
+    "durationSeconds": 81
+  },
+  "VNM": {
+    "title": "Tiến Quân Ca",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Vietnamese%20Ti%E1%BA%BFn%20Qu%C3%A2n%20Ca.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q208016",
+    "durationSeconds": 62
+  },
+  "NRU": {
+    "title": "Nauru Bwiema",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nauru%20Bwiema.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q209951",
+    "durationSeconds": 79
+  },
+  "FJI": {
+    "title": "God Bless Fiji",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fiji%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q211130",
+    "durationSeconds": 86
   },
   "PHL": {
     "title": "Lupang Hinirang",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lupang%20Hinirang%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q212725"
+    "sourceUrl": "https://www.wikidata.org/entity/Q212725",
+    "durationSeconds": 62
   },
   "PAK": {
     "title": "Qaumi Taranah",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pakistani%20national%20anthem%20-%20United%20States%20Navy%20Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q213267"
+    "sourceUrl": "https://www.wikidata.org/entity/Q213267",
+    "durationSeconds": 82
   },
   "MMR": {
     "title": "Kaba Ma Kyei",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/U.S.%20Navy%20Band%20-%20Kaba%20Ma%20Kyei.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q214449"
+    "sourceUrl": "https://www.wikidata.org/entity/Q214449",
+    "durationSeconds": 39
+  },
+  "ZAF": {
+    "title": "national anthem of Mzansi",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/South%20African%20national%20anthem.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q231725",
+    "durationSeconds": 123
   },
   "VUT": {
     "title": "Yumi, Yumi",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Yumi%2C%20Yumi%2C%20Yumi.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q272751"
+    "sourceUrl": "https://www.wikidata.org/entity/Q272751",
+    "durationSeconds": 59
+  },
+  "BHS": {
+    "title": "March On, Bahamaland",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Bahamas.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q273204",
+    "durationSeconds": 75
+  },
+  "QAT": {
+    "title": "As Salam al Amiri",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Qatar.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q309476",
+    "durationSeconds": 87
   },
   "KWT": {
     "title": "National Anthem of Kuwait",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Kuwait%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q311367"
+    "sourceUrl": "https://www.wikidata.org/entity/Q311367",
+    "durationSeconds": 35
+  },
+  "COG": {
+    "title": "La Congolaise",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Republic%20of%20the%20Congo.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q320708",
+    "durationSeconds": 75
   },
   "SUR": {
     "title": "God zij met ons Suriname",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Surinamese%20national%20anthem%2C%20performed%20by%20the%20U.S.%20Navy%20Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q327108"
+    "sourceUrl": "https://www.wikidata.org/entity/Q327108",
+    "durationSeconds": 54
+  },
+  "TLS": {
+    "title": "Pátria",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/East%20Timorese%20national%20anthem.wav",
+    "sourceUrl": "https://www.wikidata.org/entity/Q327746",
+    "durationSeconds": 129
+  },
+  "MCO": {
+    "title": "Hymne monégasque",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Monaco%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q336321",
+    "durationSeconds": 78
   },
   "NPL": {
     "title": "Sayaun Thunga Phulka",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sayaun%20Thunga%20Phool%20Ka%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q371559"
+    "sourceUrl": "https://www.wikidata.org/entity/Q371559",
+    "durationSeconds": 70
+  },
+  "ZMB": {
+    "title": "Stand and Sing of Zambia, Proud and Free",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Zambia.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q463375",
+    "durationSeconds": 117
+  },
+  "CRI": {
+    "title": "Noble patria, tu hermosa bandera",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Costa%20Rica%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q471849",
+    "durationSeconds": 110
+  },
+  "FSM": {
+    "title": "Patriots of Micronesia",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Micronesia%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q570327",
+    "durationSeconds": 36
   },
   "KHM": {
     "title": "Nokor Reach",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Nokoreach.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q631618"
+    "sourceUrl": "https://www.wikidata.org/entity/Q631618",
+    "durationSeconds": 90
   },
   "GNQ": {
     "title": "Caminemos pisando las sendas de nuestra inmensa felicidad",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Equatorial%20Guinea%27s%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q837310"
+    "sourceUrl": "https://www.wikidata.org/entity/Q837310",
+    "durationSeconds": 114
   },
   "VCT": {
     "title": "Saint Vincent, Land so Beautiful",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Saint%20Vincent%20and%20the%20Grenadines%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q1064024"
-  },
-  "ITA": {
-    "title": "Il Canto degli Italiani",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Inno%20di%20Mameli%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q187"
-  },
-  "LTU": {
-    "title": "Tautiška giesmė",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tauti%C5%A1ka%20giesme%20instrumental.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q43978"
-  },
-  "USA": {
-    "title": "The Star-Spangled Banner",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Star%20Spangled%20Banner%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q44696"
-  },
-  "LBY": {
-    "title": "Libya, Libya, Libya",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Libya%2C%20Libya%2C%20Libya%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q45861"
-  },
-  "CPV": {
-    "title": "Cântico da Liberdade",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A2ntico%20da%20Liberdade%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q110159"
-  },
-  "AUT": {
-    "title": "Land der Berge, Land am Strome",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Land%20der%20Berge%20Land%20am%20Strome%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q126658"
-  },
-  "SWE": {
-    "title": "Du gamla, du fria",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Sweden.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q133261"
-  },
-  "BRA": {
-    "title": "Brazilian National Anthem",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hino-Nacional-Brasil-instrumental-mec.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q134654"
-  },
-  "SSD": {
-    "title": "South Sudan Oyee!",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/South%20Sudan%20Oyee%21%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q145497"
-  },
-  "FIN": {
-    "title": "Maamme",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Maamme.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q162483"
-  },
-  "ARG": {
-    "title": "Argentine National Anthem",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Himno%20Nacional%20Argentino%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q172495"
-  },
-  "CYP": {
-    "title": "Hymn to Liberty",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hymn%20to%20liberty%20instrumental.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q176665"
-  },
-  "SRB": {
-    "title": "Bože pravde",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Serbian%20national%20anthem%2C%20instrumental.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q185190"
-  },
-  "KOR": {
-    "title": "Aegukga",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20South%20Korea%2C%20performed%20by%20the%20United%20States%20Navy%20Band.wav",
-    "sourceUrl": "https://www.wikidata.org/entity/Q193233"
-  },
-  "MEX": {
-    "title": "National Anthem of Mexico",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Himno%20Nacional%20Mexicano%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q200742"
-  },
-  "THA": {
-    "title": "Thai National Anthem",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Thai%20National%20Anthem%20-%20US%20Navy%20Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q207868"
-  },
-  "TCD": {
-    "title": "La Tchadienne",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Tchadienne%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q213733"
-  },
-  "AGO": {
-    "title": "Angola Avante",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Angolan-National-Anthem-%20US-Navy-Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q227866"
-  },
-  "DZA": {
-    "title": "Kassaman",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kassaman%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q230228"
-  },
-  "COL": {
-    "title": "National Anthem of Colombia",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20%C2%A1Oh%2C%20gloria%20inmarcesible%21.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q233391"
-  },
-  "MLI": {
-    "title": "Pour l'Afrique et pour toi",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Malian%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q243996"
-  },
-  "BLZ": {
-    "title": "Land of the Free",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Land%20of%20the%20Free%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q336345"
-  },
-  "LSO": {
-    "title": "Lesotho Fatse La Bontata Rona",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Lesotho%2C%20performed%20by%20the%20U.S.%20Navy%20Band.wav",
-    "sourceUrl": "https://www.wikidata.org/entity/Q463986"
-  },
-  "POL": {
-    "title": "Poland Is Not Yet Lost",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mazurek%20D%C4%85browskiego%20%28official%20instrumental%29.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q482988"
-  },
-  "BRB": {
-    "title": "National Anthem of Barbados",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20In%20Plenty%20and%20In%20Time%20of%20Need.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q505717"
-  },
-  "DMA": {
-    "title": "Isle of Beauty, Isle of Splendour",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Dominica%20by%20US%20Navy%20Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q684643"
-  },
-  "LKA": {
-    "title": "Sri Lanka Matha",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sri%20Lankan%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q745806"
-  },
-  "SYC": {
-    "title": "Koste Seselwa",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Koste%20Seselwa%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q849850"
-  },
-  "MHL": {
-    "title": "Forever Marshall Islands",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Marshall%20Islands%20by%20US%20Navy%20Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q858826"
-  },
-  "KNA": {
-    "title": "O Land of Beauty!",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20O%20Land%20of%20Beauty.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q1050025"
-  },
-  "DEU": {
-    "title": "third stanza of the Deutschlandlied",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Germany%20-%20U.S.%20Army%201st%20Armored%20Division%20Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q4122341"
-  },
-  "PER": {
-    "title": "National Anthem of Peru",
-    "type": "Instrumental audio",
-    "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Marcha%20Nacional%20del%20Per%C3%BA.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q4944"
+    "sourceUrl": "https://www.wikidata.org/entity/Q1064024",
+    "durationSeconds": 51
   },
   "TKM": {
     "title": "National anthem of Turkmenistan",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Turkmenistan%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q26693"
+    "sourceUrl": "https://www.wikidata.org/entity/Q26693",
+    "durationSeconds": 120
   },
   "JPN": {
     "title": "Kimigayo",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kimi%20ga%20Yo%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q81534"
+    "sourceUrl": "https://www.wikidata.org/entity/Q81534",
+    "durationSeconds": 59
   },
   "IND": {
     "title": "Jana Gana Mana",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jana%20Gana%20Mana%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q83099"
+    "sourceUrl": "https://www.wikidata.org/entity/Q83099",
+    "durationSeconds": 64
   },
   "UGA": {
     "title": "Oh Uganda, Land of Beauty",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ugandan%20national%20anthem%2C%20performed%20by%20the%20U.S.%20Navy%20Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q110193"
+    "sourceUrl": "https://www.wikidata.org/entity/Q110193",
+    "durationSeconds": 44
+  },
+  "UZB": {
+    "title": "National Anthem of Uzbekistan",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Uzbekistan%20anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q120143",
+    "durationSeconds": 149
   },
   "ISR": {
     "title": "Hatikvah",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hatikvah%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q130865"
+    "sourceUrl": "https://www.wikidata.org/entity/Q130865",
+    "durationSeconds": 74
+  },
+  "NOR": {
+    "title": "Ja, vi elsker dette landet",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%20%28National%20Anthem%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q133198",
+    "durationSeconds": 62
+  },
+  "MNE": {
+    "title": "Oj, svijetla majska zoro",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Montenegro.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q157999",
+    "durationSeconds": 125
   },
   "ARM": {
     "title": "Mer Hayrenik",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mer%20Hayrenik%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q164259"
+    "sourceUrl": "https://www.wikidata.org/entity/Q164259",
+    "durationSeconds": 28
+  },
+  "EST": {
+    "title": "Mu isamaa, mu õnn ja rõõm",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mu%20isamaa%2C%20mu%20%C3%B5nn%20ja%20r%C3%B5%C3%B5m%20%28first%20vocal%20recording%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q166362",
+    "durationSeconds": 107
+  },
+  "SVK": {
+    "title": "Nad Tatrou sa blýska",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nad%20Tatrou%20sa%20bl%C3%BDska.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q166944",
+    "durationSeconds": 33
   },
   "ALB": {
     "title": "Himni i Flamurit",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hymni%20i%20Flamurit%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q168731"
+    "sourceUrl": "https://www.wikidata.org/entity/Q168731",
+    "durationSeconds": 66
   },
   "SVN": {
     "title": "Zdravljica",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Slovenia%27s%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q169215"
+    "sourceUrl": "https://www.wikidata.org/entity/Q169215",
+    "durationSeconds": 56
   },
   "NIU": {
     "title": "Ko e Iki he Lagi",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ko%20e%20Iki%20he%20Lagi%20-%20Anthem%20of%20Niue%20%28Instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q179078"
+    "sourceUrl": "https://www.wikidata.org/entity/Q179078",
+    "durationSeconds": 63
   },
-  "VAT": {
-    "title": "Inno e Marcia Pontificale",
-    "type": "Instrumental audio",
+  "BGR": {
+    "title": "Mila Rodino",
+    "type": "National anthem audio",
     "credit": "Wikidata / Wikimedia Commons",
-    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Inno%20e%20Marcia%20Pontificale.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q190226"
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mila%20Rodino.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q182115",
+    "durationSeconds": 87
+  },
+  "ROU": {
+    "title": "Deșteaptă-te, române!",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Desteapta-te%2C%20romane%21.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q184540",
+    "durationSeconds": 139
+  },
+  "TJK": {
+    "title": "National anthem of Tajikistan",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tajikistan%20anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q191802",
+    "durationSeconds": 115
   },
   "MLT": {
     "title": "L-Innu Malti",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Malta%20anthem%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q192792"
+    "sourceUrl": "https://www.wikidata.org/entity/Q192792",
+    "durationSeconds": 81
   },
   "GEO": {
     "title": "Tavisupleba",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tavisupleba%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q200079"
+    "sourceUrl": "https://www.wikidata.org/entity/Q200079",
+    "durationSeconds": 81
   },
   "NZL": {
     "title": "God Defend New Zealand",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/God%20Defend%20New%20Zealand%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q202137"
+    "sourceUrl": "https://www.wikidata.org/entity/Q202137",
+    "durationSeconds": 63
   },
   "KEN": {
     "title": "Ee Mungu Nguvu Yetu",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Kenya%2C%20performed%20by%20the%20United%20States%20Navy%20Band.wav",
-    "sourceUrl": "https://www.wikidata.org/entity/Q202635"
+    "sourceUrl": "https://www.wikidata.org/entity/Q202635",
+    "durationSeconds": 112
   },
   "YEM": {
     "title": "National anthem of Yemen",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20United%20Republic.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q203048"
+    "sourceUrl": "https://www.wikidata.org/entity/Q203048",
+    "durationSeconds": 49
   },
   "VEN": {
     "title": "gloria al bravo pueblo",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gloria%20al%20Bravo%20Pueblo%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q208153"
+    "sourceUrl": "https://www.wikidata.org/entity/Q208153",
+    "durationSeconds": 91
   },
   "IRN": {
     "title": "National Anthem of the Islamic Republic of Iran",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sorud-e%20Mell%C3%AD-e%20Yomhur%C3%AD-e%20Eslam%C3%AD-e%20Ir%C3%A1n%20%28instrumental%29.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q211047"
+    "sourceUrl": "https://www.wikidata.org/entity/Q211047",
+    "durationSeconds": 56
+  },
+  "MWI": {
+    "title": "Mulungu dalitsa Malaŵi",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Malawian%20national%20anthem.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q215077",
+    "durationSeconds": 52
   },
   "BWA": {
     "title": "Fatshe leno la rona",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Fatshe%20leno%20la%20rona.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q221708"
+    "sourceUrl": "https://www.wikidata.org/entity/Q221708",
+    "durationSeconds": 57
   },
   "SAU": {
     "title": "Chant of the Saudi Nation",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Saudi%20Arabian%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q235316"
+    "sourceUrl": "https://www.wikidata.org/entity/Q235316",
+    "durationSeconds": 38
+  },
+  "CUB": {
+    "title": "El Himno de Bayamo",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Bayamesa%20%281945%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q237591",
+    "durationSeconds": 50
   },
   "GTM": {
     "title": "National Anthem of Guatemala",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Guatemala%2C%20by%20the%20U.S.%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q266593"
+    "sourceUrl": "https://www.wikidata.org/entity/Q266593",
+    "durationSeconds": 98
   },
   "MDG": {
     "title": "Ry Tanindrazanay malala ô!",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ry%20Tanindrazanay%20malala%20%C3%B4%21%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q273106"
+    "sourceUrl": "https://www.wikidata.org/entity/Q273106",
+    "durationSeconds": 62
+  },
+  "GHA": {
+    "title": "God Bless Our Homeland Ghana",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Ghana.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q273260",
+    "durationSeconds": 57
   },
   "JOR": {
     "title": "The Royal Anthem of Jordan",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Jordan%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q283407"
+    "sourceUrl": "https://www.wikidata.org/entity/Q283407",
+    "durationSeconds": 36
+  },
+  "LBN": {
+    "title": "Lebanese national anthem",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lebanese%20national%20anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q329961",
+    "durationSeconds": 51
   },
   "MUS": {
     "title": "Motherland",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Motherland%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q336273"
+    "sourceUrl": "https://www.wikidata.org/entity/Q336273",
+    "durationSeconds": 59
+  },
+  "SMR": {
+    "title": "Q336291",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Inno%20Nazionale%20della%20Repubblica.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q336291",
+    "durationSeconds": 94
+  },
+  "ETH": {
+    "title": "March Forward, Dear Mother Ethiopia",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wedefit%20Gesgeshi%20Widd%20Innat%20Ittyoppya.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q373510",
+    "durationSeconds": 84
+  },
+  "KGZ": {
+    "title": "State Anthem of the Kyrgyz Republic",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyrgyzstan%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q413650",
+    "durationSeconds": 168
+  },
+  "ARE": {
+    "title": "Ishy Bilady",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/UAE%20national%20anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q423807",
+    "durationSeconds": 48
+  },
+  "CZE": {
+    "title": "Kde domov můj",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kde%20domov%20m%C5%AFj.mid",
+    "sourceUrl": "https://www.wikidata.org/entity/Q483590",
+    "durationSeconds": 45
+  },
+  "AZE": {
+    "title": "Azərbaycan marşı",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Azerbaijan%20national%20anthem%20%28vocal%20version%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q483968",
+    "durationSeconds": 133
   },
   "BRN": {
     "title": "Allah Peliharakan Sultan",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Allah%20Peliharakan%20Sultan.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q491552"
+    "sourceUrl": "https://www.wikidata.org/entity/Q491552",
+    "durationSeconds": 65
+  },
+  "DJI": {
+    "title": "Djibouti",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Djibouti%20anthem%20Somali%20lyrics.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q503135",
+    "durationSeconds": 88
   },
   "SDN": {
     "title": "Nahnu Jund Allah Jund Al-watan",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sudanese%20national%20anthem%2C%20performed%20by%20the%20U.S.%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q548242"
+    "sourceUrl": "https://www.wikidata.org/entity/Q548242",
+    "durationSeconds": 46
+  },
+  "SLE": {
+    "title": "High We Exalt Thee, Realm of the Free",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sierra%20Leone%27s%20national%20anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q549704",
+    "durationSeconds": 46
+  },
+  "SWZ": {
+    "title": "Nkulunkulu Mnikati wetibusiso temaSwati",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Kingdom%20of%20Eswatini.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q580374",
+    "durationSeconds": 68
   },
   "STP": {
     "title": "Independência total",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Independ%C3%AAncia%20total%20%28instrumental%29.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q602433"
+    "sourceUrl": "https://www.wikidata.org/entity/Q602433",
+    "durationSeconds": 125
+  },
+  "LAO": {
+    "title": "Pheng Xat Lao",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Laos.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q623034",
+    "durationSeconds": 50
+  },
+  "ZWE": {
+    "title": "National Anthem of Zimbabwe",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Zimbabwe.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q628417",
+    "durationSeconds": 97
+  },
+  "OMN": {
+    "title": "Nashid as-Salaam as-Sultani",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peace%20to%20the%20Sultan%20%28%D9%86%D8%B4%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%D9%8A%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q634111",
+    "durationSeconds": 114
   },
   "MYS": {
     "title": "Negaraku",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Negaraku%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q648596"
+    "sourceUrl": "https://www.wikidata.org/entity/Q648596",
+    "durationSeconds": 59
   },
   "MOZ": {
     "title": "Pátria Amada",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mozambican%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.wav",
-    "sourceUrl": "https://www.wikidata.org/entity/Q682613"
+    "sourceUrl": "https://www.wikidata.org/entity/Q682613",
+    "durationSeconds": 61
   },
   "COM": {
     "title": "Udzima wa ya Masiwa",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Comoros%2C%20performed%20by%20the%20U.S.%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q690008"
+    "sourceUrl": "https://www.wikidata.org/entity/Q690008",
+    "durationSeconds": 97
   },
   "BOL": {
     "title": "National Anthem of Bolivia",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Himno%20Nacional%20de%20Bolivia%20instrumental.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q690016"
+    "sourceUrl": "https://www.wikidata.org/entity/Q690016",
+    "durationSeconds": 101
   },
   "NIC": {
     "title": "Salve a ti",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Nicaragua%20by%20US%20Navy%20Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q745219"
+    "sourceUrl": "https://www.wikidata.org/entity/Q745219",
+    "durationSeconds": 56
+  },
+  "HND": {
+    "title": "National Anthem of Honduras",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Honduras%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q842503",
+    "durationSeconds": 167
   },
   "MRT": {
     "title": "National anthem of Mauritania",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Bil%C4%81da%20l-%CA%BEub%C4%81ti%20l-hud%C4%81ti%20l-kir%C4%81m.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q845284"
+    "sourceUrl": "https://www.wikidata.org/entity/Q845284",
+    "durationSeconds": 87
   },
   "ERI": {
     "title": "Ertra, Ertra, Ertra",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Eritrea%20by%20US%20Navy%20Band.ogg",
-    "sourceUrl": "https://www.wikidata.org/entity/Q857605"
+    "sourceUrl": "https://www.wikidata.org/entity/Q857605",
+    "durationSeconds": 119
+  },
+  "GUY": {
+    "title": "National anthem of Guyana",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Guyana.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q858680",
+    "durationSeconds": 53
+  },
+  "DOM": {
+    "title": "National Anthem of the Dominican Republic",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dominican%20Republic%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q866223",
+    "durationSeconds": 97
+  },
+  "LCA": {
+    "title": "Sons and Daughters of Saint Lucia",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Saint%20Lucia.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q876575",
+    "durationSeconds": 43
+  },
+  "COK": {
+    "title": "Te Atua Mou E",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20the%20Cook%20Islands.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q1147730",
+    "durationSeconds": 65
   },
   "SOM": {
     "title": "Qolobaa Calankeed",
     "type": "Instrumental audio",
     "credit": "Wikidata / Wikimedia Commons",
     "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Somali%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
-    "sourceUrl": "https://www.wikidata.org/entity/Q4484804"
+    "sourceUrl": "https://www.wikidata.org/entity/Q4484804",
+    "durationSeconds": 66
+  },
+  "NER": {
+    "title": "L'Honneur de la Patrie",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/THE%20HONOR%20OF%20THE%20FATHERLAND.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q120170814",
+    "durationSeconds": 108
+  },
+  "ITA": {
+    "title": "Il Canto degli Italiani",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Inno%20di%20Mameli%20instrumental.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q187",
+    "durationSeconds": 92
+  },
+  "FRA": {
+    "title": "La Marseillaise",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Marseillaise.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q41180",
+    "durationSeconds": 79
+  },
+  "LTU": {
+    "title": "Tautiška giesmė",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tauti%C5%A1ka%20giesme%20instrumental.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q43978",
+    "durationSeconds": 107
+  },
+  "USA": {
+    "title": "The Star-Spangled Banner",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Star%20Spangled%20Banner%20instrumental.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q44696",
+    "durationSeconds": 78
+  },
+  "HUN": {
+    "title": "Himnusz",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Himnusz%201920s.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q45788",
+    "durationSeconds": 65
+  },
+  "LBY": {
+    "title": "Libya, Libya, Libya",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Libya%2C%20Libya%2C%20Libya%20instrumental.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q45861",
+    "durationSeconds": 68
+  },
+  "CPV": {
+    "title": "Cântico da Liberdade",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A2ntico%20da%20Liberdade%20%28instrumental%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q110159",
+    "durationSeconds": 71
+  },
+  "AUT": {
+    "title": "Land der Berge, Land am Strome",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Land%20der%20Berge%20Land%20am%20Strome%20instrumental.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q126658",
+    "durationSeconds": 89
+  },
+  "SWE": {
+    "title": "Du gamla, du fria",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Sweden.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q133261",
+    "durationSeconds": 88
+  },
+  "SSD": {
+    "title": "South Sudan Oyee!",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/South%20Sudan%20Oyee%21%20%28instrumental%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q145497",
+    "durationSeconds": 77
+  },
+  "LVA": {
+    "title": "Dievs, svētī Latviju!",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Latvian%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q156914",
+    "durationSeconds": 105
+  },
+  "IRL": {
+    "title": "Amhrán na bhFiann",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ireland%20National%20Anthem%20%28Amhr%C3%A1n%20na%20bhFiann%29%201960s.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q160672",
+    "durationSeconds": 86
+  },
+  "BEL": {
+    "title": "The Brabançonne",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Braban%C3%A7onne.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q161539",
+    "durationSeconds": 63
+  },
+  "FIN": {
+    "title": "Maamme",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Maamme.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q162483",
+    "durationSeconds": 46
+  },
+  "BLR": {
+    "title": "My Belarusy",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/My%20Belarusy.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q166350",
+    "durationSeconds": 116
+  },
+  "ISL": {
+    "title": "Lofsöngur",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lofs%C3%B6ngur%20%28first%20recording%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q170582",
+    "durationSeconds": 86
+  },
+  "EGY": {
+    "title": "Bilady, Bilady, Bilady",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bilady%2C%20Bilady%2C%20Bilady.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q171602",
+    "durationSeconds": 86
+  },
+  "CYP": {
+    "title": "Hymn to Liberty",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hymn%20to%20liberty%20instrumental.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q176665",
+    "durationSeconds": 45
+  },
+  "CHE": {
+    "title": "Swiss Psalm",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Swiss%20Psalm.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q182536",
+    "durationSeconds": 84
+  },
+  "SRB": {
+    "title": "Bože pravde",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Serbian%20national%20anthem%2C%20instrumental.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q185190",
+    "durationSeconds": 103
+  },
+  "KOR": {
+    "title": "Aegukga",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20South%20Korea%2C%20performed%20by%20the%20United%20States%20Navy%20Band.wav",
+    "sourceUrl": "https://www.wikidata.org/entity/Q193233",
+    "durationSeconds": 57
+  },
+  "LIE": {
+    "title": "Oben am jungen Rhein",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/God%20Save%20the%20King%20%281927%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q193873",
+    "durationSeconds": 52
+  },
+  "AND": {
+    "title": "El gran Carlemany",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Gran%20Carlemany.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q199506",
+    "durationSeconds": 66
+  },
+  "BGD": {
+    "title": "Amar Sonar Bangla",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amar%20Sonar%20Bangla%20-%20official%20vocal%20music%20of%20the%20National%20anthem%20of%20Bangladesh.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q199739",
+    "durationSeconds": 175
+  },
+  "MEX": {
+    "title": "National Anthem of Mexico",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Himno%20Nacional%20Mexicano%20instrumental.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q200742",
+    "durationSeconds": 102
+  },
+  "LUX": {
+    "title": "Ons Heemecht",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Luxembourg%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q202166",
+    "durationSeconds": 84
+  },
+  "THA": {
+    "title": "Thai National Anthem",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Thai%20National%20Anthem%20-%20US%20Navy%20Band.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q207868",
+    "durationSeconds": 44
+  },
+  "TCD": {
+    "title": "La Tchadienne",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Tchadienne%20%28instrumental%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q213733",
+    "durationSeconds": 61
+  },
+  "HTI": {
+    "title": "La Dessalinienne",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Haiti%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q214459",
+    "durationSeconds": 37
+  },
+  "AGO": {
+    "title": "Angola Avante",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Angolan-National-Anthem-%20US-Navy-Band.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q227866",
+    "durationSeconds": 82
+  },
+  "DZA": {
+    "title": "Kassaman",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kassaman%20instrumental.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q230228",
+    "durationSeconds": 73
+  },
+  "COL": {
+    "title": "National Anthem of Colombia",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20%C2%A1Oh%2C%20gloria%20inmarcesible%21.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q233391",
+    "durationSeconds": 161
+  },
+  "NAM": {
+    "title": "Namibia, Land of the Brave",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Namibia%2C%20Land%20of%20the%20Brave%20%28OGG%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q233961",
+    "durationSeconds": 88
+  },
+  "BHR": {
+    "title": "Bahrainona",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bahrainona%20%28vocal%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q234655",
+    "durationSeconds": 49
+  },
+  "MAR": {
+    "title": "Cherifian Anthem",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Morocco.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q238826",
+    "durationSeconds": 68
+  },
+  "GAB": {
+    "title": "La Concorde",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Concorde.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q242723",
+    "durationSeconds": 105
+  },
+  "MLI": {
+    "title": "Pour l'Afrique et pour toi",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Malian%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q243996",
+    "durationSeconds": 79
+  },
+  "BEN": {
+    "title": "L'Aube Nouvelle",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/L%27Aube%20Nouvelle.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q273110",
+    "durationSeconds": 68
+  },
+  "SYR": {
+    "title": "Humat ad-Diyar",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Syria.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q309468",
+    "durationSeconds": 66
+  },
+  "ATG": {
+    "title": "Fair Antigua, We Salute Thee",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigua%20and%20Barbuda%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q322631",
+    "durationSeconds": 61
+  },
+  "LBR": {
+    "title": "All Hail, Liberia, Hail!",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Liberia%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q324342",
+    "durationSeconds": 88
+  },
+  "BLZ": {
+    "title": "Land of the Free",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Land%20of%20the%20Free%20instrumental.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q336345",
+    "durationSeconds": 162
+  },
+  "TUR": {
+    "title": "İstiklâl Marşı",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Istikl%C3%A2l%20Marsi%20instrumetal.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q344452",
+    "durationSeconds": 76
+  },
+  "LSO": {
+    "title": "Lesotho Fatse La Bontata Rona",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Lesotho%2C%20performed%20by%20the%20U.S.%20Navy%20Band.wav",
+    "sourceUrl": "https://www.wikidata.org/entity/Q463986",
+    "durationSeconds": 43
+  },
+  "CAF": {
+    "title": "La Renaissance",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Renaissance%20%281960s%20recording%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q467988",
+    "durationSeconds": 69
+  },
+  "POL": {
+    "title": "Poland Is Not Yet Lost",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mazurek%20D%C4%85browskiego%20%28official%20instrumental%29.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q482988",
+    "durationSeconds": 46
+  },
+  "CHL": {
+    "title": "National Anthem of Chile",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gob%202022-2026%20Material%20audiovisual%20Himno%20Nacional%20Cantado.mp3",
+    "sourceUrl": "https://www.wikidata.org/entity/Q484161",
+    "durationSeconds": 131
+  },
+  "RWA": {
+    "title": "Rwanda Nziza",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hymne%20National%20du%20Rwanda.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q503118",
+    "durationSeconds": 139
+  },
+  "BRB": {
+    "title": "National Anthem of Barbados",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20In%20Plenty%20and%20In%20Time%20of%20Need.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q505717",
+    "durationSeconds": 79
+  },
+  "MDV": {
+    "title": "Gaumiii salaaam",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaumii%20salaam.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q660117",
+    "durationSeconds": 68
+  },
+  "TUN": {
+    "title": "Humat Al Hima",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Humat%20al-Hima.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q682679",
+    "durationSeconds": 52
+  },
+  "DMA": {
+    "title": "Isle of Beauty, Isle of Splendour",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Dominica%20by%20US%20Navy%20Band.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q684643",
+    "durationSeconds": 49
+  },
+  "LKA": {
+    "title": "Sri Lanka Matha",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sri%20Lankan%20national%20anthem%2C%20performed%20by%20the%20United%20States%20Navy%20Band.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q745806",
+    "durationSeconds": 173
+  },
+  "GIN": {
+    "title": "Liberté",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Libert%C3%A9.oga",
+    "sourceUrl": "https://www.wikidata.org/entity/Q747890",
+    "durationSeconds": 72
+  },
+  "GRD": {
+    "title": "Hail Grenada",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/HailGrenada.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q752655",
+    "durationSeconds": 77
+  },
+  "PAN": {
+    "title": "National anthem of Panama",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Panama%20National%20Anthem.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q753873",
+    "durationSeconds": 110
+  },
+  "KAZ": {
+    "title": "Menıñ Qazaqstanym",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Kazakhstan%20National%20Anthem%202012.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q754928",
+    "durationSeconds": 92
+  },
+  "PSE": {
+    "title": "Fida'i",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthem%20of%20Palestine.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q845207",
+    "durationSeconds": 58
+  },
+  "SYC": {
+    "title": "Koste Seselwa",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Koste%20Seselwa%20%28instrumental%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q849850",
+    "durationSeconds": 67
+  },
+  "MHL": {
+    "title": "Forever Marshall Islands",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Marshall%20Islands%20by%20US%20Navy%20Band.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q858826",
+    "durationSeconds": 138
+  },
+  "TWN": {
+    "title": "National Anthem of the Republic of China",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20the%20Republic%20of%20China%20%28Taiwan%29%20%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%8B%E6%AD%8C%28%E6%BC%94%E5%A5%8F%E7%89%88%29.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q864979",
+    "durationSeconds": 81
+  },
+  "KNA": {
+    "title": "O Land of Beauty!",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20O%20Land%20of%20Beauty.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q1050025",
+    "durationSeconds": 63
+  },
+  "DEU": {
+    "title": "third stanza of the Deutschlandlied",
+    "type": "Instrumental audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Germany%20-%20U.S.%20Army%201st%20Armored%20Division%20Band.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q4122341",
+    "durationSeconds": 80
+  },
+  "NGA": {
+    "title": "Nigeria, We Hail Thee",
+    "type": "National anthem audio",
+    "credit": "Wikidata / Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nigeria%20We%20Hail%20Thee.ogg",
+    "sourceUrl": "https://www.wikidata.org/entity/Q14405797",
+    "durationSeconds": 88
+  },
+  "BDI": {
+    "title": "Burundi Bwacu",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Burundi%20Bwacu%20instrumental.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABurundi_Bwacu_instrumental.ogg",
+    "durationSeconds": 110
+  },
+  "CHN": {
+    "title": "March of the Volunteers",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/March%20of%20the%20Volunteers%20instrumental.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMarch_of_the_Volunteers_instrumental.ogg",
+    "durationSeconds": 44
+  },
+  "COD": {
+    "title": "Debout Congolais",
+    "type": "National anthem audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Debout%20Congolais.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADebout_Congolais.ogg",
+    "durationSeconds": 89
+  },
+  "SLV": {
+    "title": "National anthem of El Salvador",
+    "type": "National anthem audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Salvador's%20national%20anthem%20(abridged).ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AEl_Salvador's_national_anthem_(abridged).ogg",
+    "durationSeconds": 88
+  },
+  "FLK": {
+    "title": "God Save the King",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20God%20Save%20the%20Queen.oga",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AUnited_States_Navy_Band_-_God_Save_the_Queen.oga",
+    "durationSeconds": 63
+  },
+  "GMB": {
+    "title": "For The Gambia Our Homeland",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/For%20The%20Gambia%20Our%20Homeland%20(instrumental).ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFor_The_Gambia_Our_Homeland_(instrumental).ogg",
+    "durationSeconds": 80
+  },
+  "HKG": {
+    "title": "March of the Volunteers",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/March%20of%20the%20Volunteers%20instrumental.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMarch_of_the_Volunteers_instrumental.ogg",
+    "durationSeconds": 44
+  },
+  "IDN": {
+    "title": "Indonesia Raya",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Indonesia%20Raya%20instrumental.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AIndonesia_Raya_instrumental.ogg",
+    "durationSeconds": 109
+  },
+  "IRQ": {
+    "title": "Mawtini",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20Mawtini.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AUnited_States_Navy_Band_-_Mawtini.ogg",
+    "durationSeconds": 105
+  },
+  "CIV": {
+    "title": "L'Abidjanaise",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20National%20Anthem%20of%20C%C3%B4te%20D'Ivoire%20%22L'Abidjanaise%22.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AUnited_States_Navy_Band_-_National_Anthem_of_C%C3%B4te_D'Ivoire_%22L'Abidjanaise%22.ogg",
+    "durationSeconds": 69
+  },
+  "UNK": {
+    "title": "Kosovo national anthem",
+    "type": "National anthem audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20the%20Republic%20of%20Kosovo.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANational_Anthem_of_the_Republic_of_Kosovo.ogg",
+    "durationSeconds": 57
+  },
+  "MDA": {
+    "title": "Limba noastră",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Imnul%20Republicii%20Moldova%20US%20NAVY.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AImnul_Republicii_Moldova_US_NAVY.ogg",
+    "durationSeconds": 71
+  },
+  "MKD": {
+    "title": "Denes nad Makedonija",
+    "type": "National anthem audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/North%20Macedonia's%20National%20Anthem.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANorth_Macedonia's_National_Anthem.ogg",
+    "durationSeconds": 50
+  },
+  "PLW": {
+    "title": "Belau rekid",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Belau%20rekid%20(instrumental).oga",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABelau_rekid_(instrumental).oga",
+    "durationSeconds": 52
+  },
+  "PNG": {
+    "title": "O Arise, All You Sons",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/O%20Arise%2C%20All%20You%20Sons%20(instrumental).ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AO_Arise%2C_All_You_Sons_(instrumental).ogg",
+    "durationSeconds": 58
+  },
+  "PER": {
+    "title": "National Anthem of Peru",
+    "type": "National anthem audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Himno%20nacional%20del%20Per%C3%BA%20en%20shipibo.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHimno_nacional_del_Per%C3%BA_en_shipibo.ogg",
+    "durationSeconds": 50
+  },
+  "RUS": {
+    "title": "State Anthem of the Russian Federation",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Former%20Russian%20national%20anthem%20(1990%E2%80%932000)%2C%20performed%20by%20the%20Brass%20Band%20of%20the%20Russian%20Ministry%20of%20Defense.wav",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFormer_Russian_national_anthem_(1990%E2%80%932000)%2C_performed_by_the_Brass_Band_of_the_Russian_Ministry_of_Defense.wav",
+    "durationSeconds": 76
+  },
+  "SEN": {
+    "title": "Le Lion rouge",
+    "type": "National anthem audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Anthem%20of%20Senegal.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANational_Anthem_of_Senegal.ogg",
+    "durationSeconds": 56
+  },
+  "ESP": {
+    "title": "Marcha Real",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcha%20Real-Royal%20March%20by%20US%20Navy%20Band.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMarcha_Real-Royal_March_by_US_Navy_Band.ogg",
+    "durationSeconds": 62
+  },
+  "TON": {
+    "title": "Ko e fasi 'o e tu'i 'o e 'Otu Tonga",
+    "type": "National anthem audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ko%20e%20fasi%20%CA%BBo%20e%20tu%CA%BBi%20%CA%BBo%20e%20%CA%BBOtu%20Tonga.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKo_e_fasi_%CA%BBo_e_tu%CA%BBi_%CA%BBo_e_%CA%BBOtu_Tonga.ogg",
+    "durationSeconds": 49
+  },
+  "TTO": {
+    "title": "Forged from the Love of Liberty",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Forged%20from%20the%20Love%20of%20Liberty%20(instrumental).ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AForged_from_the_Love_of_Liberty_(instrumental).ogg",
+    "durationSeconds": 75
+  },
+  "TUV": {
+    "title": "Tuvalu mo te Atua",
+    "type": "National anthem audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuvalu%20mo%20te%20Atua.ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATuvalu_mo_te_Atua.ogg",
+    "durationSeconds": 63
+  },
+  "UKR": {
+    "title": "Shche ne vmerla Ukrainy i slava, i volia",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20anthem%20of%20Ukraine%2C%20instrumental.oga",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANational_anthem_of_Ukraine%2C_instrumental.oga",
+    "durationSeconds": 80
+  },
+  "GBR": {
+    "title": "God Save the King",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20God%20Save%20the%20Queen.oga",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AUnited_States_Navy_Band_-_God_Save_the_Queen.oga",
+    "durationSeconds": 63
+  },
+  "URY": {
+    "title": "National Anthem of Uruguay",
+    "type": "Instrumental audio",
+    "credit": "Wikimedia Commons",
+    "audioUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20Navy%20Band%20-%20National%20Anthem%20of%20Uruguay%20(short).ogg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AUnited_States_Navy_Band_-_National_Anthem_of_Uruguay_(short).ogg",
+    "durationSeconds": 56
   }
 }
