@@ -261,6 +261,7 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
         </Link>
         <div className="nav-links">
           <a href="#explore">Explore</a>
+          <Link href="/compare">Compare</Link>
           <a href="#about">About</a>
           <a className="nav-cta" href="#countries">Browse {PROFILE_COUNT} profiles</a>
         </div>
@@ -310,6 +311,7 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
           <h2>Begin anywhere.<br /><em>Explore deeply.</em></h2>
           <p>Every world profile now has the same polished format: flag, map, people, geography, economy, identity, and sources.</p>
           <Link className="text-link" href="/countries/united-states">Explore the full USA profile <span>→</span></Link>
+          <Link className="text-link compare-link" href="/compare?countries=united-states,japan,singapore">Compare USA, Japan, and Singapore <span>→</span></Link>
         </div>
         <Link className="country-feature-card" href="/countries/united-states">
           <div className="feature-flag"><img src="/flags/us.svg" alt="" /></div>
