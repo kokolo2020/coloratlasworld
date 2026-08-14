@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import CountryProfileTabs from "@/components/CountryProfileTabs";
 import CountrySearch from "@/components/CountrySearch";
 import CountryTrajectory, { TrendData } from "@/components/CountryTrajectory";
+import DailyCountryFact from "@/components/DailyCountryFact";
 import nationalAnthems from "@/data/national-anthems.json";
 import specialReports from "@/data/special-reports.json";
 import { COUNTRIES, COUNTRY_AVERAGE_POPULATION, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getGdpRank, getMetrics } from "@/lib/countries";
@@ -182,6 +183,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
       </nav>
 
       <CountryProfileTabs report={specialReport ? <CountryTrajectory data={specialReport} flagSrc={flagUrl(country.cca2)} /> : null}>
+      <DailyCountryFact countryName={country.name} facts={enrichment.facts} profileNumber={country.profileNumber} />
       <header className="country-hero">
         <div className="country-hero-copy">
           <p className="breadcrumb"><Link href="/">World</Link><span>/</span><span>{region}</span><span>/</span><strong>{country.name}</strong></p>
