@@ -84,6 +84,26 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const borderLabel = neighbors.length
     ? `${neighbors.slice(0, 4).map((neighbor) => neighbor?.name).join(", ")}${neighbors.length > 4 ? ` +${neighbors.length - 4} more` : ""}`
     : connectionNote;
+  const neighborCodes = new Set(country.borders);
+  const comparisonPeers = COUNTRIES
+    .filter((candidate) => candidate.slug !== country.slug)
+    .sort((left, right) => {
+      const tier = (candidate: (typeof COUNTRIES)[number]) => {
+        if (neighborCodes.has(candidate.cca3)) return 0;
+        if (candidate.subregion === country.subregion) return 1;
+        if (candidate.region === country.region) return 2;
+        return 3;
+      };
+      const tierDifference = tier(left) - tier(right);
+      if (tierDifference) return tierDifference;
+      const populationDistance = (candidate: (typeof COUNTRIES)[number]) => {
+        if (!country.population || !candidate.population) return Number.POSITIVE_INFINITY;
+        return Math.abs(Math.log(candidate.population / country.population));
+      };
+      return populationDistance(left) - populationDistance(right) || left.name.localeCompare(right.name);
+    })
+    .slice(0, 3);
+  const primaryComparisonHref = `/compare/${[country.slug, ...comparisonPeers.slice(0, 2).map((peer) => peer.slug)].join("-vs-")}`;
   const nationalAnthem = (nationalAnthems as Record<string, NationalAnthem>)[country.cca3] || null;
   const nationalAnthemDuration = formatDuration(nationalAnthem?.durationSeconds);
 
@@ -156,7 +176,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <Link className="brand" href="/"><span className="brand-mark">✦</span><span>Color Atlas World</span></Link>
         <CountrySearch />
         <div className="nav-links">
-          <Link href={`/compare?countries=${country.slug},united-states,japan`}>Compare</Link>
+          <Link href={primaryComparisonHref}>Compare</Link>
           <Link className="back-link nav-cta" href="/#countries">All profiles</Link>
         </div>
       </nav>
@@ -168,7 +188,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <div className="country-kicker"><span>{country.cca2}</span>{country.officialName}<small>{profileStatus}</small></div>
           <h1>{country.name}</h1>
           <p>{country.name} is in {country.subregion}. This profile brings its status, flag, geography, people, languages, and latest available indicators into one clear visual story.</p>
-          <div className="hero-actions"><a className="primary-button" href="#overview">Explore the profile <span>↓</span></a><Link className="secondary-button" href={`/compare?countries=${country.slug},united-states,japan`}>Compare countries</Link><a className="secondary-button" href="#sources">View sources</a></div>
+          <div className="hero-actions"><a className="primary-button" href="#overview">Explore the profile <span>↓</span></a><Link className="secondary-button" href={primaryComparisonHref}>Compare countries</Link><a className="secondary-button" href="#sources">View sources</a></div>
         </div>
         <div className="country-flag-stage">
           <div className="flag-label"><span>Flag</span><span>{country.cca3} · {country.profileNumber.toString().padStart(3, "0")} / {profileCount}</span></div>
@@ -215,6 +235,26 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="profile-compare" aria-label={`Compare ${country.name} with other countries`}>
+        <div className="profile-compare-heading">
+          <div>
+            <p className="eyebrow"><span /> Compare profiles</p>
+            <h2>See {country.name}<br /><em>in context.</em></h2>
+          </div>
+          <p>Start with a neighbor or a similar regional profile, then adjust the matchup across the complete atlas.</p>
+        </div>
+        <div className="profile-compare-grid">
+          {comparisonPeers.map((peer) => (
+            <Link href={`/compare/${country.slug}-vs-${peer.slug}`} key={peer.slug}>
+              <img src={flagUrl(peer.cca2)} alt={`Flag of ${peer.name}`} loading="lazy" />
+              <span><small>{displayRegion(peer)}</small><strong>{country.name} vs {peer.name}</strong></span>
+              <b aria-hidden="true">→</b>
+            </Link>
+          ))}
+        </div>
+        <Link className="profile-compare-all" href={primaryComparisonHref}>Open the full comparison <span>→</span></Link>
       </section>
 
       <section className="profile-grid">
