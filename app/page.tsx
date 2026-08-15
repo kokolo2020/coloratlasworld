@@ -1,9 +1,12 @@
 import Link from "next/link";
 import CountrySearch from "../components/CountrySearch";
 import CountrySnapshot, { CountrySnapshotData } from "../components/CountrySnapshot";
-import { COUNTRIES, displayRegion, flagUrl, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getMetrics } from "../lib/countries";
+import { COUNTRIES, displayRegion, flagUrl, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getDemographics, getEnrichment, getMetrics, metricSourceLabel } from "../lib/countries";
 
 const PROFILE_COUNT = COUNTRIES.length;
+const HOME_USA_METRICS = getMetrics("USA");
+const HOME_USA_POPULATION = formatNumber(HOME_USA_METRICS.population?.value);
+const HOME_USA_POPULATION_YEAR = HOME_USA_METRICS.population?.year || "Latest";
 
 const highlights = [
   { value: PROFILE_COUNT.toString(), label: "world profiles" },
@@ -195,6 +198,7 @@ function economyLabel(value?: number | null) {
 function buildSnapshot(slug: string): CountrySnapshotData {
   const country = getCountryBySlug(slug)!;
   const metrics = getMetrics(country.cca3);
+  const demographics = getDemographics(country.cca3);
   const enrichment = getEnrichment(country.cca3);
   const currencies = Object.entries(country.currencies);
   const [lat, lng] = country.latlng;
@@ -216,7 +220,7 @@ function buildSnapshot(slug: string): CountrySnapshotData {
     displayTheme: WHITE_FLAG_CARD_COUNTRIES.has(country.cca2) ? "night" : undefined,
     capital: country.capital || "Not published",
     population: metrics?.population ? formatNumber(metrics.population.value) : formatNumber(country.population),
-    populationNote: metrics?.population?.year ? `${metrics.population.year} est.` : "2024 est.",
+    populationNote: metrics.population ? metricSourceLabel(metrics.population) : "No comparable value",
     currency: currencies.map(([code, currency]) => `${currency.name} (${code})`).join(", ") || "Not published",
     currencyCode: currencies.map(([code]) => code).join(", ") || "n/a",
     area: compactArea(country.area),
@@ -226,7 +230,13 @@ function buildSnapshot(slug: string): CountrySnapshotData {
     gdpPerCapita: metrics?.gdpPerCapita ? formatMoney(metrics.gdpPerCapita.value) : "Not published",
     gdpGrowth: metrics?.gdpGrowth ? `${metrics.gdpGrowth.value.toFixed(1)}%` : "Not published",
     lifeExpectancy: metrics?.lifeExpectancy ? `${metrics.lifeExpectancy.value.toFixed(0)} years` : "Not published",
-    medianAge: enrichment?.demographics?.medianAge ? `${enrichment.demographics.medianAge} years` : "Not published",
+    medianAge: demographics?.medianAge != null ? `${demographics.medianAge.toFixed(1)} years` : enrichment?.demographics?.medianAge ? `${enrichment.demographics.medianAge} years` : "Not published",
+    demographicsNote: demographics ? "UN DESA · 2026 medium projection" : undefined,
+    gender: demographics?.gender ? {
+      female: `${demographics.gender.femalePercent.toFixed(1)}%`,
+      male: `${demographics.gender.malePercent.toFixed(1)}%`,
+    } : undefined,
+    ageDistribution: demographics?.ageDistribution?.map((item) => ({ label: item.label, value: Number(item.value.toFixed(1)) })),
     urbanPercent: percent(urban),
     ruralPercent: percent(rural),
     languages: (enrichment?.demographics?.officialLanguages ?? []).join(", ") || Object.values(country.languages).join(", "),
@@ -242,7 +252,17 @@ function buildSnapshot(slug: string): CountrySnapshotData {
     summary: enrichment?.snapshotAbout || enrichment?.history?.summary || "",
     facts: enrichment?.facts ?? [],
   };
-  return { ...snapshot, ...override };
+  return {
+    ...snapshot,
+    ...override,
+    population: snapshot.population,
+    populationNote: snapshot.populationNote,
+    lifeExpectancy: snapshot.lifeExpectancy,
+    medianAge: snapshot.medianAge,
+    demographicsNote: snapshot.demographicsNote,
+    gender: snapshot.gender,
+    ageDistribution: snapshot.ageDistribution,
+  };
 }
 
 export default async function Home({ searchParams }: { searchParams?: Promise<{ country?: string }> }) {
@@ -291,8 +311,8 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
             </div>
           </div>
           <div className="atlas-card atlas-stat-card">
-            <small>Population · 2025</small>
-            <strong>341.8M</strong>
+            <small>Population · {HOME_USA_POPULATION_YEAR}</small>
+            <strong>{HOME_USA_POPULATION}</strong>
             <span>50 states · 1 federal district</span>
           </div>
           <div className="atlas-pin"><span>●</span> Washington, D.C.</div>
@@ -322,7 +342,7 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
             </div>
             <div className="mini-stats">
               <div><small>Capital</small><strong>Washington, D.C.</strong></div>
-              <div><small>Population</small><strong>341.8 million</strong></div>
+              <div><small>Population</small><strong>{HOME_USA_POPULATION}</strong></div>
               <div><small>Currency</small><strong>U.S. dollar</strong></div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CountrySearch from "@/components/CountrySearch";
-import { COUNTRIES, flagUrl, formatArea, formatMoney, formatNumber, getEnrichment, getMetrics } from "@/lib/countries";
+import { COUNTRIES, flagUrl, formatArea, formatMoney, formatNumber, getDemographics, getEnrichment, getMetrics, metricSourceLabel } from "@/lib/countries";
 
 type AtlasCountry = {
   slug: string;
@@ -138,6 +138,7 @@ function randomPair() {
 
 function buildCompareCountry(country: AtlasCountry): CompareCountry {
   const metrics = getMetrics(country.cca3);
+  const demographics = getDemographics(country.cca3);
   const enrichment = getEnrichment(country.cca3);
   const languages = enrichment.demographics.officialLanguages.length
     ? enrichment.demographics.officialLanguages.join(", ")
@@ -159,13 +160,13 @@ function buildCompareCountry(country: AtlasCountry): CompareCountry {
     summary: enrichment.snapshotAbout || enrichment.history.summary || `${country.name} is a ${displayCompareRegion(country)} profile in Color Atlas World.`,
     facts: enrichment.facts || [],
     metrics: {
-      population: { value: populationValue, label: metricLabel(populationValue), note: metrics.population ? `World Bank · ${metrics.population.year}` : "Open country catalog" },
+      population: { value: populationValue, label: metricLabel(populationValue), note: metrics.population ? metricSourceLabel(metrics.population) : "Open country catalog" },
       gdp: { value: metrics.gdp?.value ?? null, label: metricLabel(metrics.gdp?.value, formatMoney), note: metrics.gdp ? `${metrics.gdp.year} · current USD` : "No recent value" },
       gdpPerCapita: { value: metrics.gdpPerCapita?.value ?? null, label: metricLabel(metrics.gdpPerCapita?.value, formatMoney), note: metrics.gdpPerCapita ? `${metrics.gdpPerCapita.year} · current USD` : "No recent value" },
       gdpGrowth: { value: metrics.gdpGrowth?.value ?? null, label: metrics.gdpGrowth ? `${metrics.gdpGrowth.value.toFixed(1)}%` : "Not published", note: metrics.gdpGrowth ? `${metrics.gdpGrowth.year} annual growth` : "No recent value" },
-      lifeExpectancy: { value: metrics.lifeExpectancy?.value ?? null, label: metrics.lifeExpectancy ? `${metrics.lifeExpectancy.value.toFixed(1)} years` : "Not published", note: metrics.lifeExpectancy ? `World Bank · ${metrics.lifeExpectancy.year}` : "No recent value" },
+      lifeExpectancy: { value: metrics.lifeExpectancy?.value ?? null, label: metrics.lifeExpectancy ? `${metrics.lifeExpectancy.value.toFixed(1)} years` : "Not published", note: metrics.lifeExpectancy ? metricSourceLabel(metrics.lifeExpectancy) : "No recent value" },
       area: { value: country.area ?? null, label: formatArea(country.area), note: "Open country catalog" },
-      medianAge: { value: enrichment.demographics.medianAge, label: enrichment.demographics.medianAge != null ? `${enrichment.demographics.medianAge} years` : "Not published", note: "Comparable enrichment data" },
+      medianAge: { value: demographics?.medianAge ?? enrichment.demographics.medianAge, label: demographics?.medianAge != null ? `${demographics.medianAge.toFixed(1)} years` : enrichment.demographics.medianAge != null ? `${enrichment.demographics.medianAge} years` : "Not published", note: demographics ? "UN DESA · 2026 medium projection" : "Comparable enrichment data" },
       urbanShare: { value: enrichment.demographics.urbanPercent?.value ?? null, label: percentLabel(enrichment.demographics.urbanPercent?.value), note: enrichment.demographics.urbanPercent ? `World Bank · ${enrichment.demographics.urbanPercent.year}` : "No recent value" },
     },
     dailyLife: {

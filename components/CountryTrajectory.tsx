@@ -1,3 +1,5 @@
+import type { CountryDemographics } from "@/lib/countries";
+
 type TrendPoint = { year: number; value: number };
 type TrendChange = {
   fromYear: number;
@@ -167,7 +169,7 @@ function latestYear(data: TrendData) {
   return years.length ? Math.max(...years) : null;
 }
 
-export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; flagSrc?: string }) {
+export default function CountryTrajectory({ data, demographics, flagSrc }: { data: TrendData; demographics?: CountryDemographics | null; flagSrc?: string }) {
   const heroes = heroKeys.map((key) => getSeries(data, key)).filter(Boolean) as TrendSeries[];
   const chartSeries = chartKeys.map((key) => getSeries(data, key)).filter(Boolean) as TrendSeries[];
   const population = getSeries(data, "population");
@@ -211,6 +213,22 @@ export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; 
             <small>Economy, people, health, work, tech, environment</small>
           </article>
         </div>
+
+        {demographics && (
+          <section className="trajectory-un-baseline" aria-label={`${data.countryName} United Nations 2026 demographic baseline`}>
+            <div className="trajectory-un-heading">
+              <div><span>Current demographic baseline</span><strong>UN DESA · 2026</strong></div>
+              <p>Medium projection from World Population Prospects, 2024 Revision</p>
+            </div>
+            <div className="trajectory-un-grid">
+              <article><small>Population</small><strong>{demographics.population ? new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(demographics.population.value) : "Not available"}</strong><span>mid-year population</span></article>
+              <article><small>Life expectancy</small><strong>{demographics.lifeExpectancy ? `${demographics.lifeExpectancy.value.toFixed(1)} yrs` : "Not available"}</strong><span>both sexes</span></article>
+              <article><small>Median age</small><strong>{demographics.medianAge != null ? `${demographics.medianAge.toFixed(1)} yrs` : "Not available"}</strong><span>mid-year population</span></article>
+              <article><small>Population growth</small><strong>{demographics.populationGrowth != null ? `${demographics.populationGrowth.toFixed(2)}%` : "Not available"}</strong><span>annual rate</span></article>
+              <article><small>Fertility rate</small><strong>{demographics.fertilityRate != null ? demographics.fertilityRate.toFixed(2) : "Not available"}</strong><span>births per woman</span></article>
+            </div>
+          </section>
+        )}
 
         <div className="trajectory-feature-grid">
           {heroes.length ? heroes.map((series) => {
@@ -296,8 +314,8 @@ export default function CountryTrajectory({ data, flagSrc }: { data: TrendData; 
 
         <div className="trajectory-note">
           <strong>Educational projection, not an official forecast.</strong>
-          <span>Historical values are from World Bank observations retrieved {data.retrievedAt}. Scenario numbers use simple transparent trend math so the assumptions stay visible.</span>
-          <a href={data.source.url} target="_blank" rel="noreferrer">World Bank source</a>
+          <span>Historical values are World Bank observations retrieved {data.retrievedAt}. The 2026 demographic baseline is the official UN DESA medium projection from World Population Prospects 2024. The atlas's 2035 scenarios use simple trend math.</span>
+          <div><a href="https://population.un.org/wpp/downloads" target="_blank" rel="noreferrer">UN source</a><a href={data.source.url} target="_blank" rel="noreferrer">World Bank source</a></div>
         </div>
       </div>
     </section>

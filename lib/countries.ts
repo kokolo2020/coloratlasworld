@@ -1,9 +1,10 @@
 import countriesData from "@/data/countries.json";
 import metricsData from "@/data/world-bank.json";
+import unDemographicsData from "@/data/un-demographics.json";
 import enrichmentData from "@/data/country-enrichment.js";
 
 export type CountryRecord = (typeof countriesData)[number];
-type Metric = { value: number; year: string } | null;
+export type Metric = { value: number; year: string; source?: string; status?: string } | null;
 export type CountryMetrics = {
   population: Metric;
   lifeExpectancy: Metric;
@@ -21,6 +22,16 @@ export type CountryEnrichment = {
   neighbors: string[];
   facts: string[];
   images: { url: string; label: string; source: string }[];
+};
+export type CountryDemographics = {
+  locationName: string;
+  population: Metric;
+  lifeExpectancy: Metric;
+  medianAge: number | null;
+  populationGrowth: number | null;
+  fertilityRate: number | null;
+  gender: { femalePercent: number; malePercent: number } | null;
+  ageDistribution: { label: string; value: number }[] | null;
 };
 
 export function slugifyCountry(name: string) {
@@ -49,7 +60,13 @@ export function getCountryBySlug(slug: string) {
 export function getCountryByCca3(code: string) { return COUNTRIES.find((country) => country.cca3 === code); }
 export function getEnrichment(code: string): CountryEnrichment { return (enrichmentData as Record<string, CountryEnrichment>)[code]; }
 
-const metricRows = Object.entries(metricsData as Record<string, CountryMetrics>);
+const unRows = (unDemographicsData as { countries: Record<string, CountryDemographics> }).countries;
+const unCode = (code: string) => code === "UNK" ? "XKX" : code;
+const metricRows = Object.entries(metricsData as Record<string, CountryMetrics>).map(([code, row]) => [code, {
+  ...row,
+  population: unRows[unCode(code)]?.population || row.population,
+  lifeExpectancy: unRows[unCode(code)]?.lifeExpectancy || row.lifeExpectancy,
+}] as const);
 export const COUNTRY_AVERAGE_POPULATION = metricRows.reduce((sum, [, row]) => sum + (row.population?.value || 0), 0) / metricRows.filter(([, row]) => row.population?.value).length;
 export function getGdpRank(code: string) {
   const ranked = metricRows.filter(([, row]) => row.gdp?.value).sort((a, b) => (b[1].gdp?.value || 0) - (a[1].gdp?.value || 0));
@@ -58,9 +75,25 @@ export function getGdpRank(code: string) {
 }
 
 export function getMetrics(code: string): CountryMetrics {
-  return (metricsData as Record<string, CountryMetrics>)[code] || {
+  const base = (metricsData as Record<string, CountryMetrics>)[code] || {
     population: null, lifeExpectancy: null, gdp: null, gdpPerCapita: null, gdpGrowth: null,
   };
+  const un = unRows[unCode(code)];
+  return {
+    ...base,
+    population: un?.population || base.population,
+    lifeExpectancy: un?.lifeExpectancy || base.lifeExpectancy,
+  };
+}
+
+export function getDemographics(code: string): CountryDemographics | null {
+  return unRows[unCode(code)] || null;
+}
+
+export function metricSourceLabel(metric: Metric, fallback = "World Bank") {
+  if (!metric) return "No recent value";
+  const source = metric.source || fallback;
+  return metric.status ? `${source} · ${metric.year} ${metric.status}` : `${source} · ${metric.year}`;
 }
 
 export function flagUrl(code: string) {

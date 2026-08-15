@@ -7,7 +7,7 @@ import CountryTrajectory, { TrendData } from "@/components/CountryTrajectory";
 import DailyCountryFact from "@/components/DailyCountryFact";
 import nationalAnthems from "@/data/national-anthems.json";
 import specialReports from "@/data/special-reports.json";
-import { COUNTRIES, COUNTRY_AVERAGE_POPULATION, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getEnrichment, getGdpRank, getMetrics } from "@/lib/countries";
+import { COUNTRIES, COUNTRY_AVERAGE_POPULATION, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getDemographics, getEnrichment, getGdpRank, getMetrics, metricSourceLabel } from "@/lib/countries";
 
 type NationalAnthem = {
   title: string;
@@ -42,6 +42,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const profileCount = COUNTRIES.length;
   const profileStatus = country.status || "Sovereign country profile";
   const metrics = getMetrics(country.cca3);
+  const demographics = getDemographics(country.cca3);
   const region = displayRegion(country);
   const currencies = Object.entries(country.currencies);
   const currencyLabel = currencies.length ? currencies.map(([code, item]) => `${item.name} (${code})`).join(", ") : "Not published";
@@ -70,15 +71,19 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     : country.landlocked
       ? "This profile has no coastline or listed land-border neighbors."
       : "No land borders; sea and air links shape outside connections.";
-  const medianAgeLabel = enrichment.demographics.medianAge != null ? `${enrichment.demographics.medianAge} years` : "Comparable value pending";
+  const medianAgeLabel = demographics?.medianAge != null
+    ? `${demographics.medianAge.toFixed(1)} years`
+    : enrichment.demographics.medianAge != null
+      ? `${enrichment.demographics.medianAge} years`
+      : "Comparable value pending";
   const timeZoneLabel = enrichment.dailyLife.timeZones || "Profile-specific value pending";
   const plugTypeLabel = enrichment.dailyLife.plugTypes || "Profile-specific value pending";
   const tippingLabel = enrichment.dailyLife.tipping || "Local customs vary by setting";
   const emergencyLabel = enrichment.dailyLife.emergencyNumbers || "Emergency numbers vary; check official guidance";
-  const sourceUrl = country.cca3 === "HKG"
+  const economicSourceUrl = country.cca3 === "HKG"
     ? "https://data.worldbank.org/country/hong-kong-sar-china"
     : country.cca2.startsWith("GB-")
-      ? "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates"
+      ? "https://data.worldbank.org/country/united-kingdom"
       : `https://data.worldbank.org/country/${country.cca2.toLowerCase()}`;
   const specialReport = (specialReports as Record<string, TrendData>)[country.cca3];
   const coordinateLabel = `${Math.abs(lat).toFixed(1)}° ${lat >= 0 ? "N" : "S"}, ${Math.abs(lng).toFixed(1)}° ${lng >= 0 ? "E" : "W"}`;
@@ -109,10 +114,10 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const nationalAnthemDuration = formatDuration(nationalAnthem?.durationSeconds);
 
   const quickStats = [
-    { label: "Population", value: population, note: metrics.population ? `World Bank · ${metrics.population.year}` : "No recent World Bank value" },
+    { label: "Population", value: population, note: metrics.population ? metricSourceLabel(metrics.population) : "No recent comparable value" },
     { label: "Capital", value: country.capital || "Not published", note: country.officialName },
     { label: "Currency", value: currencies[0]?.[0] || "Not published", note: currencyLabel },
-    { label: "Life expectancy", value: life, note: metrics.lifeExpectancy ? `World Bank · ${metrics.lifeExpectancy.year}` : "No recent World Bank value" },
+    { label: "Life expectancy", value: life, note: metrics.lifeExpectancy ? metricSourceLabel(metrics.lifeExpectancy) : "No recent comparable value" },
   ];
   const basicDataGroups = [
     {
@@ -127,8 +132,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
     {
       title: "People",
       items: [
-        ["Population", metrics.population ? `${population} · ${metrics.population.year}` : population],
-        ["Median age", medianAgeLabel],
+        ["Population", metrics.population ? `${population} · ${metricSourceLabel(metrics.population)}` : population],
+        ["Median age", demographics ? `${medianAgeLabel} · UN DESA 2026 medium projection` : medianAgeLabel],
         ["Languages", languages.length ? languages.join(", ") : "Not published"],
         ["Largest cities", enrichment.demographics.largestCities.join(", ") || country.capital || "Not published"],
       ],
@@ -182,7 +187,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         </div>
       </nav>
 
-      <CountryProfileTabs report={specialReport ? <CountryTrajectory data={specialReport} flagSrc={flagUrl(country.cca2)} /> : null}>
+      <CountryProfileTabs report={specialReport ? <CountryTrajectory data={specialReport} demographics={demographics} flagSrc={flagUrl(country.cca2)} /> : null}>
       <DailyCountryFact countryName={country.name} facts={enrichment.facts} profileNumber={country.profileNumber} />
       <header className="country-hero">
         <div className="country-hero-copy">
@@ -399,7 +404,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         <section className="sources" id="sources">
         <div><p className="eyebrow"><span /> Sources & notes</p><h2>Numbers you can trace.</h2><p>Statistics show their reference year because country data changes. Unavailable values are clearly marked instead of estimated.</p></div>
         <ul>
-          <li><a href={sourceUrl} target="_blank" rel="noreferrer">Primary statistics source — population and economy where available ↗</a></li>
+          <li><a href="https://population.un.org/wpp/downloads" target="_blank" rel="noreferrer">UN DESA World Population Prospects — population, age, sex balance, and longevity ↗</a></li>
+          <li><a href={economicSourceUrl} target="_blank" rel="noreferrer">World Bank — latest available economic indicators ↗</a></li>
           <li><a href="https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS" target="_blank" rel="noreferrer">World Bank — urban population share ↗</a></li>
           <li><a href={enrichment.government.sourceUrl || "https://www.wikidata.org"} target="_blank" rel="noreferrer">Wikidata — government and current officeholders ↗</a></li>
           {nationalAnthem && <li><a href={nationalAnthem.sourceUrl} target="_blank" rel="noreferrer">National anthem audio source — {nationalAnthem.title} ↗</a></li>}

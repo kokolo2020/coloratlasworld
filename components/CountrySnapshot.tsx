@@ -27,6 +27,7 @@ export type CountrySnapshotData = {
   gdpGrowth: string;
   lifeExpectancy: string;
   medianAge: string;
+  demographicsNote?: string;
   urbanPercent: string;
   ruralPercent: string;
   languages: string;
@@ -131,7 +132,7 @@ export default function CountrySnapshot({
   const summary = selected.summary || selected.history || `${selected.name} is located in ${selected.region}, with ${selected.capital} as its capital.`;
   const currencyLabel = selected.currency.replace(/\s*\([^)]*\)/g, "");
   const stats = [
-    ["population", "Population", selected.population, selected.populationNote || "2024 est."],
+    ["population", "Population", selected.population, selected.populationNote || "Latest available"],
     ["currency", "Currency", currencyLabel, selected.currencyCode || ""],
     ["capital", "Capital", selected.capital, ""],
     ["area", "Area", selected.area, selected.areaImperial || ""],
@@ -147,15 +148,8 @@ export default function CountrySnapshot({
     { value: selected.currencyCode || currencyLabel, label: "Currency" },
     { value: selected.coastline, label: "Access" },
   ];
-  const ageDistribution = selected.ageDistribution || [
-    { label: "0-14", value: 18 },
-    { label: "15-29", value: 20 },
-    { label: "30-44", value: 19 },
-    { label: "45-59", value: 20 },
-    { label: "60-74", value: 15 },
-    { label: "75+", value: 8 },
-  ];
-  const gender = selected.gender || { female: "50.5%", male: "49.5%" };
+  const ageDistribution = selected.ageDistribution || [];
+  const gender = selected.gender;
   const education = selected.education || { tertiary: "62%", secondary: "28%", primary: "10%" };
   const religion = selected.religion || { primary: "Major tradition", primaryPercent: "60%", secondary: "Unaffiliated", secondaryPercent: "25%", other: "Other 15%" };
   const transportFacts = selected.transportFacts || [
@@ -199,7 +193,7 @@ export default function CountrySnapshot({
 
           <section className="poster-card poster-gender">
             <h3><i className="pi gender" />Gender</h3>
-            <div className="gender-visual premium-gender">
+            {gender ? <div className="gender-visual premium-gender">
               <figure className="gender-person female">
                 <span className="human female" />
                 <figcaption>Female</figcaption>
@@ -209,17 +203,17 @@ export default function CountrySnapshot({
                 <span className="human male" />
                 <figcaption>Male</figcaption>
               </figure>
-            </div>
+            </div> : <p className="poster-data-unavailable">No comparable UN country series</p>}
             <div className="life-box"><span>Life expectancy</span><strong>{numberOnly(selected.lifeExpectancy)} <em>years</em></strong></div>
           </section>
 
           <section className="poster-card poster-age">
             <h3><i className="pi age" />Age distribution</h3>
-            <div className="poster-bars">
+            {ageDistribution.length ? <div className="poster-bars">
               {ageDistribution.map((item) => (
                 <div key={item.label}><b>{item.value}%</b><span style={{ height: `${item.value * 2.7}px` }} /><small>{item.label}</small></div>
               ))}
-            </div>
+            </div> : <p className="poster-data-unavailable">No comparable UN country series</p>}
             <div className="life-box"><span>Median age</span><strong>{numberOnly(selected.medianAge)} <em>years</em></strong></div>
           </section>
 
