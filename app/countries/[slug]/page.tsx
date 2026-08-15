@@ -30,9 +30,16 @@ export function generateStaticParams() { return COUNTRIES.map(({ slug }) => ({ s
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const country = getCountryBySlug((await params).slug);
   if (!country) return {};
+  const canonical = `/countries/${country.slug}`;
   return {
     title: `${country.name} Country Profile`,
     description: `Explore ${country.name}: flag, capital, population, economy, geography, people, languages, and defining facts.`,
+    alternates: { canonical },
+    openGraph: {
+      title: `${country.name} Country Profile`,
+      description: `Explore ${country.name}: flag, capital, population, economy, geography, people, languages, and defining facts.`,
+      url: canonical,
+    },
   };
 }
 

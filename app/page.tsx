@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import CountryDirectoryGrid from "../components/CountryDirectoryGrid";
 import CountrySearch from "../components/CountrySearch";
 import CountrySnapshot, { CountrySnapshotData } from "../components/CountrySnapshot";
 import RotatingAtlasHero, { type AtlasHeroItem } from "../components/RotatingAtlasHero";
@@ -63,6 +65,25 @@ const highlights = [
   { value: "1", label: "searchable world atlas" },
   { value: "0", label: "clutter or geography jargon" },
 ];
+
+export async function generateMetadata({ searchParams }: { searchParams?: Promise<{ country?: string }> }): Promise<Metadata> {
+  const country = getCountryBySlug((await searchParams)?.country?.toLowerCase() || "");
+  if (!country) {
+    return { alternates: { canonical: "/" } };
+  }
+
+  const canonical = `/countries/${country.slug}`;
+  return {
+    title: `${country.name} Country Profile`,
+    description: `Explore ${country.name}: flag, capital, population, economy, geography, people, languages, and defining facts.`,
+    alternates: { canonical },
+    openGraph: {
+      title: `${country.name} Country Profile`,
+      description: `Explore ${country.name}: flag, capital, population, economy, geography, people, languages, and defining facts.`,
+      url: canonical,
+    },
+  };
+}
 
 const WHITE_FLAG_CARD_COUNTRIES = new Set(["AT", "CY", "FI", "GB-ENG", "GB-WLS", "GE", "GR", "ID", "IL", "JP", "KR", "MC", "MT", "PL", "SG", "SM", "VA"]);
 
@@ -391,15 +412,15 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
           <p>Search by country name, UK nation, special region, common alias, or code—or browse the full directory below.</p>
         </div>
         <CountrySearch variant="hero" />
-        <div className="country-directory-grid">
+        <CountryDirectoryGrid>
           {COUNTRIES.map((country) => (
-            <a className="country-directory-card" href={`/?country=${country.slug}`} key={country.cca3}>
+            <a className="country-directory-card" data-snapshot-slug={country.slug} href={`/countries/${country.slug}`} key={country.cca3}>
               <img src={flagUrl(country.cca2)} alt="" loading="lazy" />
               <span><strong>{country.name}</strong><small>{displayRegion(country)} · {country.cca2}</small></span>
               <b aria-hidden="true">→</b>
             </a>
           ))}
-        </div>
+        </CountryDirectoryGrid>
       </section>
 
       <section className="principles" id="about">
