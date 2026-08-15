@@ -1,12 +1,62 @@
 import Link from "next/link";
 import CountrySearch from "../components/CountrySearch";
 import CountrySnapshot, { CountrySnapshotData } from "../components/CountrySnapshot";
+import RotatingAtlasHero, { type AtlasHeroItem } from "../components/RotatingAtlasHero";
 import { COUNTRIES, displayRegion, flagUrl, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getDemographics, getEnrichment, getMetrics, metricSourceLabel } from "../lib/countries";
 
 const PROFILE_COUNT = COUNTRIES.length;
 const HOME_USA_METRICS = getMetrics("USA");
 const HOME_USA_POPULATION = formatNumber(HOME_USA_METRICS.population?.value);
 const HOME_USA_POPULATION_YEAR = HOME_USA_METRICS.population?.year || "Latest";
+
+const HERO_PROFILE_NOTES: Record<string, string> = {
+  "united-states": "50 states · 1 federal district",
+  brazil: "Amazon basin · Atlantic coast",
+  france: "Western Europe · EU member",
+  japan: "Island nation · 47 prefectures",
+  "south-africa": "Southern Africa · 9 provinces",
+  australia: "Oceania · 6 states",
+  antarctica: "Antarctic Treaty · research continent",
+};
+
+const HERO_REGION_CODES: Record<string, string> = {
+  "united-states": "NA",
+  brazil: "SA",
+  france: "EU",
+  japan: "AS",
+  "south-africa": "AF",
+  australia: "OC",
+  antarctica: "AN",
+};
+
+const HERO_ROTATION: AtlasHeroItem[] = [
+  "united-states",
+  "brazil",
+  "france",
+  "japan",
+  "south-africa",
+  "australia",
+  "antarctica",
+].map((slug) => {
+  const country = getCountryBySlug(slug)!;
+  const metrics = getMetrics(country.cca3);
+  const isAntarctica = country.cca3 === "ATA";
+
+  return {
+    slug,
+    profileNumber: country.profileNumber,
+    name: country.name,
+    code: country.cca2,
+    region: isAntarctica ? "Antarctica" : displayRegion(country),
+    regionCode: HERO_REGION_CODES[slug],
+    capital: country.capital || "International research stations",
+    population: isAntarctica ? "Research only" : formatNumber(metrics.population?.value),
+    populationYear: isAntarctica ? "Current status" : metrics.population?.year || "Latest",
+    populationNote: isAntarctica ? "No permanent population" : HERO_PROFILE_NOTES[slug],
+    flagUrl: flagUrl(country.cca2),
+    needsContrast: country.cca2 === "JP" || country.cca2 === "AQ",
+  };
+});
 
 const highlights = [
   { value: PROFILE_COUNT.toString(), label: "world profiles" },
@@ -299,24 +349,7 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
           <p className="search-note">Try “Canada”, “Hong Kong”, “Scotland”, “Japan”, “UK”, or “BR”</p>
         </div>
 
-        <div className="hero-atlas" aria-label="United States profile preview">
-          <div className="atlas-orbit orbit-one" />
-          <div className="atlas-orbit orbit-two" />
-          <div className="atlas-card atlas-card-main">
-            <div className="atlas-card-topline"><span>Country 001</span><span>North America</span></div>
-            <img src="/flags/us.svg" alt="Flag of the United States" />
-            <div className="atlas-card-title">
-              <div><small>Now exploring</small><strong>United States</strong></div>
-              <span className="atlas-code">US</span>
-            </div>
-          </div>
-          <div className="atlas-card atlas-stat-card">
-            <small>Population · {HOME_USA_POPULATION_YEAR}</small>
-            <strong>{HOME_USA_POPULATION}</strong>
-            <span>50 states · 1 federal district</span>
-          </div>
-          <div className="atlas-pin"><span>●</span> Washington, D.C.</div>
-        </div>
+        <RotatingAtlasHero items={HERO_ROTATION} />
       </section>
 
       <section className="number-strip" aria-label="Color Atlas World at a glance">

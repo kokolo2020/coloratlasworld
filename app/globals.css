@@ -31,24 +31,39 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .search-note,.search-message { font-size:12px; color:#6b7775; margin:10px 0 0 18px; }
 .search-message { color:#a4413d; }
 
-.hero-atlas { height:520px; position:relative; display:grid; place-items:center; }
+.hero-atlas { height:520px; position:relative; display:grid; place-items:center; isolation:isolate; }
 .atlas-orbit { position:absolute; border:1px solid rgba(78,184,170,.38); border-radius:50%; }
 .orbit-one { width:530px; height:530px; }
 .orbit-two { width:390px; height:390px; border-color:rgba(237,81,76,.3); }
 .atlas-card { position:absolute; background:#fffaf2; border:1px solid var(--line); box-shadow:0 22px 55px rgba(8,47,53,.15); }
-.atlas-card-main { width:min(470px,84%); padding:18px; border-radius:28px; transform:rotate(2deg); }
+.atlas-card-main { z-index:2; width:min(470px,84%); padding:18px; border-radius:28px; transform:rotate(2deg); transition:transform .2s ease,box-shadow .2s ease; }
+.atlas-card-main:hover { transform:rotate(1deg) translateY(-4px); box-shadow:0 28px 68px rgba(8,47,53,.19); }
 .atlas-card-topline { display:flex; justify-content:space-between; text-transform:uppercase; letter-spacing:.14em; font-size:9px; margin-bottom:15px; }
-.atlas-card-main img { border-radius:14px; width:100%; aspect-ratio:1.9; object-fit:cover; }
+.atlas-flag-frame { width:100%; aspect-ratio:1.9; overflow:hidden; border-radius:14px; background:#ece5d8; box-shadow:inset 0 0 0 1px rgba(8,47,53,.08); }
+.atlas-flag-frame img { width:100%; height:100%; object-fit:contain; }
+.atlas-flag-frame.needs-contrast { padding:10px; background:#092e33; box-shadow:inset 0 0 0 1px rgba(255,255,255,.16); }
+.atlas-flag-frame.needs-contrast img { border-radius:8px; }
 .atlas-card-title { display:flex; align-items:end; justify-content:space-between; padding:18px 4px 2px; }
 .atlas-card-title small { display:block; text-transform:uppercase; font-size:9px; letter-spacing:.16em; }
-.atlas-card-title strong { display:block; font-family:var(--font-display); font-size:30px; }
+.atlas-card-title strong { display:block; font-family:var(--font-display); font-size:30px; line-height:1; }
 .atlas-code { font-size:18px; border:1px solid var(--line); border-radius:50%; width:48px; height:48px; display:grid; place-items:center; }
-.atlas-stat-card { z-index:3; left:0; bottom:38px; padding:20px; border-radius:18px; transform:rotate(-4deg); display:grid; }
+.atlas-stat-card { z-index:3; left:0; bottom:58px; min-width:182px; max-width:230px; padding:20px; border-radius:18px; transform:rotate(-4deg); display:grid; }
 .atlas-stat-card small { text-transform:uppercase; letter-spacing:.12em; font-size:8px; }
-.atlas-stat-card strong { font-family:var(--font-display); font-size:34px; color:var(--red); }
+.atlas-stat-card strong { margin:2px 0; font-family:var(--font-display); font-size:clamp(25px,2.8vw,34px); line-height:1; color:var(--red); overflow-wrap:anywhere; }
 .atlas-stat-card span { font-size:11px; }
-.atlas-pin { position:absolute; right:0; top:78px; z-index:3; padding:12px 16px; background:var(--ink); color:white; border-radius:999px; font-size:12px; box-shadow:0 12px 30px rgba(8,47,53,.22); }
+.atlas-pin { position:absolute; right:0; top:64px; z-index:3; max-width:235px; padding:12px 16px; background:var(--ink); color:white; border-radius:999px; font-size:12px; line-height:1.25; box-shadow:0 12px 30px rgba(8,47,53,.22); }
 .atlas-pin span { color:var(--red); }
+.atlas-controls { position:absolute; z-index:5; left:50%; bottom:0; transform:translateX(-50%); display:flex; align-items:center; gap:8px; padding:6px; border:1px solid var(--line); border-radius:999px; background:rgba(255,250,242,.94); box-shadow:0 12px 30px rgba(8,47,53,.12); backdrop-filter:blur(12px); }
+.atlas-arrow,.atlas-continent-tabs button { flex:none; display:grid; place-items:center; border:0; color:var(--ink); cursor:pointer; transition:background .18s ease,color .18s ease,transform .18s ease; }
+.atlas-arrow { width:34px; height:34px; border-radius:50%; background:#e9e1d3; font-size:16px; }
+.atlas-arrow:hover { color:white; background:var(--ink); transform:translateY(-1px); }
+.atlas-continent-tabs { display:flex; align-items:center; gap:3px; }
+.atlas-continent-tabs button { width:28px; height:28px; border-radius:50%; background:transparent; color:#627270; font-size:8px; font-weight:900; }
+.atlas-continent-tabs button:hover { background:#eee4d4; color:var(--ink); }
+.atlas-continent-tabs button.active { background:var(--red); color:white; }
+.atlas-rotating-piece { animation:atlasHeroIn .46s ease both; }
+@keyframes atlasHeroIn { from { opacity:0; transform:translateY(10px) rotate(0); } to { opacity:1; } }
+@media (prefers-reduced-motion:reduce) { .atlas-rotating-piece { animation:none; } }
 
 .number-strip { background:var(--ink); color:white; display:grid; grid-template-columns:repeat(3,1fr); padding:34px max(5vw,44px); }
 .number-strip>div { display:flex; justify-content:center; align-items:center; gap:14px; border-right:1px solid rgba(255,255,255,.17); }
@@ -489,11 +504,19 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   .hero-copy h1 { font-size:58px; }
   .country-search { padding-left:12px; }
   .country-search button { padding:14px 13px; }
-  .hero-atlas { height:390px; }
+  .hero-atlas { height:420px; }
   .orbit-one { width:390px; height:390px; }
   .orbit-two { width:285px; height:285px; }
-  .atlas-stat-card { left:-8px; bottom:10px; }
-  .atlas-pin { top:28px; right:-10px; }
+  .atlas-card-main { width:92%; padding:13px; border-radius:22px; }
+  .atlas-card-title { padding-top:13px; }
+  .atlas-card-title strong { font-size:25px; }
+  .atlas-code { width:42px; height:42px; font-size:15px; }
+  .atlas-stat-card { left:-8px; bottom:52px; min-width:156px; max-width:190px; padding:14px; }
+  .atlas-pin { top:18px; right:-8px; max-width:190px; padding:10px 13px; font-size:10px; }
+  .atlas-controls { bottom:0; gap:4px; padding:5px; }
+  .atlas-arrow { width:30px; height:30px; }
+  .atlas-continent-tabs { gap:1px; }
+  .atlas-continent-tabs button { width:24px; height:24px; font-size:7px; }
   .feature-section { gap:40px; }
   .mini-stats { grid-template-columns:1fr; }
   .country-hero h1 { font-size:66px; }
