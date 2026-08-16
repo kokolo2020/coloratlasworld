@@ -17,19 +17,20 @@ export async function GET(request: Request) {
     }
     if (!env?.DB) {
       return Response.json({
-        totals: { totalVisits: 0, uniqueVisitors: 0, countries: 0, today: 0, totalSearches: 0, matchedSearches: 0, averageDurationSeconds: 0 },
+        totals: { totalVisits: 0, uniqueVisitors: 0, countries: 0, today: 0, totalSearches: 0, matchedSearches: 0, averageDurationSeconds: 0, sponsorClicks: 0 },
         countries: [],
         pages: [],
         daily: [],
         keywords: [],
         recentSearches: [],
         sessions: [],
+        sponsorClicks: [],
         preview: true,
       });
     }
     await ensureAnalyticsSchema(env.DB);
 
-    const [totals, countries, pages, daily, keywords, recentSearches, sessions] = await Promise.all([
+    const [totals, countries, pages, daily, keywords, recentSearches, sessions, sponsorClicks] = await Promise.all([
       env.DB.prepare(`
         SELECT COUNT(*) AS totalVisits,
                COUNT(DISTINCT visitor_id) AS uniqueVisitors,
@@ -37,6 +38,7 @@ export async function GET(request: Request) {
                COALESCE(SUM(CASE WHEN date(visited_at) = date('now') THEN 1 ELSE 0 END), 0) AS today,
                (SELECT COUNT(*) FROM search_events) AS totalSearches,
                (SELECT COUNT(*) FROM search_events WHERE matched = 1) AS matchedSearches,
+               (SELECT COUNT(*) FROM sponsor_click_events) AS sponsorClicks,
                COALESCE(ROUND(AVG(duration_seconds)), 0) AS averageDurationSeconds
         FROM visits
       `).first(),
@@ -87,6 +89,18 @@ export async function GET(request: Request) {
         ORDER BY datetime(visited_at) DESC
         LIMIT 12
       `).all(),
+      env.DB.prepare(`
+        SELECT country_slug AS countrySlug,
+               country_name AS countryName,
+               partner,
+               placement,
+               COUNT(*) AS clicks,
+               MAX(clicked_at) AS lastClickedAt
+        FROM sponsor_click_events
+        GROUP BY country_slug, country_name, partner, placement
+        ORDER BY clicks DESC, datetime(lastClickedAt) DESC
+        LIMIT 20
+      `).all(),
     ]);
 
     return Response.json({
@@ -97,6 +111,7 @@ export async function GET(request: Request) {
       keywords: keywords.results,
       recentSearches: recentSearches.results,
       sessions: sessions.results,
+      sponsorClicks: sponsorClicks.results,
     });
   } catch (error) {
     return Response.json({ error: error instanceof Error ? error.message : "Unable to load analytics" }, { status: 500 });

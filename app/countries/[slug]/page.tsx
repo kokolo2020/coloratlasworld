@@ -6,10 +6,12 @@ import CountryPdfDownload from "@/components/CountryPdfDownload";
 import CountrySearch from "@/components/CountrySearch";
 import CountryTrajectory, { TrendData } from "@/components/CountryTrajectory";
 import DailyCountryFact from "@/components/DailyCountryFact";
+import TravelSponsorCard from "@/components/TravelSponsorCard";
 import nationalAnthems from "@/data/national-anthems.json";
 import specialReports from "@/data/special-reports.json";
 import { COUNTRIES, COUNTRY_AVERAGE_POPULATION, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getDemographics, getEnrichment, getGdpRank, getMetrics, metricSourceLabel } from "@/lib/countries";
 import type { CountryPdfData } from "@/lib/country-pdf";
+import { getTripComSponsorUrl } from "@/lib/sponsors";
 
 type NationalAnthem = {
   title: string;
@@ -121,6 +123,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const primaryComparisonHref = `/compare/${[country.slug, ...comparisonPeers.slice(0, 2).map((peer) => peer.slug)].join("-vs-")}`;
   const nationalAnthem = (nationalAnthems as Record<string, NationalAnthem>)[country.cca3] || null;
   const nationalAnthemDuration = formatDuration(nationalAnthem?.durationSeconds);
+  const tripComSponsorUrl = getTripComSponsorUrl(country.name, country.slug);
 
   const pdfFlagCode = country.cca2 === "GB-NIR" ? "gb" : country.cca2.toLowerCase();
   const pdfData: CountryPdfData = {
@@ -314,6 +317,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
         {quickStats.map((stat, index) => <div className="quick-stat" key={stat.label}><span>0{index + 1}</span><small>{stat.label}</small><strong>{stat.value}</strong><p>{stat.note}</p></div>)}
       </section>
 
+      <TravelSponsorCard countryName={country.name} countrySlug={country.slug} capital={country.capital} flagSrc={flagUrl(country.cca2)} href={tripComSponsorUrl} placement="overview" />
+
       {nationalAnthem && (
         <section className="anthem-strip" aria-label={`${country.name} national anthem`}>
           <div>
@@ -349,6 +354,8 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           ))}
         </div>
       </section>
+
+      <TravelSponsorCard countryName={country.name} countrySlug={country.slug} capital={country.capital} flagSrc={flagUrl(country.cca2)} href={tripComSponsorUrl} placement="practical" variant="compact" />
 
       <section className="profile-compare" aria-label={`Compare ${country.name} with other countries`}>
         <div className="profile-compare-heading">

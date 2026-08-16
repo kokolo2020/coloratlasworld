@@ -8,14 +8,16 @@ type DailyRow = { date: string; visits: number; visitors: number };
 type KeywordRow = { query: string; searches: number; matches: number; topResult: string | null };
 type RecentSearchRow = { query: string; matched: number; resultName: string | null; path: string; searchedAt: string };
 type SessionRow = { countryName: string; path: string; startedAt: string; lastSeenAt: string; durationSeconds: number };
+type SponsorClickRow = { countrySlug: string; countryName: string; partner: string; placement: string; clicks: number; lastClickedAt: string };
 type Summary = {
-  totals: { totalVisits: number; uniqueVisitors: number; countries: number; today: number; totalSearches: number; matchedSearches: number; averageDurationSeconds: number };
+  totals: { totalVisits: number; uniqueVisitors: number; countries: number; today: number; totalSearches: number; matchedSearches: number; averageDurationSeconds: number; sponsorClicks: number };
   countries: CountryRow[];
   pages: PageRow[];
   daily: DailyRow[];
   keywords: KeywordRow[];
   recentSearches: RecentSearchRow[];
   sessions: SessionRow[];
+  sponsorClicks: SponsorClickRow[];
 };
 
 function flagEmoji(code: string) {
@@ -130,6 +132,7 @@ export default function AnalyticsDashboard() {
         <article><span>Total searches</span><strong>{data?.totals.totalSearches ?? "—"}</strong><small>Submitted keywords</small></article>
         <article><span>Search match rate</span><strong>{data ? `${matchRate}%` : "—"}</strong><small>Searches that found a profile</small></article>
         <article><span>Average stay</span><strong>{data ? formatDuration(data.totals.averageDurationSeconds) : "—"}</strong><small>Tracked session duration</small></article>
+        <article><span>Sponsor clicks</span><strong>{data?.totals.sponsorClicks ?? "—"}</strong><small>Outbound partner visits</small></article>
         <article><span>Last refresh</span><strong>{new Date().toLocaleTimeString("en", { hour: "numeric", minute: "2-digit" })}</strong><small>Your local time</small></article>
       </div>
 
@@ -206,6 +209,23 @@ export default function AnalyticsDashboard() {
           )}
         </article>
       </div>
+
+      <article className="country-analytics-card analytics-sponsor-card">
+        <div className="country-analytics-title"><h2>Sponsor Engagement</h2><span>Top 20 placements</span></div>
+        {!data ? <p className="analytics-empty">Loading sponsor activity…</p> : data.sponsorClicks.length === 0 ? (
+          <p className="analytics-empty">No sponsor clicks recorded yet.</p>
+        ) : (
+          <div className="sponsor-click-list">
+            {data.sponsorClicks.map((click) => (
+              <div className="sponsor-click-row" key={`${click.partner}-${click.countrySlug}-${click.placement}`}>
+                <span><strong>{click.countryName}</strong><small>{click.partner} · {click.placement}</small></span>
+                <b>{click.clicks}</b>
+                <time>{localTime(click.lastClickedAt)}</time>
+              </div>
+            ))}
+          </div>
+        )}
+      </article>
 
       <article className="country-analytics-card analytics-sessions-card">
         <div className="country-analytics-title"><h2>Session Starts & Stay Time</h2><span>Latest 12</span></div>

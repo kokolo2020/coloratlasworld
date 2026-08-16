@@ -55,6 +55,23 @@ export async function ensureAnalyticsSchema(db: D1Database) {
       await db.prepare(`CREATE INDEX IF NOT EXISTS search_events_query_idx ON search_events (normalized_query)`).run();
       await db.prepare(`CREATE INDEX IF NOT EXISTS search_events_session_idx ON search_events (session_id)`).run();
       await db.prepare(`CREATE INDEX IF NOT EXISTS search_events_searched_at_idx ON search_events (searched_at)`).run();
+
+      await db.prepare(`
+        CREATE TABLE IF NOT EXISTS sponsor_click_events (
+          id integer PRIMARY KEY AUTOINCREMENT NOT NULL,
+          visitor_id text NOT NULL,
+          session_id text NOT NULL,
+          partner text NOT NULL,
+          placement text NOT NULL,
+          country_slug text NOT NULL,
+          country_name text NOT NULL,
+          path text DEFAULT '/' NOT NULL,
+          clicked_at text DEFAULT CURRENT_TIMESTAMP NOT NULL
+        )
+      `).run();
+
+      await db.prepare(`CREATE INDEX IF NOT EXISTS sponsor_click_events_country_idx ON sponsor_click_events (country_slug)`).run();
+      await db.prepare(`CREATE INDEX IF NOT EXISTS sponsor_click_events_clicked_at_idx ON sponsor_click_events (clicked_at)`).run();
     })();
   }
   return scope[ANALYTICS_SCHEMA_KEY];
