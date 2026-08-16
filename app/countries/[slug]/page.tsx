@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CountryProfileTabs from "@/components/CountryProfileTabs";
+import CountryPdfDownload from "@/components/CountryPdfDownload";
 import CountrySearch from "@/components/CountrySearch";
 import CountryTrajectory, { TrendData } from "@/components/CountryTrajectory";
 import DailyCountryFact from "@/components/DailyCountryFact";
 import nationalAnthems from "@/data/national-anthems.json";
 import specialReports from "@/data/special-reports.json";
 import { COUNTRIES, COUNTRY_AVERAGE_POPULATION, displayRegion, flagUrl, formatArea, formatMoney, formatNumber, getCountryByCca3, getCountryBySlug, getDemographics, getEnrichment, getGdpRank, getMetrics, metricSourceLabel } from "@/lib/countries";
+import type { CountryPdfData } from "@/lib/country-pdf";
 
 type NationalAnthem = {
   title: string;
@@ -120,6 +122,103 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
   const nationalAnthem = (nationalAnthems as Record<string, NationalAnthem>)[country.cca3] || null;
   const nationalAnthemDuration = formatDuration(nationalAnthem?.durationSeconds);
 
+  const pdfFlagCode = country.cca2 === "GB-NIR" ? "gb" : country.cca2.toLowerCase();
+  const pdfData: CountryPdfData = {
+    slug: country.slug,
+    name: country.name,
+    officialName: country.officialName,
+    code: `${country.cca2} / ${country.cca3}`,
+    status: profileStatus,
+    region,
+    subregion: country.subregion,
+    capital: country.capital || "Not published",
+    summary: enrichment.snapshotAbout || enrichment.history.summary || `${country.name} is located in ${region}.`,
+    flagPngUrl: `https://flagcdn.com/w640/${pdfFlagCode}.png`,
+    generatedDate: new Intl.DateTimeFormat("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "UTC" }).format(new Date()),
+    overview: [
+      { label: "Population", value: population, note: metrics.population ? metricSourceLabel(metrics.population) : "No comparable value" },
+      { label: "Capital", value: country.capital || "Not published", note: country.officialName },
+      { label: "Currency", value: currencies[0]?.[0] || "Not published", note: currencyLabel },
+      { label: "Area", value: formatArea(country.area), note: country.landlocked ? "Landlocked" : "Coastal or island access" },
+      { label: "Life expectancy", value: life, note: metrics.lifeExpectancy ? metricSourceLabel(metrics.lifeExpectancy) : "No comparable value" },
+      { label: "GDP", value: formatMoney(metrics.gdp?.value), note: metrics.gdp ? metricSourceLabel(metrics.gdp) : "No comparable value" },
+      { label: "GDP per person", value: formatMoney(metrics.gdpPerCapita?.value), note: metrics.gdpPerCapita ? metricSourceLabel(metrics.gdpPerCapita) : "No comparable value" },
+      { label: "Median age", value: medianAgeLabel, note: demographics ? "UN DESA 2026 medium projection" : "Latest comparable value" },
+    ],
+    people: [
+      { label: "Population", value: metrics.population ? `${population} - ${metricSourceLabel(metrics.population)}` : population },
+      { label: "Life expectancy", value: metrics.lifeExpectancy ? `${life} - ${metricSourceLabel(metrics.lifeExpectancy)}` : life },
+      { label: "Median age", value: medianAgeLabel },
+      { label: "Population growth", value: demographics?.populationGrowth != null ? `${demographics.populationGrowth.toFixed(2)}% annually` : "Not published" },
+      { label: "Fertility", value: demographics?.fertilityRate != null ? `${demographics.fertilityRate.toFixed(2)} births per woman` : "Not published" },
+      { label: "Gender", value: demographics?.gender ? `${demographics.gender.femalePercent.toFixed(1)}% female / ${demographics.gender.malePercent.toFixed(1)}% male` : "Not published" },
+      { label: "Languages", value: languages.length ? languages.join(", ") : "Not published" },
+      { label: "Largest cities", value: enrichment.demographics.largestCities.join(", ") || country.capital || "Not published" },
+    ],
+    geography: [
+      { label: "Region", value: region },
+      { label: "Subregion", value: country.subregion },
+      { label: "Area", value: formatArea(country.area) },
+      { label: "Coordinates", value: coordinateLabel },
+      { label: "Climate", value: enrichment.environment.climate },
+      { label: "Highest point", value: enrichment.environment.highestPoint || "Not published" },
+      { label: "Major rivers", value: enrichment.environment.majorRivers || "Not published" },
+      { label: "Resources", value: enrichment.environment.naturalResources || "Not published" },
+    ],
+    practical: [
+      { label: "Calling code", value: enrichment.dailyLife.callingCode || country.callingCode || "Not published" },
+      { label: "Time zones", value: timeZoneLabel },
+      { label: "Driving side", value: enrichment.dailyLife.drivingSide },
+      { label: "Plug types", value: plugTypeLabel },
+      { label: "Emergency", value: emergencyLabel },
+      { label: "Tipping", value: tippingLabel },
+    ],
+    economy: [
+      { label: "Nominal GDP", value: formatMoney(metrics.gdp?.value), note: metrics.gdp ? metricSourceLabel(metrics.gdp) : "No comparable value" },
+      { label: "GDP per person", value: formatMoney(metrics.gdpPerCapita?.value), note: metrics.gdpPerCapita ? metricSourceLabel(metrics.gdpPerCapita) : "No comparable value" },
+      { label: "GDP growth", value: metrics.gdpGrowth ? `${metrics.gdpGrowth.value.toFixed(2)}%` : "Not published", note: metrics.gdpGrowth ? metricSourceLabel(metrics.gdpGrowth) : "No comparable value" },
+      { label: "Global GDP rank", value: gdpRank ? `#${gdpRank.rank} of ${gdpRank.total}` : "Not ranked", note: "Comparable profiles with published GDP" },
+      { label: "Currency", value: currencyLabel, note: currencies.map(([code]) => code).join(" / ") },
+      { label: "Urban population", value: enrichment.demographics.urbanPercent ? `${enrichment.demographics.urbanPercent.value.toFixed(1)}%` : "Not published", note: enrichment.demographics.urbanPercent ? metricSourceLabel(enrichment.demographics.urbanPercent) : "No comparable value" },
+    ],
+    government: [
+      { label: "Government type", value: enrichment.government.type || "Not published" },
+      { label: "Head of state", value: enrichment.government.headOfState || "Not published" },
+      { label: "Head of government", value: enrichment.government.headOfGovernment || "Not published" },
+      { label: "Constitution", value: enrichment.government.constitutionDate || "Not published" },
+      { label: "Current state since", value: enrichment.history.currentStateSince ? String(enrichment.history.currentStateSince) : "Not published" },
+      { label: "Country codes", value: `${country.cca2} / ${country.cca3}` },
+    ],
+    history: enrichment.history.summary,
+    facts: enrichment.facts,
+    neighbors: neighbors.map((neighbor) => neighbor?.name).filter((name): name is string => Boolean(name)),
+    sources: [
+      metrics.population ? metricSourceLabel(metrics.population) : "Population source pending",
+      metrics.lifeExpectancy ? metricSourceLabel(metrics.lifeExpectancy) : "Life expectancy source pending",
+      metrics.gdp ? metricSourceLabel(metrics.gdp) : "GDP source pending",
+      metrics.gdpPerCapita ? metricSourceLabel(metrics.gdpPerCapita) : "GDP per capita source pending",
+      demographics ? "UN DESA World Population Prospects 2024 Revision - 2026 medium projection" : "UN demographic series unavailable",
+      enrichment.government.sourceUrl ? `Government reference: ${enrichment.government.sourceUrl}` : "Government reference pending",
+    ],
+    specialReport: specialReport ? {
+      sourceName: specialReport.source.name,
+      sourceUrl: specialReport.source.url,
+      retrievedAt: specialReport.retrievedAt,
+      thesis: specialReport.narrative.thesis,
+      projectionNote: specialReport.narrative.projectionNote,
+      insights: specialReport.narrative.insights,
+      series: specialReport.series,
+    } : {
+      sourceName: "Comparable long-run source pending",
+      sourceUrl: "https://coloratlasworld.com/sources",
+      retrievedAt: "Not available",
+      thesis: "A comparable long-run series is not yet available for this profile.",
+      projectionNote: "No projection is shown without a suitable historical baseline.",
+      insights: [],
+      series: [],
+    },
+  };
+
   const quickStats = [
     { label: "Population", value: population, note: metrics.population ? metricSourceLabel(metrics.population) : "No recent comparable value" },
     { label: "Capital", value: country.capital || "Not published", note: country.officialName },
@@ -202,7 +301,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <div className="country-kicker"><span>{country.cca2}</span>{country.officialName}<small>{profileStatus}</small></div>
           <h1>{country.name}</h1>
           <p>{country.name} is in {country.subregion}. This profile brings its status, flag, geography, people, languages, and latest available indicators into one clear visual story.</p>
-          <div className="hero-actions"><a className="primary-button" href="#overview">Explore the profile <span>↓</span></a><Link className="secondary-button" href={primaryComparisonHref}>Compare countries</Link><a className="secondary-button" href="#sources">View sources</a></div>
+          <div className="hero-actions"><a className="primary-button" href="#overview">Explore the profile <span>↓</span></a><CountryPdfDownload data={pdfData} /><Link className="secondary-button" href={primaryComparisonHref}>Compare countries</Link><a className="secondary-button" href="#sources">View sources</a></div>
         </div>
         <div className="country-flag-stage">
           <div className="flag-label"><span>Flag</span><span>{country.cca3} · {country.profileNumber.toString().padStart(3, "0")} / {profileCount}</span></div>

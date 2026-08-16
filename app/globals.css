@@ -126,6 +126,12 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .hero-actions { margin-top:30px; display:flex; gap:14px; align-items:center; }
 .primary-button { background:var(--red); display:inline-flex; gap:20px; align-items:center; }
 .secondary-button { padding:13px 20px; border:1px solid rgba(255,255,255,.3); border-radius:999px; }
+.country-pdf-download { display:grid; gap:5px; }
+.country-pdf-download small { color:#f5b9b4; font-size:10px; max-width:190px; line-height:1.3; }
+.pdf-download-button { min-height:46px; display:inline-flex; align-items:center; gap:10px; padding:8px 15px 8px 9px; border:1px solid rgba(242,199,111,.55); border-radius:999px; background:#f2c76f; color:#082f35; font-weight:900; cursor:pointer; box-shadow:0 12px 28px rgba(0,0,0,.14); transition:transform .18s ease,background .18s ease,box-shadow .18s ease; }
+.pdf-download-button:hover { transform:translateY(-2px); background:#ffe19a; box-shadow:0 16px 34px rgba(0,0,0,.2); }
+.pdf-download-button:disabled { cursor:wait; opacity:.72; transform:none; }
+.pdf-download-icon { width:30px; height:30px; display:grid; place-items:center; border-radius:50%; background:#082f35; color:#fffaf0; font-size:8px; letter-spacing:.08em; }
 .country-flag-stage { position:relative; background:#123c41; border:1px solid rgba(255,255,255,.15); border-radius:32px; padding:24px; box-shadow:0 40px 90px rgba(0,0,0,.28); transform:rotate(1deg); }
 .country-flag-stage:before { content:""; position:absolute; inset:-80px; border:1px solid rgba(242,199,111,.2); border-radius:50%; z-index:-1; }
 .flag-label { display:flex; justify-content:space-between; font-size:9px; text-transform:uppercase; letter-spacing:.14em; color:#a9c7c3; margin-bottom:16px; }
@@ -474,6 +480,7 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   .site-footer { gap:20px; flex-wrap:wrap; padding:30px 24px; }
   .country-hero { grid-template-columns:1fr; padding:65px 24px; gap:55px; }
   .country-kicker { margin-top:35px; }
+  .hero-actions { flex-wrap:wrap; }
   .quick-stat-grid { grid-template-columns:1fr 1fr; }
   .quick-stat { min-height:155px; padding:24px; }
   .anthem-strip { grid-template-columns:1fr; padding:26px 24px; }
