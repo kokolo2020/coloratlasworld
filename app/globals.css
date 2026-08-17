@@ -335,6 +335,45 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
 .profile-compare-grid strong { font-size:14px; line-height:1.3; }
 .profile-compare-grid b { font-size:20px; }
 .profile-compare-all { display:inline-flex; gap:14px; align-items:center; margin-top:22px; color:#f2c76f; font-size:13px; font-weight:900; }
+.usa-trends-page { background:#fffaf2; color:var(--ink); }
+.usa-trends-hero { min-height:720px; display:grid; grid-template-columns:minmax(0,1.05fr) minmax(320px,.58fr); gap:60px; align-items:center; padding:88px max(6vw,54px); background:#092e33; color:#fffaf2; }
+.usa-trends-hero h1 { max-width:900px; margin:24px 0 28px; font-size:clamp(54px,7vw,104px); line-height:.88; letter-spacing:-.055em; }
+.usa-trends-hero p:not(.breadcrumb,.eyebrow) { max-width:720px; color:#c4d7d4; font-size:18px; line-height:1.7; }
+.usa-trends-hero .secondary-button { color:white; border-color:rgba(255,255,255,.24); }
+.usa-trends-summary { margin:0; border:1px solid rgba(255,255,255,.15); border-radius:28px; padding:18px; background:linear-gradient(145deg,rgba(255,250,242,.14),rgba(255,255,255,.04)); box-shadow:0 34px 90px rgba(0,0,0,.24); }
+.usa-trends-summary img { display:block; width:100%; aspect-ratio:3/2; object-fit:contain; border-radius:18px; background:#fff; }
+.usa-trends-summary dl { margin:16px 0 0; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.usa-trends-summary div { min-width:0; padding:16px; border-radius:18px; background:rgba(255,250,242,.08); border:1px solid rgba(255,255,255,.1); }
+.usa-trends-summary dt { color:#9fc8c3; text-transform:uppercase; letter-spacing:.12em; font-size:8px; font-weight:900; }
+.usa-trends-summary dd { margin:8px 0 0; color:white; font-family:var(--font-display); font-size:25px; line-height:1; overflow-wrap:anywhere; }
+.usa-query-strip { display:grid; grid-template-columns:auto repeat(4,minmax(0,1fr)); gap:1px; background:var(--line); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.usa-query-strip span,.usa-query-strip strong { min-width:0; padding:22px 24px; background:#fffaf2; }
+.usa-query-strip span { color:var(--red); text-transform:uppercase; letter-spacing:.14em; font-size:9px; font-weight:900; }
+.usa-query-strip strong { font-size:14px; line-height:1.35; }
+.usa-trend-dashboard { padding:112px max(5vw,54px); }
+.usa-section-heading { max-width:880px; margin-bottom:34px; }
+.usa-section-heading h2 { margin:16px 0; font-size:clamp(44px,5.2vw,76px); line-height:.92; letter-spacing:-.045em; }
+.usa-section-heading p { max-width:720px; color:var(--ink-2); line-height:1.75; }
+.usa-trend-card-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+.usa-trend-card { min-width:0; border:1px solid var(--line); border-radius:24px; padding:24px; background:white; box-shadow:0 22px 60px rgba(9,47,53,.08); }
+.usa-trend-card small { color:var(--red); text-transform:uppercase; letter-spacing:.12em; font-size:8px; font-weight:900; }
+.usa-trend-card h3 { margin:7px 0 8px; font-size:30px; line-height:1; letter-spacing:-.02em; }
+.usa-trend-line { width:100%; height:auto; margin:10px 0; overflow:visible; }
+.usa-trend-line line { stroke:#dfe3dc; stroke-width:1; }
+.usa-trend-line polyline { fill:none; stroke-linecap:round; stroke-linejoin:round; stroke-width:4; }
+.usa-trend-line .history-line { stroke:#ed514c; }
+.usa-trend-line .forecast-line { stroke:#0e9890; stroke-dasharray:8 7; }
+.usa-trend-line text { fill:#7a8582; font:800 9px var(--font-sans); letter-spacing:.08em; }
+.usa-trend-values { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px; }
+.usa-trend-values span { min-width:0; padding:12px; border-radius:14px; background:#f5efe5; }
+.usa-trend-values small,.usa-trend-values strong { display:block; min-width:0; overflow-wrap:anywhere; }
+.usa-trend-values strong { margin-top:5px; font-size:16px; }
+.usa-trend-card p { color:#5e6f6b; line-height:1.6; font-size:13px; }
+.usa-insight-band { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.usa-insight-band article { min-width:0; padding:70px max(5vw,54px); background:#fff; }
+.usa-insight-band h2 { margin:14px 0 20px; font-size:42px; line-height:.98; letter-spacing:-.03em; }
+.usa-insight-band p,.usa-insight-band li { color:#5f6f6b; line-height:1.7; }
+.usa-insight-band ul { margin:0; padding-left:20px; display:grid; gap:10px; }
 
 /* Country comparison */
 .compare-page { min-height:100vh; background:#f6f0e5; }
@@ -457,6 +496,11 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   .profile-compare { padding:60px 24px; }
   .profile-compare-heading { grid-template-columns:1fr; gap:20px; }
   .profile-compare-grid { grid-template-columns:1fr; }
+  .usa-trends-hero { grid-template-columns:1fr; padding:70px 24px; gap:40px; }
+  .usa-query-strip { grid-template-columns:1fr 1fr; }
+  .usa-trend-dashboard { padding:80px 24px; }
+  .usa-trend-card-grid,.usa-insight-band { grid-template-columns:1fr; }
+  .usa-insight-band article { padding:52px 24px; }
   .compare-hero,.compare-controls { grid-template-columns:1fr; }
   .compare-hero { padding:66px 24px; min-height:auto; }
   .compare-tool { padding:54px 24px 86px; }
@@ -480,6 +524,8 @@ h1 em,h2 em { color:var(--red); font-style:italic; font-weight:500; }
   .mini-stats { grid-template-columns:1fr; }
   .country-hero h1 { font-size:66px; }
   .quick-stat-grid { grid-template-columns:1fr; }
+  .usa-trends-hero h1 { font-size:48px; }
+  .usa-trends-summary dl,.usa-query-strip,.usa-trend-values { grid-template-columns:1fr; }
   .fact-columns { grid-template-columns:1fr; }
   .basic-data-grid { grid-template-columns:1fr; }
   .basic-data-grid dl div { grid-template-columns:1fr; gap:5px; }

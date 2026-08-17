@@ -190,7 +190,7 @@ export default async function CountryPage({ params }: { params: Promise<{ slug: 
           <div className="country-kicker"><span>{country.cca2}</span>{country.officialName}<small>{profileStatus}</small></div>
           <h1>{country.name}</h1>
           <p>{country.name} is in {country.subregion}. This profile brings its status, flag, geography, people, languages, and latest available indicators into one clear visual story.</p>
-          <div className="hero-actions"><a className="primary-button" href="#overview">Explore the profile <span>↓</span></a><Link className="secondary-button" href={primaryComparisonHref}>Compare countries</Link><a className="secondary-button" href="#sources">View sources</a></div>
+          <div className="hero-actions"><a className="primary-button" href="#overview">Explore the profile <span>↓</span></a><Link className="secondary-button" href={primaryComparisonHref}>Compare countries</Link>{country.slug === "united-states" && <Link className="secondary-button" href="/countries/united-states/trends">USA trends</Link>}<a className="secondary-button" href="#sources">View sources</a></div>
         </div>
         <div className="country-flag-stage">
           <div className="flag-label"><span>Flag</span><span>{country.cca3} · {country.profileNumber.toString().padStart(3, "0")} / {profileCount}</span></div>
