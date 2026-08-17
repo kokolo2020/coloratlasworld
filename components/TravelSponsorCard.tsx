@@ -49,17 +49,24 @@ export default function TravelSponsorCard({
     <aside className={`travel-sponsor ${variant}`} aria-label={`Sponsored travel options for ${countryName}`}>
       <div className="travel-sponsor-visual">
         <img src={flagSrc} alt="" loading="lazy" />
-        <span>Sponsored travel</span>
+        <span>Travel partner</span>
       </div>
       <div className="travel-sponsor-copy">
-        <small>Featured travel booking</small>
+        <small>Advertisement · Affiliate link</small>
         <h2>{variant === "wide" ? `Turn ${countryName} into your next journey.` : `Plan a visit to ${countryName}.`}</h2>
-        <p>Compare stays, flights and experiences{capital ? ` around ${capital}` : ""} with Trip.com.</p>
+        <p>Search stays, flights and experiences{capital ? ` around ${capital}` : ""} on Trip.com.</p>
       </div>
-      <a href={href} target="_blank" rel="sponsored nofollow noopener noreferrer" onClick={recordClick}>
-        <span className="trip-wordmark">Trip.com</span>
-        <strong>Explore travel deals <span aria-hidden="true">↗</span></strong>
-        <small>External booking site</small>
+      <a
+        className="travel-sponsor-cta"
+        href={href}
+        target="_blank"
+        rel="sponsored nofollow noopener noreferrer"
+        aria-label={`Search Trip.com for travel to ${countryName} (affiliate link)`}
+        onClick={recordClick}
+      >
+        <img className="trip-logo" src="/partners/trip-com-logo.png" alt="Trip.com" />
+        <strong>Search flights &amp; hotels <span aria-hidden="true">↗</span></strong>
+        <small>Affiliate booking link</small>
       </a>
     </aside>
   );

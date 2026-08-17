@@ -1,4 +1,4 @@
-const DEFAULT_TRIP_COM_URL = "https://www.trip.com/?locale=en-US";
+const DEFAULT_TRIP_COM_URL = "https://www.trip.com/?Allianceid=10098824&SID=328636813&trip_sub1={slug}&trip_sub3=D19266536";
 
 export function getTripComSponsorUrl(countryName: string, countrySlug: string) {
   const configured = process.env.TRIP_COM_AFFILIATE_URL?.trim() || DEFAULT_TRIP_COM_URL;
