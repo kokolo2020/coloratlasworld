@@ -8,6 +8,7 @@ export function getTripComSponsorUrl(countryName: string, countrySlug: string) {
 
   try {
     const url = new URL(expanded);
+    if (url.searchParams.has("Allianceid")) url.searchParams.set("trip_sub1", countrySlug);
     url.searchParams.set("utm_source", "coloratlasworld");
     url.searchParams.set("utm_medium", "sponsored_travel");
     url.searchParams.set("utm_campaign", "country_profiles");
