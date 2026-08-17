@@ -64,7 +64,7 @@ export default function TravelSponsorCard({
         aria-label={`Search Trip.com for travel to ${countryName} (affiliate link)`}
         onClick={recordClick}
       >
-        <img className="trip-logo" src="/partners/trip-com-logo.png" alt="Trip.com" />
+        <img className="trip-logo" src="/partners/trip-com-logo-v1.png" alt="Trip.com" />
         <strong>Search flights &amp; hotels <span aria-hidden="true">↗</span></strong>
         <small>Affiliate booking link</small>
       </a>
