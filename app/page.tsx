@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { permanentRedirect } from "next/navigation";
 import CountryDirectoryGrid from "../components/CountryDirectoryGrid";
 import CountrySearch from "../components/CountrySearch";
 import CountrySnapshot, { CountrySnapshotData } from "../components/CountrySnapshot";
@@ -340,6 +341,11 @@ export default async function Home({ searchParams }: { searchParams?: Promise<{ 
   const params = await searchParams;
   const initialCountry = params?.country?.toLowerCase();
   const activeCountry = initialCountry ? getCountryBySlug(initialCountry) : null;
+
+  if (activeCountry) {
+    permanentRedirect(`/countries/${activeCountry.slug}`);
+  }
+
   const snapshot = buildSnapshot(activeCountry?.slug || "united-states");
 
   return (
