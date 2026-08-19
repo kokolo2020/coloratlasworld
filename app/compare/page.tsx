@@ -54,11 +54,6 @@ type CompareCountry = {
   };
 };
 
-export const metadata: Metadata = {
-  title: "Compare Countries",
-  description: "Compare population, GDP, life expectancy, geography, languages, daily-life details, and country profiles side by side.",
-};
-
 const DEFAULT_COMPARE = ["united-states", "japan", "singapore"];
 const PRESETS = [
   { label: "USA · China · India", countries: ["united-states", "china", "india"] },
@@ -110,11 +105,34 @@ function displayCompareRegion(country: AtlasCountry) {
 }
 
 function compareHref(slugs: string[]) {
-  return `/compare?countries=${encodeURIComponent(slugs.join(","))}`;
+  return cleanCompareHref(slugs);
 }
 
 function cleanCompareHref(slugs: string[]) {
   return `/compare/${slugs.join("-vs-")}`;
+}
+
+export async function generateMetadata({ searchParams }: { searchParams?: Promise<{ countries?: string; a?: string; b?: string; c?: string; d?: string; sort?: string }> }): Promise<Metadata> {
+  const params = await searchParams;
+  const selectedSlugs = parseSelectedCountries(params);
+  const countries = selectedSlugs.map(countryBySlug).filter((country): country is AtlasCountry => Boolean(country));
+  const title = countries.length >= 2 ? `Compare ${countries.map((country) => country.name).join(" vs ")}` : "Compare Countries";
+  const description = countries.length >= 2
+    ? `Compare ${countries.map((country) => country.name).join(", ")} by population, GDP, life expectancy, geography, languages, and country facts.`
+    : "Compare population, GDP, life expectancy, geography, languages, daily-life details, and country profiles side by side.";
+  const canonical = countries.length >= 2 ? cleanCompareHref(selectedSlugs) : "/compare";
+
+  return {
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      type: "website",
+    },
+  };
 }
 
 function sortableHref(slugs: string[], metric: keyof CompareCountry["metrics"]) {

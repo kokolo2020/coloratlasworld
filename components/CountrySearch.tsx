@@ -49,7 +49,7 @@ export default function CountrySearch({ variant = "compact" }: { variant?: "hero
     recordSearch(query.trim(), result);
     if (!result) return setMessage("Profile not found. Try a full name, alias, or code.");
     setMessage("");
-    window.location.href = `/?country=${result.slug}`;
+    window.location.href = `/countries/${result.slug}`;
   }
 
   return (
